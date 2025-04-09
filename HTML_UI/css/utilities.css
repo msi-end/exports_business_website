@@ -1,0 +1,139 @@
+/*
+* Color Palette 
+* -------------
+* Define your main color scheme here.  Use descriptive names
+* to make your CSS more maintainable.
+*/
+
+:root {
+    --primary-color: #c7fc4e;      /* Example: Blue */
+    --primary-color-dark: #2383e9; /* Darker shade for hover/active states */
+    --primary-color-light: #e0f7fa;  /* Lighter shade for backgrounds, etc. */
+    --secondary-color: #6c757d;    /* Example: Gray */
+    --secondary-color-dark: #565e64;
+    --secondary-color-light: #f8f9fa;
+    --tertiary-color: #28a745;     /* Example: Green */
+    --tertiary-color-dark: #218838;
+    --tertiary-color-light: #eff6e9;
+    --accent-color: #ffc107;       /* Example: Yellow (for highlights) */
+    --text-color: #333;          /* Default text color */
+    --text-color-light: #6c757d;  /* Lighter text for less emphasis */
+    --background-color: #ffffff;    /* Default background */
+    --border-color: #ddd;          /* Default border color */
+    --muted-color: #e9ecef;       /* Very light gray, useful for backgrounds */
+}
+
+
+/*
+* Typography
+* ----------
+* Define your font families, sizes, and other text-related styles.
+*/
+
+:root {
+    --font-family-base: 'Arial, sans-serif';  /* Default font */
+    --font-family-heading: 'Arial, serif'; /* Example: Different font for headings */
+    --font-size-base: 16px;           /* Default font size.  Use rems! */
+    --font-size-sm: 0.8rem;         /* 12.8px */
+    --font-size-md: 1rem;           /* 16px */
+    --font-size-lg: 1.25rem;          /* 20px */
+    --font-size-xl: 1.5rem;          /* 24px */
+    --font-size-h1: 2.5rem;         /* 40px */
+    --font-size-h2: 2rem;           /* 32px */
+    --font-size-h3: 1.75rem;         /* 28px */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --line-height-base: 1.5;
+    --line-height-heading: 1.2;
+}
+
+/*
+* Spacing
+* -------
+* Define your spacing units.  Use rems or ems for scalability.
+*/
+:root {
+    --space-unit: 1rem; /* 16px */
+    --space-xxs: calc(0.25 * var(--space-unit)); /* 4px */
+    --space-xs: calc(0.5 * var(--space-unit));  /* 8px */
+    --space-sm: calc(0.75 * var(--space-unit));  /* 12px */
+    --space-md: var(--space-unit);             /* 16px */
+    --space-lg: calc(1.25 * var(--space-unit)); /* 20px */
+    --space-xl: calc(1.5 * var(--space-unit));  /* 24px */
+    --space-xxl: calc(2 * var(--space-unit));  /* 32px */
+    --space-3xl: calc(3 * var(--space-unit));  /* 48px */
+}
+
+/*
+* Borders
+* ------
+*/
+:root{
+  --border-width: 1px;
+  --border-radius: 0.25rem; /* 4px */
+  --border-radius-sm: 0.2rem;
+  --border-radius-lg: 0.3rem;
+  --border-radius-pill: 50rem; /* For rounded buttons, etc. */
+}
+
+/*
+* Width & Height
+* ------------
+*/
+
+:root {
+    --width-full: 100%;
+    --width-half: 50%;
+    --width-third: 33.33%;
+    --width-quarter: 25%;
+    --width-auto: auto;
+    --height-full: 100%;
+    --height-half: 50%;
+    --height-third: 33.33%;
+    --height-quarter: 25%;
+    --height-auto: auto;
+    --max-width: 1200px;  /* Example max width for a container */
+}
+
+/*
+* Shadows
+* -------
+*/
+:root {
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.16);
+    --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.20);
+}
+
+
+/*
+* Transition
+* ----------
+*/
+:root {
+    --transition-fast: 0.2s ease-in-out;
+    --transition-medium: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in-out;
+}
+/* Example Usage (in your other CSS files)
+*
+* .my-element {
+* color: var(--primary-color);
+* background-color: var(--secondary-color-light);
+* font-size: var(--font-size-lg);
+* padding: var(--space-md);
+* border: 1px solid var(--border-color);
+* border-radius: var(--border-radius);
+* }
+*
+* .my-heading {
+* font-family: var(--font-family-heading);
+* font-size: var(--font-size-h1);
+* color: var(--primary-color-dark);
+* margin-bottom: var(--space-xl);
+* }
+*/

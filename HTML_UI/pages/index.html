@@ -6,15 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/skeleton_v3.css">
     <link rel="stylesheet" href="../css/animation.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
 </head>
 
+<style>
+    #blur_bg {
+        background: rgba(161, 238, 82, 0.36);
+        filter: blur(95px);
+        width: 40vh;
+        height: 40vh;
+        display: block;
+        position: absolute;
+        top: -5%;
+        left: -5%;
+    }
+</style>
+
 <body>
-    <header>
-        <nav>
-            <a href="#"><img src="../images/svg/logo.svg" alt="Logo"></a>
+    <header class="navigation-container">
+        <nav class="navigation">
+            <a href="#" class="logo"><img src="../images/svg/logo.svg" alt="Logo"></a>
             <ul>
                 <li><a href="../pages/index.html">Home</a></li>
                 <li><a href="../pages/fruits.html">Fruits</a></li>
@@ -28,12 +42,200 @@
             </ul>
         </nav>
     </header>
-
+    <section class="position-absolute top-0 left-0">
+        <object data="../image/svg/top_left_corner2.svg" class="" type="image/svg+xml">
+            Your browser does not support SVG
+        </object>
+        <!-- <object data="../image/svg/top_left_corner.svg" type="image/svg+xml">
+            Your browser does not support SVG
+        </object> -->
+        <span id="blur_bg"></span>
+    </section>
     <main>
-        <section class="product-hero">
+        <section class="product-hero container flex">
+            <div class="five columns">
+                <span> No #1 People's choice for Fresh food</span>
+                <h1 class="bold">Kiega Exims</h1>
+                <h3> Packed With Love From North-East India</h3>
+            </div>
+            <div class="seven columns">
+                <object data="../image/svg/hero_background.svg" type="image/svg+xml">
+                    Your browser does not support SVG
+                </object>
+                <img src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
+                    alt="">
+            </div>
 
         </section>
     </main>
+
+
+    <section class="hero-two">
+        <div class="container flex">
+            <div class="flex flex-row features">
+                <div class="five columns">
+                    <h3>Straight from the Farm</h3>
+                    <p>"Experience the true essence of nature with every purchase"</p>
+                    <p><i></i> Natural </p>
+                    <p><i></i> Organic</p>
+                </div>
+                <div>
+                    <p>We connect buyers and sellers of natural products, ensuring fresh, farm-to-market goodness.</p>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+            </div>
+            <div class="seven columns">
+                <object data="../image/svg/hero_background.svg" type="image/svg+xml">
+                    Your browser does not support SVG
+                </object>
+                <img src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
+                    alt="">
+            </div>
+        </div>
+    </section>
+    <section class="why-choose">
+        <div class="container">
+            <h2>Why choose Kiega</h2>
+            <div class="grid features">
+                <div>
+                    <img src="veg.png" alt="Organic Products" />
+                    <h3>Organic Products</h3>
+                </div>
+                <div>
+                    <img src="veg.png" alt="Vegetables" />
+                    <h3>Daily Fresh</h3>
+                </div>
+                <div>
+                    <img src="veg.png" alt="Vegetables" />
+                    <h3>Fresh Harvest</h3>
+                </div>
+                <div>
+                    <img src="veg.png" alt="Vegetables" />
+                    <h3>Natural Items</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="categories">
+        <div class="container">
+            <h2>Our categories</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            </p>
+            <div class="grid">
+                <div class="category-list">
+                    <div class="category">
+                        <img src="veg.png" alt="Vegetables" />
+                        <h3>VEGETABLES</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+                    <div class="category">
+                        <img src="veg.png" alt="Vegetables" />
+                        <h3>FRUIT</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+                    <div class="category">
+                        <img src="veg.png" alt="Vegetables" />
+                        <h3>CORN</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+                    <div class="category">
+                        <img src="veg.png" alt="Vegetables" />
+                        <h3>RICE</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="empowerment">
+        <div class="container">
+            <h2>We empower Smallholder farmers</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            </p>
+            <div class="grid">
+                <div>
+                    <h3>Farmer Development</h3>
+                    <ul>
+                        <li>Training</li>
+                        <li>Pre-Financing</li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <object data="../image/svg" class="" type="image/svg+xml">
+                            Your browser does not support SVG
+                        </object>
+                        <h3>Living Wage</h3>
+                    </div>
+                    <div>
+                        <object data="../image/svg" class="" type="image/svg+xml">
+                            Your browser does not support SVG
+                        </object>
+                        <h3>41% Female</h3>
+                    </div>
+                    <div>
+                        <object data="../image/svg" class="" type="image/svg+xml">
+                            Your browser does not support SVG
+                        </object>
+                        <h3>Locals for Locals</h3>
+                    </div>
+                    <div>
+                        <object data="../image/svg" class="" type="image/svg+xml">
+                            Your browser does not support SVG
+                        </object>
+                        <h3>Health checks</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <object data="../image/svg" class="" type="image/svg+xml">
+            Your browser does not support SVG
+        </object>
+        <div class="footer-about">
+            <object data="../image/svg/logo_white.svg" class="" type="image/svg+xml">
+                Your browser does not support SVG
+            </object>
+            <h4>Kiega Exims</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            </p>
+            <div class="contact-icons">
+                <a href="#"><i class="fab fa-email"></i>Kiegawebsite@example.com</a>
+                <a href="#"><i class="fab fa-location"></i>No 23 Meghalaya Street, 123/34, India</a>
+                <a href="#"><i class="fab fa-call"></i>+918744539234</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Explore</h4>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Rice and Corn</li>
+                <li>North-East Source</li>
+                <li>Social Impact</li>
+                <li>Our Farmers</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="footer-gallery">
+            <h4>Gallery</h4>
+            <div class="gallery-images">
+                <img src="gallery1.png" alt="Gallery 1" />
+                <img src="gallery2.png" alt="Gallery 2" />
+                <img src="gallery3.png" alt="Gallery 3" />
+                <img src="gallery3.png" alt="Gallery 3" />
+                <img src="gallery3.png" alt="Gallery 3" />
+                <img src="gallery3.png" alt="Gallery 3" />
+            </div>
+        </div>
+    </footer>
 
     <footer>
 
