@@ -1,39 +1,31 @@
-/*
-* Color Palette 
-* -------------
-* Define your main color scheme here.  Use descriptive names
-* to make your CSS more maintainable.
-*/
-
 :root {
-    --primary-color: #c7fc4e;      /* Example: Blue */
-    --primary-color-dark: #2383e9; /* Darker shade for hover/active states */
-    --primary-color-light: #e0f7fa;  /* Lighter shade for backgrounds, etc. */
-    --secondary-color: #6c757d;    /* Example: Gray */
+    --primary-color: #c7fc4e;     
+    --primary-color-dark: #2383e9; 
+    --primary-color-light: #e0f7fa;  
+    --secondary-color: #6c757d;   
     --secondary-color-dark: #565e64;
     --secondary-color-light: #f8f9fa;
-    --tertiary-color: #28a745;     /* Example: Green */
+    --tertiary-color: #28a745;    
     --tertiary-color-dark: #218838;
     --tertiary-color-light: #eff6e9;
-    --accent-color: #ffc107;       /* Example: Yellow (for highlights) */
-    --text-color: #333;          /* Default text color */
-    --text-color-light: #6c757d;  /* Lighter text for less emphasis */
-    --background-color: #ffffff;    /* Default background */
-    --border-color: #ddd;          /* Default border color */
-    --muted-color: #e9ecef;       /* Very light gray, useful for backgrounds */
+    --accent-color: #ffc107;      
+    --text-color: #333;         
+    --text-color-light: #6c757d; 
+    --background-color: #ffffff;   
+    --border-color: #ddd;        
+    --muted-color: #e9ecef;     
 }
 
 
 /*
 * Typography
 * ----------
-* Define your font families, sizes, and other text-related styles.
 */
 
 :root {
-    --font-family-base: 'Arial, sans-serif';  /* Default font */
-    --font-family-heading: 'Arial, serif'; /* Example: Different font for headings */
-    --font-size-base: 16px;           /* Default font size.  Use rems! */
+    --font-family-base: 'Arial, sans-serif';  
+    --font-family-heading: 'Arial, serif'; 
+    --font-size-base: 16px;           
     --font-size-sm: 0.8rem;         /* 12.8px */
     --font-size-md: 1rem;           /* 16px */
     --font-size-lg: 1.25rem;          /* 20px */
@@ -53,7 +45,6 @@
 /*
 * Spacing
 * -------
-* Define your spacing units.  Use rems or ems for scalability.
 */
 :root {
     --space-unit: 1rem; /* 16px */
@@ -76,7 +67,7 @@
   --border-radius: 0.25rem; /* 4px */
   --border-radius-sm: 0.2rem;
   --border-radius-lg: 0.3rem;
-  --border-radius-pill: 50rem; /* For rounded buttons, etc. */
+  --border-radius-pill: 50rem; 
 }
 
 /*
@@ -95,7 +86,7 @@
     --height-third: 33.33%;
     --height-quarter: 25%;
     --height-auto: auto;
-    --max-width: 1200px;  /* Example max width for a container */
+    --max-width: 1200px; 
 }
 
 /*
