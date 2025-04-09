@@ -1,0 +1,53 @@
+/* //// Root Backgrounds /// */
+#blur_bg {
+  background: rgba(161, 238, 82, 0.36);
+  filter: blur(95px);
+  width: 40vh;
+  height: 40vh;
+  display: block;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+}
+.hero-background {
+  position: absolute;
+  top: 8%;
+  right: -6%;
+  float: right;
+  z-index: -1;
+}
+
+/* //// Hero Section /// */
+.product-hero {
+  justify-content: center;
+  align-items: flex-end;
+  height: 800px;
+}
+.hero-image{
+    width: 58vw;
+    position: relative;
+    left: -50px;
+    top: -10px;
+    max-width: 60vw;
+}
+.hero-intro {
+  position: relative;
+  bottom: 15%;
+}
+.hero-intro p {
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 13px;
+}
+.hero-intro h1 {
+  color: var(--secondary-color);
+  font-weight: 800;
+  font-size: 75px;
+}
+.hero-intro h4 {
+    font-weight: 500;
+    font-size: 30px;
+  }
+  

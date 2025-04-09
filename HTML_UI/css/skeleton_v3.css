@@ -2,8 +2,8 @@
 /* Combines Skeleton V3.0.4 with custom utility classes */
 /* ===== Skeleton Base ===== */
 /* Table of contents
-- Grid
 - Base Styles
+- Grid
 - Typography
 - Links
 - Buttons
@@ -16,6 +16,31 @@
 - Clearing
 - Media Queries
 */
+/* ===== Custom Variables & Base Styles ===== */
+:root {
+  /* Gray Scale */
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+
+  /* Typography */
+  --font-sans: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-mono: "Courier New", monospace;
+
+  /* Spacing */
+  --spacing-unit: 1rem;
+  --border-radius: 4px;
+  --box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --transition: all 0.3s ease;
+}
 :root {
   --opacity-0: 0;
   --opacity-25: 0.25;
@@ -30,14 +55,28 @@
   --z-index-40: 40;
   --z-index-50: 50;
   --z-index-auto: auto;
-
-  
 }
+
+/* Base Styles */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-size: 1.5em; /* 15px */
+  line-height: 1.6;
+  font-weight: 400;
+  /* font-family: var(--font-sans); */
+  /* font-family: "Inria Sans", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
 /* Grid */
 .container {
   position: relative;
   width: 100%;
-  max-width: 1200px; /* Increased from 960px */
+  max-width: 1300px; /* Increased from 960px */
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -60,7 +99,7 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 90%;
     padding: 0;
   }
 }
@@ -68,7 +107,7 @@
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%;
+    width: 90%;
   }
 
   /* Column classes maintained from Skeleton */
@@ -146,55 +185,6 @@
   }
 }
 
-/* ===== Custom Variables & Base Styles ===== */
-:root {
-  /* Color System */
-  --primary: #2c3e50;
-  --secondary: #3498db;
-  --accent: #e74c3c;
-  --light: #ecf0f1;
-  --dark: #2c3e50;
-  --success: #27ae60;
-  --warning: #f39c12;
-  --danger: #e74c3c;
-  --info: #3498db;
-
-  /* Gray Scale */
-  --gray-100: #f8f9fa;
-  --gray-200: #e9ecef;
-  --gray-300: #dee2e6;
-  --gray-400: #ced4da;
-  --gray-500: #adb5bd;
-  --gray-600: #6c757d;
-  --gray-700: #495057;
-  --gray-800: #343a40;
-  --gray-900: #212529;
-
-  /* Typography */
-  --font-sans: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
-  --font-serif: Georgia, "Times New Roman", serif;
-  --font-mono: "Courier New", monospace;
-
-  /* Spacing */
-  --spacing-unit: 1rem;
-  --border-radius: 4px;
-  --box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  --transition: all 0.3s ease;
-}
-
-/* Base Styles */
-html {
-  font-size: 62.5%; /* 1rem = 10px */
-}
-
-body {
-  font-size: 1.5em; /* 15px */
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: var(--font-sans);
-}
-
 /* ===== Typography ===== */
 h1,
 h2,
@@ -258,7 +248,7 @@ a {
 }
 
 a:hover {
-  color: #2980b9;
+  color: var(--primary-color-dark);
 }
 
 /* ===== Buttons ===== */
@@ -360,7 +350,7 @@ select:focus {
 }
 
 /* ===== Custom Utility Classes ===== */
-/* Spacing */
+/* Spacing TOP*/
 .mt-0 {
   margin-top: 0 !important;
 }
@@ -377,6 +367,25 @@ select:focus {
   margin-top: 1.5rem !important;
 }
 .mt-5 {
+  margin-top: 3rem !important;
+}
+/* Spacing TOP*/
+.mb-0 {
+  margin-top: 0 !important;
+}
+.mb-1 {
+  margin-top: 0.25rem !important;
+}
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+.mb-3 {
+  margin-top: 1rem !important;
+}
+.mb-4 {
+  margin-top: 1.5rem !important;
+}
+.mb-5 {
   margin-top: 3rem !important;
 }
 
@@ -789,4 +798,14 @@ select:focus {
 }
 .brightness-110 {
   --tw-brightness: brightness(1.1);
+}
+/* Display */
+.hidden {
+  display: none;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
 }

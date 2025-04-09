@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #c7fc4e;     
-    --primary-color-dark: #2383e9; 
-    --primary-color-light: #e0f7fa;  
-    --secondary-color: #6c757d;   
-    --secondary-color-dark: #565e64;
+    --primary-color: #74A528;     
+    --primary-color-dark:  #18492B; 
+    --primary-color-light: #E7F3C6;  
+    --secondary-color: #004391;   
+    --secondary-color-dark: #255e9e;
     --secondary-color-light: #f8f9fa;
-    --tertiary-color: #28a745;    
+    --tertiary-color: #2E5848;    
     --tertiary-color-dark: #218838;
     --tertiary-color-light: #eff6e9;
     --accent-color: #ffc107;      
@@ -15,7 +15,6 @@
     --border-color: #ddd;        
     --muted-color: #e9ecef;     
 }
-
 
 /*
 * Typography

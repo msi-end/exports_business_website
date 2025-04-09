@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/skeleton_v3.css">
+    <link rel="stylesheet" href="../css/utilities.css">
     <link rel="stylesheet" href="../css/animation.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
@@ -14,24 +21,31 @@
 
 <!-- temorary css -->
 <style>
-  
+
 </style>
 
 <body>
     <header class="navigation-container">
-        <nav class="navigation">
-            <a href="#" class="logo"><img src="../images/svg/logo.svg" alt="Logo"></a>
-            <ul>
-                <li><a href="../pages/index.html">Home</a></li>
-                <li><a href="../pages/fruits.html">Fruits</a></li>
-                <li><a href="../pages/about-us.html">About Us</a></li>
-                <li><a href="../pages/vegetables.html">Vegetables</a></li>
-                <li><a href="../pages/rice-corn.html">Rice & Corn</a></li>
-                <li><a href="../pages/northeast-source.html">Source from Northeast</a></li>
-                <li><a href="../pages/social-impact.html">Social Impact</a></li>
-                <li><a href="../pages/cultivate-northeast.html">Cultivate in Northeast</a></li>
-                <li><a href="../pages/contact.html">Contact Us</a></li>
-            </ul>
+        <nav class="navigation flex">
+            <a href="#" class="logo"><img src="../image/svg/header/logo.svg" alt="Logo"></a>
+            <span>
+                <object data="../image/svg/header/menu.svg" class="menu-svg" type="image/svg+xml">
+                    Your browser does not support SVG
+                </object>
+            </span>
+            <div class="hidden">
+                <ul>
+                    <li><a href="../pages/index.html">Home</a></li>
+                    <li><a href="../pages/fruits.html">Fruits</a></li>
+                    <li><a href="../pages/about-us.html">About Us</a></li>
+                    <li><a href="../pages/vegetables.html">Vegetables</a></li>
+                    <li><a href="../pages/rice-corn.html">Rice & Corn</a></li>
+                    <li><a href="../pages/northeast-source.html">Source from Northeast</a></li>
+                    <li><a href="../pages/social-impact.html">Social Impact</a></li>
+                    <li><a href="../pages/cultivate-northeast.html">Cultivate in Northeast</a></li>
+                    <li><a href="../pages/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <section class="position-absolute top-0 left-0">
@@ -45,17 +59,17 @@
     </section>
     <main>
         <section class="product-hero container flex">
-            <div class="five columns">
-                <span> No #1 People's choice for Fresh food</span>
+            <div class="five columns hero-intro ">
+                <p class="mb-2 inline"> No #1 People's choice for Fresh food</p>
                 <h1 class="bold">Kiega Exims</h1>
-                <h3> Packed With Love From North-East India</h3>
+                <h4> Packed With Love From North-East India</h4>
             </div>
             <div class="seven columns">
-                <object data="../image/svg/hero_background.svg" type="image/svg+xml">
+                <object data="../image/svg/hero_background_with_text.svg" class="hero-background" type="image/svg+xml">
                     Your browser does not support SVG
                 </object>
                 <img src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-                    alt="">
+                    class="hero-image" alt="">
             </div>
 
         </section>
