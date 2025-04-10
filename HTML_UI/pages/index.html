@@ -21,18 +21,18 @@
 
 <!-- temorary css -->
 <style>
-
+    /* * {
+        border: 1px solid rgb(172, 233, 160);
+    } */
 </style>
 
 <body>
     <header class="navigation-container">
         <nav class="navigation flex">
             <a href="#" class="logo"><img src="../image/svg/header/logo.svg" alt="Logo"></a>
-            <span>
-                <object data="../image/svg/header/menu.svg" class="menu-svg" type="image/svg+xml">
-                    Your browser does not support SVG
-                </object>
-            </span>
+            <object data="../image/svg/header/menu.svg" class="menu-svg" type="image/svg+xml">
+                Your browser does not support SVG
+            </object>
             <div class="hidden">
                 <ul>
                     <li><a href="../pages/index.html">Home</a></li>
@@ -49,13 +49,13 @@
         </nav>
     </header>
     <section class="position-absolute top-0 left-0">
-        <object data="../image/svg/top_left_corner2.svg" class="" type="image/svg+xml">
+        <object data="../image/svg/top_left_corner2.svg" class="hero-background-0" type="image/svg+xml">
             Your browser does not support SVG
         </object>
         <!-- <object data="../image/svg/top_left_corner.svg" type="image/svg+xml">
             Your browser does not support SVG
         </object> -->
-        <span id="blur_bg"></span>
+        <span class="blur_bg position-absolute block hero-background-1"></span>
     </section>
     <main>
         <section class="product-hero container flex">
@@ -65,158 +65,174 @@
                 <h4> Packed With Love From North-East India</h4>
             </div>
             <div class="seven columns">
-                <object data="../image/svg/hero_background_with_text.svg" class="hero-background" type="image/svg+xml">
+                <object data="../image/svg/hero_background_with_text.svg" class="hero-background hero-background-2"
+                    type="image/svg+xml">
                     Your browser does not support SVG
                 </object>
                 <img src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
                     class="hero-image" alt="">
             </div>
-
+            <span class="blur_bg position-absolute right-0 bottom-0 hero-background-3"></span>
         </section>
         <section class="mission">
+            <object data="../image/svg/content_line.svg" class="mission-background-0 " type="image/svg+xml">
+                Your browser does not support SVG
+            </object>
+            <div class="container position-absolute top-0">
+                <span class="blur_bg position-absolute left-0 top-0 mission-background-1"></span>
+                <div class="twelve columns">
+                    <div class="row mission-content">
+                        <div class="one">
+                            <p><strong>We're an organic and fair trade pioneer.</strong></p>
+                            <p>Over the years, we've grown into an international fresh food group, but our mission
+                                stayed
+                                the same. We're here to save soils, lift up lives, and nourish the world with healthy
+                                food.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mission-content ">
+                        <div class="two">
+                            <p><strong>We farm, export, import...</strong> and we also train and support. We are on the
+                                ground with growers,
+                                empowering them to leave poverty behind and restore ecosystems.</p>
+                        </div>
+                    </div>
+                    <div class="row mission-content ">
+                        <div class="three">
+                            <p><strong>This is how we re-think business,</strong> and make it fruitful for all</p>
+                        </div>
+                    </div>
+                </div>
+                <span class="blur_bg position-absolute right-0 bottom-0 mission-background-2"></span>
+            </div>
+        </section>
+
+
+        <section class="hero-two">
+            <div class="container flex">
+                <div class="flex flex-row features">
+                    <div class="five columns">
+                        <h3>Straight from the Farm</h3>
+                        <p>"Experience the true essence of nature with every purchase"</p>
+                        <p><i></i> Natural </p>
+                        <p><i></i> Organic</p>
+                    </div>
+                    <div>
+                        <p>We connect buyers and sellers of natural products, ensuring fresh, farm-to-market goodness.
+                        </p>
+                        <a href="#" class="btn">Explore</a>
+                    </div>
+                </div>
+                <div class="seven columns">
+                    <object data="../image/svg/hero_background.svg" type="image/svg+xml">
+                        Your browser does not support SVG
+                    </object>
+                    <img src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
+                        alt="">
+                </div>
+            </div>
+        </section>
+        <section class="why-choose">
             <div class="container">
+                <h2>Why choose Kiega</h2>
+                <div class="grid features">
+                    <div>
+                        <img src="veg.png" alt="Organic Products" />
+                        <h3>Organic Products</h3>
+                    </div>
+                    <div>
+                        <img src="veg.png" alt="Vegetables" />
+                        <h3>Daily Fresh</h3>
+                    </div>
+                    <div>
+                        <img src="veg.png" alt="Vegetables" />
+                        <h3>Fresh Harvest</h3>
+                    </div>
+                    <div>
+                        <img src="veg.png" alt="Vegetables" />
+                        <h3>Natural Items</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="container">
+                <h2>Our categories</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration
+                </p>
+                <div class="grid">
+                    <div class="category-list">
+                        <div class="category">
+                            <img src="veg.png" alt="Vegetables" />
+                            <h3>VEGETABLES</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available</p>
+                        </div>
+                        <div class="category">
+                            <img src="veg.png" alt="Vegetables" />
+                            <h3>FRUIT</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available</p>
+                        </div>
+                        <div class="category">
+                            <img src="veg.png" alt="Vegetables" />
+                            <h3>CORN</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available</p>
+                        </div>
+                        <div class="category">
+                            <img src="veg.png" alt="Vegetables" />
+                            <h3>RICE</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="empowerment">
+            <div class="container">
+                <h2>We empower Smallholder farmers</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration
+                </p>
                 <div class="grid">
                     <div>
-                        <p><strong>We're an organic and fair trade pioneer.</strong></p>
-                        <p>Over the years, we've grown into an international fresh food group, but our mission
-                            stayed
-                            the same. We're here to save soils, lift up lives, and nourish the world with healthy
-                            food.
-                        </p>
+                        <h3>Farmer Development</h3>
+                        <ul>
+                            <li>Training</li>
+                            <li>Pre-Financing</li>
+                            <li>Support</li>
+                        </ul>
                     </div>
                     <div>
-                        <p><strong>We farm, export, import...</strong> and we also train and support. We are on the
-                            ground with growers,
-                            empowering them to leave poverty behind and restore ecosystems.</p>
-                    </div>
-                    <div>
-                        <p><strong>This is how we re-think business,</strong> and make it fruitful for all</p>
+                        <div>
+                            <object data="../image/svg" class="" type="image/svg+xml">
+                                Your browser does not support SVG
+                            </object>
+                            <h3>Living Wage</h3>
+                        </div>
+                        <div>
+                            <object data="../image/svg" class="" type="image/svg+xml">
+                                Your browser does not support SVG
+                            </object>
+                            <h3>41% Female</h3>
+                        </div>
+                        <div>
+                            <object data="../image/svg" class="" type="image/svg+xml">
+                                Your browser does not support SVG
+                            </object>
+                            <h3>Locals for Locals</h3>
+                        </div>
+                        <div>
+                            <object data="../image/svg" class="" type="image/svg+xml">
+                                Your browser does not support SVG
+                            </object>
+                            <h3>Health checks</h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-
-    <section class="hero-two">
-        <div class="container flex">
-            <div class="flex flex-row features">
-                <div class="five columns">
-                    <h3>Straight from the Farm</h3>
-                    <p>"Experience the true essence of nature with every purchase"</p>
-                    <p><i></i> Natural </p>
-                    <p><i></i> Organic</p>
-                </div>
-                <div>
-                    <p>We connect buyers and sellers of natural products, ensuring fresh, farm-to-market goodness.</p>
-                    <a href="#" class="btn">Explore</a>
-                </div>
-            </div>
-            <div class="seven columns">
-                <object data="../image/svg/hero_background.svg" type="image/svg+xml">
-                    Your browser does not support SVG
-                </object>
-                <img src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-                    alt="">
-            </div>
-        </div>
-    </section>
-    <section class="why-choose">
-        <div class="container">
-            <h2>Why choose Kiega</h2>
-            <div class="grid features">
-                <div>
-                    <img src="veg.png" alt="Organic Products" />
-                    <h3>Organic Products</h3>
-                </div>
-                <div>
-                    <img src="veg.png" alt="Vegetables" />
-                    <h3>Daily Fresh</h3>
-                </div>
-                <div>
-                    <img src="veg.png" alt="Vegetables" />
-                    <h3>Fresh Harvest</h3>
-                </div>
-                <div>
-                    <img src="veg.png" alt="Vegetables" />
-                    <h3>Natural Items</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="categories">
-        <div class="container">
-            <h2>Our categories</h2>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-            </p>
-            <div class="grid">
-                <div class="category-list">
-                    <div class="category">
-                        <img src="veg.png" alt="Vegetables" />
-                        <h3>VEGETABLES</h3>
-                        <p>There are many variations of passages of Lorem Ipsum available</p>
-                    </div>
-                    <div class="category">
-                        <img src="veg.png" alt="Vegetables" />
-                        <h3>FRUIT</h3>
-                        <p>There are many variations of passages of Lorem Ipsum available</p>
-                    </div>
-                    <div class="category">
-                        <img src="veg.png" alt="Vegetables" />
-                        <h3>CORN</h3>
-                        <p>There are many variations of passages of Lorem Ipsum available</p>
-                    </div>
-                    <div class="category">
-                        <img src="veg.png" alt="Vegetables" />
-                        <h3>RICE</h3>
-                        <p>There are many variations of passages of Lorem Ipsum available</p>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section class="empowerment">
-        <div class="container">
-            <h2>We empower Smallholder farmers</h2>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-            </p>
-            <div class="grid">
-                <div>
-                    <h3>Farmer Development</h3>
-                    <ul>
-                        <li>Training</li>
-                        <li>Pre-Financing</li>
-                        <li>Support</li>
-                    </ul>
-                </div>
-                <div>
-                    <div>
-                        <object data="../image/svg" class="" type="image/svg+xml">
-                            Your browser does not support SVG
-                        </object>
-                        <h3>Living Wage</h3>
-                    </div>
-                    <div>
-                        <object data="../image/svg" class="" type="image/svg+xml">
-                            Your browser does not support SVG
-                        </object>
-                        <h3>41% Female</h3>
-                    </div>
-                    <div>
-                        <object data="../image/svg" class="" type="image/svg+xml">
-                            Your browser does not support SVG
-                        </object>
-                        <h3>Locals for Locals</h3>
-                    </div>
-                    <div>
-                        <object data="../image/svg" class="" type="image/svg+xml">
-                            Your browser does not support SVG
-                        </object>
-                        <h3>Health checks</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer>
         <object data="../image/svg" class="" type="image/svg+xml">
             Your browser does not support SVG
