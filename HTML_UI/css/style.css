@@ -391,17 +391,17 @@
   margin: 0 auto;
 }
 .feature-background {
-  /* height: 52vw; */
   background: url("../image/svg/why-choose-item-bg.svg");
   background-repeat: no-repeat;
-  /* background-size: 120% 105%; */
+  background-size: 100% 100%;
 }
 
 .feature {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 180px;
+  width: 220px;
+  height: 400px;
   transition: transform 0.3s;
 }
 
@@ -412,7 +412,7 @@
   top: 150px;
 }
 .feature-icon {
-  margin: 5rem;
+  margin: 10rem 5rem;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -424,12 +424,13 @@
 }
 
 .feature-icon img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 .feature-title {
   text-align: center;
+  padding-top: 5rem;
 }
 /* //// Category Section /// */
 .categories-section {
