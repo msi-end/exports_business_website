@@ -71,7 +71,18 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
-
+.circular--square {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+.prim-color{
+  color: var(--primary-color);
+  }
+.sec-color{
+color: var(--secondary-color);
+}
 /* Grid */
 .container {
   position: relative;
@@ -808,4 +819,41 @@ select:focus {
 }
 .inline {
   display: inline;
+}
+/* Font  */
+
+.font-thin {
+  font-weight: 100;
+}
+
+.font-extra-light {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400; 
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semi-bold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extra-bold {
+  font-weight: 800;
+}
+
+.font-black {
+  font-weight: 900;
 }

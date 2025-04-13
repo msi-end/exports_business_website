@@ -1,0 +1,149 @@
+.footer {
+  background-color: #2e5848;
+  color: white;
+  padding: 3rem 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  position: relative;
+  margin-top: 300px;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background-color: #ffffff;
+  background-image: url('../image/svg/footer.svg'); /* Replace with your actual silhouette image */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-about object {
+  width: 120px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.footer-about h4 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.footer-about p {
+  margin: 0.5rem 0 1.5rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 90%;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-icons a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: opacity 0.3s;
+}
+
+.contact-icons a:hover {
+  opacity: 0.8;
+}
+
+.contact-icons i {
+  width: 1.2rem;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.footer-links h4 {
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem;
+  font-weight: 600;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  padding: 0.6rem 0;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.footer-links li:hover {
+  opacity: 0.8;
+}
+
+.footer-gallery h4 {
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem;
+  font-weight: 600;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.gallery-images img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 2rem 5%;
+  }
+  
+  .gallery-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
