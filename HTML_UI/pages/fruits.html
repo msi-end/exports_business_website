@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIEGA EXIMS - Sustainability</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background: rgb(227, 255, 227);
+            color: #1a365d;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        
+        .left-section {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .right-section {
+            flex: 1;
+            min-width: 300px;
+            padding-top: 20px;
+        }
+        
+        /* Circle and its segments */
+        .circle-container {
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto 60px;
+            position: relative;
+        }
+        
+        .circle {
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%; /* Makes it a perfect circle */
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        
+        /* Divide the circle into 5 segments */
+        .segment {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 50%;
+            transform-origin: bottom left;
+            border: 3px solid #f0f0f0;
+        }
+        
+        .segment-1 {
+            transform: rotate(0deg) skewY(18deg);
+        }
+        
+        .segment-2 {
+            transform: rotate(72deg) skewY(18deg);
+        }
+        
+        .segment-3 {
+            transform: rotate(144deg) skewY(18deg);
+        }
+        
+        .segment-4 {
+            transform: rotate(216deg) skewY(18deg);
+        }
+        
+        .segment-5 {
+            transform: rotate(288deg) skewY(18deg);
+        }
+        
+        /* Logos positioning */
+        .logo {
+            position: absolute;
+            z-index: 10;
+        }
+        
+        .logo-demeter {
+            top: 15%;
+            right: 20%;
+            width: 70px;
+            height: 30px;
+        }
+        
+        .logo-global {
+            top: 15%;
+            left: 20%;
+            width: 60px;
+            height: 60px;
+        }
+        
+        .logo-handprint {
+            top: 45%;
+            left: 15%;
+            width: 60px;
+            height: 60px;
+        }
+        
+        .logo-ifs {
+            top: 45%;
+            right: 15%;
+            width: 60px;
+            height: 60px;
+        }
+        
+        .logo-kiega {
+            bottom: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 40px;
+        }
+        
+        .heading {
+            font-size: 36px;
+            font-weight: bold;
+            color: #0052a5;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .benefits-list {
+            margin-top: 30px;
+        }
+        
+        .benefit-item {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+        
+        .benefit-item .bullet {
+            margin-right: 15px;
+            color: #0052a5;
+            font-size: 24px;
+            line-height: 1;
+            transform: translateY(-2px);
+        }
+        
+        .benefit-text {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .mission-statement {
+            margin-top: 40px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            font-weight: bold;
+        }
+        
+        .product-section {
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        .product-name {
+            font-size: 48px;
+            color: #ff7700;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .product-tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            padding: 5px 15px;
+            margin: 0 5px 5px;
+            font-size: 14px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #0052a5;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        
+        .cta-button::after {
+            content: "→";
+            margin-left: 10px;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 992px) {
+            .heading {
+                font-size: 30px;
+            }
+            
+            .product-name {
+                font-size: 36px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .circle-container {
+                max-width: 350px;
+            }
+            
+            .heading {
+                font-size: 28px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .circle-container {
+                max-width: 280px;
+            }
+            
+            .logo {
+                transform: scale(0.8);
+            }
+            
+            .heading {
+                font-size: 24px;
+            }
+            
+            .product-name {
+                font-size: 32px;
+            }
+            
+            .benefit-text {
+                font-size: 14px;
+            }
+        }
+
+        .inner-cicle {
+            position: absolute;
+            width: 10rem;
+            height: 10rem;
+            background: transparent;
+            top: 200px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="left-section">
+                <div class="circle-container">
+                    <div class="circle">
+                        <!-- Circle segments -->
+                        <div class="segment segment-1"></div>
+                        <div class="segment segment-2"></div>
+                        <div class="segment segment-3"></div>
+                        <div class="segment segment-4"></div>
+                        <div class="segment segment-5"></div>
+
+                        <div class="inner-cicle"></div>
+                        
+                        <!-- Certification logos -->
+                        <div class="logo logo-demeter">
+                            <img src="/api/placeholder/70/30" alt="Demeter" style="background-color: #ff7700; border-radius: 5px;" />
+                        </div>
+                        
+                        <div class="logo logo-global">
+                            <img src="/api/placeholder/60/60" alt="Global G.A.P." style="border-radius: 50%; background-color: #8cc63f;" />
+                        </div>
+                        
+                        <div class="logo logo-handprint">
+                            <img src="/api/placeholder/60/60" alt="Global G.A.P. GRASP" style="background-color: transparent;" />
+                        </div>
+                        
+                        <div class="logo logo-ifs">
+                            <img src="/api/placeholder/60/60" alt="IFS Broker" style="border-radius: 50%; background-color: #e30613;" />
+                        </div>
+                        
+                        <div class="logo logo-kiega">
+                            <img src="/api/placeholder/100/40" alt="KIEGA" style="background-color: transparent;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-section">
+                <h1 class="heading">The highest standards<br>of sustainability</h1>
+                
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <span class="bullet">•</span>
+                        <div class="benefit-text">100% of our products are certified organic</div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <span class="bullet">•</span>
+                        <div class="benefit-text">Many of our fruits are available from regenerative, Demeter certified farms.</div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <span class="bullet">•</span>
+                        <div class="benefit-text">Many of our fruits are available from regenerative, Demeter certified farms.</div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <span class="bullet">•</span>
+                        <div class="benefit-text"><span class="highlight">We farm, export, import...</span> and we also train and support. We are on the ground with growers, empowering them to leave poverty behind and restore ecosystems.</div>
+                    </div>
+                </div>
+                
+                <div class="mission-statement">
+                    <p><span class="highlight">We're an organic and fair trade pioneer.</span></p>
+                    <p>Over the years, we've grown into a international fresh food group, but our mission stayed the same. We're here to save soils, lift up lives, and nourish the world with healthy food.</p>
+                </div>
+                
+                <a href="#" class="cta-button">Get in touch</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
