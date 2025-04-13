@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rotating Organic Display</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f5;
+      padding: 40px;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .main-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .carousel {
+      display: flex;
+      gap: 15px;
+    }
+
+    .carousel img {
+      width: 80px;
+      height: 80px;
+      border-radius: 15px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Main image -->
+  <img id="mainImage" class="main-image" src="https://picsum.photos/200/300" alt="Main Product" />
+
+  <!-- Carousel of rotating images -->
+  <div class="carousel" id="carousel">
+    <img src="https://picsum.photos/200/300" alt="Strawberry">
+    <img src="https://picsum.photos/200/300" alt="Carrot">
+    <img src="https://picsum.photos/200/300" alt="Eggplant">
+    <img src="https://picsum.photos/200/300" alt="Cauliflower">
+    <img src="https://picsum.photos/200/300" alt="Banana">
+  </div>
+</div>
+
+<script>
+  const mainImage = document.getElementById("mainImage");
+  const carousel = document.getElementById("carousel");
+
+  setInterval(() => {
+    const firstImg = carousel.children[0];
+
+    // Save main image src
+    const oldMainSrc = mainImage.src;
+
+    // Move first carousel image to main
+    mainImage.src = firstImg.src;
+
+    // Remove first image from carousel
+    carousel.removeChild(firstImg);
+
+    // Add old main image to the end of carousel
+    const newImg = document.createElement("img");
+    newImg.src = oldMainSrc;
+    newImg.alt = "Swapped Image";
+    carousel.appendChild(newImg);
+  }, 3000); // 3 seconds interval
+</script>
+
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RE-FRESH Organic Produce</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f0;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .background-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .shape-1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgba(255, 218, 185, 0.3);
+        }
+        
+        .shape-2 {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 2px dashed rgba(0, 0, 0, 0.1);
+        }
+        
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 80px;
+        }
+        
+        .featured-product {
+            width: 40%;
+            position: relative;
+        }
+        
+        .product-info {
+            width: 55%;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            color: #003366;
+            margin: 0;
+            font-weight: 800;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #003366;
+            margin-top: 10px;
+        }
+        
+        .featured-image-container {
+            position: relative;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .featured-image {
+            width: 250px;
+            height: auto;
+            position: absolute;
+            transition: opacity 0.8s ease-in-out;
+        }
+        
+        .product-name {
+            font-size: 2rem;
+            color: #f8931f;
+            margin-top: 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .product-name span {
+            display: inline-block;
+        }
+        
+        .circle-arrow {
+            background-color: #f8931f;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .product-details {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .detail {
+            margin-right: 15px;
+        }
+        
+        .detail:before {
+            content: "• ";
+            color: #f8931f;
+        }
+        
+        .product-description {
+            margin-top: 10px;
+        }
+        
+        .fruit-line {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            max-width: 500px;
+        }
+        
+        .fruit-item {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .fruit-item img {
+            width: 80%;
+            height: auto;
+        }
+        
+        .strawberry-bg {
+            background-color: rgba(255, 150, 150, 0.5);
+        }
+        
+        .carrot-bg {
+            background-color: rgba(255, 200, 150, 0.5);
+        }
+        
+        .eggplant-bg {
+            background-color: rgba(200, 150, 255, 0.5);
+        }
+        
+        .cauliflower-bg {
+            background-color: rgba(200, 255, 200, 0.5);
+        }
+        
+        .banana-bg {
+            background-color: rgba(255, 255, 200, 0.5);
+        }
+        
+        .info-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background-color: #003366;
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #003366;
+            border: 2px solid #003366;
+        }
+        
+        /* Animation styles */
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animated {
+            animation: slideIn 0.5s ease-out forwards;
+        }
+        
+        /* Hide all featured images initially except the first one */
+        .featured-image:not(:first-child) {
+            opacity: 0;
+        }
+        
+        /* Fruit rotation animation */
+        @keyframes rotateItems {
+            0%, 15% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            20%, 95% {
+                transform: translateY(-350px) scale(3);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .fruit-item {
+            position: relative;
+        }
+        
+        .fruit-item img {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .fruit-item.active img {
+            animation: rotateItems 5s infinite;
+            animation-fill-mode: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background-shapes">
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+        </div>
+        
+        <div class="content">
+            <div class="featured-product">
+                <div class="featured-image-container">
+                    <img src="https://picsum.photos/200/300" alt="Pumpkin" class="featured-image active" id="pumpkin-image">
+                    <img src="https://picsum.photos/200/300" alt="Strawberry" class="featured-image" id="strawberry-image">
+                    <img src="https://picsum.photos/200/300" alt="Carrot" class="featured-image" id="carrot-image">
+                    <img src="https://picsum.photos/200/300" alt="Eggplant" class="featured-image" id="eggplant-image">
+                    <img src="https://picsum.photos/200/300" alt="Cauliflower" class="featured-image" id="cauliflower-image">
+                    <img src="https://picsum.photos/200/300" alt="Banana" class="featured-image" id="banana-image">
+                </div>
+                
+                <div class="product-name">
+                    <span id="product-name-text">Pumpkin</span>
+                    <span class="circle-arrow">→</span>
+                </div>
+                
+                <div class="product-details">
+                    <span class="detail">Organic</span>
+                    <span class="detail">Year round</span>
+                    <span class="detail">3 continents</span>
+                </div>
+                
+                <div class="product-description">
+                    Large selection of Fairtrade and Demeter.
+                </div>
+                
+                <div class="fruit-line">
+                    <div class="fruit-item strawberry-bg" id="strawberry-item">
+                        <img src="https://picsum.photos/200/300" alt="Strawberry">
+                    </div>
+                    <div class="fruit-item carrot-bg" id="carrot-item">
+                        <img src="https://picsum.photos/200/300" alt="Carrot">
+                    </div>
+                    <div class="fruit-item eggplant-bg" id="eggplant-item">
+                        <img src="https://picsum.photos/200/300" alt="Eggplant">
+                    </div>
+                    <div class="fruit-item cauliflower-bg" id="cauliflower-item">
+                        <img src="https://picsum.photos/200/300" alt="Cauliflower">
+                    </div>
+                    <div class="fruit-item banana-bg" id="banana-item">
+                        <img src="https://picsum.photos/200/300" alt="Banana">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h1>RE-FRESH</h1>
+                <h2>100% Organic, High Volume</h2>
+                
+                <div class="info-box">
+                    Reliable, efficient and consistent supply of organic products to the global market.
+                    
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary">
+                            Explore
+                            <span>→</span>
+                        </a>
+                        <a href="#" class="btn btn-secondary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Array of product names
+        const products = [
+            { id: 'pumpkin', name: 'Pumpkin' },
+            { id: 'strawberry', name: 'Strawberry' },
+            { id: 'carrot', name: 'Carrot' },
+            { id: 'eggplant', name: 'Eggplant' },
+            { id: 'cauliflower', name: 'Cauliflower' },
+            { id: 'banana', name: 'Banana' }
+        ];
+        
+        // Initialize animation
+        let currentIndex = 0;
+        const productNameText = document.getElementById('product-name-text');
+        
+        // Function to rotate products
+        function rotateProducts() {
+            // Remove active class from all items
+            document.querySelectorAll('.fruit-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Hide all featured images
+            document.querySelectorAll('.featured-image').forEach(img => {
+                img.style.opacity = 0;
+            });
+            
+            // Advance to next product
+            currentIndex = (currentIndex + 1) % products.length;
+            
+            // Get next product
+            const nextProduct = products[currentIndex];
+            
+            // Update product name
+            productNameText.textContent = nextProduct.name;
+            
+            // Show the corresponding image
+            const nextImage = document.getElementById(`${nextProduct.id}-image`);
+            if (nextImage) {
+                nextImage.style.opacity = 1;
+            }
+            
+            // Add active class to corresponding fruit item 
+            // (except for pumpkin which is always featured)
+            if (nextProduct.id !== 'pumpkin') {
+                const fruitItem = document.getElementById(`${nextProduct.id}-item`);
+                if (fruitItem) {
+                    fruitItem.classList.add('active');
+                }
+            }
+            
+            // Schedule next rotation
+            setTimeout(rotateProducts, 5000);
+        }
+        
+        // Start the rotation
+        setTimeout(rotateProducts, 5000);
+        
+        // Set up click events for fruit items
+        document.querySelectorAll('.fruit-item').forEach((item, index) => {
+            item.addEventListener('click', () => {
+                // Skip pumpkin which is already featured
+                const productIndex = index + 1; // +1 because pumpkin is at index 0
+                
+                // Update current index
+                currentIndex = productIndex % products.length;
+                
+                // Manually trigger rotation
+                clearTimeout(window.rotationTimer);
+                rotateProducts();
+            });
+        });
+    </script>
+</body>
+</html>
