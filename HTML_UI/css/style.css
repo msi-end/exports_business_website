@@ -438,8 +438,9 @@
 }
 
 .heading {
-  color: #13397c;
+  color:var(--secondary-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .subheading {
@@ -483,7 +484,7 @@
 }
 
 .category-card.active {
-  background: #dff0d8;
+  background: var(--primary-color-light);
   border-radius: 100px 100px 30px 30px;
   padding: 20px 10px;
   width: 200px;
@@ -496,6 +497,26 @@
 
 .category-card.active p {
   margin: 10px 0;
+}
+.category-card.active {
+transform-style: preserve-3d;
+border-radius: 20px;
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-flex-wrap: wrap;
+-moz-flex-wrap: wrap;
+place-items: center;
+box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+background: -webkit-linear-gradient(to right, #cb2d3e, #ef473a);
+background: -moz-linear-gradient(to right, #cb2d3e, #ef473a);
+background: -ms-linear-gradient(to right, #cb2d3e, #ef473a);
+background: -o-linear-gradient(to right, #cb2d3e, #ef473a);
+background: linear-gradient(to right, #cb2d3e, #ef473a);
 }
 
 /* //// Hero Two Section /// */
