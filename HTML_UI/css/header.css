@@ -1,8 +1,7 @@
 .navigation-container {
 }
-.navigation-container .navigation {
+.navigation-container .navigation, .navigation-menu  {
   width: 30%;
-  display: flex;
   margin: 0.5rem 1.5rem;
   background-color: #fff;
   border: 1px slid white;
