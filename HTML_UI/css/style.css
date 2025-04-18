@@ -584,7 +584,7 @@ background: linear-gradient(to right, #cb2d3e, #ef473a);
   justify-content: center;
 }
 
-.map-product-container object {
+.map-product-container  {
   width: 100%;
   background: #ffffff;
   background: linear-gradient(
@@ -609,6 +609,9 @@ background: linear-gradient(to right, #cb2d3e, #ef473a);
 
 .map-container {
   width: 100%;
+}
+.map-container-map{
+  background-color: #ffffff00;
 }
 .map-image {
   width: 500px;
