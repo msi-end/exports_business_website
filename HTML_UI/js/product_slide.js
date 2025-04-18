@@ -1,31 +1,31 @@
 const products = [
   {
     name: "Pumkin",
-    desc:'Straight from (Pumkin) Farm',
+    desc:"Straight from (Pumkin) Farm",
     image:
       "../image/fruits/Objects.png",
   },
   {
     name: "Tomato",
-    desc:'Straight from (Tomato) Farm',
+    desc:"Straight from (Tomato) Farm",
     image:
       "../image/fruits/tomato.png",
   },
   {
     name: "Pumkin",
-    desc:'Straight from (Pumkin) Farm',
+    desc:"Straight from (Pumkin) Farm",
     image:
       "../image/fruits/Objects.png",
   },
   {
     name: "adfasdfasdf",
-    desc:'Straight from (Pumkin) Farm',
+    desc:"Straight from (Pumkin) Farm",
     image:
       "../image/fruits/tomato-key.png",
   },
   {
     name: "asdfasdfdsf",
-    desc:'Straight from (Pumkin) Farm',
+    desc:"Straight from (Pumkin) Farm",
     image:
       "../image/farmer.jpg",
   },
@@ -35,6 +35,7 @@ const animationInterval = 4000;
 let isAnimating = false;
 let minaImage = {
   name: "Pumpkin",
+  desc:"Straight from (Pumkin) Farm",
   image:
     "../image/fruits/Objects.png",
 };
