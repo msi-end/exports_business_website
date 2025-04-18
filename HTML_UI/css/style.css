@@ -517,11 +517,12 @@
 }
 
 .category-card .image {
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 10px;
+  border: 20px solid #dfefb2;
 }
 
 .category-card img {
@@ -548,7 +549,11 @@
 }
 
 .category-card.active p {
-  margin: 10px 0;
+  margin: 10px 15px;
+  display: block;
+}
+.category-card.active div {
+  display: block;
 }
 /* .category-card.active {
 transform-style: preserve-3d;
