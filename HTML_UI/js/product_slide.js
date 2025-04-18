@@ -1,26 +1,31 @@
 const products = [
   {
-    name: "afgadsfasf",
+    name: "Pumkin",
+    desc:'Straight from (Pumkin) Farm',
     image:
-      "../image/farmer.jpg",
+      "../image/fruits/Objects.png",
   },
   {
-    name: "adfasdf",
+    name: "Tomato",
+    desc:'Straight from (Tomato) Farm',
     image:
-      "../image/farmer.jpg",
+      "../image/fruits/tomato.png",
   },
   {
-    name: "adfasdf",
+    name: "Pumkin",
+    desc:'Straight from (Pumkin) Farm',
     image:
-      "../image/farmer.jpg",
+      "../image/fruits/Objects.png",
   },
   {
     name: "adfasdfasdf",
+    desc:'Straight from (Pumkin) Farm',
     image:
-      "../image/farmer.jpg",
+      "../image/fruits/tomato-key.png",
   },
   {
     name: "asdfasdfdsf",
+    desc:'Straight from (Pumkin) Farm',
     image:
       "../image/farmer.jpg",
   },
@@ -31,7 +36,7 @@ let isAnimating = false;
 let minaImage = {
   name: "Pumpkin",
   image:
-    "../image/farmer.jpg",
+    "../image/fruits/Objects.png",
 };
 let animationTimer;
 let itemPositions = [];
@@ -39,6 +44,7 @@ const productRow = document.getElementById("product-row");
 const productContainer = document.getElementById("product-container");
 const featuredImage = document.getElementById("featured-image");
 const productName = document.getElementById("product-name");
+const productDesc = document.getElementById("product-description");
 
 function getRelativePosition(element, container) {
   const containerRect = container.getBoundingClientRect();
@@ -81,6 +87,7 @@ function initializeCarousel() {
 
   featuredImage.src = minaImage.image;
   productName.textContent = minaImage.name;
+  productDesc.textContent=minaImage.desc;
 
   document.querySelectorAll(".product-item").forEach((item) => {
     item.addEventListener("click", () => {

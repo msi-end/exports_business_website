@@ -153,15 +153,15 @@
   border-radius: 12px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  background-color: #f8f8f8;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8; */
   bottom: 60px;
 }
 
 .featured-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: opacity 0.5s ease-in-out;
   position: absolute;
   top: 0;
@@ -204,18 +204,19 @@
   position: absolute;
   width: 180px;
   height: 180px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
 }
 
 .product-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 
@@ -237,7 +238,8 @@
 .animated-clone img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
+  object-fit: contain;
 }
 
 .featured-fade-out {
@@ -563,44 +565,39 @@ background: linear-gradient(to right, #cb2d3e, #ef473a);
 /*////  
  ////////
  //////// */
-/* //// Product frit slider Section /// */
-.map-product-container{
+/* //// Outsiurce Section /// */
+.map-product-container {
   justify-content: center;
 }
 
-.map-product-container object{
+.map-product-container object {
   width: 100%;
   background: #ffffff;
-background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 50%, rgba(255, 255, 255, 1) 99%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(243, 243, 243, 1) 50%,
+    rgba(255, 255, 255, 1) 99%
+  );
 }
- 
+
 .left-content {
-  flex: .4;
+  flex: 0.4;
   padding-right: 20px;
 }
 
 .right-content {
-  flex: .6;
+  flex: 0.6;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.title {
-  color: #0a4a94;
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-
 .map-container {
   width: 100%;
-  position: relative;
 }
-
 .map-image {
-  width: 100%;
+  width: 500px;
   height: auto;
 }
 
@@ -612,35 +609,32 @@ background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 
   font-size: 20px;
 }
 
-.product-showcase {
-  background: #f0f9e8;
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+.map-product-container .product-showcase {
+  background: var(--primary-color-light);
+  border-radius: 35% 65% 63% 37% / 42% 34% 66% 58%;
   padding: 30px;
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 319px;
+  height: 319px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 51px;
 }
-
+.product-showcase-bg {
+  width: 400px;
+  height: 400px;
+  background: url(../image/svg/empowerment.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  left: -8rem;
+  bottom: 6rem;
+}
 .product-images {
-  width: 100%;
+  width: 250%;
   height: auto;
-}
-
-.region-name {
-  color: #3c7a28;
-  font-size: 28px;
-  font-weight: bold;
-  margin: 15px 0;
-}
-
-.description {
-  color: #555;
-  margin-bottom: 20px;
-  line-height: 1.5;
 }
 
 .see-more-btn {
@@ -767,11 +761,11 @@ background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 
 .empowerment .image-slider .active {
   background: var(--primary-color-dark);
 }
-.empowerment-images{
+.empowerment-images {
   margin: 0px 1rem;
   text-align: center;
 }
-.align-bottom{
+.align-bottom {
   top: 100px;
 }
 .empowerment-images div {
@@ -784,10 +778,6 @@ background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 
   width: 140px;
   height: 140px;
 }
-
-
-
-
 
 .hero-two-content-1 img[style*="display: block"] {
   opacity: 1;
@@ -818,5 +808,6 @@ background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 
 }
 
 .image-slider-dash.active {
-  background-color: #292D32;
+  background-color: #292d32;
   transform: scaleX(1.2);
+}
