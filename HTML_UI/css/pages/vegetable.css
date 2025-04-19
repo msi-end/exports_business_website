@@ -1,0 +1,201 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif, poppins;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 8rem;
+    z-index: 5;
+}
+
+.title {
+    color: #004aad;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: #004aad;
+    font-size: 8rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* Vegetable image circles */
+.veg-circle {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60% 40% 30% 70% / 50% 30% 70% 40%;
+}
+
+.lettuce {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(183, 233, 136, 0.5);
+    top: 100px;
+    left: 30px;
+    overflow: visible;
+}
+
+.bell-peppers {
+    width: 140px;
+    height: 140px;
+    background-color: rgba(255, 200, 184, 0.6);
+    top: 20px;
+    right: 70%;
+    overflow: visible;
+}
+
+.potatoes {
+    width: 160px;
+    height: 160px;
+    background-color: rgba(255, 222, 189, 0.6);
+    top: 350px;
+    left: 100px;
+    overflow: visible;
+}
+
+.cabbage {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(183, 233, 136, 0.5);
+    bottom: 100px;
+    right: 200px;
+    overflow: visible;
+}
+
+.tomatoes {
+    width: 170px;
+    height: 170px;
+    background-color: rgba(255, 176, 170, 0.6);
+    right: 70px;
+    top: 300px;
+    overflow: visible;
+}
+
+.eggplant {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(220, 190, 255, 0.6);
+    bottom: 50px;
+    right: 10px;
+    overflow: visible;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    border-top: 3px dashed #004aad;
+    border-radius: 50% 50% 0 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 4.5rem;
+    }
+    
+    .veg-circle {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 3.5rem;
+    }
+    
+    .lettuce {
+        width: 150px;
+        height: 150px;
+        left: 10px;
+    }
+    
+    .bell-peppers {
+        width: 120px;
+        height: 120px;
+        right: 30%;
+    }
+    
+    .potatoes, .cabbage, .tomatoes {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .eggplant {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        min-height: 500px;
+    }
+    
+    .title {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle {
+        font-size: 2.8rem;
+    }
+    
+    .veg-circle {
+        transform: scale(0.6);
+    }
+    
+    .bell-peppers {
+        top: 30px;
+        right: 10%;
+    }
+    
+    .potatoes {
+        left: 50px;
+    }
+    
+    .cabbage {
+        right: 80px;
+    }
+    
+    .tomatoes {
+        right: 20px;
+    }
+    
+    .eggplant {
+        right: 30px;
+    }
+}

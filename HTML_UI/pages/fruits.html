@@ -5,111 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pumpkin Section</title>
     <link rel="stylesheet" href="../css/pages/fruits.css" />
-
-    <style>
-      .content-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-        margin-bottom: 40px;
-        justify-content: space-evenly;
-      }
-
-      .text-content {
-        flex: 1;
-        min-width: 300px;
-        margin-left: 10%;
-      }
-
-      .image-content {
-        flex: 1;
-        min-width: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .circle-image {
-        width: 100%;
-        max-width: 450px;
-        height: auto;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-
-      .second-row {
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-        gap: 40px;
-      }
-
-      h2 {
-        color: #0056a3;
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-      }
-
-      p {
-        color: #0056a3;
-        font-size: 1.15rem;
-        line-height: 1.6;
-        margin-bottom: 20px;
-        font-weight: 500;
-      }
-
-      .highlight {
-        font-weight: bold;
-        color: #0056a3;
-      }
-
-      .packing-section {
-        flex: 1;
-        min-width: 300px;
-      }
-
-      .packing-title {
-        color: #315e43;
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-      }
-
-      .packing-list {
-        list-style: none;
-      }
-
-      .packing-list li {
-        color: #315e43;
-        font-size: 1.15rem;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        font-weight: 500;
-      }
-
-      .packing-list li::before {
-        content: "✓";
-        margin-right: 10px;
-        font-weight: bold;
-      }
-
-      @media (max-width: 768px) {
-        .content-wrapper,
-        .second-row {
-          flex-direction: column;
-        }
-
-        .image-content {
-          order: -1;
-        }
-
-        .second-row .image-content {
-          order: -1;
-        }
-      }
-    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <span class="blur_bg position-absolute block hero-background-1"></span>
+      <div class="content">
+        <h2 class="title">Organic & Kiega</h2>
+        <h2 class="subtitle">Fruits</h1>
+      </div>
+
+      <div class="line-f">
+        <img src="/HTML_UI/image/fruits/vector.png" alt="" srcset="" />
+      </div>
+
+      <!-- Vegetable image placeholders with colorful background circles -->
+      <div class="veg-circle lettuce">
+        <img src="/HTML_UI/image/fruits/orange.png" alt="" srcset="" />
+      </div>
+
+      <div class="veg-circle bell-peppers">
+        <img src="/HTML_UI/image/fruits/banana.png" alt="" srcset="" />
+      </div>
+
+      <div class="veg-circle potatoes">
+        <img src="/HTML_UI/image/vegetables/Objects.png" alt="" srcset="" />
+      </div>
+
+      <div class="veg-circle cabbage">
+        <img src="/HTML_UI/image/fruits/berry.png" alt="" srcset="" />
+      </div>
+
+      <div class="veg-circle lemon">
+        <img src="/HTML_UI/image/fruits/lemon.png" alt="" srcset="" />
+      </div>
+
+      <div class="veg-circle eggplant">
+        <img src="/HTML_UI/image/fruits/ava.png" alt="" srcset="" />
+      </div>
+    </section>
+
+    <!-- Descript section with Wheel -->
+    <section class="w-container">
+      <div class="certifications">
+          <div class="certification-wheel">
+            <img src="/HTML_UI/image/fruits/main-circle.png" alt="" srcset="">
+          </div>
+      </div>
+      <div class="w-content">
+          <h2>The highest standards of sustainability</h2>
+          <ul>
+              <li>100% of our products are certified organic</li>
+              <li>Many of our fruits are available from regenerative, Demeter certified farms.</li>
+              <li>Many of our fruits are available from regenerative, Demeter certified farms.</li>
+              <li>We farm, export, import... and we also train and support. We are on the ground with growers, empowering them to leave poverty ehind and restore ecosystems.</li>
+          </ul>
+          <div class="mission">
+              <h3>We're an organic and fair trade pioneer.</h3>
+              <p>Over the years, we've grown into a international fresh food group, but our mission stayed the same. We're here to save soils, lift up lives, and nourish the world with healthy food.</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- Fruits Section -->
     <section class="container mx-5">
       <div>
         <div class="flex flex-row j-between i-base">
@@ -133,6 +95,7 @@
               srcset=""
               style="z-index: 2"
             />
+            <div class="shadow-fruit"></div>
           </div>
         </div>
         <div class="table-list">
@@ -250,6 +213,9 @@
       </div>
     </section>
 
+
+
+    <!-- Key benefit section -->
     <section class="container mb-5">
       <!-- First Row -->
       <div class="content-wrapper">
@@ -295,6 +261,35 @@
             alt="Cut pumpkin pieces on a wooden surface"
             class="circle-image"
           />
+        </div>
+      </div>
+
+      <!-- Third row -->
+      <div class="content-wrapper">
+        <div class="section-content">
+          <h2>Health benefits</h2>
+          <div class="benefit-item">
+            <strong class="highlight">Rich in Vitamins:</strong>
+            <p>
+              Vitamin A: Crucial for vision, immune function, and skin health.
+            </p>
+            <p>Vitamin C: Supports immune health and acts as an antioxidant.</p>
+          </div>
+          <div class="benefit-item">
+            <strong class="highlight">Fiber: Aids digestion, promotes satiety, and helps</strong>
+            <p>Regulate blood sugar levels.</p>
+          </div>
+          <div class="benefit-item">
+            <strong class="highlight">Antioxidants: Protects cells from damage and may</strong>
+            <p>Reduce the risk of chronic disease.</p>
+          </div>
+          <div class="benefit-item">
+            <strong class="highlight">Potassium: Helps regulate blood pressure</strong>
+            <p>Supports heart health.</p>
+          </div>
+        </div>
+        <div class="section-image">
+          <img src="/HTML_UI/image/fruits/key-tomato.svg" alt="Cooked rice" />
         </div>
       </div>
     </section>
