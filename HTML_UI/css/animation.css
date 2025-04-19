@@ -1,3 +1,35 @@
+.navigation {
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+.navigation.navigation-active .navigation-content {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+.navigation-content {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.menu-svg {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.close-svg {
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.navigation-active .menu-svg {
+  opacity: 0;
+}
+
+.navigation-active .close-svg {
+  opacity: 1;
+}
+
 .tracking-in-expand {
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
     both;
