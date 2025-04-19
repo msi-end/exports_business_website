@@ -30,15 +30,25 @@
 
 <body>
     <header class="navigation-container">
-        <nav class="flex">
-            <div class="navigation flex">
+        <nav class="navigation flex ">
+            <div class="navigation-head flex align-center position-relative">
                 <a href="#" class="logo"><img src="../image/svg/header/logo.svg" alt="Logo"></a>
                 <object data="../image/svg/header/menu.svg" class="menu-svg" type="image/svg+xml">
                     Your browser does not support SVG
                 </object>
+                <object data="../image/svg/close-circle.svg" class="menu-svg close-svg hidden" type="image/svg+xml">
+                    Your browser does not support SVG
+                </object>
             </div>
-            <div class="navigation-menu hidden">
-                <ul>
+            <div class="navigation-content hidden">
+                <object data="../image/svg/wave-up.svg" class="header-background-0" type="image/svg+xml">
+                    Your browser does not support SVG
+                </object>
+                <div class="ocean hidden">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+                <ul class="menu-ctn">
                     <li><a href="/pages/../pages/index.html">Home</a></li>
                     <li><a href="/pages/../pages/fruits.html">Fruits</a></li>
                     <li><a href="/pages/../pages/about-us.html">About Us</a></li>
@@ -76,7 +86,7 @@
                 Your browser does not support SVG
             </object>
             <img src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-                class="hero-image" alt="">
+                class="hero-image float-lite" alt="">
         </div>
         <span class="blur_bg position-absolute right-0 bottom-0 hero-background-3"></span>
     </section>
@@ -134,8 +144,9 @@
                             id="featured-image">
                     </div>
                     <div class="product-info">
-                        <h2 class="product-name" id="product-name">Pumpkin</h2>
-                        <p class="product-description" id="product-description">Organic & Fresh</p>
+                        <h2 class="product-name text-em-2 font-semi-bold" id="product-name">Pumpkin</h2>
+                        <p class="product-description text-em-125 font-medium" id="product-description">Organic & Fresh
+                        </p>
                     </div>
                 </div>
 
@@ -205,9 +216,9 @@
     </section>
 
     <section class="why-choose container">
-        <h2 class="sec-color font-black">Why choose Kiega</h2>
+        <h2 class="sec-color font-black text-em-3">Why choose Kiega</h2>
         <div class="features feature-main">
-            <div class="feature ">
+            <div class="feature float">
                 <div class="feature-background position-relative feature-align ">
                     <div class="feature-icon ">
                         <img src="https://img.icons8.com/ios/50/4caf50/vegetarian-food.png" alt="Fresh Harvest" />
@@ -216,7 +227,7 @@
                 </div>
             </div>
 
-            <div class="feature">
+            <div class="feature float">
                 <div class="feature-background">
                     <div class="feature-icon">
                         <img src="https://img.icons8.com/ios/50/4caf50/organic-food.png" alt="Organic Products" />
@@ -225,7 +236,7 @@
                 </div>
             </div>
 
-            <div class="feature">
+            <div class="feature float">
                 <div class="feature-background">
                     <div class="feature-icon">
                         <img src="https://img.icons8.com/ios/50/4caf50/wheat.png" alt="Daily Fresh" />
@@ -234,7 +245,7 @@
                 </div>
             </div>
 
-            <div class="feature">
+            <div class="feature float">
                 <div class="feature-background position-relative feature-align">
                     <div class="feature-icon  ">
                         <img src="https://img.icons8.com/ios/50/4caf50/eco-food.png" alt="Natural Items" />
@@ -257,7 +268,7 @@
                 </div>
                 <h5>VEGETABLES</h5>
                 <p class="hidden">There are many variations of passages of Lorem Ipsum available</p>
-                <div class="arrow  hidden" idden">
+                <div class="arrow  hidden">
                     <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.06 11.27L12.53 14.8C12.38 14.95 12.19 15.02 12 15.02C11.81 15.02 11.62 14.95 11.47 14.8L7.94 11.27C7.65 10.98 7.65 10.5 7.94 10.21C8.23 9.92 8.71 9.92 9 10.21L12 13.21L15 10.21C15.29 9.92 15.77 9.92 16.06 10.21C16.35 10.5 16.35 10.97 16.06 11.27Z"
@@ -349,7 +360,7 @@
                     <h1 class="text-em-3 font-semi-bold sec-color">Our various products<br>from North-East Location</h1>
                     <div class="map-container position-relative">
                         <!-- <img class="map-image" src="../image/svg/IN-AR.svg" alt=""> -->
-                        <object data="../image/svg/IN-AR.svg"  type="image/svg+xml" class="map-container-map">
+                        <object data="../image/svg/IN-AR.svg" type="image/svg+xml" class="map-container-map">
                             Your browser does not support SVG
                         </object>
                     </div>
@@ -516,9 +527,9 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="../js/product_slide.js"></script>
     <script src="../js/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
 </body>
 
