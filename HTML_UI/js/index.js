@@ -213,30 +213,12 @@ cards.forEach(card => {
 });
 
 
-const menuSvg = document.querySelector('.menu-svg');
-const closeSvg = document.querySelector('.close-svg');
 const nav = document.querySelector('.navigation');
+const menuToggleBtns = document.querySelectorAll('.menu-toggle-btn');
 const navContent = document.querySelector('.navigation-content');
 
-// Function to toggle navigation visibility
-function toggleNavigation() {
-    nav.classList.toggle('navigation-active');
+// Function to toggle the navigation menu
+function toggleMenu() {
+  nav.classList.toggle('navigation-active');
 
-    // Toggle the visibility of the menu and close icons
-    menuSvg.classList.toggle('hidden');
-    closeSvg.classList.toggle('hidden');
 }
-
-// Function to add event listeners once SVG is loaded
-function addSvgListeners() {
-    const menuSvgElement = menuSvg.contentDocument.querySelector('svg');
-    const closeSvgElement = closeSvg.contentDocument.querySelector('svg');
-
-    // Add click event listener to SVG elements
-    menuSvgElement.addEventListener('click', toggleNavigation);
-    closeSvgElement.addEventListener('click', toggleNavigation);
-}
-
-// Add the event listener for when the SVGs inside <object> are loaded
-menuSvg.addEventListener('load', addSvgListeners);
-closeSvg.addEventListener('load', addSvgListeners);
