@@ -174,18 +174,6 @@
   transition: all 0.3s ease;
 }
 
-.product-name {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #2c3e50;
-}
-
-.product-description {
-  color: #7f8c8d;
-  font-size: 14px;
-}
-
 /*  row styles */
 .product-row-container {
   flex: 600px;
@@ -504,6 +492,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  height: 350px;
 }
 
 .category-card {

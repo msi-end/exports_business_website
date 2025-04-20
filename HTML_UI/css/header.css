@@ -1,23 +1,51 @@
 .navigation-container {
 }
-.navigation-container .navigation, .navigation-menu  {
+.header-background-0 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+.header-background-0 svg path{
+fill: url(--primary-color-light);
+}
+.navigation-container .navigation {
   width: 25%;
   margin: 0.5rem 1.5rem;
   background-color: #fff;
   border: 1px slid white;
-  justify-content: space-between;
-  align-items: center;
   height: 50px;
   z-index: 3;
-  position: relative;
-  padding: 10px 15px;
+  position: absolute;
+  padding: 10px 20px;
   border-radius: 30px;
-  right: -65%;
+  left: 65%;
+  flex-direction: column;
   box-shadow: 1px 0px 7px -2px #95af6d;
+}
+.navigation-active {
+  height: auto !important;
+  padding: 0px 0px !important;
+}
+.navigation-active .navigation-head {
+  padding: 10px 20px;
+  background-color: var(--primary-color-light);
+  border-radius: 20px 20px 0px 0px;
+}
+.navigation-head {
+  justify-content: space-between;
+}
+.navigation-active .navigation-content{
+  display: block!important;
+}
+.navigation-active .menu-svg{
+  display: none!important;
+}
+.navigation-active .close-svg{
+  display: block!important;
 }
 .navigation .logo {
   width: 75px;
-  /* height: 75px; */
 }
 .navigation .menu-svg {
   width: 25px;
@@ -30,4 +58,14 @@
 }
 
 .navigation .menu-svg object {
+}
+.menu-ctn {
+  padding: 0px 50px;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.menu-ctn li {
+  padding: 10px 0px;
+  font-size: 18px;
+  font-weight: 500;
 }

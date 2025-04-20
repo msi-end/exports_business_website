@@ -132,6 +132,7 @@
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s;
+  background-color:var(--primary-color-light);
 }
 
 .gallery-images img:hover {
