@@ -216,9 +216,7 @@ cards.forEach(card => {
 const nav = document.querySelector('.navigation');
 const menuToggleBtns = document.querySelectorAll('.menu-toggle-btn');
 const navContent = document.querySelector('.navigation-content');
-
-// Function to toggle the navigation menu
 function toggleMenu() {
+  nav.removeAttribute('date-aos')
   nav.classList.toggle('navigation-active');
-
 }
