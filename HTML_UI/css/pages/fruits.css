@@ -504,95 +504,17 @@ td:first-child {
 
 .certification-wheel {
   width: 100%;
-  max-width: 450px;
+  max-width: 600px;
   aspect-ratio: 1/1;
   position: relative;
   margin: 0 auto;
+  margin-right: 10%;
+  margin-bottom: 5%;
 }
 
-.wheel-border {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #e0e0e0;
-  border-radius: 50%;
-}
 
-.wheel-segment {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  border-radius: 50%;
-  clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 50% 100%);
-  transform-origin: center;
-}
-
-.segment-1 {
-  transform: rotate(0deg);
-  clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%);
-}
-
-.segment-2 {
-  transform: rotate(90deg);
-  clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%);
-}
-
-.segment-3 {
-  transform: rotate(180deg);
-  clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%);
-}
-
-.segment-4 {
-  transform: rotate(270deg);
-  clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%);
-}
-
-.inner-circle {
-  position: absolute;
-  width: 30%;
-  height: 30%;
-  background-color: white;
-  border-radius: 50%;
-  top: 35%;
-  left: 35%;
-  border: 2px solid #e0e0e0;
-}
-
-.divider {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #e0e0e0;
-  top: 50%;
-  transform-origin: center;
-}
-
-.divider-1 {
-  transform: rotate(0deg);
-}
-
-.divider-2 {
-  transform: rotate(45deg);
-}
-
-.divider-3 {
-  transform: rotate(90deg);
-}
-
-.divider-4 {
-  transform: rotate(135deg);
-}
-
-.logo-placeholder {
-  position: absolute;
-  width: 25%;
-  height: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #777;
-  font-size: 12px;
+.certification-wheel img {
+  width: 650px;
 }
 
 .w-content {
@@ -621,6 +543,7 @@ td:first-child {
   line-height: 1.5;
   font-weight: 500;
   font-size: 16px;
+  max-width: 80%;
 
 }
 

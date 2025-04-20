@@ -1,224 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rice Information</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pumpkin Section</title>
+    <link rel="stylesheet" href="../css/pages/ricecorn.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="organic-section">
+      <div class="organic-content">
+        <h2 class="heading-primary">100% Organic</h2>
+        <h1 class="heading-secondary">
+          <span class="rice-text">Rice</span> &
+          <span class="corn-text">Corn</span>
+        </h1>
+      </div>
 
-        body {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(226, 244, 184, 0.8) 100%);
-            padding: 20px;
-            min-height: 100vh;
-        }
+      <div class="image-container">
+        <img
+          src="/HTML_UI/image/ricecorn/rice-hero.png"
+          alt="Rice crops"
+          class="circle-image"
+        />
+      </div>
+    </section>
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Key Facts Section */
-        .section {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        
-        .section-content {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .section-image {
-            flex: 0 0 auto;
-            width: 400px;
-            height: 400px;
-            border-radius: 50%;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .section-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        h2 {
-            color: #0b4d83;
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-
-        p {
-            color: #0b4d83;
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-
-        /* Packing Section */
-        .packing-section {
-            background-color: rgba(255, 255, 255, 0.7);
-            border-radius: 20px;
-            padding: 30px;
-            margin: 40px 0;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-        }
-
-        .packing-section h2 {
-            color: #2a6d5a;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .packing-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        .packing-list {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .packing-image {
-            flex: 0 0 auto;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .packing-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        ul li {
-            margin-bottom: 12px;
-            position: relative;
-            padding-left: 30px;
-            color: #333;
-        }
-
-        ul li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #2a6d5a;
-            font-weight: bold;
-        }
-
-        /* Health Benefits Section */
-        .health-benefits {
-            margin-top: 40px;
-        }
-
-        .benefit-item {
-            margin-bottom: 15px;
-            color: #0b4d83;
-        }
-
-        .benefit-item strong {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        /* Making it responsive */
-        @media (max-width: 768px) {
-            .section, .packing-content {
-                flex-direction: column;
-            }
-            
-            .section-image, .packing-image {
-                margin: 0 auto 20px;
-            }
-            
-            .section-content, .packing-list {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- Key Facts Section -->
-        <div class="section">
-            <div class="section-content">
-                <h2>Key facts</h2>
-                <p><strong>Rice</strong> are widely grown in the northeastern states of India, including Assam, Meghalaya, and Tripura. The most popular varieties grown in the region are Kew and Queen, which are known for being sweet and having les fiber.</p>
-                <p>The most popular varieties grown in the region are Kew and Queen, which are known for being sweet and having les fiber.</p>
-            </div>
-            <div class="section-image">
-                <img src="/HTML_UI/image/fruits/tomato-key.png" alt="Cooked rice">
-            </div>
+    <!-- Descript section with Wheel -->
+    <section class="w-container">
+      <div class="certifications">
+        <div class="certification-wheel">
+          <img src="/HTML_UI/image/ricecorn/rice-circle.png" alt="" srcset="" />
         </div>
+      </div>
+      <div class="w-content">
+        <h2>The highest standards of sustainability</h2>
+        <ul>
+          <li>100% of our products are certified organic</li>
+          <li>
+            Many of our fruits are available from regenerative, Demeter
+            certified farms.
+          </li>
+          <li>
+            Many of our fruits are available from regenerative, Demeter
+            certified farms.
+          </li>
+          <li>
+            We farm, export, import... and we also train and support. We are on
+            the ground with growers, empowering them to leave poverty ehind and
+            restore ecosystems.
+          </li>
+        </ul>
+        <div class="mission">
+          <h3>We're an organic and fair trade pioneer.</h3>
+          <p>
+            Over the years, we've grown into a international fresh food group,
+            but our mission stayed the same. We're here to save soils, lift up
+            lives, and nourish the world with healthy food.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <!-- Packing Section -->
+    <!-- Fruits Section -->
+    <section class="container mx-5">
+      <div>
+        <div class="flex flex-row j-between i-base">
+          <h2 class="title">Rice</h2>
+          <button class="btn">
+            Get in touch
+            <span class="arrow-icon">→</span>
+          </button>
+        </div>
+      </div>
+      <div class="grid gtc5">
+        <div class="fruit">
+          <div>
+            <div class="ring">
+              <div class="ring-blob"></div>
+            </div>
+            <img
+              src="/HTML_UI/image/ricecorn/rice.png"
+              width="590"
+              alt=""
+              srcset=""
+              style="z-index: 2"
+            />
+            <div class="shadow-fruit"></div>
+          </div>
+        </div>
+        <div class="table-list">
+          <table>
+            <thead>
+              <tr>
+                <th>Origin</th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>Mar</th>
+                <th>Apr</th>
+                <th>May</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Aug</th>
+                <th>Sep</th>
+                <th>Oct</th>
+                <th>Nov</th>
+                <th>Dec</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Assam</td>
+                <td><div class="availability-dot"></div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Meghalaya</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><div class="availability-dot"></div></td>
+                <td><div class="availability-dot"></div></td>
+                <td><div class="availability-dot"></div></td>
+                <td><div class="availability-dot"></div></td>
+                <td><div class="availability-dot"></div></td>
+                <td><div class="availability-dot"></div></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Tripura</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><div class="availability-dot"></div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="navigation">
+            <button class="nav-btn prev">
+              <svg
+                width="30px"
+                height="30px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.9783 5.31877L10.7683 8.52877L8.79828 10.4888C7.96828 11.3188 7.96828 12.6688 8.79828 13.4988L13.9783 18.6788C14.6583 19.3588 15.8183 18.8688 15.8183 17.9188V12.3088V6.07877C15.8183 5.11877 14.6583 4.63877 13.9783 5.31877Z"
+                  fill="#0056a3"
+                />
+              </svg>
+            </button>
+            <button class="nav-btn next">
+              <svg
+                width="30px"
+                height="30px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.1997 10.4919L13.2297 8.52188L10.0197 5.31188C9.33969 4.64188 8.17969 5.12188 8.17969 6.08188V12.3119V17.9219C8.17969 18.8819 9.33969 19.3619 10.0197 18.6819L15.1997 13.5019C16.0297 12.6819 16.0297 11.3219 15.1997 10.4919Z"
+                  fill="#fff"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="tags">
+            <div class="tag active">Pumpkin</div>
+            <div class="tag">Apple</div>
+            <div class="tag">Avacoda</div>
+            <div class="tag">Banana</div>
+            <div class="tag">Apple</div>
+            <div class="tag">Avacoda</div>
+            <div class="tag">Banana</div>
+            <div class="tag">Apple</div>
+            <div class="tag">Banana</div>
+            <div class="tag">Apple</div>
+            <div class="tag">Avacoda</div>
+            <div class="tag">Banana</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key benefit section -->
+    <section class="container mb-5">
+      <!-- First Row -->
+      <div class="content-wrapper">
+        <div class="text-content">
+          <h2>Key facts</h2>
+          <p>
+            Rice are widely grown in the northeastern states of India, including
+            <span class="highlight">Assam, Meghalaya, and Tripura</span>. The
+            most popular varieties grown in the region are Kew and Queen, which
+            are known for being sweet and having les fiber.
+          </p>
+          <p>
+            The most popular varieties grown in the region are
+            <span class="highlight">Kew and Queen</span>, which are known for
+            being sweet and having les fiber.
+          </p>
+        </div>
+        <div class="image-content">
+          <img
+            src="/HTML_UI/image/ricecorn/green-rice.png"
+            alt="Pumpkins growing in a field"
+            class="circle-image"
+          />
+        </div>
+      </div>
+
+      <!-- Second Row -->
+      <div class="second-row">
         <div class="packing-section">
-            <h2>We can pack</h2>
-            <div class="packing-content">
-                <div class="packing-list">
-                    <ul>
-                        <li>Ready to eat</li>
-                        <li>Loose</li>
-                        <li>Flowpack: 2 / 3 / 4 pcs</li>
-                        <li>Cellulose tube net: 500 / 700 / 750 / 1000 g</li>
-                        <li>Variety: Hass</li>
-                        <li>Box weight: 4 / 6/ 10 kg</li>
-                    </ul>
-                </div>
-                <div class="packing-image">
-                    <img src="/HTML_UI/image/fruits/tomato-key.png" alt="Cooked rice">
-                </div>
-            </div>
+          <h2 class="packing-title">We can pack</h2>
+          <ul class="packing-list">
+            <li>Ready to eat</li>
+            <li>Loose</li>
+            <li>Flowpack: 2 / 3 / 4 pcs</li>
+            <li>Cellulose tube net: 500 / 700 / 750 / 1000 g</li>
+            <li>Variety: Hass</li>
+            <li>Box weight: 4 / 6/ 10 kg</li>
+          </ul>
         </div>
+        <div class="image-content">
+          <img
+            src="/HTML_UI/image/ricecorn/rice-key.png"
+            alt="Cut pumpkin pieces on a wooden surface"
+            class="circle-image"
+          />
+        </div>
+      </div>
 
-        <!-- Health Benefits Section -->
-        <div class="section health-benefits">
-            <div class="section-content">
-                <h2>Health benefits</h2>
-                <div class="benefit-item">
-                    <strong>Rich in Vitamins:</strong>
-                    <p>Vitamin A: Crucial for vision, immune function, and skin health.</p>
-                    <p>Vitamin C: Supports immune health and acts as an antioxidant.</p>
-                </div>
-                <div class="benefit-item">
-                    <strong>Fiber: Aids digestion, promotes satiety, and helps</strong>
-                    <p>Regulate blood sugar levels.</p>
-                </div>
-                <div class="benefit-item">
-                    <strong>Antioxidants: Protects cells from damage and may</strong>
-                    <p>Reduce the risk of chronic disease.</p>
-                </div>
-                <div class="benefit-item">
-                    <strong>Potassium: Helps regulate blood pressure</strong>
-                    <p>Supports heart health.</p>
-                </div>
-            </div>
-            <div class="section-image">
-                <img src="/HTML_UI/image/fruits/tomato-key.png" alt="Cooked rice">
-            </div>
+      <!-- Third row -->
+      <div class="content-wrapper">
+        <div class="section-content">
+          <h2>Health benefits</h2>
+          <div class="benefit-item">
+            <strong class="highlight">Rich in Vitamins:</strong>
+            <p>
+              Vitamin A: Crucial for vision, immune function, and skin health.
+            </p>
+            <p>Vitamin C: Supports immune health and acts as an antioxidant.</p>
+          </div>
+          <div class="benefit-item">
+            <strong class="highlight"
+              >Fiber: Aids digestion, promotes satiety, and helps</strong
+            >
+            <p>Regulate blood sugar levels.</p>
+          </div>
+          <div class="benefit-item">
+            <strong class="highlight"
+              >Antioxidants: Protects cells from damage and may</strong
+            >
+            <p>Reduce the risk of chronic disease.</p>
+          </div>
+          <div class="benefit-item">
+            <strong class="highlight"
+              >Potassium: Helps regulate blood pressure</strong
+            >
+            <p>Supports heart health.</p>
+          </div>
         </div>
-    </div>
-</body>
+        <div class="section-image">
+          <img src="/HTML_UI/image/ricecorn/white-rice.png" alt="Cooked rice" />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
