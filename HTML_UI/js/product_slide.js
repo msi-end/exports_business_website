@@ -1,9 +1,9 @@
 const products = [
   {
-    name: "Pumkin",
-    desc:"Straight from (Pumkin) Farm",
+    name: "Beetroot",
+    desc:"Straight from (Beetroot) Farm",
     image:
-      "../image/fruits/Objects.png",
+      "../image/products/vegetables/beetroot.png",
   },
   {
     name: "Tomato",
@@ -12,22 +12,28 @@ const products = [
       "../image/fruits/tomato.png",
   },
   {
-    name: "Pumkin",
-    desc:"Straight from (Pumkin) Farm",
+    name: "strawbarry",
+    desc:"Straight from (strawbarry) Farm",
     image:
-      "../image/fruits/Objects.png",
+      "../image/products/fruits/strawberry.png",
   },
   {
-    name: "adfasdfasdf",
-    desc:"Straight from (Pumkin) Farm",
+    name: "pineapple",
+    desc:"Straight from (pineapple) Farm",
     image:
-      "../image/fruits/tomato-key.png",
+      "../image/products/fruits/pineapple.jpg",
   },
   {
-    name: "asdfasdfdsf",
-    desc:"Straight from (Pumkin) Farm",
+    name: "Red pepper",
+    desc:"Straight from (pepper) Farm",
     image:
-      "../image/farmer.jpg",
+      "../image/products/vegetables/red-pepper.jpg",
+  },
+  {
+    name: "bitter-gourd",
+    desc:"Straight from (bitter-gourd) Farm",
+    image:
+      "../image/products/vegetables/bitter-gourd.png",
   },
 ];
 
