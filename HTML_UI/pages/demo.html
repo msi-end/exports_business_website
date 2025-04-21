@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Carousel Animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .carousel-container {
+        margin-left: 5rem;
+        width: 100%;
+        max-width: 1000px;
+        overflow: visible;
+        display: flex;
+        gap: 20px;
+        position: relative;
+        transition: transform 0.8s ease-in-out;
+      }
+      .fruit {
+        flex: 0 0 200px;
+        text-align: center;
+        transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out,
+          opacity 0.8s ease-in-out;
+        transform: scale(1);
+        z-index: 1;
+        opacity: 1;
+      }
+      .fruit.fade-out {
+        opacity: 0;
+        transform: scale(1);
+      }
+      .fruit.fade-in {
+        animation: fadeInSmooth 0.8s ease-in-out forwards;
+      }
+      @keyframes fadeInSmooth {
+        0% {
+          opacity: 0;
+          transform: scale(1);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .fruit img {
+        width: 140px;
+        height: 140px;
+        object-fit: contain;
+        border-radius: 60% 40% 30% 70% / 50% 30% 70% 40%;
+        margin-bottom: 20px;
+        overflow: visible;
+        background-color: rgb(247, 226, 245);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.8s ease-in-out;
+      }
+      .fruit h2 {
+        font-size: 1.5em;
+        color: #05478e;
+      }
+      .fruit p {
+        font-size: 8px;
+        color: #666;
+        margin-top: 10px;
+        display: none;
+      }
+
+      .fruit.first img {
+        background: none;
+        padding: 0;
+        box-shadow: none;
+        transition: background 0.6s ease-in-out, padding 0.9s ease-in-out,
+          box-shadow 0.8s ease-in-out;
+        transition: transform 1.2s ease-in-out, margin-right 1s ease-in-out;
+        margin-right: 8rem;
+      }
+
+      .fruit.first {
+        transform: scale(2.4);
+        z-index: 10;
+      }
+      .fruit.first p {
+        display: block;
+      }
+
+   
+
+      /* My css */
+      .f-section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+        gap: 5rem;
+      }
+
+      .text-sec {
+        align-self: flex-end;
+      }
+
+      .text-sec h2 {
+        font-size: 5rem;
+        color: #05478e;
+        font-weight: 800;
+      }
+
+      .text-sec h3 {
+        font-size: 2rem;
+        color: #05478e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="f-section">
+      <div class="text-sec">
+        <h2>RE-FRESH</h2>
+        <h3>100% organic, High value</h3>
+      </div>
+      <div class="carousel-container" id="carousel">
+        <div class="fruit">
+          <img
+            src="/HTML_UI/image/products/vegetables/beetroot.png"
+            alt="Apple"
+          />
+          <h2>Apple</h2>
+          <p>A sweet, crunchy fruit rich in fiber and vitamin C.</p>
+        </div>
+        <div class="fruit">
+          <img
+            src="/HTML_UI/image/products/vegetables/bitter-gourd.png"
+            alt="Banana"
+          />
+          <h2>Banana</h2>
+          <p>A soft, energy-boosting fruit packed with potassium.</p>
+        </div>
+        <div class="fruit">
+          <img
+            src="/HTML_UI/image/products/vegetables/cauliflower.png"
+            alt="Mango"
+          />
+          <h2>Mango</h2>
+          <p>The king of fruits, juicy and full of tropical flavor.</p>
+        </div>
+        <div class="fruit">
+          <img
+            src="/HTML_UI/image/products/fruits/strawberry.png"
+            alt="Orange"
+          />
+          <h2>Orange</h2>
+          <p>A citrus fruit loaded with vitamin C and antioxidants.</p>
+        </div>
+        <div class="fruit">
+          <img src="/HTML_UI/image/fruits/orange.png" alt="Grapes" />
+          <h2>Grapes</h2>
+          <p>Small, juicy fruits that come in many varieties and colors.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.getElementById("carousel");
+
+        function rotateFruits() {
+          const fruits = carousel.children;
+          const firstFruit = fruits[0];
+
+          // Fade out the first item
+          firstFruit.classList.add("fade-out");
+
+          // Slide the carousel
+          carousel.style.transition = "transform 0.8s ease-in-out";
+          carousel.style.transform = "translateX(-220px)";
+
+          setTimeout(() => {
+            carousel.style.transition = "none";
+            carousel.style.transform = "translateX(0)";
+
+            // Clone and reset class list for fade-in effect
+            const clone = firstFruit.cloneNode(true);
+            clone.classList.remove("fade-out", "first");
+
+            // Trigger fade-in animation
+            requestAnimationFrame(() => {
+              clone.classList.add("fade-in");
+              setTimeout(() => {
+                clone.classList.remove("fade-in");
+              }, 800);
+            });
+
+            // Remove old first and append clone
+            carousel.removeChild(firstFruit);
+            carousel.appendChild(clone);
+
+            // Add active class to new first element
+            requestAnimationFrame(() => {
+              carousel.children[0].classList.add("first");
+            });
+          }, 800);
+        }
+
+        // Set initial active
+        carousel.children[0].classList.add("first");
+
+        setInterval(rotateFruits, 3000);
+      });
+    </script>
+  </body>
+</html>

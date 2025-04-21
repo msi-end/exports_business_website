@@ -43,3 +43,481 @@
 
 
 
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Animation Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f9f4;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content-area {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            height: 400px;
+        }
+
+        .featured-area {
+            flex: 0 0 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-image {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .featured-image.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .featured-image.fade-out {
+            opacity: 0;
+            transform: scale(1.1);
+        }
+
+        .list-area {
+            flex: 0 0 60%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        .fruit-list {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            position: relative;
+        }
+
+        .fruit-item {
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            /* All items start with equal size */
+            height: 120px;
+            flex: 0 0 120px;
+        }
+
+        /* Create gradually smaller sizes */
+        .fruit-item:nth-child(2) {
+            height: 110px;
+            flex: 0 0 110px;
+        }
+
+        .fruit-item:nth-child(3) {
+            height: 100px;
+            flex: 0 0 100px;
+        }
+
+        .fruit-item:nth-child(4) {
+            height: 90px;
+            flex: 0 0 90px;
+        }
+
+        .fruit-item:nth-child(5) {
+            height: 80px;
+            flex: 0 0 80px;
+        }
+
+        .fruit-item:nth-child(6) {
+            height: 70px;
+            flex: 0 0 70px;
+        }
+
+        .fruit-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter 0.3s ease;
+        }
+
+        .fruit-item.active {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+        }
+
+        .fruit-item.viewed img {
+            filter: grayscale(50%) brightness(0.8);
+        }
+
+        .fruit-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 3px solid transparent;
+            border-radius: 12px;
+            transition: border 0.3s ease;
+        }
+
+        .fruit-item.active::after {
+            border-color: #ff6b6b;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background-color: #ff5252;
+        }
+
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        .progress-container {
+            width: 100%;
+            height: 6px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: #ff6b6b;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        @media (max-width: 768px) {
+            .content-area {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .featured-area,
+            .list-area {
+                flex: auto;
+                width: 100%;
+                height: 300px;
+            }
+
+            .fruit-list {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Fresh Fruits Animation</h1>
+        </div>
+
+        <div class="content-area">
+            <div class="featured-area" id="featuredArea">
+                <!-- Featured fruit will appear here -->
+            </div>
+
+            <div class="list-area">
+                <div class="fruit-list" id="fruitList">
+                    <div class="fruit-item">
+                        <img src="/HTML_UI/image/products/vegetables/beetroot.png" alt="Apple">
+                    </div>
+                    <div class="fruit-item">
+                        <img src="/HTML_UI/image/products/vegetables/beetroot.png" alt="Orange">
+                    </div>
+                    <div class="fruit-item">
+                        <img src="/HTML_UI/image/products/vegetables/beetroot.png" alt="Banana">
+                    </div>
+                    <div class="fruit-item">
+                        <img src="/HTML_UI/image/products/vegetables/beetroot.png" alt="Grapes">
+                    </div>
+                    <div class="fruit-item">
+                        <img src="/HTML_UI/image/products/vegetables/beetroot.png" alt="Kiwi">
+                    </div>
+                    <div class="fruit-item">
+                        <img src="/HTML_UI/image/products/vegetables/beetroot.png" alt="Mango">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn">Start Animation</button>
+            <button id="pauseBtn" disabled>Pause</button>
+            <button id="resetBtn" disabled>Reset</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fruitItems = document.querySelectorAll('.fruit-item');
+            const featuredArea = document.getElementById('featuredArea');
+            const startBtn = document.getElementById('startBtn');
+            const pauseBtn = document.getElementById('pauseBtn');
+            const resetBtn = document.getElementById('resetBtn');
+            const progressBar = document.getElementById('progressBar');
+            
+            let currentIndex = 0;
+            let isAnimating = false;
+            let animationTimeout;
+            let totalItems = fruitItems.length;
+            
+            // Initialize
+            function init() {
+                // Clear featured area
+                featuredArea.innerHTML = '';
+                
+                // Reset fruit items
+                fruitItems.forEach(item => {
+                    item.classList.remove('active', 'viewed');
+                });
+                
+                currentIndex = 0;
+                updateProgressBar(0);
+            }
+            
+            // Update progress bar
+            function updateProgressBar(progress) {
+                progressBar.style.width = `${progress}%`;
+            }
+            
+            // Animate a fruit
+            function animateFruit(index) {
+                if (!isAnimating) return;
+                
+                // Update progress
+                const progress = ((index + 1) / totalItems) * 100;
+                updateProgressBar(progress);
+                
+                // Clear active class from all items
+                fruitItems.forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Set current item as active
+                fruitItems[index].classList.add('active');
+                
+                // Clone the current fruit image to the featured area
+                const originalImg = fruitItems[index].querySelector('img');
+                const featuredImg = document.createElement('img');
+                featuredImg.src = originalImg.src;
+                featuredImg.alt = originalImg.alt;
+                featuredImg.classList.add('featured-image');
+                featuredArea.appendChild(featuredImg);
+                
+                // Force reflow
+                void featuredImg.offsetWidth;
+                
+                // Make the image appear
+                featuredImg.classList.add('active');
+                
+                // After delay, fade out featured image and move to next
+                setTimeout(() => {
+                    if (!isAnimating) return;
+                    
+                    featuredImg.classList.add('fade-out');
+                    fruitItems[index].classList.add('viewed');
+                    
+                    setTimeout(() => {
+                        if (!isAnimating) return;
+                        
+                        // Remove the old featured image
+                        featuredImg.remove();
+                        
+                        // Move to next fruit
+                        currentIndex = (index + 1) % totalItems;
+                        
+                        if (currentIndex === 0) {
+                            // Reset viewed status when starting over
+                            fruitItems.forEach(item => item.classList.remove('viewed'));
+                        }
+                        
+                        // Continue animation
+                        animateFruit(currentIndex);
+                    }, 800);
+                }, 2500);
+            }
+            
+            // Start animation
+            function startAnimation() {
+                isAnimating = true;
+                startBtn.disabled = true;
+                pauseBtn.disabled = false;
+                resetBtn.disabled = false;
+                animateFruit(currentIndex);
+            }
+            
+            // Pause animation
+            function pauseAnimation() {
+                isAnimating = false;
+                startBtn.disabled = false;
+                pauseBtn.disabled = true;
+                clearTimeout(animationTimeout);
+            }
+            
+            // Reset animation
+            function resetAnimation() {
+                pauseAnimation();
+                init();
+                resetBtn.disabled = true;
+            }
+            
+            // Add click event for fruit items
+            fruitItems.forEach((item, idx) => {
+                item.addEventListener('click', () => {
+                    if (isAnimating) return;
+                    
+                    // Clear featured area
+                    featuredArea.innerHTML = '';
+                    
+                    // Update current index
+                    currentIndex = idx;
+                    
+                    // Reset active states
+                    fruitItems.forEach(fruit => fruit.classList.remove('active'));
+                    
+                    // Mark clicked fruit as active
+                    item.classList.add('active');
+                    
+                    // Update progress
+                    updateProgressBar(((idx + 1) / totalItems) * 100);
+                });
+            });
+            
+            // Add event listeners for buttons
+            startBtn.addEventListener('click', startAnimation);
+            pauseBtn.addEventListener('click', pauseAnimation);
+            resetBtn.addEventListener('click', resetAnimation);
+            
+            // Initialize
+            init();
+        });
+    </script>
+</body>
+</html>
+
+
+create an smooth and fully responsive animation using html css and javascript where there should be a list of fruits in horizontal way each item from the list should come forward become bigger shows its name an a short description and then fade away similary for the next item
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const carousel = document.getElementById("carousel");
+      const items = carousel.querySelectorAll(".fruit");
+
+      // Initially activate the first item
+      items[0].classList.add("active");
+
+      function rotateFruits() {
+        // Get current active item
+        const activeItem = carousel.querySelector(".active");
+
+        // Add fade-out class to the active item
+        activeItem.classList.add("fade-out");
+        activeItem.classList.remove("active");
+
+        // Move items
+        carousel.style.transition = "transform 0.8s ease-in-out";
+        carousel.style.transform = "translateX(-220px)";
+
+        setTimeout(() => {
+          // Reset position without animation
+          carousel.style.transition = "none";
+          carousel.style.transform = "translateX(0)";
+
+          // Move first element to the end
+          const firstItem = carousel.children[0];
+          firstItem.classList.remove("fade-out");
+          carousel.removeChild(firstItem);
+          carousel.appendChild(firstItem);
+
+          // Add fade-in class to the moved item
+          requestAnimationFrame(() => {
+            firstItem.classList.add("fade-in");
+            // Clear fade-in class after animation completes
+            setTimeout(() => {
+              firstItem.classList.remove("fade-in");
+            }, 800);
+          });
+
+          // Set the new first item as active
+          carousel.children[0].classList.add("active");
+        }, 800);
+      }
+
+      // Start the infinite rotation
+      setInterval(rotateFruits, 3000);
+    });
+  </script>
+
+
