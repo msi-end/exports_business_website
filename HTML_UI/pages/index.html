@@ -56,15 +56,33 @@
                     <div class="wave"></div>
                 </div>
                 <ul class="menu-ctn">
-                    <li><a href="/pages/../pages/index.html">Home</a></li>
-                    <li><a href="/pages/../pages/fruits.html">Fruits</a></li>
-                    <li><a href="/pages/../pages/about-us.html">About Us</a></li>
-                    <li><a href="/pages/../pages/vegetables.html">Vegetables</a></li>
-                    <li><a href="/pages/../pages/rice-corn.html">Rice & Corn</a></li>
-                    <li><a href="/pages/../pages/northeast-source.html">Source from Northeast</a></li>
-                    <li><a href="/pages/../pages/social-impact.html">Social Impact</a></li>
-                    <li><a href="/pages/../pages/cultivate-northeast.html">Cultivate in Northeast</a></li>
-                    <li><a href="/pages/../pages/contact.html">Contact Us</a></li>
+                    <li><a href="/pages/../pages/index.html">Home</a>
+                        <span class="navigation-plus-icon"></span>
+                    </li>
+                    <li><a href="/pages/../pages/fruits.html">Fruits</a>
+                        <span class="navigation-plus-icon"></span>
+                    </li>
+                    <li><a href="/pages/../pages/about-us.html">About Us</a>
+                        <span class="navigation-plus-icon"></span>
+                    </li>
+                    <li><a href="/pages/../pages/vegetables.html">Vegetables</a>
+                        <span class="navigation-plus-icon"></span>
+                    </li>
+                    <li><a href="/pages/../pages/rice-corn.html">Rice & Corn</a>
+                        <span class="navigation-plus-icon"></span>
+                    </li>
+                    <li><a href="/pages/../pages/northeast-source.html">Source from Northeast</a>
+                        <span class="navigation-plus-icon"></span>
+                    </li>
+                    <li><a href="/pages/../pages/social-impact.html">Social Impact</a>
+                        <span class="navigation-plus-icon"></span>
+                    </li>
+                    <li><a href="/pages/../pages/cultivate-northeast.html">Cultivate in Northeast</a>
+                        <span class="navigation-plus-icon"></span>
+                    </li>
+                    <li><a href="/pages/../pages/contact.html">Contact Us</a>
+                        <span class="navigation-plus-icon"></span>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -73,9 +91,11 @@
         <object data="../image/svg/top_left_corner2.svg" class="hero-background-0" type="image/svg+xml">
             Your browser does not support SVG
         </object>
-        <!-- <object data="../image/svg/top_left_corner.svg" type="image/svg+xml">
+        <object data="../image/svg/mobile/top-left-corner.svg" class="hero-background-0 hidden mobile"
+            type="image/svg+xml">
             Your browser does not support SVG
-        </object> -->
+        </object>
+
         <span class="blur_bg position-absolute block hero-background-1"></span>
     </section>
     <section class="product-hero container flex">
@@ -99,6 +119,10 @@
     </section>
     <section class="mission">
         <object data="../image/svg/content_line.svg" class="mission-background-0 " type="image/svg+xml">
+            Your browser does not support SVG
+        </object>
+        <object data="../image/svg/mobile/content_line_mobile.svg" class="mission-background-0 hidden mobile "
+            type="image/svg+xml">
             Your browser does not support SVG
         </object>
         <div class="container position-absolute top-0">
@@ -131,35 +155,43 @@
         </div>
     </section>
 
-    <section class="fruit-slider_intro">
+    <section class="fruit-slider_intro position-relative">
         <div class="position-relative top-50">
-            <object data="../image/svg/product_bg.svg" class="fruit_silder-background-0 position-absolute top-0"
+            <object data="../image/svg/mobile/product-bg.svg" class="fruit_silder-background-0 position-absolute top-0"
                 type="image/svg+xml">
                 Your browser does not support SVG
             </object>
-            <div class="position-absolute right-0 six columns fruit-slider_intro-content " data-aos="flip-up">
+            <div class="position-relative left-50 six columns fruit-slider_intro-content mb-5" data-aos="flip-up">
                 <h1 class="font-semi-bold sec-color text-em-5">RE-FRESH</h1>
                 <h2 class="sec-color font-semi-bold">100% Organic, High Value</h2>
             </div>
         </div>
         <span class="blur_bg  left-0 top-0 fruit_silder-background-1 "></span>
-        <div class="product-showcase container">
-            <div class="product-container" id="product-container">
-                <div class="featured-product">
-                    <div class="featured-image-container">
-                        <img src="https://source.unsplash.com/400x400/?pumpkin" alt="Pumpkin" class="featured-image"
-                            id="featured-image">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-name text-em-2 font-semi-bold" id="product-name">Pumpkin</h2>
-                        <p class="product-description text-em-125 font-medium" id="product-description">Organic & Fresh
-                        </p>
-                    </div>
-                </div>
-
-                <div class="product-row-container">
-                    <div class="product-row" id="product-row"></div>
-                </div>
+        <div class="carousel-container" id="carousel">
+            <div class="fruit">
+                <img src="../image/products/vegetables/beetroot.png" alt="Apple" />
+                <h2>Apple</h2>
+                <p>A sweet, crunchy fruit rich in fiber and vitamin C.</p>
+            </div>
+            <div class="fruit">
+                <img src="../image/products/vegetables/bitter-gourd.png" alt="Banana" />
+                <h2>Banana</h2>
+                <p>A soft, energy-boosting fruit packed with potassium.</p>
+            </div>
+            <div class="fruit">
+                <img src="../image/products/vegetables/cauliflower.png" alt="Mango" />
+                <h2>Mango</h2>
+                <p>The king of fruits, juicy and full of tropical flavor.</p>
+            </div>
+            <div class="fruit">
+                <img src="../image/products/fruits/strawberry.png" alt="Orange" />
+                <h2>Orange</h2>
+                <p>A citrus fruit loaded with vitamin C and antioxidants.</p>
+            </div>
+            <div class="fruit">
+                <img src="../image/fruits/orange.png" alt="Grapes" />
+                <h2>Grapes</h2>
+                <p>Small, juicy fruits that come in many varieties and colors.</p>
             </div>
         </div>
     </section>
@@ -385,7 +417,7 @@
                         Ipsum available, but the majority have suffered
                         alteration
                     </p>
-                    <h2 class="font-bold prim-color text-em-2 ">Farmer <br> Development</h2>
+                    <p class="font-bold prim-color text-em-2 mt-5 mb-3 ">Farmer <br> Development</p>
                     <div class="grid">
                         <div>
                             <ul>
@@ -477,7 +509,7 @@
 
     <footer class="footer">
         <div class="footer-about">
-            <object data="../image/svg/header/logo.svg" class="logo" type="image/svg+xml">
+            <object data="../image/svg/header/logo.svg" style="filter: invert(1);" class="logo" type="image/svg+xml">
                 Your browser does not support SVG
             </object>
             <h4>Kiega Exims</h4>
@@ -524,9 +556,11 @@
         <div class="footer-gallery">
             <h4>Gallery</h4>
             <div class="gallery-images">
-                <img src="../image/products/vegetables/beetroot.png" data-aos="flip-left" alt="Fresh fruits and vegetables" />
+                <img src="../image/products/vegetables/beetroot.png" data-aos="flip-left"
+                    alt="Fresh fruits and vegetables" />
                 <img src="../image/fruits/tomato.png" data-aos="flip-up" alt="Colorful vegetable harvest" />
-                <img src="../image/products/fruits/strawberry.png" data-aos="flip-down" alt="Organic produce assortment" />
+                <img src="../image/products/fruits/strawberry.png" data-aos="flip-down"
+                    alt="Organic produce assortment" />
                 <img src="../image/products/fruits/pineapple.jpg" data-aos="flip-left" alt="Pumpkin harvest" />
                 <img src="../image/products/vegetables/red-pepper.jpg" alt="Tomato plants" />
                 <img src="../image/products/vegetables/bitter-gourd.png" data-aos="flip-right" alt="Fresh carrots" />

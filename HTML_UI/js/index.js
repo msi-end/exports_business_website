@@ -217,6 +217,59 @@ const nav = document.querySelector('.navigation');
 const menuToggleBtns = document.querySelectorAll('.menu-toggle-btn');
 const navContent = document.querySelector('.navigation-content');
 function toggleMenu() {
-  nav.removeAttribute('date-aos')
+  nav.removeAttribute('data-aos')
   nav.classList.toggle('navigation-active');
 }
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.getElementById("carousel");
+
+  function rotateFruits() {
+    const fruits = carousel.children;
+    const firstFruit = fruits[0];
+
+    // Fade out the first item
+    firstFruit.classList.add("fade-out");
+
+    // Slide the carousel
+    carousel.style.transition = "transform 0.8s ease-in-out";
+    carousel.style.transform = "translateX(-220px)";
+
+    setTimeout(() => {
+      carousel.style.transition = "none";
+      carousel.style.transform = "translateX(0)";
+
+      // Clone and reset class list for fade-in effect
+      const clone = firstFruit.cloneNode(true);
+      clone.classList.remove("fade-out", "first");
+
+      // Trigger fade-in animation
+      requestAnimationFrame(() => {
+        clone.classList.add("fade-in");
+        setTimeout(() => {
+          clone.classList.remove("fade-in");
+        }, 800);
+      });
+
+      // Remove old first and append clone
+      carousel.removeChild(firstFruit);
+      carousel.appendChild(clone);
+
+      // Add active class to new first element
+      requestAnimationFrame(() => {
+        carousel.children[0].classList.add("first");
+      });
+    }, 800);
+  }
+
+  // Set initial active
+  carousel.children[0].classList.add("first");
+
+  setInterval(rotateFruits, 3000);
+});
