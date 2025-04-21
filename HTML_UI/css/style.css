@@ -59,10 +59,15 @@ html, body {
   height: 800px;
 }
 .hero-image {
-  width: 50vw;
+  /* width: 50vw;
   position: relative;
   left: -50px;
   top: -10px;
+  max-width: 60vw; */
+  width: 50vw;
+  position: relative;
+  left: 58px;
+  top: 138px;
   max-width: 60vw;
 }
 .hero-intro {
