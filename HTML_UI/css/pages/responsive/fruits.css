@@ -1,0 +1,239 @@
+/* Responsive adjustments for hero */
+@media (max-width: 992px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .subtitle {
+      font-size: 4.5rem;
+    }
+  
+    .veg-circle {
+      transform: scale(0.8);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 3.5rem;
+    }
+  
+    .lettuce {
+      width: 150px;
+      height: 150px;
+      left: 10px;
+      top: -20px;
+    }
+  
+    .bell-peppers {
+      width: 120px;
+      height: 120px;
+      right: 30%;
+    }
+  
+    .potatoes,
+    .cabbage,
+    .lemon {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .eggplant {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 8px;
+    }
+  
+    /* Track (the background) */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+  
+    /* Thumb (the draggable part) */
+    ::-webkit-scrollbar-thumb {
+      background-color: #05478e;
+      border-radius: 10px;
+      border: 2px solid #f1f1f1;
+    }
+  
+    /* Thumb on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+    }
+  
+    .hero-section {
+      min-height: 500px;
+    }
+  
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .subtitle {
+      font-size: 2.8rem;
+    }
+  
+    .veg-circle {
+      transform: scale(0.6);
+    }
+  
+    .bell-peppers {
+      top: -5%;
+      left: 35%;
+      transform: scale(0.4);
+    }
+  
+    .potatoes {
+      left: -25px;
+      top: 15%;
+      transform: scale(0.4);
+    }
+  
+    .lettuce {
+      transform: scale(0.5);
+    }
+  
+    .cabbage {
+      right: 100px;
+      bottom: 25%;
+      transform: scale(0.5);
+    }
+  
+    .lemon {
+      top: 70%;
+      right: 20px;
+    }
+  
+    .eggplant {
+      bottom: 20%;
+      right: -8%;
+    }
+  
+    /* wheel Area */
+    .w-content h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .w-content ul li {
+      font-size: 14px;
+      max-width: 95%;
+    }
+  
+    /* fruit table */
+  
+    th,
+    td {
+      padding: 6px;
+      font-size: 13px;
+    }
+  
+    .fruit {
+      height: fit-content;
+    }
+  
+    .fruit img {
+      width: 300px;
+    }
+  
+    .t-container {
+      padding: 1rem;
+    }
+  
+    .m-fruit-flex {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .main-table {
+      overflow-x: scroll;
+    }
+  
+    .table-list {
+      height: max-content;
+      max-width: 100%;
+    }
+  
+    .ring {
+      left: -80%;
+    }
+  
+    .tag {
+      padding: 6px;
+      padding-inline: 12px;
+      font-size: 14px;
+    }
+  
+    /* Key facts area */
+    .k-container {
+      margin-top: 10%;
+    }
+  
+    .circle-image {
+      max-width: 80%;
+    }
+  
+    .text-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .text-content p {
+      font-size: 14px;
+    }
+  
+    .packing-title {
+      font-size: 1.5rem;
+      margin-left: 10%;
+    }
+  
+    .packing-list li {
+      font-size: 14px;
+      margin-left: 10%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content {
+      margin-top: 15%;
+    }
+  
+    .content .title {
+      font-size: 1.5rem;
+      z-index: 10;
+    }
+  
+    .content .subtitle {
+      z-index: 10;
+    }
+  
+    /* Wheel area */
+    .certification-wheel img {
+      width: 300px;
+    }
+  
+    /* Utility */
+    .blur_bg {
+      filter: blur(80px);
+      width: 30vh;
+      height: 30vh;
+      left: -25%;
+    }
+  
+    .m-line-f {
+      position: absolute;
+      display: inline-block;
+      top: 26%;
+      left: 0;
+    }
+  }
+  

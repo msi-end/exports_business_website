@@ -28,14 +28,14 @@
 }
 
 .content .title {
-  color: #05478E;
+  color: #05478e;
   font-size: 4rem;
   margin-bottom: 20px;
   margin-right: 5%;
 }
 
 .subtitle {
-  color: #05478E;
+  color: #05478e;
   font-size: 10rem;
   font-weight: bold;
   line-height: 1;
@@ -237,13 +237,13 @@
 }
 
 h2 {
-  color: #05478E;
+  color: #05478e;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
 p {
-  color: #05478E;
+  color: #05478e;
   font-size: 1.15rem;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -252,7 +252,7 @@ p {
 
 .highlight {
   font-weight: bold;
-  color: #05478E;
+  color: #05478e;
 }
 
 .packing-section {
@@ -261,7 +261,7 @@ p {
 }
 
 .packing-title {
-  color: #2E5949;
+  color: #2e5949;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
@@ -271,7 +271,7 @@ p {
 }
 
 .packing-list li {
-  color: #2E5949;
+  color: #2e5949;
   font-size: 1.15rem;
   margin-bottom: 15px;
   display: flex;
@@ -300,9 +300,10 @@ p {
   }
 }
 
-.container {
+.t-container {
   width: 100%;
   min-height: max-content;
+  padding: 3rem;
 }
 
 .flex {
@@ -353,12 +354,12 @@ p {
 .title {
   font-size: 6rem;
   font-weight: bold;
-  color: #F53B2A;
+  color: #f53b2a;
   margin-left: 4%;
 }
 
 .btn {
-  background-color: #05478E;
+  background-color: #05478e;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -380,7 +381,7 @@ p {
   height: 350px;
   width: 350px;
   background-color: #fff;
-  border: 3rem solid #FCE0D1;
+  border: 3rem solid #fce0d1;
   border-radius: 50%;
 }
 
@@ -406,7 +407,7 @@ td {
 }
 
 th {
-  background-color: #05478E;
+  background-color: #05478e;
   color: white;
   font-weight: normal;
 }
@@ -451,12 +452,12 @@ td:first-child {
   align-items: center;
   justify-content: center;
   background-color: #e6f0fa;
-  border: 1px solid #05478E;
+  border: 1px solid #05478e;
   cursor: pointer;
 }
 
 .nav-btn.next {
-  background-color: #05478E;
+  background-color: #05478e;
   color: white;
   border: none;
 }
@@ -477,11 +478,10 @@ td:first-child {
 }
 
 .tag.active {
-  background-color: #CEE68C;
-  border-color: #CEE68C;
+  background-color: #cee68c;
+  border-color: #cee68c;
   font-weight: bold;
 }
-
 
 /* Wheel Area Css */
 
@@ -512,7 +512,6 @@ td:first-child {
   margin-bottom: 5%;
 }
 
-
 .certification-wheel img {
   width: 650px;
 }
@@ -523,7 +522,7 @@ td:first-child {
 }
 
 .w-content h2 {
-  color: #05478E;
+  color: #05478e;
   font-size: 2.5rem;
   margin-bottom: 30px;
   line-height: 1.2;
@@ -539,19 +538,18 @@ td:first-child {
   position: relative;
   padding-left: 30px;
   margin-bottom: 15px;
-  color: #2E5949;
+  color: #2e5949;
   line-height: 1.5;
   font-weight: 500;
   font-size: 16px;
   max-width: 80%;
-
 }
 
 .w-content ul li::before {
   content: "•";
   position: absolute;
   left: 0;
-  color: #2E5949;
+  color: #2e5949;
   font-size: 30px;
   line-height: 1;
 }
@@ -561,49 +559,48 @@ td:first-child {
 }
 
 .mission h3 {
-  color: #2E5949;
+  color: #2e5949;
   font-size: 18px;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
 .mission p {
-  color: #2E5949;
+  color: #2e5949;
   line-height: 1.6;
 }
 
 @media (max-width: 900px) {
   .container {
-      flex-direction: column;
+    flex-direction: column;
   }
-  
+
   .certification-wheel {
-      max-width: 350px;
+    max-width: 350px;
   }
-  
+
   .content h1 {
-      font-size: 32px;
+    font-size: 32px;
   }
 }
 
 @media (max-width: 480px) {
   .certification-wheel {
-      max-width: 280px;
+    max-width: 280px;
   }
-  
+
   .content h1 {
-      font-size: 26px;
+    font-size: 26px;
   }
-  
+
   .content ul li {
-      font-size: 14px;
+    font-size: 14px;
   }
-  
+
   .mission p {
-      font-size: 14px;
+    font-size: 14px;
   }
 }
-
 
 /* Utility CSS */
 
@@ -611,6 +608,10 @@ td:first-child {
   position: absolute;
   top: 0;
   left: 15%;
+}
+
+.m-line-f {
+  display: none;
 }
 
 .blur_bg {
@@ -629,4 +630,9 @@ td:first-child {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   filter: blur(15px);
+}
+
+
+.h-benefit {
+  margin-top: 8%;
 }
