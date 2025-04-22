@@ -38,7 +38,7 @@ viewBox="0 0 197.47546 175.07559"
         rightLongitude="97.419638"
         bottomLatitude="6.746236" />
          <linearGradient id="landGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#aaccff" stop-opacity="1"/> <stop offset="100%" stop-color="#d6ffd4" stop-opacity="1"/> </linearGradient>
+      <stop offset="0%"   stop-color="#0263f5" stop-opacity="1"/> <stop offset="100%" stop-color="#21851c" stop-opacity="1"/> </linearGradient>
     </defs>
   <g
      id="g1"

@@ -383,11 +383,11 @@ top: -50px;
   max-width: 1200px;
   margin: 0 auto;
 }
-.feature-background {
+/* .feature-background {
   background: url("../image/svg/why-choose-item-bg.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
+} */
 
 .feature {
   display: flex;
@@ -406,8 +406,8 @@ top: -50px;
 }
 .feature-icon {
   margin: 10rem 5rem;
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background: rgba(144, 238, 144, 0.1);
   display: flex;
@@ -417,13 +417,13 @@ top: -50px;
 }
 
 .feature-icon img {
-  width: 100px;
-  height: 100px;
+  width: 240px;
+  height: 240px;
 }
 
 .feature-title {
   text-align: center;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
 }
 /*////  
  ////////

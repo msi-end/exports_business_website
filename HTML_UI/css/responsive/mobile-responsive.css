@@ -1,255 +1,303 @@
 /* Default styles (desktop) */
 .blur_bg {
-    background: rgba(161, 238, 82, 0.36);
-    filter: blur(95px);
-    width: 40vh;
-    height: 40vh;
+  background: rgba(161, 238, 82, 0.36);
+  filter: blur(95px);
+  width: 40vh;
+  height: 40vh;
+}
+
+/* Tablet styles (768px - 1024px) */
+@media only screen and (max-width: 1024px) {
+  .hero-intro h1 {
+    font-size: 55px !important;
   }
-  
-  /* Tablet styles (768px - 1024px) */
-  @media only screen and (max-width: 1024px) {
-    .hero-intro h1 {
-      font-size: 55px !important;
-    }
-    .hero-intro h4 {
-      font-size: 24px !important;
-    }
-    .mission {
-      height: auto !important;
-      padding-bottom: 100px;
-    }
-    .mission-content .one,
-    .mission-content .two,
-    .mission-content .three {
-      padding-left: 50px !important;
-      margin-left: 0 !important;
-      width: 100% !important;
-      padding-top: 100px !important;
-    }
-    .featured-product {
-      width: 350px !important;
-    }
-    .featured-image-container {
-      height: 350px !important;
-    }
-    .hero-two-content-1 {
-      height: 45vw !important;
-    }
-    .hero-two .image-slider {
-      left: 50vw !important;
-    }
-    .features {
-      gap: 20px !important;
-    }
-    .feature {
-      width: 220px !important;
-      height: 350px !important;
-    }
+  .hero-intro h4 {
+    font-size: 24px !important;
   }
-  
-  /* Mobile styles (up to 767px) */
-  @media only screen and (max-width: 767px) {
-    /* Root Backgrounds */
-    .blur_bg {
-      width: 30vh;
-      height: 30vh;
-    }
-    .hero-background {
-      right: -15% !important;
-    }
-    .hero-background-1 {
-      top: -5% !important;
-      left: -15% !important;
-    }
-    .mission-background-2 {
-      right: -30% !important;
-      width: 50vh !important;
-    }
-  
-    /* Hero Section */
-    .product-hero {
-      height: auto !important;
-      flex-direction: column !important;
-      padding-top: 50px !important;
-    }
-    .hero-image {
-      width: 100% !important;
-      left: 0 !important;
-      top: 0 !important;
-      max-width: 100% !important;
-    }
-    .hero-intro {
-      bottom: 0 !important;
-      text-align: center !important;
-      padding: 20px !important;
-    }
-    .hero-intro h1 {
-      font-size: 42px !important;
-      line-height: 1.2 !important;
-    }
-    .hero-intro h4 {
-      font-size: 20px !important;
-    }
-  
-    /* Mission Section */
-    .mission {
-      height: auto !important;
-      top: 0 !important;
-      padding-bottom: 50px !important;
-    }
-    .mission-content {
-      height: auto !important;
-    }
-    .mission-content .one,
-    .mission-content .two,
-    .mission-content .three {
-      padding: 30px 20px !important;
-      margin-left: 0 !important;
-      width: 100% !important;
-    }
-  
-    /* Product Slider */
-    .product-container {
-      flex-direction: column !important;
-      height: auto !important;
-    }
-    .featured-product {
-      width: 100% !important;
-      margin-bottom: 30px;
-    }
-    .featured-image-container {
-      height: 300px !important;
-      bottom: 0 !important;
-    }
-    .product-row {
-      height: auto !important;
-      flex-wrap: wrap !important;
-      justify-content: center !important;
-      margin-top: 20px !important;
-    }
-    .product-item {
-      position: relative !important;
-      margin: 10px !important;
-    }
-    .fruit-slider_intro-content {
-      padding-left: 1rem !important;
-      text-align: center !important;
-    }
-  
-    /* Hero Two Section */
-    .hero-two-content-0 {
-      flex-direction: column !important;
-      margin-left: 0 !important;
-    }
-    .hero-two-content-1 {
-      height: 80vw !important;
-      background-size: cover !important;
-      margin-top: 30px;
-    }
-    .hero-two-content-1 img {
-      width: 70vw !important;
-      height: 70vw !important;
-      left: 15% !important;
-    }
-    .hero-two .image-slider {
-      left: 50% !important;
-      transform: translateX(-50%) !important;
-      margin-top: 20px !important;
-    }
-  
-    /* Why Choose Section */
-    .why-choose {
-      height: auto !important;
-      padding: 30px 10px !important;
-      margin-top: 50px !important;
-    }
-    .features {
-      flex-direction: column !important;
-      align-items: center !important;
-      gap: 30px !important;
-    }
-    .feature {
-      width: 100% !important;
-      max-width: 300px !important;
-      height: auto !important;
-    }
-    .feature-align {
-      top: 0 !important;
-    }
-    .feature-icon {
-      margin: 2rem 0 !important;
-    }
-    .feature-title {
-      padding-top: 2rem !important;
-      padding-bottom: 2rem !important;
-    }
-  
-    /* Category Section */
-    .categories {
-      gap: 15px !important;
-    }
-    .category-card {
-      width: 140px !important;
-    }
-    .category-card .image {
-      width: 140px !important;
-      height: 140px !important;
-      border-width: 15px !important;
-    }
-    .category-card.active {
-      width: 160px !important;
-    }
-  
-    /* Empowerment Section */
-    .empowerment-content-0 {
-      flex-direction: column !important;
-      margin-left: 0 !important;
-    }
-    .empowerment-content-1 {
-      height: 80vw !important;
-    }
-    .empowerment-content-1 img {
-      width: 70vw !important;
-      height: 70vw !important;
-      left: 15% !important;
-    }
-    .empowerment .image-slider {
-      left: 50% !important;
-      transform: translateX(-50%) !important;
-    }
-    .empowerment-images {
-      flex-wrap: wrap !important;
-      justify-content: center !important;
-    }
-    .empowerment-images div {
-      width: 120px !important;
-      height: 120px !important;
-    }
-    .empowerment-images img {
-      width: 100px !important;
-      height: 100px !important;
-    }
+  .mission {
+    height: auto !important;
+    padding-bottom: 100px;
   }
-  
-  /* Small mobile devices (up to 480px) */
-  @media only screen and (max-width: 480px) {
-    .hero-intro h1 {
-      font-size: 36px !important;
-    }
-    .hero-intro h4 {
-      font-size: 18px !important;
-    }
-    .category-card {
-      width: 120px !important;
-    }
-    .category-card .image {
-      width: 120px !important;
-      height: 120px !important;
-    }
-    .category-card.active {
-      width: 140px !important;
-    }
-    .featured-image-container {
-      height: 250px !important;
-    }
+  .mission-content .one,
+  .mission-content .two,
+  .mission-content .three {
+    padding-left: 50px !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding-top: 100px !important;
   }
+  .featured-product {
+    width: 350px !important;
+  }
+  .featured-image-container {
+    height: 350px !important;
+  }
+  .hero-two-content-1 {
+    height: 45vw !important;
+  }
+  .hero-two .image-slider {
+    left: 50vw !important;
+  }
+  .features {
+    gap: 20px !important;
+  }
+  .feature {
+    width: 220px !important;
+    height: 350px !important;
+  }
+}
+
+/* Mobile styles (up to 767px) */
+@media only screen and (max-width: 767px) {
+  /* Root Backgrounds */
+  .blur_bg {
+    width: 30vh;
+    height: 30vh;
+  }
+  .hero-background-0 {
+    display: none;
+  }
+  .hero-background-0-mobile {
+    display: block;
+    top: -65px;
+    position: absolute;
+  }
+  .hero-background {
+    width: 80vw;
+    top: unset;
+  }
+  .hero-background-1 {
+    top: -5% !important;
+    left: -15% !important;
+  }
+  .mission-background-2 {
+    right: -30% !important;
+    width: 50vh !important;
+  }
+
+  /* Hero Section */
+  .product-hero {
+    height: auto !important;
+    flex-direction: column !important;
+    padding-top: 50px !important;
+  }
+  .hero-image {
+    width: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    max-width: 100% !important;
+  }
+  .hero-intro {
+    bottom: -40px !important;
+    padding: 20px !important;
+    left: -10px;
+  }
+  .hero-intro h1 {
+    font-size: 42px !important;
+    line-height: 1.2 !important;
+  }
+  .hero-intro h4 {
+    font-size: 20px !important;
+  }
+
+  /* Mission Section */
+  .mission-background-0 {
+    display: none;
+  }
+  .mission-background-0-mobile {
+    display: block;
+    width: 100%;
+  }
+  .mission {
+    height: auto !important;
+    top: -100px !important;
+    padding-bottom: 50px !important;
+  }
+  .mission-content {
+    height: auto !important;
+    position: relative;
+  }
+  .mission .container {
+    height: 100%;
+    display: flex;
+  }
+  .mission .container > div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+  .mission-content .one,
+  .mission-content .two,
+  .mission-content .three {
+    font-size: 14px;
+    padding: 30px 20px !important;
+    margin-left: 0 !important;
+  }
+  .mission-content:nth-child(1) {
+    width: 90vw;
+    left: 5vw;
+    bottom: 28px;
+  }
+  .mission-content:nth-child(2) {
+    width: 80vw;
+    left: 15vw;
+    bottom: 45px;
+  }
+  .mission-content:nth-child(3) {
+    width: 60vw;
+    left: 45vw;
+    bottom: 70px;
+    text-wrap: wrap;
+  }
+
+  /* Product Slider */
+  .product-container {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+  .featured-product {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  .featured-image-container {
+    height: 300px !important;
+    bottom: 0 !important;
+  }
+  .product-row {
+    height: auto !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    margin-top: 20px !important;
+  }
+  .product-item {
+    position: relative !important;
+    margin: 10px !important;
+  }
+  .fruit-slider_intro-content {
+    padding-left: 1rem !important;
+    text-align: center !important;
+  }
+
+  /* Hero Two Section */
+  .hero-two-content-0 {
+    flex-direction: column !important;
+    margin-left: 0 !important;
+  }
+  .hero-two-content-1 {
+    height: 92vw !important;
+    background-size: cover !important;
+    margin-top: 30px;
+  }
+  .hero-two-content-1 img {
+    width: 70vw !important;
+    height: 70vw !important;
+    left: 15% !important;
+  }
+  .hero-two {
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+  .hero-two .image-slider {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-top: 20px !important;
+  }
+
+  /* Why Choose Section */
+  .why-choose {
+    height: auto !important;
+    padding: 30px 10px !important;
+    margin-top: 50px !important;
+  }
+  .features {
+    width: unset;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 30px !important;
+  }
+  .feature {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+  }
+  .feature-align {
+    top: 0 !important;
+  }
+  .feature-icon {
+    margin: 2rem 0 !important;
+  }
+  .feature-title {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Category Section */
+  .categories {
+    gap: 15px !important;
+  }
+  .category-card {
+    width: 140px !important;
+  }
+  .category-card .image {
+    width: 140px !important;
+    height: 140px !important;
+    border-width: 15px !important;
+  }
+  .category-card.active {
+    width: 160px !important;
+  }
+
+  /* Empowerment Section */
+  .empowerment-content-0 {
+    flex-direction: column !important;
+    margin-left: 0 !important;
+  }
+  .empowerment-content-1 {
+    height: 80vw !important;
+  }
+  .empowerment-content-1 img {
+    width: 70vw !important;
+    height: 70vw !important;
+    left: 15% !important;
+  }
+  .empowerment .image-slider {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+  .empowerment-images {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .empowerment-images div {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .empowerment-images img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
+
+/* Small mobile devices (up to 480px) */
+@media only screen and (max-width: 480px) {
+  .hero-intro h1 {
+    font-size: 36px !important;
+  }
+  .hero-intro h4 {
+    font-size: 18px !important;
+  }
+  .category-card {
+    width: 120px !important;
+  }
+  .category-card .image {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .category-card.active {
+    width: 140px !important;
+  }
+  .featured-image-container {
+    height: 250px !important;
+  }
+}

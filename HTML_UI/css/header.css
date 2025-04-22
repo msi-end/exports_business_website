@@ -69,3 +69,14 @@ fill: url(--primary-color-light);
   font-size: 18px;
   font-weight: 500;
 }
+
+
+@media only screen and (max-width: 767px) {
+
+.navigation-container .navigation {
+  width: 80%;
+  left: unset;
+  margin: auto;
+  right: 0;
+}
+}
