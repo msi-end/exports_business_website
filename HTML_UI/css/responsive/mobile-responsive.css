@@ -62,6 +62,7 @@
 
 /* Mobile styles (up to 767px) */
 @media only screen and (max-width: 767px) {
+
   /* Root Backgrounds */
   .blur_bg {
     width: 30vh;
@@ -148,7 +149,7 @@
     display: flex;
   }
 
-  .mission .container > div:nth-of-type(1) {
+  .mission .container>div:nth-of-type(1) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,6 +183,11 @@
   }
 
   /* Product Slider */
+  .fruit-slider_intro-content {
+    top: -50px;
+    left: auto;
+  }
+
   .product-container {
     flex-direction: column !important;
     height: auto !important;
@@ -215,6 +221,7 @@
   }
 
   /* Hero Two Section */
+
   .hero-two-content-0 {
     flex-direction: column !important;
     margin-left: 0 !important;
@@ -323,18 +330,22 @@
   .empowerment {
     flex-direction: column;
   }
+
   .empowerment-content-0 {
     flex-direction: column !important;
     margin-left: 0 !important;
   }
+
   .empowerment-image-content {
-    height: 100vh;
+    height: 880px;
   }
+
   .empowerment-image-content>div {
     flex-wrap: wrap;
     gap: 20px;
     position: relative;
   }
+
   .align-bottom {
     left: 167px;
     top: unset;
@@ -375,7 +386,116 @@
 
 /* Small mobile devices (up to 480px) */
 @media only screen and (max-width: 480px) {
-  /* .hero-intro h1 {
+  hr {
+    display: none;
+}
+  .text-em-1 {
+    font-size: 1em;
+  }
+
+  .text-em-125 {
+    font-size: 1.25em;
+  }
+
+  .text-em-15 {
+    font-size: 1.1em;
+  }
+
+  .text-em-2 {
+    font-size: 2em;
+  }
+
+  .text-em-3 {
+    font-size: 2em;
+  }
+
+  .text-em-35 {
+    font-size: 3.5em;
+  }
+
+  .text-em-4 {
+    font-size: 4em;
+  }
+
+  .text-em-45 {
+    font-size: 4.5em;
+  }
+
+  .text-em-5 {
+    font-size: 3.5em;
+  }
+
+  .hero-intro {
+    bottom: -60px !important;
+    padding: unset !important;
+    left: -10px;
+    height: 217px;
+  }
+
+  .mission {
+    height: auto !important;
+    top: -10vh !important;
+    padding-bottom: 50px !important;
+  }
+
+  .hero-two-content-0 {
+    padding: 10px;
+  }
+  .feature-icon img {
+    width: 150px;
+    height: 150px;
+}
+.feature-icon {
+  margin: 0rem 0 !important;
+}
+.feature-icon {
+  width: 150px;
+  height: 150px;
+}
+.feature-title {
+  padding-top: 0rem !important;
+  font-size: 18px;
+  font-weight: 600;
+  opacity: .6;
+}
+.features {
+  gap: 50px !important;
+  margin: 60px auto;
+  margin-bottom: 0px;
+}
+  .categories-section .subheading {
+    padding: 10px;
+  }
+
+  .empowerment-content-0 {
+    padding: 10px;
+  }
+
+  .empowerment li {
+    font-weight: 30px;
+    font-weight: 500;
+    list-style-type: none;
+
+  }
+
+  .map-product-container .page-bg-svg {
+    height: 250vh;
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* .hero-intro h1 {
     font-size: 36px !important;
   }
   .hero-intro h4 {

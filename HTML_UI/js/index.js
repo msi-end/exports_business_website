@@ -1,70 +1,70 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   const sliderContainer = document.querySelector(".hero-two-content-1");
-//   const images = sliderContainer.querySelectorAll("img");
-//   const prevBtn = document.querySelector(".image-slider svg:first-child");
-//   const nextBtn = document.querySelector(".image-slider svg:last-child");
-//   const dashes = document.querySelectorAll(".image-slider-dash");
-//   let currentIndex = 0;
-//   let slideInterval;
-//   const slideDuration = 1000;
-//   function initSlider() {
-//     images.forEach((img, index) => {
-//       img.style.display = index === 0 ? "block" : "none";
-//     });
-//     updateDashes();
-//     startAutoSlide();
-//   }
-//   function showSlide(index) {
-//     if (index < 0) {
-//       index = images.length - 1;
-//     } else if (index >= images.length) {
-//       index = 0;
-//     }
+document.addEventListener("DOMContentLoaded", function () {
+  const sliderContainer = document.querySelector(".hero-two-content-1");
+  const images = sliderContainer.querySelectorAll("img");
+  const prevBtn = document.querySelector(".image-slider svg:first-child");
+  const nextBtn = document.querySelector(".image-slider svg:last-child");
+  const dashes = document.querySelectorAll(".image-slider-dash");
+  let currentIndex = 0;
+  let slideInterval;
+  const slideDuration = 1000;
+  function initSlider() {
+    images.forEach((img, index) => {
+      img.style.display = index === 0 ? "block" : "none";
+    });
+    updateDashes();
+    startAutoSlide();
+  }
+  function showSlide(index) {
+    if (index < 0) {
+      index = images.length - 1;
+    } else if (index >= images.length) {
+      index = 0;
+    }
 
-//     images[currentIndex].style.display = "none";
-//     images[index].style.display = "block";
-//     currentIndex = index;
-//     updateDashes();
-//   }
-//   function updateDashes() {
-//     dashes.forEach((dash, index) => {
-//       dash.classList.toggle("active", index === currentIndex);
-//     });
-//   }
-//   function nextSlide() {
-//     showSlide(currentIndex + 1);
-//   }
-//   function prevSlide() {
-//     showSlide(currentIndex - 1);
-//   }
-//   function startAutoSlide() {
-//     slideInterval = setInterval(nextSlide, slideDuration);
-//   }
-//   function pauseAutoSlide() {
-//     clearInterval(slideInterval);
-//   }
-//   nextBtn.addEventListener("click", () => {
-//     pauseAutoSlide();
-//     nextSlide();
-//     startAutoSlide();
-//   });
+    images[currentIndex].style.display = "none";
+    images[index].style.display = "block";
+    currentIndex = index;
+    updateDashes();
+  }
+  function updateDashes() {
+    dashes.forEach((dash, index) => {
+      dash.classList.toggle("active", index === currentIndex);
+    });
+  }
+  function nextSlide() {
+    showSlide(currentIndex + 1);
+  }
+  function prevSlide() {
+    showSlide(currentIndex - 1);
+  }
+  function startAutoSlide() {
+    slideInterval = setInterval(nextSlide, slideDuration);
+  }
+  function pauseAutoSlide() {
+    clearInterval(slideInterval);
+  }
+  nextBtn.addEventListener("click", () => {
+    pauseAutoSlide();
+    nextSlide();
+    startAutoSlide();
+  });
 
-//   prevBtn.addEventListener("click", () => {
-//     pauseAutoSlide();
-//     prevSlide();
-//     startAutoSlide();
-//   });
-//   dashes.forEach((dash, index) => {
-//     dash.addEventListener("click", () => {
-//       pauseAutoSlide();
-//       showSlide(index);
-//       startAutoSlide();
-//     });
-//   });
-//   sliderContainer.addEventListener("mouseenter", pauseAutoSlide);
-//   sliderContainer.addEventListener("mouseleave", startAutoSlide);
-//   initSlider();
-// });
+  prevBtn.addEventListener("click", () => {
+    pauseAutoSlide();
+    prevSlide();
+    startAutoSlide();
+  });
+  dashes.forEach((dash, index) => {
+    dash.addEventListener("click", () => {
+      pauseAutoSlide();
+      showSlide(index);
+      startAutoSlide();
+    });
+  });
+  sliderContainer.addEventListener("mouseenter", pauseAutoSlide);
+  sliderContainer.addEventListener("mouseleave", startAutoSlide);
+  initSlider();
+});
 
 function animateFarmerCard(card) {
   const img = card.querySelector("img");
