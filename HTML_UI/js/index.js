@@ -168,46 +168,15 @@ function setRandomFloatingFeatures() {
 setRandomFloatingFeatures();
 setInterval(setRandomFloatingFeatures, 6000);
 
-const cards = document.querySelectorAll(".category-card");
-function activateCard(card) {
-  anime({
-    targets: card,
-    scale: 1.05,
-    opacity: 1,
-    duration: 600,
-    easing: "easeInOutQuad",
-  });
-  card.classList.add("active");
-}
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".category-card");
+  let currentIndex = 0;
 
-function deactivateCard(card) {
-  anime({
-    targets: card,
-    scale: 1,
-    opacity: 0.6,
-    duration: 600,
-    easing: "easeInOutQuad",
-  });
-  card.classList.remove("active");
-}
-
-function setRandomActiveCard() {
-  const randomIndex = Math.floor(Math.random() * cards.length);
-  cards.forEach((card, index) => {
-    if (index === randomIndex) {
-      activateCard(card);
-    } else {
-      deactivateCard(card);
-    }
-  });
-}
-setRandomActiveCard();
-setInterval(setRandomActiveCard, 2000);
-cards.forEach((card) => {
-  card.addEventListener("mouseenter", () => {
-    cards.forEach(deactivateCard);
-    activateCard(card);
-  });
+  setInterval(() => {
+    cards.forEach((card) => card.classList.remove("active"));
+    cards[currentIndex].classList.add("active");
+    currentIndex = (currentIndex + 1) % cards.length;
+  }, 1500);
 });
 
 const nav = document.querySelector(".navigation");
@@ -250,7 +219,6 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(rotateFruits, 3000);
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const plusIcons = document.querySelectorAll(".navigation-plus-icon");
 
@@ -263,10 +231,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const isOpen = dropdown.classList.contains("show");
 
       // Close all others
-      document.querySelectorAll(".dropdown.submenu").forEach(menu => {
+      document.querySelectorAll(".dropdown.submenu").forEach((menu) => {
         menu.classList.remove("show");
       });
-      document.querySelectorAll(".navigation-plus-icon").forEach(i => {
+      document.querySelectorAll(".navigation-plus-icon").forEach((i) => {
         i.classList.remove("rotate");
       });
 

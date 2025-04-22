@@ -501,7 +501,51 @@ top: -50px;
 .category-card.active div {
   display: block;
 }
+/* =========== */
+.category-card {
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), 
+              box-shadow 0.8s cubic-bezier(0.22, 1, 0.36, 1), 
+              opacity 0.8s ease-in-out;
+  transform: scale(0.98);
+  opacity: 0.6;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  will-change: transform, opacity;
+}
 
+.category-card.active {
+  transform: scale(1) translateY(-10px);
+  opacity: 1;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
+}
+
+/* Smooth show/hide for paragraph and arrow */
+.category-card p,
+.category-card .arrow {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out 0.2s;
+  overflow: hidden;
+}
+
+.category-card.active p,
+.category-card.active .arrow {
+  opacity: 1;
+  max-height: 120px;
+  transform: translateY(0);
+}
+
+
+
+/* When active, show them */
+.category-card.active p,
+.category-card.active .arrow {
+  opacity: 1;
+  max-height: 100px;
+  transform: translateY(0);
+}
 /*////// */
 /* //// Outsiurce Section /// */
 .map-product-container {
