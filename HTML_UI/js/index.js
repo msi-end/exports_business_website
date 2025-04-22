@@ -142,8 +142,6 @@ async function loopTyping() {
 }
 document.addEventListener("DOMContentLoaded", loopTyping);
 
-
-
 const features = document.querySelectorAll(".feature");
 function setRandomFloatingFeatures() {
   features.forEach((feature) => {
@@ -250,4 +248,33 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   carousel.children[0].classList.add("first");
   setInterval(rotateFruits, 3000);
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const plusIcons = document.querySelectorAll(".navigation-plus-icon");
+
+  plusIcons.forEach((icon, index) => {
+    icon.addEventListener("click", () => {
+      const dropdown = icon.parentElement.nextElementSibling;
+
+      if (!dropdown || !dropdown.classList.contains("submenu")) return;
+
+      const isOpen = dropdown.classList.contains("show");
+
+      // Close all others
+      document.querySelectorAll(".dropdown.submenu").forEach(menu => {
+        menu.classList.remove("show");
+      });
+      document.querySelectorAll(".navigation-plus-icon").forEach(i => {
+        i.classList.remove("rotate");
+      });
+
+      // Toggle current
+      if (!isOpen) {
+        dropdown.classList.add("show");
+        icon.classList.add("rotate");
+      }
+    });
+  });
 });

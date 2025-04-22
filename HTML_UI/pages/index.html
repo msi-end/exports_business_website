@@ -7,11 +7,11 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/skeleton_v3.css">
-    <link rel="stylesheet" href="../css/utilities.css">
     <link href="../css/scroll-animation.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/animation.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -54,12 +54,22 @@
                     <div class="wave"></div>
                 </div>
                 <ul class="menu-ctn">
-                    <li><a href="/pages/../pages/index.html">Home</a>
+                    <li class="has-dropdown"><a href="/pages/../pages/index.html">Home</a>
                         <span class="navigation-plus-icon"></span>
                     </li>
-                    <li><a href="/pages/../pages/fruits.html">Fruits</a>
+                    <ul class="dropdown submenu ">
+                        <li>Mango</li>
+                        <li>Orange</li>
+                        <li>Pineapple</li>
+                    </ul>
+                    <li class="has-dropdown"><a href="/pages/../pages/fruits.html">Fruits</a>
                         <span class="navigation-plus-icon"></span>
                     </li>
+                    <ul class="dropdown submenu ">
+                        <li>Mango</li>
+                        <li>Orange</li>
+                        <li>Pineapple</li>
+                    </ul>
                     <li><a href="/pages/../pages/about-us.html">About Us</a>
                         <span class="navigation-plus-icon"></span>
                     </li>
@@ -110,8 +120,7 @@
                 type="image/svg+xml">
                 Your browser does not support SVG
             </object>
-            <img src="../image/home/hero-background-2.png"
-                class="hero-image float-lite" alt="">
+            <img src="../image/home/hero-background-2.png" class="hero-image float-lite" alt="">
         </div>
         <span class="blur_bg position-absolute right-0 bottom-0 hero-background-3"></span>
     </section>

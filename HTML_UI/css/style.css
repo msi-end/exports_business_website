@@ -501,30 +501,8 @@ top: -50px;
 .category-card.active div {
   display: block;
 }
-/* .category-card.active {
-transform-style: preserve-3d;
-border-radius: 20px;
-display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
--ms-flex-wrap: wrap;
-flex-wrap: wrap;
--webkit-flex-wrap: wrap;
--moz-flex-wrap: wrap;
-place-items: center;
-box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-background: -webkit-linear-gradient(to right, #cb2d3e, #ef473a);
-background: -moz-linear-gradient(to right, #cb2d3e, #ef473a);
-background: -ms-linear-gradient(to right, #cb2d3e, #ef473a);
-background: -o-linear-gradient(to right, #cb2d3e, #ef473a);
-background: linear-gradient(to right, #cb2d3e, #ef473a);
-} */
 
-/*////  
- ////////
- //////// */
+/*////// */
 /* //// Outsiurce Section /// */
 .map-product-container {
   justify-content: center;
