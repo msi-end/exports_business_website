@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pumpkin Section</title>
     <link rel="stylesheet" href="../css/pages/fruits.css" />
+    <link rel="stylesheet" href="../css/pages/responsive/fruits.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -47,6 +48,10 @@
       <div class="veg-circle eggplant">
         <img src="/HTML_UI/image/fruits/ava.png" alt="" srcset="" />
       </div>
+
+      <div class="m-line-f">
+        <img src="/HTML_UI/image/vegetables/mobile-line.png" alt="" srcset="" />
+      </div>
     </section>
 
     <!-- Descript section with Wheel -->
@@ -72,7 +77,7 @@
     </section>
 
     <!-- Fruits Section -->
-    <section class="container mx-5">
+    <section class="t-container">
       <div>
         <div class="flex flex-row j-between i-base">
           <h2 class="title">Tomato</h2>
@@ -82,7 +87,7 @@
           </button>
         </div>
       </div>
-      <div class="grid gtc5">
+      <div class="grid gtc5 m-fruit-flex">
         <div class="fruit">
           <div>
             <div class="ring">
@@ -90,7 +95,6 @@
             </div>
             <img
               src="/HTML_UI/image/fruits/tomato.png"
-              width="500"
               alt=""
               srcset=""
               style="z-index: 2"
@@ -99,72 +103,74 @@
           </div>
         </div>
         <div class="table-list">
-          <table>
-            <thead>
-              <tr>
-                <th>Origin</th>
-                <th>Jan</th>
-                <th>Feb</th>
-                <th>Mar</th>
-                <th>Apr</th>
-                <th>May</th>
-                <th>Jun</th>
-                <th>Jul</th>
-                <th>Aug</th>
-                <th>Sep</th>
-                <th>Oct</th>
-                <th>Nov</th>
-                <th>Dec</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Assam</td>
-                <td><div class="availability-dot"></div></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Meghalaya</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><div class="availability-dot"></div></td>
-                <td><div class="availability-dot"></div></td>
-                <td><div class="availability-dot"></div></td>
-                <td><div class="availability-dot"></div></td>
-                <td><div class="availability-dot"></div></td>
-                <td><div class="availability-dot"></div></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Tripura</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><div class="availability-dot"></div></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
+          <div  class="main-table">
+            <table>
+                <thead>
+                  <tr>
+                    <th>Origin</th>
+                    <th>Jan</th>
+                    <th>Feb</th>
+                    <th>Mar</th>
+                    <th>Apr</th>
+                    <th>May</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Aug</th>
+                    <th>Sep</th>
+                    <th>Oct</th>
+                    <th>Nov</th>
+                    <th>Dec</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Assam</td>
+                    <td><div class="availability-dot"></div></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Meghalaya</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><div class="availability-dot"></div></td>
+                    <td><div class="availability-dot"></div></td>
+                    <td><div class="availability-dot"></div></td>
+                    <td><div class="availability-dot"></div></td>
+                    <td><div class="availability-dot"></div></td>
+                    <td><div class="availability-dot"></div></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Tripura</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><div class="availability-dot"></div></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
 
           <div class="navigation">
             <button class="nav-btn prev">
@@ -216,7 +222,7 @@
 
 
     <!-- Key benefit section -->
-    <section class="container mb-5">
+    <section class="k-container mb-5">
       <!-- First Row -->
       <div class="content-wrapper">
         <div class="text-content">
@@ -265,9 +271,9 @@
       </div>
 
       <!-- Third row -->
-      <div class="content-wrapper">
-        <div class="section-content">
-          <h2>Health benefits</h2>
+      <div class="content-wrapper h-benefit">
+        <div class="text-content">
+            <h2>Health benefits</h2>
           <div class="benefit-item">
             <strong class="highlight">Rich in Vitamins:</strong>
             <p>
@@ -288,8 +294,12 @@
             <p>Supports heart health.</p>
           </div>
         </div>
-        <div class="section-image">
-          <img src="/HTML_UI/image/fruits/key-tomato.svg" alt="Cooked rice" />
+        <div class="image-content">
+          <img
+          src="/HTML_UI/image/fruits/key-tomato.svg"
+            alt="Pumpkins growing in a field"
+            class="circle-image"
+          />
         </div>
       </div>
     </section>
