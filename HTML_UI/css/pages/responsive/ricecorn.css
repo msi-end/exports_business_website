@@ -21,12 +21,41 @@
     background-color: #555;
   }
 
+  /* Hero section CSS */
+
+  .rc-img {
+    max-width: 100%;
+  }
+
   .text-transparent {
     font-size: 3.2rem;
   }
 
   .organic-section {
     min-height: max-content;
+  }
+
+  /* Wheel Area Image */
+
+  .mx-5 {
+    padding: 1rem;
+  }
+
+  .w-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .w-content ul li {
+    font-size: 14px;
+  }
+
+  .certifications {
+    margin-right: 10%;
+  }
+
+  .certification-wheel img {
+    width: 280px;
+    margin-right: 10%;
   }
 
   /* Table section */
@@ -77,8 +106,11 @@
     font-size: 14px;
   }
 
-
   /* Key facts area */
+  .mb-5 {
+    margin-top: 15%;
+  }
+
   .k-container {
     margin-top: 10%;
   }
