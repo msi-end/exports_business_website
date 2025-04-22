@@ -1,70 +1,70 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const sliderContainer = document.querySelector(".hero-two-content-1");
-  const images = sliderContainer.querySelectorAll("img");
-  const prevBtn = document.querySelector(".image-slider svg:first-child");
-  const nextBtn = document.querySelector(".image-slider svg:last-child");
-  const dashes = document.querySelectorAll(".image-slider-dash");
-  let currentIndex = 0;
-  let slideInterval;
-  const slideDuration = 1000;
-  function initSlider() {
-    images.forEach((img, index) => {
-      img.style.display = index === 0 ? "block" : "none";
-    });
-    updateDashes();
-    startAutoSlide();
-  }
-  function showSlide(index) {
-    if (index < 0) {
-      index = images.length - 1;
-    } else if (index >= images.length) {
-      index = 0;
-    }
+// document.addEventListener("DOMContentLoaded", function () {
+//   const sliderContainer = document.querySelector(".hero-two-content-1");
+//   const images = sliderContainer.querySelectorAll("img");
+//   const prevBtn = document.querySelector(".image-slider svg:first-child");
+//   const nextBtn = document.querySelector(".image-slider svg:last-child");
+//   const dashes = document.querySelectorAll(".image-slider-dash");
+//   let currentIndex = 0;
+//   let slideInterval;
+//   const slideDuration = 1000;
+//   function initSlider() {
+//     images.forEach((img, index) => {
+//       img.style.display = index === 0 ? "block" : "none";
+//     });
+//     updateDashes();
+//     startAutoSlide();
+//   }
+//   function showSlide(index) {
+//     if (index < 0) {
+//       index = images.length - 1;
+//     } else if (index >= images.length) {
+//       index = 0;
+//     }
 
-    images[currentIndex].style.display = "none";
-    images[index].style.display = "block";
-    currentIndex = index;
-    updateDashes();
-  }
-  function updateDashes() {
-    dashes.forEach((dash, index) => {
-      dash.classList.toggle("active", index === currentIndex);
-    });
-  }
-  function nextSlide() {
-    showSlide(currentIndex + 1);
-  }
-  function prevSlide() {
-    showSlide(currentIndex - 1);
-  }
-  function startAutoSlide() {
-    slideInterval = setInterval(nextSlide, slideDuration);
-  }
-  function pauseAutoSlide() {
-    clearInterval(slideInterval);
-  }
-  nextBtn.addEventListener("click", () => {
-    pauseAutoSlide();
-    nextSlide();
-    startAutoSlide();
-  });
+//     images[currentIndex].style.display = "none";
+//     images[index].style.display = "block";
+//     currentIndex = index;
+//     updateDashes();
+//   }
+//   function updateDashes() {
+//     dashes.forEach((dash, index) => {
+//       dash.classList.toggle("active", index === currentIndex);
+//     });
+//   }
+//   function nextSlide() {
+//     showSlide(currentIndex + 1);
+//   }
+//   function prevSlide() {
+//     showSlide(currentIndex - 1);
+//   }
+//   function startAutoSlide() {
+//     slideInterval = setInterval(nextSlide, slideDuration);
+//   }
+//   function pauseAutoSlide() {
+//     clearInterval(slideInterval);
+//   }
+//   nextBtn.addEventListener("click", () => {
+//     pauseAutoSlide();
+//     nextSlide();
+//     startAutoSlide();
+//   });
 
-  prevBtn.addEventListener("click", () => {
-    pauseAutoSlide();
-    prevSlide();
-    startAutoSlide();
-  });
-  dashes.forEach((dash, index) => {
-    dash.addEventListener("click", () => {
-      pauseAutoSlide();
-      showSlide(index);
-      startAutoSlide();
-    });
-  });
-  sliderContainer.addEventListener("mouseenter", pauseAutoSlide);
-  sliderContainer.addEventListener("mouseleave", startAutoSlide);
-  initSlider();
-});
+//   prevBtn.addEventListener("click", () => {
+//     pauseAutoSlide();
+//     prevSlide();
+//     startAutoSlide();
+//   });
+//   dashes.forEach((dash, index) => {
+//     dash.addEventListener("click", () => {
+//       pauseAutoSlide();
+//       showSlide(index);
+//       startAutoSlide();
+//     });
+//   });
+//   sliderContainer.addEventListener("mouseenter", pauseAutoSlide);
+//   sliderContainer.addEventListener("mouseleave", startAutoSlide);
+//   initSlider();
+// });
 
 function animateFarmerCard(card) {
   const img = card.querySelector("img");
@@ -133,7 +133,6 @@ async function loopTyping() {
   const taglineText = "No #1 People's choice for Fresh food";
   const subText = "Packed With Love From North-East India";
   const repeats = 50;
-
   for (let i = 0; i < repeats; i++) {
     await typeText("#tagline-text", taglineText);
     await sleep(100);
@@ -142,6 +141,8 @@ async function loopTyping() {
   }
 }
 document.addEventListener("DOMContentLoaded", loopTyping);
+
+
 
 const features = document.querySelectorAll(".feature");
 function setRandomFloatingFeatures() {
@@ -169,17 +170,16 @@ function setRandomFloatingFeatures() {
 setRandomFloatingFeatures();
 setInterval(setRandomFloatingFeatures, 6000);
 
-const cards = document.querySelectorAll('.category-card');
-
+const cards = document.querySelectorAll(".category-card");
 function activateCard(card) {
   anime({
     targets: card,
     scale: 1.05,
     opacity: 1,
     duration: 600,
-    easing: 'easeInOutQuad'
+    easing: "easeInOutQuad",
   });
-  card.classList.add('active');
+  card.classList.add("active");
 }
 
 function deactivateCard(card) {
@@ -188,9 +188,9 @@ function deactivateCard(card) {
     scale: 1,
     opacity: 0.6,
     duration: 600,
-    easing: 'easeInOutQuad'
+    easing: "easeInOutQuad",
   });
-  card.classList.remove('active');
+  card.classList.remove("active");
 }
 
 function setRandomActiveCard() {
@@ -205,47 +205,32 @@ function setRandomActiveCard() {
 }
 setRandomActiveCard();
 setInterval(setRandomActiveCard, 2000);
-cards.forEach(card => {
-  card.addEventListener('mouseenter', () => {
+cards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
     cards.forEach(deactivateCard);
     activateCard(card);
   });
 });
 
-
-const nav = document.querySelector('.navigation');
-const menuToggleBtns = document.querySelectorAll('.menu-toggle-btn');
-const navContent = document.querySelector('.navigation-content');
+const nav = document.querySelector(".navigation");
+const menuToggleBtns = document.querySelectorAll(".menu-toggle-btn");
+const navContent = document.querySelector(".navigation-content");
 function toggleMenu() {
-  nav.removeAttribute('data-aos')
-  nav.classList.toggle('navigation-active');
+  nav.removeAttribute("data-aos");
+  nav.classList.toggle("navigation-active");
 }
-
-
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.getElementById("carousel");
-
   function rotateFruits() {
     const fruits = carousel.children;
     const firstFruit = fruits[0];
-
-    // Fade out the first item
     firstFruit.classList.add("fade-out");
-
-    // Slide the carousel
     carousel.style.transition = "transform 0.8s ease-in-out";
     carousel.style.transform = "translateX(-220px)";
-
     setTimeout(() => {
       carousel.style.transition = "none";
       carousel.style.transform = "translateX(0)";
-
-      // Clone and reset class list for fade-in effect
       const clone = firstFruit.cloneNode(true);
       clone.classList.remove("fade-out", "first");
 
@@ -256,20 +241,13 @@ document.addEventListener("DOMContentLoaded", function () {
           clone.classList.remove("fade-in");
         }, 800);
       });
-
-      // Remove old first and append clone
       carousel.removeChild(firstFruit);
       carousel.appendChild(clone);
-
-      // Add active class to new first element
       requestAnimationFrame(() => {
         carousel.children[0].classList.add("first");
       });
     }, 800);
   }
-
-  // Set initial active
   carousel.children[0].classList.add("first");
-
   setInterval(rotateFruits, 3000);
 });

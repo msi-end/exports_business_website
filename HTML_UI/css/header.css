@@ -74,9 +74,9 @@ fill: url(--primary-color-light);
 @media only screen and (max-width: 767px) {
 
 .navigation-container .navigation {
-  width: 80%;
+  width: 100%;
   left: unset;
-  margin: auto;
+  margin: 5px auto;
   right: 0;
 }
 }

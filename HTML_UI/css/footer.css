@@ -16,10 +16,10 @@
   right: 0;
   height: 200px;
   background-color: #ffffff;
-  background-image: url('../image/svg/footer.svg'); 
+  background-image: url("../image/svg/footer.svg");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size: 100%;
   z-index: -1;
 }
 
@@ -132,7 +132,7 @@
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s;
-  background-color:var(--primary-color-light);
+  background-color: var(--primary-color-light);
 }
 
 .gallery-images img:hover {
@@ -142,9 +142,13 @@
   .footer {
     grid-template-columns: 1fr;
     padding: 2rem 5%;
+    margin-top: 30vh;
   }
-  
+  .footer::before {
+    top: -181px;
+    width: 1000px;
+  }
   .gallery-images {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
