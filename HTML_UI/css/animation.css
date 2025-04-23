@@ -181,3 +181,11 @@
   opacity: 1;
   transform: translateY(0px);
 }
+.fade-transition {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}

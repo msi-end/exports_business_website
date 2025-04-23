@@ -315,7 +315,6 @@
       function updateItems(selected) {
         const [left, center, right] = data[selected];
 
-        // Update images and labels
         leftItem.querySelector("img").src =
           "../image/sourcenortheast/p-ginger.png";
         leftItem.querySelector(".label").textContent = left;
@@ -329,11 +328,8 @@
         ).src = `../image/sourcenortheast/p-corn.png`;
         rightItem.querySelector(".label").textContent = right;
       }
-
-      // Click events
       tags.forEach((tag) => {
         tag.addEventListener("click", () => {
-          // Remove active class from all
           tags.forEach((t) => t.classList.remove("active"));
           tag.classList.add("active");
 
@@ -341,8 +337,6 @@
           updateItems(selected);
         });
       });
-
-      // Optional: set default
       updateItems("Chilli");
     </script>
   </body>

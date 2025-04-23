@@ -1,70 +1,54 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const sliderContainer = document.querySelector(".hero-two-content-1");
-  const images = sliderContainer.querySelectorAll("img");
-  const prevBtn = document.querySelector(".image-slider svg:first-child");
-  const nextBtn = document.querySelector(".image-slider svg:last-child");
-  const dashes = document.querySelectorAll(".image-slider-dash");
-  let currentIndex = 0;
-  let slideInterval;
-  const slideDuration = 1000;
-  function initSlider() {
-    images.forEach((img, index) => {
-      img.style.display = index === 0 ? "block" : "none";
-    });
-    updateDashes();
-    startAutoSlide();
-  }
-  function showSlide(index) {
-    if (index < 0) {
-      index = images.length - 1;
-    } else if (index >= images.length) {
-      index = 0;
-    }
 
-    images[currentIndex].style.display = "none";
-    images[index].style.display = "block";
-    currentIndex = index;
-    updateDashes();
-  }
-  function updateDashes() {
-    dashes.forEach((dash, index) => {
-      dash.classList.toggle("active", index === currentIndex);
-    });
-  }
-  function nextSlide() {
-    showSlide(currentIndex + 1);
-  }
-  function prevSlide() {
-    showSlide(currentIndex - 1);
-  }
-  function startAutoSlide() {
-    slideInterval = setInterval(nextSlide, slideDuration);
-  }
-  function pauseAutoSlide() {
-    clearInterval(slideInterval);
-  }
-  nextBtn.addEventListener("click", () => {
-    pauseAutoSlide();
-    nextSlide();
-    startAutoSlide();
-  });
+document.addEventListener("DOMContentLoaded", function() {
+  // Function to initialize the slider for a given section
+  function initializeSlider(sliderSelector) {
+      const slider = document.querySelector(sliderSelector);
+      const prevButton = slider.querySelector('svg:first-of-type');
+      const nextButton = slider.querySelector('svg:last-of-type');
+      const dots = slider.querySelectorAll('.image-slider-dash');
+      let currentSlide = 0;
 
-  prevBtn.addEventListener("click", () => {
-    pauseAutoSlide();
-    prevSlide();
-    startAutoSlide();
-  });
-  dashes.forEach((dash, index) => {
-    dash.addEventListener("click", () => {
-      pauseAutoSlide();
-      showSlide(index);
-      startAutoSlide();
-    });
-  });
-  sliderContainer.addEventListener("mouseenter", pauseAutoSlide);
-  sliderContainer.addEventListener("mouseleave", startAutoSlide);
-  initSlider();
+      // Function to update the active slide and dots
+      function updateSlide() {
+          // Reset all slides and dots
+          dots.forEach(dot => dot.classList.remove('active'));
+          const slides = slider.querySelectorAll('.position-relative img');
+          slides.forEach(slide => slide.classList.add('hidden'));
+
+          // Activate the current slide and corresponding dot
+          slides[currentSlide].classList.remove('hidden');
+          dots[currentSlide].classList.add('active');
+      }
+
+      // Event listener for the "previous" button
+      prevButton.addEventListener("click", function() {
+          currentSlide = (currentSlide === 0) ? dots.length - 1 : currentSlide - 1;
+          updateSlide();
+      });
+
+      // Event listener for the "next" button
+      nextButton.addEventListener("click", function() {
+          currentSlide = (currentSlide === dots.length - 1) ? 0 : currentSlide + 1;
+          updateSlide();
+      });
+
+      // Event listeners for dot clicks
+      dots.forEach((dot, index) => {
+          dot.addEventListener("click", function() {
+              currentSlide = index;
+              updateSlide();
+          });
+      });
+
+      // Initialize the slider
+      updateSlide();
+  }
+
+  // Initialize sliders for both sections
+  initializeSlider('.hero-two .image-slider');
+  initializeSlider('.empowerment .image-slider');
 });
+
 
 function animateFarmerCard(card) {
   const img = card.querySelector("img");
@@ -221,24 +205,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", () => {
   const plusIcons = document.querySelectorAll(".navigation-plus-icon");
-
   plusIcons.forEach((icon, index) => {
     icon.addEventListener("click", () => {
       const dropdown = icon.parentElement.nextElementSibling;
-
       if (!dropdown || !dropdown.classList.contains("submenu")) return;
-
       const isOpen = dropdown.classList.contains("show");
-
-      // Close all others
       document.querySelectorAll(".dropdown.submenu").forEach((menu) => {
         menu.classList.remove("show");
       });
       document.querySelectorAll(".navigation-plus-icon").forEach((i) => {
         i.classList.remove("rotate");
       });
-
-      // Toggle current
       if (!isOpen) {
         dropdown.classList.add("show");
         icon.classList.add("rotate");
@@ -246,3 +223,44 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+
+function updateMapProductShowcase(region) {
+  const State = {
+    "Assam": {
+      title: "ASSAM",
+      description:
+        "Assam produces a wide variety of seasonal fruits rich in flavor and nutrients.",
+      image: "../image/fruits/banana.png",
+      alt: "Fruits from Assam",
+    },
+  };
+  const data = State[region];
+  if (!data) return;
+  const leftContent = document.querySelector(".map-product-container .left-content");
+  const title = leftContent.querySelector("h2");
+  const desc = leftContent.querySelector("p");
+  const img = leftContent.querySelector(".product-images");
+  title.classList.add("fade-out");
+  desc.classList.add("fade-out");
+  img.classList.add("fade-out");
+  setTimeout(() => {
+    title.textContent = data.title;
+    desc.textContent = data.description;
+    img.src = data.image;
+    img.alt = data.alt || data.title;
+    title.classList.remove("fade-out");
+    desc.classList.remove("fade-out");
+    img.onload = () => {
+      img.classList.remove("fade-out");
+    };
+    if (img.complete) {
+      img.onload();
+    }
+
+  }, 500);  
+}
+
+
+
