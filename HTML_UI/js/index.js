@@ -1,52 +1,72 @@
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Function to initialize the slider for a given section
   function initializeSlider(sliderSelector) {
-      const slider = document.querySelector(sliderSelector);
-      const prevButton = slider.querySelector('svg:first-of-type');
-      const nextButton = slider.querySelector('svg:last-of-type');
-      const dots = slider.querySelectorAll('.image-slider-dash');
-      let currentSlide = 0;
+    const slider = document.querySelector(sliderSelector);
+    const prevButton = slider.querySelector("svg.left");
+    const nextButton = slider.querySelector("svg.right");
+    const dots = slider.querySelectorAll(".image-slider-dash");
+    const slides = slider.querySelectorAll(".image-content img");
+    let currentSlide = 0;
+    let autoSlideInterval;
 
-      // Function to update the active slide and dots
-      function updateSlide() {
-          // Reset all slides and dots
-          dots.forEach(dot => dot.classList.remove('active'));
-          const slides = slider.querySelectorAll('.position-relative img');
-          slides.forEach(slide => slide.classList.add('hidden'));
-
-          // Activate the current slide and corresponding dot
-          slides[currentSlide].classList.remove('hidden');
-          dots[currentSlide].classList.add('active');
-      }
-
-      // Event listener for the "previous" button
-      prevButton.addEventListener("click", function() {
-          currentSlide = (currentSlide === 0) ? dots.length - 1 : currentSlide - 1;
-          updateSlide();
+    // Function to update the active slide and dots
+    function updateSlide() {
+      dots.forEach((dot) => dot.classList.remove("active"));
+      slides.forEach((slide, index) => {
+        slide.classList.add("hidden");
+        slide.style.opacity = 0;
+        slide.style.transition = "opacity 1s ease-in-out";
       });
 
-      // Event listener for the "next" button
-      nextButton.addEventListener("click", function() {
-          currentSlide = (currentSlide === dots.length - 1) ? 0 : currentSlide + 1;
-          updateSlide();
-      });
+      slides[currentSlide].classList.remove("hidden");
+      slides[currentSlide].style.opacity = 1;
+      dots[currentSlide].classList.add("active");
+    }
 
-      // Event listeners for dot clicks
-      dots.forEach((dot, index) => {
-          dot.addEventListener("click", function() {
-              currentSlide = index;
-              updateSlide();
-          });
-      });
-
-      // Initialize the slider
+    // Event listener for the "previous" button
+    prevButton.addEventListener("click", function () {
+      currentSlide = currentSlide === 0 ? dots.length - 1 : currentSlide - 1;
       updateSlide();
+      resetAutoSlide();
+    });
+
+    // Event listener for the "next" button
+    nextButton.addEventListener("click", function () {
+      currentSlide = currentSlide === dots.length - 1 ? 0 : currentSlide + 1;
+      updateSlide();
+      resetAutoSlide();
+    });
+
+    // Dot click listeners
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", function () {
+        currentSlide = index;
+        updateSlide();
+        resetAutoSlide();
+      });
+    });
+
+    // Auto-slide functionality
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(() => {
+        currentSlide = (currentSlide + 1) % dots.length;
+        updateSlide();
+      }, 2000); // Change slide every 5 seconds
+    }
+
+    function resetAutoSlide() {
+      clearInterval(autoSlideInterval);
+      startAutoSlide();
+    }
+
+    // Initialize the slider
+    updateSlide();
+    startAutoSlide();
   }
 
   // Initialize sliders for both sections
-  initializeSlider('.hero-two .image-slider');
-  initializeSlider('.empowerment .image-slider');
+  initializeSlider(".hero-two");
+  initializeSlider(".empowerment");
 });
 
 
@@ -224,11 +244,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
 function updateMapProductShowcase(region) {
   const State = {
-    "Assam": {
+    Assam: {
       title: "ASSAM",
       description:
         "Assam produces a wide variety of seasonal fruits rich in flavor and nutrients.",
@@ -238,7 +256,9 @@ function updateMapProductShowcase(region) {
   };
   const data = State[region];
   if (!data) return;
-  const leftContent = document.querySelector(".map-product-container .left-content");
+  const leftContent = document.querySelector(
+    ".map-product-container .left-content"
+  );
   const title = leftContent.querySelector("h2");
   const desc = leftContent.querySelector("p");
   const img = leftContent.querySelector(".product-images");
@@ -258,9 +278,5 @@ function updateMapProductShowcase(region) {
     if (img.complete) {
       img.onload();
     }
-
-  }, 500);  
+  }, 500);
 }
-
-
-

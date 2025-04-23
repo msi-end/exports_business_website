@@ -6,9 +6,7 @@
   height: 40vh;
 }
 
-.text-em-15 {
-  font-size: 1.2em;
-}
+
 
 /* Tablet styles (768px - 1024px) */
 @media only screen and (max-width: 1024px) {
