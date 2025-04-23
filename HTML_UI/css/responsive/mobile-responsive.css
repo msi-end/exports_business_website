@@ -12,6 +12,19 @@
 
 /* Tablet styles (768px - 1024px) */
 @media only screen and (max-width: 1024px) {
+  /* .navigation-container .navigation {
+    width: 37%;
+    left: 60%;
+  } */
+
+  /* .hero-background {
+    position: absolute;
+    bottom: -8% !important;
+    right: -6%;
+    float: right;
+    z-index: -1;
+  } */
+
   .hero-intro h1 {
     font-size: 55px !important;
   }
@@ -52,6 +65,7 @@
 
   .features {
     gap: 20px !important;
+    flex-wrap: nowrap;
   }
 
   .feature {
@@ -82,6 +96,8 @@
   .hero-background {
     width: 80vw;
     top: unset;
+    bottom: unset;
+
   }
 
   .hero-background-1 {
@@ -290,6 +306,7 @@
 
   .categories-section {
     padding: unset;
+    margin-bottom: 50px;
   }
 
   .category-card {
@@ -317,7 +334,7 @@
 
   /* sources from northeaset Section */
   .map-product-container .page-bg-svg {
-    height: 170vh;
+    height: 190vh;
   }
 
   .map-product-container .container {
@@ -344,6 +361,7 @@
     flex-wrap: wrap;
     gap: 20px;
     position: relative;
+    width: 350px;
   }
 
   .align-bottom {
@@ -380,15 +398,14 @@
     width: 160px !important;
     height: 160px !important;
   }
-
-
 }
 
 /* Small mobile devices (up to 480px) */
 @media only screen and (max-width: 480px) {
   hr {
     display: none;
-}
+  }
+
   .text-em-1 {
     font-size: 1em;
   }
@@ -441,28 +458,34 @@
   .hero-two-content-0 {
     padding: 10px;
   }
+
   .feature-icon img {
     width: 150px;
     height: 150px;
-}
-.feature-icon {
-  margin: 0rem 0 !important;
-}
-.feature-icon {
-  width: 150px;
-  height: 150px;
-}
-.feature-title {
-  padding-top: 0rem !important;
-  font-size: 18px;
-  font-weight: 600;
-  opacity: .6;
-}
-.features {
-  gap: 50px !important;
-  margin: 60px auto;
-  margin-bottom: 0px;
-}
+  }
+
+  .feature-icon {
+    margin: 0rem 0 !important;
+  }
+
+  .feature-icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .feature-title {
+    padding-top: 0rem !important;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.6;
+  }
+
+  .features {
+    gap: 50px !important;
+    margin: 60px auto;
+    margin-bottom: 0px;
+  }
+
   .categories-section .subheading {
     padding: 10px;
   }
@@ -475,25 +498,17 @@
     font-weight: 30px;
     font-weight: 500;
     list-style-type: none;
-
   }
 
   .map-product-container .page-bg-svg {
-    height: 250vh;
+    height: 170vh;
   }
 
-
-
-
-
-
+  .category-card .image {
+    width: 115px !important;
+    height: 117px !important;
+  }
 }
-
-
-
-
-
-
 
 /* .hero-intro h1 {
     font-size: 36px !important;
@@ -514,4 +529,3 @@
   .featured-image-container {
     height: 250px !important;
   } */
-}

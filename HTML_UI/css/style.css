@@ -514,14 +514,15 @@ body {
 }
 /* =========== */
 .category-card {
-  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.8s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.8s ease-in-out;
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.8s ease-in-out;
   transform: scale(0.98);
-  opacity: 0.6;
+  opacity: .9;
   cursor: pointer;
   border-radius: 12px;
   overflow: hidden;
   will-change: transform, opacity;
+  transition: all 0.2s;
+  
 }
 .category-card.active {
   transform: scale(1) translateY(-10px);
