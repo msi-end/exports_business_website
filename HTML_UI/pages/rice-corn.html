@@ -4,83 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pumpkin Section</title>
-    <link rel="stylesheet" href="../css/pages/vegetable.css" />
-    <link rel="stylesheet" href="../css/pages/responsive/vegetable.css" />
+    <link rel="stylesheet" href="../css/pages/ricecorn.css" />
+    <link rel="stylesheet" href="../css/pages/responsive/ricecorn.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+  <link href="../css/scroll-animation.css" rel="stylesheet" />
+
   </head>
   <body>
     <!-- Hero Section -->
-    <section class="hero-section">
-      <span class="blur_bg position-absolute block hero-background-1"></span>
-      <div class="content">
-        <h2 class="title">Fresh & Kiega</h2>
-        <h2 class="subtitle">Vegetables</h1>
-      </div>
-
+    <section class="organic-section position-relative" data-aos="fade-up">
       <div class="line-f">
-        <img src="/HTML_UI/image/fruits/vector.png" alt="" srcset="" />
+        <img src="../image/ricecorn/line.png" alt="" srcset="" />
       </div>
 
-      <!-- Vegetable image placeholders with colorful background circles -->
-      <div class="veg-circle lettuce">
-        <img  src="/HTML_UI/image/vegetables/xaak.png" alt="" srcset="" />
+      <span class="blur_bg position-absolute top-0 left-0 block hero-background-1"></span>
+
+      <div class="organic-content" data-aos="fade-up">
+        <h2 class="heading-primary">100% Organic</h2>
+        <h1 class="text-transparent">
+          <span class="rice-text">Rice</span>
+          <span style="color: #05478e">&</span>
+          <span class="corn-text">Corn</span>
+        </h1>
       </div>
 
-      <div class="veg-circle bell-peppers">
-        <img src="/HTML_UI/image/vegetables/potato.png" alt="" srcset="" />
+      <div class="image-container">
+        <img
+          src="../image/ricecorn/rice-hero.png"
+          alt="Rice crops"
+          class="rc-img"
+        />
       </div>
-
-      <div class="veg-circle potatoes">
-        <img src="/HTML_UI/image/vegetables/Objects.png" alt="" srcset="" />
-      </div>
-
-      <div class="veg-circle cabbage">
-        <img src="/HTML_UI/image/vegetables/cabbage.png" alt="" srcset="" />
-      </div>
-
-      <div class="veg-circle lemon">
-        <img src="/HTML_UI/image/vegetables/brinjal.png" alt="" srcset="" />
-      </div>
-
-      <div class="veg-circle eggplant">
-        <img src="/HTML_UI/image/vegetables/h-tomato.png" alt="" srcset="" />
-      </div>
-
-      <div class="m-line-f">
-        <img src="/HTML_UI/image/vegetables/mobile-line.png" alt="" srcset="" />
-      </div>
+      <span class="blur_bg position-absolute right-0 "></span>
     </section>
-
+    
     <!-- Descript section with Wheel -->
-    <section class="w-container">
+    <section class="w-container" data-aos="fade-up">
+      <span class="blur_bg position-absolute top-0  left-0"></span>
       <div class="certifications">
-          <div class="certification-wheel">
-            <img src="/HTML_UI/image/vegetables/v-circle.png" alt="" srcset="">
-          </div>
+        <div class="certification-wheel">
+          <img src="../image/ricecorn/rice-circle.png" alt="" srcset="" />
+        </div>
       </div>
       <div class="w-content">
-          <h2>The highest standards of sustainability</h2>
-          <ul>
-              <li>100% of our products are certified organic</li>
-              <li>Many of our fruits are available from regenerative, Demeter certified farms.</li>
-              <li>Many of our fruits are available from regenerative, Demeter certified farms.</li>
-              <li>We farm, export, import... and we also train and support. We are on the ground with growers, empowering them to leave poverty ehind and restore ecosystems.</li>
-          </ul>
-          <div class="mission">
-              <h3>We're an organic and fair trade pioneer.</h3>
-              <p>Over the years, we've grown into a international fresh food group, but our mission stayed the same. We're here to save soils, lift up lives, and nourish the world with healthy food.</p>
-          </div>
+        <h2>The highest standards of sustainability</h2>
+        <ul>
+          <li>100% of our products are certified organic</li>
+          <li>
+            Many of our fruits are available from regenerative, Demeter
+            certified farms.
+          </li>
+          <li>
+            Many of our fruits are available from regenerative, Demeter
+            certified farms.
+          </li>
+          <li>
+            We farm, export, import... and we also train and support. We are on
+            the ground with growers, empowering them to leave poverty ehind and
+            restore ecosystems.
+          </li>
+        </ul>
+        <div class="mission">
+          <h3>We're an organic and fair trade pioneer.</h3>
+          <p>
+            Over the years, we've grown into a international fresh food group,
+            but our mission stayed the same. We're here to save soils, lift up
+            lives, and nourish the world with healthy food.
+          </p>
+        </div>
       </div>
+      <span class="blur_bg position-absolute bottom-0 right-0 "></span>
     </section>
 
     <!-- Fruits Section -->
-    <section class="t-container">
+    <section class="container mx-5" data-aos="fade-up">
       <div>
         <div class="flex flex-row j-between i-base">
-          <h2 class="title">Tomato</h2>
+          <h2 class="title">Rice</h2>
           <button class="btn">
             Get in touch
             <span class="arrow-icon">→</span>
@@ -94,7 +97,8 @@
               <div class="ring-blob"></div>
             </div>
             <img
-              src="/HTML_UI/image/fruits/tomato.png"
+              src="../image/ricecorn/rice.png"
+              width="590"
               alt=""
               srcset=""
               style="z-index: 2"
@@ -103,73 +107,74 @@
           </div>
         </div>
         <div class="table-list">
-          <div  class="main-table">
+          <div class="main-table">
             <table>
-                <thead>
-                  <tr>
-                    <th>Origin</th>
-                    <th>Jan</th>
-                    <th>Feb</th>
-                    <th>Mar</th>
-                    <th>Apr</th>
-                    <th>May</th>
-                    <th>Jun</th>
-                    <th>Jul</th>
-                    <th>Aug</th>
-                    <th>Sep</th>
-                    <th>Oct</th>
-                    <th>Nov</th>
-                    <th>Dec</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Assam</td>
-                    <td><div class="availability-dot"></div></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Meghalaya</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><div class="availability-dot"></div></td>
-                    <td><div class="availability-dot"></div></td>
-                    <td><div class="availability-dot"></div></td>
-                    <td><div class="availability-dot"></div></td>
-                    <td><div class="availability-dot"></div></td>
-                    <td><div class="availability-dot"></div></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Tripura</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><div class="availability-dot"></div></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
+              <thead>
+                <tr>
+                  <th>Origin</th>
+                  <th>Jan</th>
+                  <th>Feb</th>
+                  <th>Mar</th>
+                  <th>Apr</th>
+                  <th>May</th>
+                  <th>Jun</th>
+                  <th>Jul</th>
+                  <th>Aug</th>
+                  <th>Sep</th>
+                  <th>Oct</th>
+                  <th>Nov</th>
+                  <th>Dec</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Assam</td>
+                  <td><div class="availability-dot"></div></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Meghalaya</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><div class="availability-dot"></div></td>
+                  <td><div class="availability-dot"></div></td>
+                  <td><div class="availability-dot"></div></td>
+                  <td><div class="availability-dot"></div></td>
+                  <td><div class="availability-dot"></div></td>
+                  <td><div class="availability-dot"></div></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Tripura</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><div class="availability-dot"></div></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <span class="blur_bg position-absolute left-0 "></span>
           </div>
 
           <div class="navigation">
@@ -219,10 +224,8 @@
       </div>
     </section>
 
-
-
     <!-- Key benefit section -->
-    <section class="k-container mb-5">
+    <section class="container mb-5" data-aos="fade-up">
       <!-- First Row -->
       <div class="content-wrapper">
         <div class="text-content">
@@ -241,15 +244,17 @@
         </div>
         <div class="image-content">
           <img
-            src="/HTML_UI/image/fruits/tomato-key.png"
+            src="../image/ricecorn/green-rice.png"
             alt="Pumpkins growing in a field"
             class="circle-image"
           />
         </div>
+      <span class="blur_bg position-absolute left-0 bottom-0 "></span>
+
       </div>
 
       <!-- Second Row -->
-      <div class="second-row">
+      <div class="second-row" data-aos="fade-up">
         <div class="packing-section">
           <h2 class="packing-title">We can pack</h2>
           <ul class="packing-list">
@@ -263,15 +268,17 @@
         </div>
         <div class="image-content">
           <img
-            src="/HTML_UI/image/fruits/tomato-key.png"
+            src="../image/ricecorn/rice-key.png"
             alt="Cut pumpkin pieces on a wooden surface"
             class="circle-image"
           />
         </div>
+      <span class="blur_bg position-absolute right-0 top-0 "></span>
+
       </div>
 
       <!-- Third row -->
-      <div class="content-wrapper h-benefit">
+      <div class="content-wrapper h-benefit" data-aos="fade-up">
         <div class="text-content">
             <h2>Health benefits</h2>
           <div class="benefit-item">
@@ -296,12 +303,19 @@
         </div>
         <div class="image-content">
           <img
-          src="/HTML_UI/image/fruits/key-tomato.svg"
+          src="../image/fruits/key-tomato.svg"
             alt="Pumpkins growing in a field"
             class="circle-image"
           />
         </div>
       </div>
+      <span class="blur_bg position-absolute left-0 bottom-0 "></span>
+
     </section>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

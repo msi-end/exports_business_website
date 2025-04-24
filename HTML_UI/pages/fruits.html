@@ -10,56 +10,58 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
+  <link href="../css/scroll-animation.css" rel="stylesheet" />
+
 </head>
 
 <body>
   <!-- Hero Section -->
   <section class="hero-section">
     <span class="blur_bg position-absolute block hero-background-1"></span>
-    <div class="content">
+    <div class="content" data-aos="fade-up">
       <h2 class="title">Organic & Kiega</h2>
       <h2 class="subtitle">Fruits</h1>
     </div>
 
     <div class="line-f">
-      <img src="/HTML_UI/image/fruits/vector.png" alt="" srcset="" />
+      <img src="../image/fruits/vector.png" alt="" srcset="" />
     </div>
 
     <!-- Vegetable image placeholders with colorful background circles -->
     <div class="veg-circle lettuce">
-      <img src="/HTML_UI/image/fruits/orange.png" alt="" srcset="" />
+      <img src="../image/fruits/orange.png" alt="" srcset="" />
     </div>
 
     <div class="veg-circle bell-peppers">
-      <img src="/HTML_UI/image/fruits/banana.png" alt="" srcset="" />
+      <img src="../image/fruits/banana.png" alt="" srcset="" />
     </div>
 
     <div class="veg-circle potatoes">
-      <img src="/HTML_UI/image/vegetables/Objects.png" alt="" srcset="" />
+      <img src="../image/vegetables/Objects.png" alt="" srcset="" />
     </div>
 
     <div class="veg-circle cabbage">
-      <img src="/HTML_UI/image/fruits/berry.png" alt="" srcset="" />
+      <img src="../image/fruits/berry.png" alt="" srcset="" />
     </div>
 
     <div class="veg-circle lemon">
-      <img src="/HTML_UI/image/fruits/lemon.png" alt="" srcset="" />
+      <img src="../image/fruits/lemon.png" alt="" srcset="" />
     </div>
 
     <div class="veg-circle eggplant">
-      <img src="/HTML_UI/image/fruits/ava.png" alt="" srcset="" />
+      <img src="../image/fruits/ava.png" alt="" srcset="" />
     </div>
 
     <div class="m-line-f">
-      <img src="/HTML_UI/image/vegetables/mobile-line.png" alt="" srcset="" />
+      <img src="../image/vegetables/mobile-line.png" alt="" srcset="" />
     </div>
   </section>
 
   <!-- Descript section with Wheel -->
-  <section class="w-container">
+  <section class="w-container" data-aos="fade-up">
     <div class="certifications">
       <div class="certification-wheel">
-        <img src="/HTML_UI/image/fruits/circle.png" alt="" srcset="">
+        <img src="../image/fruits/circle.png" alt="" srcset="">
       </div>
     </div>
     <div class="w-content">
@@ -76,11 +78,15 @@
         <p>Over the years, we've grown into a international fresh food group, but our mission stayed the same. We're
           here to save soils, lift up lives, and nourish the world with healthy food.</p>
       </div>
+      <span class="blur_bg position-absolute top-0 left-0"></span>
+      <span class="blur_bg position-absolute bottom-0 right-0"></span>
+      
     </div>
   </section>
 
   <!-- Fruits Section -->
-  <section class="t-container">
+  <section class="t-container position-relative" data-aos="fade-up">
+
     <div>
       <div class="flex flex-row j-between i-base">
         <h2 class="title">Tomato</h2>
@@ -96,7 +102,7 @@
           <div class="ring">
             <div class="ring-blob"></div>
           </div>
-          <img src="/HTML_UI/image/fruits/tomato.png" alt="" srcset="" style="z-index: 2" />
+          <img src="../image/fruits/tomato.png" alt="" srcset="" style="z-index: 2" />
           <div class="shadow-fruit"></div>
         </div>
       </div>
@@ -219,12 +225,14 @@
         </div>
       </div>
     </div>
+    <span class="blur_bg position-absolute bottom-0 right-0"></span>
+
   </section>
 
 
 
   <!-- Key benefit section -->
-  <section class="k-container mb-5">
+  <section class="k-container mb-5" data-aos="fade-up">
     <!-- First Row -->
     <div class="content-wrapper">
       <div class="text-content">
@@ -242,12 +250,14 @@
         </p>
       </div>
       <div class="image-content">
-        <img src="/HTML_UI/image/fruits/tomato-key.png" alt="Pumpkins growing in a field" class="circle-image" />
+        <img src="../image/fruits/tomato-key.png" alt="Pumpkins growing in a field" class="circle-image" />
       </div>
     </div>
 
     <!-- Second Row -->
-    <div class="second-row">
+    <div class="second-row" data-aos="fade-up">
+      <span class="blur_bg position-absolute bottom-0 left-0"></span>
+
       <div class="packing-section">
         <h2 class="packing-title">We can pack</h2>
         <ul class="packing-list">
@@ -260,13 +270,12 @@
         </ul>
       </div>
       <div class="image-content">
-        <img src="/HTML_UI/image/fruits/tomato-key.png" alt="Cut pumpkin pieces on a wooden surface"
-          class="circle-image" />
+        <img src="../image/fruits/tomato-key.png" alt="Cut pumpkin pieces on a wooden surface" class="circle-image" />
       </div>
     </div>
 
     <!-- Third row -->
-    <div class="content-wrapper h-benefit">
+    <div class="content-wrapper h-benefit" data-aos="fade-up">
       <div class="text-content">
         <h2>Health benefits</h2>
         <div class="benefit-item">
@@ -290,16 +299,21 @@
         </div>
       </div>
       <div class="image-content">
-        <img src="/HTML_UI/image/fruits/key-tomato.svg" alt="Pumpkins growing in a field" class="circle-image" />
+        <img src="../image/fruits/key-tomato.svg" alt="Pumpkins growing in a field" class="circle-image" />
       </div>
+      <span class="blur_bg position-absolute bottom-0 right-0"></span>
+
     </div>
   </section>
 
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script>
     const fruitsData = {
       Tomato: {
-        image: "/HTML_UI/image/fruits/tomato.png",
+        image: "../image/fruits/tomato.png",
         availability: {
           Assam: [0],
           Meghalaya: [4, 5, 6, 7, 8, 9],
@@ -307,7 +321,7 @@
         },
       },
       Pumpkin: {
-        image: "/HTML_UI/image/fruits/pumpkin.png",
+        image: "../image/fruits/pumpkin.png",
         availability: {
           Assam: [1, 2],
           Meghalaya: [3, 4],
@@ -315,7 +329,7 @@
         },
       },
       Apple: {
-        image: "/HTML_UI/image/fruits/apple.png",
+        image: "../image/fruits/apple.png",
         availability: {
           Assam: [9, 10],
           Meghalaya: [8, 9],
@@ -323,7 +337,7 @@
         },
       },
       Avacoda: {
-        image: "/HTML_UI/image/fruits/avacoda.png",
+        image: "../image/fruits/avacoda.png",
         availability: {
           Assam: [2, 3],
           Meghalaya: [1, 2],
@@ -331,7 +345,7 @@
         },
       },
       Banana: {
-        image: "/HTML_UI/image/fruits/banana.png",
+        image: "../image/fruits/banana.png",
         availability: {
           Assam: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           Meghalaya: [0, 2, 4, 6],

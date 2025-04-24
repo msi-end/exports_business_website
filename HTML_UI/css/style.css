@@ -112,21 +112,29 @@ body {
   height: 400px;
   width: 100%;
 }
+.mission-content p {
+ font-size: 20px;
+}
 .mission-content .one {
   padding-left: 170px;
   padding-top: 220px;
   width: 800px;
+  margin-top: 8%;
 }
 .mission-content .two {
   margin-left: 450px;
   padding-top: 220px;
   width: 850px;
+  max-width: 600px;
 }
 .mission-content .three {
   margin-left: 880px;
   padding-top: 50px;
   width: 450px;
+  max-width: 600px;
 }
+
+
 
 /*////  
  ////////
@@ -808,23 +816,7 @@ body {
 }
 
 
-/* Additional CSS */
 
-.one p {
-  font-size: 20px;
-  margin-top: 8%;
-}
-
-.two p {
-  font-size: 20px;
-  max-width: 600px;
-}
-
-.three p {
-  font-size: 20px;
-  margin-top: 5%;
-  max-width: 600px;
-}
 
 .ss-w {
   max-width: 500px;
