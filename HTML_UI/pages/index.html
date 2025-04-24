@@ -1,45 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/skeleton_v3.css" />
-    <link href="../css/scroll-animation.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/animation.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/responsive/mobile-responsive.css" />
-  </head>
 
-  <body>
-    <header class="navigation-container">
-      <nav class="navigation flex" data-aos="fade-left">
-        <div class="navigation-head flex align-center position-relative">
-          <a href="#" class="logo"
-            ><img src="../image/svg/header/logo.svg" alt="Logo"
-          /></a>
-          <img
-            src="../image/svg/header/menu.svg"
-            alt="Menu"
-            onclick="toggleMenu()"
-            class="menu-toggle-btn menu-svg"
-          />
-          <img
-            src="../image/svg/close-circle.svg"
-            alt="Close"
-            onclick="toggleMenu()"
-            class="menu-toggle-btn menu-svg close-svg hidden"
-          />
-          <!-- <object data="../image/svg/header/menu.svg" onclick="toggleMenu()" class="menu-svg"
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/skeleton_v3.css" />
+  <link href="../css/scroll-animation.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/animation.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/responsive/mobile-responsive.css" />
+</head>
+
+<body>
+  <header class="navigation-container">
+    <nav class="navigation flex" data-aos="fade-left">
+      <div class="navigation-head flex align-center position-relative">
+        <a href="#" class="logo"><img src="../image/svg/header/logo.svg" alt="Logo" /></a>
+        <img src="../image/svg/header/menu.svg" alt="Menu" onclick="toggleMenu()" class="menu-toggle-btn menu-svg" />
+        <img src="../image/svg/close-circle.svg" alt="Close" onclick="toggleMenu()"
+          class="menu-toggle-btn menu-svg close-svg hidden" />
+        <!-- <object data="../image/svg/header/menu.svg" onclick="toggleMenu()" class="menu-svg"
                     type="image/svg+xml">
                     Your browser does not support SVG
                 </object>
@@ -47,935 +36,654 @@
                     type="image/svg+xml">
                     Your browser does not support SVG
                 </object> -->
+      </div>
+      <div class="navigation-content hidden">
+        <object data="../image/svg/wave-up.svg" class="header-background-0" type="image/svg+xml">
+          Your browser does not support SVG
+        </object>
+        <div class="ocean hidden">
+          <div class="wave"></div>
+          <div class="wave"></div>
         </div>
-        <div class="navigation-content hidden">
-          <object
-            data="../image/svg/wave-up.svg"
-            class="header-background-0"
-            type="image/svg+xml"
-          >
-            Your browser does not support SVG
-          </object>
-          <div class="ocean hidden">
-            <div class="wave"></div>
-            <div class="wave"></div>
-          </div>
-          <ul class="menu-ctn">
-            <li class="has-dropdown">
-              <a href="/pages/../pages/index.html">Home</a>
-              <span class="navigation-plus-icon"></span>
-            </li>
-            <ul class="dropdown submenu">
-              <li>Mango</li>
-              <li>Orange</li>
-              <li>Pineapple</li>
-            </ul>
-            <li class="has-dropdown">
-              <a href="/pages/../pages/fruits.html">Fruits</a>
-              <span class="navigation-plus-icon"></span>
-            </li>
-            <ul class="dropdown submenu">
-              <li>Mango</li>
-              <li>Orange</li>
-              <li>Pineapple</li>
-            </ul>
-            <li>
-              <a href="/pages/../pages/about-us.html">About Us</a>
-              <span class="navigation-plus-icon"></span>
-            </li>
-            <li>
-              <a href="/pages/../pages/vegetables.html">Vegetables</a>
-              <span class="navigation-plus-icon"></span>
-            </li>
-            <li>
-              <a href="/pages/../pages/rice-corn.html">Rice & Corn</a>
-              <span class="navigation-plus-icon"></span>
-            </li>
-            <li>
-              <a href="/pages/../pages/northeast-source.html"
-                >Source from Northeast</a
-              >
-              <span class="navigation-plus-icon"></span>
-            </li>
-            <li>
-              <a href="/pages/../pages/social-impact.html">Social Impact</a>
-              <span class="navigation-plus-icon"></span>
-            </li>
-            <li>
-              <a href="/pages/../pages/cultivate-northeast.html"
-                >Cultivate in Northeast</a
-              >
-              <span class="navigation-plus-icon"></span>
-            </li>
-            <li>
-              <a href="/pages/../pages/contact.html">Contact Us</a>
-              <span class="navigation-plus-icon"></span>
-            </li>
+        <ul class="menu-ctn">
+          <li class="has-dropdown">
+            <a href="/pages/../pages/index.html">Home</a>
+            <span class="navigation-plus-icon"></span>
+          </li>
+          <ul class="dropdown submenu">
+            <li>Mango</li>
+            <li>Orange</li>
+            <li>Pineapple</li>
           </ul>
-          <span
-            class="blur_bg position-absolute block bottom-0 right-0"
-            style="z-index: -1"
-          ></span>
-        </div>
-      </nav>
-    </header>
-    <section class="position-absolute top-0 left-0">
-      <object
-        data="../image/svg/top_left_corner2.svg"
-        class="hero-background-0"
-        type="image/svg+xml"
-      >
-        Your browser does not support SVG
-      </object>
-      <object
-        data="../image/svg/mobile/top-left-corner.svg"
-        class="hero-background-0-mobile hidden mobile"
-        type="image/svg+xml"
-      >
-        Your browser does not support SVG
-      </object>
+          <li class="has-dropdown">
+            <a href="/pages/../pages/fruits.html">Fruits</a>
+            <span class="navigation-plus-icon"></span>
+          </li>
+          <ul class="dropdown submenu">
+            <li>Mango</li>
+            <li>Orange</li>
+            <li>Pineapple</li>
+          </ul>
+          <li>
+            <a href="/pages/../pages/about-us.html">About Us</a>
+            <span class="navigation-plus-icon"></span>
+          </li>
+          <li>
+            <a href="/pages/../pages/vegetables.html">Vegetables</a>
+            <span class="navigation-plus-icon"></span>
+          </li>
+          <li>
+            <a href="/pages/../pages/rice-corn.html">Rice & Corn</a>
+            <span class="navigation-plus-icon"></span>
+          </li>
+          <li>
+            <a href="/pages/../pages/northeast-source.html">Source from Northeast</a>
+            <span class="navigation-plus-icon"></span>
+          </li>
+          <li>
+            <a href="/pages/../pages/social-impact.html">Social Impact</a>
+            <span class="navigation-plus-icon"></span>
+          </li>
+          <li>
+            <a href="/pages/../pages/cultivate-northeast.html">Cultivate in Northeast</a>
+            <span class="navigation-plus-icon"></span>
+          </li>
+          <li>
+            <a href="/pages/../pages/contact.html">Contact Us</a>
+            <span class="navigation-plus-icon"></span>
+          </li>
+        </ul>
+        <span class="blur_bg position-absolute block bottom-0 right-0" style="z-index: -1"></span>
+      </div>
+    </nav>
+  </header>
+  <section class="position-absolute top-0 left-0">
+    <object data="../image/svg/top_left_corner2.svg" class="hero-background-0" type="image/svg+xml">
+      Your browser does not support SVG
+    </object>
+    <object data="../image/svg/mobile/top-left-corner.svg" class="hero-background-0-mobile hidden mobile"
+      type="image/svg+xml">
+      Your browser does not support SVG
+    </object>
 
-      <span class="blur_bg position-absolute block hero-background-1"></span>
-    </section>
-    <section class="product-hero container flex">
-      <div class="five columns hero-intro">
-        <p class="mb-2 inline" id="tagline-text"></p>
-        <h1 class="bold tracking-in-contract" data-aos="fade-right">
-          Kiega Exims
-        </h1>
-        <h4 id="subtagline-text">.</h4>
-        <!-- <p class="mb-2 inline"> No #1 People's choice for Fresh food</p>
+    <span class="blur_bg position-absolute block hero-background-1"></span>
+  </section>
+  <section class="product-hero container flex">
+    <div class="five columns hero-intro">
+      <p class="mb-2 inline" id="tagline-text"></p>
+      <h1 class="bold tracking-in-contract" data-aos="fade-right">
+        Kiega Exims
+      </h1>
+      <h4 id="subtagline-text">.</h4>
+      <!-- <p class="mb-2 inline"> No #1 People's choice for Fresh food</p>
             <h1 class="bold">Kiega Exims</h1>
             <h4> Packed With Love From North-East India</h4> -->
-      </div>
-      <div class="seven columns">
-        <object
-          data="../image/svg/hero_background_with_text.svg"
-          class="hero-background hero-background-2"
-          type="image/svg+xml"
-        >
-          Your browser does not support SVG
-        </object>
-        <img
-          src="../image/home/hero-background-2.png"
-          class="hero-image float-lite"
-          alt
-        />
-      </div>
-      <span
-        class="blur_bg position-absolute right-0 bottom-0 hero-background-3"
-      ></span>
-    </section>
-
-    <section class="mission">
-      <object
-        data="../image/svg/content_line.svg"
-        class="mission-background-0"
-        type="image/svg+xml"
-      >
+    </div>
+    <div class="seven columns">
+      <object data="../image/svg/hero_background_with_text.svg" class="hero-background hero-background-2"
+        type="image/svg+xml">
         Your browser does not support SVG
       </object>
-      <object
-        data="../image/svg/mobile/content_line_mobile.svg"
-        class="mission-background-0-mobile hidden mobile"
-        type="image/svg+xml"
-      >
+      <img src="../image/home/hero-background-2.png" class="hero-image float-lite" alt />
+    </div>
+    <span class="blur_bg position-absolute right-0 bottom-0 hero-background-3"></span>
+  </section>
+
+  <section class="mission">
+    <object data="../image/svg/content_line.svg" class="mission-background-0" type="image/svg+xml">
+      Your browser does not support SVG
+    </object>
+    <object data="../image/svg/mobile/content_line_mobile.svg" class="mission-background-0-mobile hidden mobile"
+      type="image/svg+xml">
+      Your browser does not support SVG
+    </object>
+    <div class="container position-absolute top-0">
+      <span class="blur_bg position-absolute left-0 top-0 mission-background-1"></span>
+      <div class="twelve columns">
+        <div class="row mission-content" data-aos="fade-right">
+          <div class="one">
+            <p>
+              <strong>We're an organic and fair trade pioneer.</strong>
+              Over the years, we've grown into an international fresh food
+              group, but our mission stayed the same. We're here to save
+              soils, lift up lives, and nourish the world with healthy food.
+            </p>
+          </div>
+        </div>
+        <div class="row mission-content">
+          <div class="two" data-aos="fade-right">
+            <p>
+              <strong>We farm, export, import...</strong> and we also train
+              and support. We are on the ground with growers, empowering them
+              to leave poverty behind and restore ecosystems.
+            </p>
+          </div>
+        </div>
+        <div class="row mission-content">
+          <div class="three" data-aos="fade-right">
+            <p>
+              <strong>This is how we re-think business,</strong> and make it
+              fruitful for all
+            </p>
+          </div>
+        </div>
+      </div>
+      <span class="blur_bg position-absolute right-0 bottom-0 mission-background-2"></span>
+    </div>
+  </section>
+
+  <section class="fruit-slider_intro position-relative">
+    <div class="position-relative top-50">
+      <object data="../image/svg/mobile/product-bg.svg" class="fruit_silder-background-0 position-absolute top-0"
+        type="image/svg+xml">
         Your browser does not support SVG
       </object>
-      <div class="container position-absolute top-0">
-        <span
-          class="blur_bg position-absolute left-0 top-0 mission-background-1"
-        ></span>
-        <div class="twelve columns">
-          <div class="row mission-content" data-aos="fade-right">
-            <div class="one">
-              <p>
-                <strong>We're an organic and fair trade pioneer.</strong>
-                Over the years, we've grown into an international fresh food
-                group, but our mission stayed the same. We're here to save
-                soils, lift up lives, and nourish the world with healthy food.
-              </p>
-            </div>
-          </div>
-          <div class="row mission-content">
-            <div class="two" data-aos="fade-right">
-              <p>
-                <strong>We farm, export, import...</strong> and we also train
-                and support. We are on the ground with growers, empowering them
-                to leave poverty behind and restore ecosystems.
-              </p>
-            </div>
-          </div>
-          <div class="row mission-content">
-            <div class="three" data-aos="fade-right">
-              <p>
-                <strong>This is how we re-think business,</strong> and make it
-                fruitful for all
-              </p>
-            </div>
-          </div>
-        </div>
-        <span
-          class="blur_bg position-absolute right-0 bottom-0 mission-background-2"
-        ></span>
+      <div class="position-relative left-50 six columns fruit-slider_intro-content mb-5" data-aos="flip-up">
+        <h1 class="font-black sec-color text-em-5">RE-FRESH</h1>
+        <h2 class="sec-color font-semi-bold text-em-3">
+          100% Organic, High Value
+        </h2>
       </div>
-    </section>
-
-    <section class="fruit-slider_intro position-relative">
-      <div class="position-relative top-50">
-        <object
-          data="../image/svg/mobile/product-bg.svg"
-          class="fruit_silder-background-0 position-absolute top-0"
-          type="image/svg+xml"
-        >
-          Your browser does not support SVG
-        </object>
-        <div
-          class="position-relative left-50 six columns fruit-slider_intro-content mb-5"
-          data-aos="flip-up"
-        >
-          <h1 class="font-black sec-color text-em-5">RE-FRESH</h1>
-          <h2 class="sec-color font-semi-bold text-em-3">
-            100% Organic, High Value
-          </h2>
-        </div>
+    </div>
+    <span class="blur_bg left-0 top-0 fruit_silder-background-1"></span>
+    <div class="carousel-container" id="carousel">
+      <div class="fruit">
+        <img src="../image/products/vegetables/beetroot.png" alt="Apple" />
+        <h2>Apple</h2>
+        <p>A sweet, crunchy fruit rich in fiber and vitamin C.</p>
       </div>
-      <span class="blur_bg left-0 top-0 fruit_silder-background-1"></span>
-      <div class="carousel-container" id="carousel">
-        <div class="fruit">
-          <img src="../image/products/vegetables/beetroot.png" alt="Apple" />
-          <h2>Apple</h2>
-          <p>A sweet, crunchy fruit rich in fiber and vitamin C.</p>
-        </div>
-        <div class="fruit">
-          <img
-            src="../image/products/vegetables/bitter-gourd.png"
-            alt="Banana"
-          />
-          <h2>Banana</h2>
-          <p>A soft, energy-boosting fruit packed with potassium.</p>
-        </div>
-        <div class="fruit">
-          <img src="../image/products/vegetables/cauliflower.png" alt="Mango" />
-          <h2>Mango</h2>
-          <p>The king of fruits, juicy and full of tropical flavor.</p>
-        </div>
-        <div class="fruit">
-          <img src="../image/products/fruits/strawberry.png" alt="Orange" />
-          <h2>Orange</h2>
-          <p>A citrus fruit loaded with vitamin C and antioxidants.</p>
-        </div>
-        <div class="fruit">
-          <img src="../image/fruits/orange.png" alt="Grapes" />
-          <h2>Grapes</h2>
-          <p>Small, juicy fruits that come in many varieties and colors.</p>
-        </div>
+      <div class="fruit">
+        <img src="../image/products/vegetables/bitter-gourd.png" alt="Banana" />
+        <h2>Banana</h2>
+        <p>A soft, energy-boosting fruit packed with potassium.</p>
       </div>
-    </section>
-    <section class="hero-two">
-        <div class="flex hero-two">
-            <div class="flex flex-row features seven columns hero-two-content">
-                <div class=" hero-two-content-0 position-relative " data-aos="flip-left">
-                    <h2 class="font-black text-em-3 sec-color">Straight from
-                        the Farm</h2>
-                    <p class="font-bold text-em-15 prim-color mb-5">"Experience
-                        the true essence of nature with every
-                        purchase"</p>
-                    <p class="hreo-two-check-mark text-em-125 font-semi-bold ">
-                        Natural </p>
-                    <p class="hreo-two-check-mark text-em-125 font-semi-bold ">
-                        Organic</p>
-                    <p class="mt-3 text-em-1">We connect buyers and sellers
-                        of natural products, ensuring fresh,
-                        farm-to-market goodness.We connect buyers and
-                        sellers of natural products, ensuring fresh,
-                        farm-to-market goodness.
-                    </p>
-                    <a href="#" class="button mt-5 flex align-center btn">Explore
-                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="white"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g id="Arrow / Arrow_Right_SM">
-                                <path id="Vector" d="M7 12H17M17 12L13 8M17 12L13 16" stroke="#ffffff" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </g>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class=" seven columns hero-two-content-1 image-content position-relative">
-                <!-- <object data="../image/svg/hero_background.svg" type="image/svg+xml">
-                    Your browser does not support SVG
-                </object> -->
-                <img src="../image/products/fruits/healthy-vegetables-wooden-table.avif" alt
-                    class="hidden position-absolute bottom-0 reght-0 circular--square">
-                <img src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-                    alt class="hidden position-absolute bottom-0 reght-0 circular--square">
-                <img src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-                    alt class="hidden position-absolute bottom-0 reght-0 circular--square">
-                <img src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-                    alt class="hidden position-absolute bottom-0 reght-0 circular--square">
-            </div>
-        </div>
-        <div class="position-relative">
-            <div class="image-slider flex" data-aos="zoom-in-up">
-                <svg width="30px" class="left"  height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M13.9783 5.31877L10.7683 8.52877L8.79828 10.4888C7.96828 11.3188 7.96828 12.6688 8.79828 13.4988L13.9783 18.6788C14.6583 19.3588 15.8183 18.8688 15.8183 17.9188V12.3088V6.07877C15.8183 5.11877 14.6583 4.63877 13.9783 5.31877Z"
-                        fill="#292D32" />
-                </svg>
-                <div class="image-slider-dash active"></div>
-                <div class="image-slider-dash"></div>
-                <div class="image-slider-dash"></div>
-                <div class="image-slider-dash"></div>
-                <svg width="30px" class="right"  height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M15.1997 10.4919L13.2297 8.52188L10.0197 5.31188C9.33969 4.64188 8.17969 5.12188 8.17969 6.08188V12.3119V17.9219C8.17969 18.8819 9.33969 19.3619 10.0197 18.6819L15.1997 13.5019C16.0297 12.6819 16.0297 11.3219 15.1997 10.4919Z"
-                        fill="#292D32" />
-                </svg>
-            </div>
-            <span class="blur_bg position-absolute right-0 bottom-0 mt-5 hero-background-3"></span>
-        </div>
-        <span
-          class="blur_bg position-absolute right-0 bottom-0 mt-5 hero-background-3"
-        ></span>
+      <div class="fruit">
+        <img src="../image/products/vegetables/cauliflower.png" alt="Mango" />
+        <h2>Mango</h2>
+        <p>The king of fruits, juicy and full of tropical flavor.</p>
       </div>
-    </section>
-
-    <section></section>
-
-    <section class="why-choose container">
-      <h2 class="sec-color font-black text-em-3">Why choose Kiega</h2>
-      <div class="features feature-main">
-        <div class="feature float">
-          <div class="feature-background position-relative feature-align">
-            <div class="feature-icon">
-              <img
-                src="../image/home/Group 1171275072.svg"
-                alt="Fresh Harvest"
-              />
-            </div>
-            <div class="feature-title">Fresh Harvest</div>
-          </div>
-        </div>
-
-        <div class="feature float">
-          <div class="feature-background">
-            <div class="feature-icon">
-              <img
-                src="../image/home/Group 1171275076.svg"
-                alt="Organic Products"
-              />
-            </div>
-            <div class="feature-title">Organic Products</div>
-          </div>
-        </div>
-
-        <div class="feature float">
-          <div class="feature-background">
-            <div class="feature-icon">
-              <img src="../image/home/Group 1171275077.svg" alt="Daily Fresh" />
-            </div>
-            <div class="feature-title">Daily Fresh</div>
-          </div>
-        </div>
-
-        <div class="feature float">
-          <div class="feature-background position-relative feature-align">
-            <div class="feature-icon">
-              <img
-                src="../image/home/Group 1171275078.svg"
-                alt="Natural Items"
-              />
-            </div>
-            <div class="feature-title">Natural Items</div>
-          </div>
-        </div>
+      <div class="fruit">
+        <img src="../image/products/fruits/strawberry.png" alt="Orange" />
+        <h2>Orange</h2>
+        <p>A citrus fruit loaded with vitamin C and antioxidants.</p>
       </div>
-    </section>
-    <hr />
-    <section class="categories-section container">
-      <h2 class="heading text-em-3 sec-color font-bold">Our categories</h2>
-      <p class="subheading text-em-15 prim-color-dark font-semi-bold">
-        There are many variations of passages of Lorem Ipsum available, but the
-        majority have suffered alteration
-      </p>
-      <div
-        class="categories"
-        data-aos="fade-up"
-        data-aos-anchor-placement="bottom-bottom"
-      >
-        <div class="category-card">
-          <div class="image">
-            <img src="../image/farmer.jpg" alt="Vegetables" />
-          </div>
-          <h5>VEGETABLES</h5>
-          <p class="hidden">
-            There are many variations of passages of Lorem Ipsum available
+      <div class="fruit">
+        <img src="../image/fruits/orange.png" alt="Grapes" />
+        <h2>Grapes</h2>
+        <p>Small, juicy fruits that come in many varieties and colors.</p>
+      </div>
+    </div>
+  </section>
+  <section class="hero-two">
+    <div class="flex hero-two">
+      <div class="flex flex-row features seven columns hero-two-content">
+        <div class=" hero-two-content-0 position-relative " data-aos="flip-left">
+          <h2 class="font-black text-em-3 sec-color">Straight from
+            the Farm</h2>
+          <p class="font-bold text-em-15 prim-color mb-5">"Experience
+            the true essence of nature with every
+            purchase"</p>
+          <p class="hreo-two-check-mark text-em-125 font-semi-bold ">
+            Natural </p>
+          <p class="hreo-two-check-mark text-em-125 font-semi-bold ">
+            Organic</p>
+          <p class="mt-3 text-em-1">We connect buyers and sellers
+            of natural products, ensuring fresh,
+            farm-to-market goodness.We connect buyers and
+            sellers of natural products, ensuring fresh,
+            farm-to-market goodness.
           </p>
-          <div class="arrow hidden">
-            <svg
-              width="30px"
-              height="30px"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.06 11.27L12.53 14.8C12.38 14.95 12.19 15.02 12 15.02C11.81 15.02 11.62 14.95 11.47 14.8L7.94 11.27C7.65 10.98 7.65 10.5 7.94 10.21C8.23 9.92 8.71 9.92 9 10.21L12 13.21L15 10.21C15.29 9.92 15.77 9.92 16.06 10.21C16.35 10.5 16.35 10.97 16.06 11.27Z"
-                fill="#292D32"
-              />
+          <a href="#" class="button mt-5 flex align-center btn">Explore
+            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <g id="Arrow / Arrow_Right_SM">
+                <path id="Vector" d="M7 12H17M17 12L13 8M17 12L13 16" stroke="#ffffff" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </g>
             </svg>
-          </div>
-        </div>
-
-        <div class="category-card">
-          <div class="image">
-            <img src="../image/farmer.jpg" alt="Fruit" />
-          </div>
-          <h5>FRUIT</h5>
-          <p class="hidden">
-            There are many variations of passages of Lorem Ipsum available
-          </p>
-          <div class="arrow hidden">
-            <svg
-              width="30px"
-              height="30px"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.06 11.27L12.53 14.8C12.38 14.95 12.19 15.02 12 15.02C11.81 15.02 11.62 14.95 11.47 14.8L7.94 11.27C7.65 10.98 7.65 10.5 7.94 10.21C8.23 9.92 8.71 9.92 9 10.21L12 13.21L15 10.21C15.29 9.92 15.77 9.92 16.06 10.21C16.35 10.5 16.35 10.97 16.06 11.27Z"
-                fill="#292D32"
-              />
-            </svg>
-          </div>
-        </div>
-
-        <div class="category-card">
-          <div class="image">
-            <img src="../image/farmer.jpg" alt="Corn" />
-          </div>
-          <h5>CORN</h5>
-          <p class="hidden">
-            There are many variations of passages of Lorem Ipsum available
-          </p>
-          <div class="arrow hidden">
-            <svg
-              width="30px"
-              height="30px"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.06 11.27L12.53 14.8C12.38 14.95 12.19 15.02 12 15.02C11.81 15.02 11.62 14.95 11.47 14.8L7.94 11.27C7.65 10.98 7.65 10.5 7.94 10.21C8.23 9.92 8.71 9.92 9 10.21L12 13.21L15 10.21C15.29 9.92 15.77 9.92 16.06 10.21C16.35 10.5 16.35 10.97 16.06 11.27Z"
-                fill="#292D32"
-              />
-            </svg>
-          </div>
-        </div>
-
-        <div class="category-card">
-          <div class="image">
-            <img src="../image/farmer.jpg" alt="Rice" />
-          </div>
-          <h5>RICE</h5>
-          <p class="hidden">
-            There are many variations of passages of Lorem Ipsum available
-          </p>
-          <div class="arrow hidden">
-            <svg
-              width="30px"
-              height="30px"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.06 11.27L12.53 14.8C12.38 14.95 12.19 15.02 12 15.02C11.81 15.02 11.62 14.95 11.47 14.8L7.94 11.27C7.65 10.98 7.65 10.5 7.94 10.21C8.23 9.92 8.71 9.92 9 10.21L12 13.21L15 10.21C15.29 9.92 15.77 9.92 16.06 10.21C16.35 10.5 16.35 10.97 16.06 11.27Z"
-                fill="#292D32"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr />
-    <section class="map-product-container position-relative flex align-center">
-      <object
-        data="../image/svg/source-page-bg.svg"
-        class="page-bg-svg"
-        type="image/svg+xml"
-      >
-        Your browser does not support SVG
-      </object>
-      <div></div>
-      <div
-        class="container flex position-absolute top-0"
-        style="margin-top: 30rem"
-      >
-        <div class="left-content position-relative">
-          <div class="product-showcase-bg position-relative flex align-center">
-            <div class="product-showcase">
-              <img
-                src="../image/fruits/tomato.png"
-                alt="Fruits from Meghalaya"
-                class="fade-transition product-images"
-              />
-            </div>
-          </div>
-          <h2 class="font-semi-bold text-em-3 prim-color fade-transition">
-            MEGHALAYA
-          </h2>
-          <p class="font-semi-bold text-em-15 prim-color-dark fade-transition">
-            There are many variations of fruits and vegetables of Lorem Ipsum
-            available
-          </p>
-          <a href="#" class="button btn mt-5 flex align-center">
-            See More
-            <span class="arrow-icon">
-              <svg
-                width="30px"
-                height="30px"
-                viewBox="0 0 24 24"
-                fill="white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Arrow / Arrow_Right_SM">
-                  <path
-                    id="Vector"
-                    d="M7 12H17M17 12L13 8M17 12L13 16"
-                    stroke="#ffffff"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-              </svg>
-            </span>
           </a>
         </div>
-        <div class="right-content">
-          <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-            <h1 class="text-em-3 font-semi-bold sec-color">
-              Our various products<br />from North-East Location
-            </h1>
-            <div class="map-container position-relative">
-              <!-- <img class="map-image" src="../image/svg/IN-AR.svg" alt=""> -->
-              <!-- <object data="../image/svg/IN-AR.svg" type="image/svg+xml" id="map-container-map"
+      </div>
+      <div class=" seven columns hero-two-content-1 image-content position-relative">
+        <!-- <object data="../image/svg/hero_background.svg" type="image/svg+xml">
+                    Your browser does not support SVG
+                </object> -->
+        <img src="../image/products/fruits/healthy-vegetables-wooden-table.avif" alt
+          class="hidden position-absolute bottom-0 reght-0 circular--square">
+        <img
+          src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
+          alt class="hidden position-absolute bottom-0 reght-0 circular--square">
+        <img
+          src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
+          alt class="hidden position-absolute bottom-0 reght-0 circular--square">
+        <img
+          src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
+          alt class="hidden position-absolute bottom-0 reght-0 circular--square">
+      </div>
+    </div>
+    <div class="position-relative">
+      <div class="image-slider flex" data-aos="zoom-in-up">
+        <svg width="30px" class="left" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.9783 5.31877L10.7683 8.52877L8.79828 10.4888C7.96828 11.3188 7.96828 12.6688 8.79828 13.4988L13.9783 18.6788C14.6583 19.3588 15.8183 18.8688 15.8183 17.9188V12.3088V6.07877C15.8183 5.11877 14.6583 4.63877 13.9783 5.31877Z"
+            fill="#292D32" />
+        </svg>
+        <div class="image-slider-dash active"></div>
+        <div class="image-slider-dash"></div>
+        <div class="image-slider-dash"></div>
+        <div class="image-slider-dash"></div>
+        <svg width="30px" class="right" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15.1997 10.4919L13.2297 8.52188L10.0197 5.31188C9.33969 4.64188 8.17969 5.12188 8.17969 6.08188V12.3119V17.9219C8.17969 18.8819 9.33969 19.3619 10.0197 18.6819L15.1997 13.5019C16.0297 12.6819 16.0297 11.3219 15.1997 10.4919Z"
+            fill="#292D32" />
+        </svg>
+      </div>
+      <span class="blur_bg position-absolute right-0 bottom-0 mt-5 hero-background-3"></span>
+    </div>
+    <span class="blur_bg position-absolute right-0 bottom-0 mt-5 hero-background-3"></span>
+    </div>
+  </section>
+
+  <section></section>
+
+  <section class="why-choose container">
+    <h2 class="sec-color font-black text-em-3">Why choose Kiega</h2>
+    <div class="features feature-main">
+      <div class="feature float">
+        <div class="feature-background position-relative feature-align">
+          <div class="feature-icon">
+            <img src="../image/home/Group 1171275072.svg" alt="Fresh Harvest" />
+          </div>
+          <div class="feature-title">Fresh Harvest</div>
+        </div>
+      </div>
+
+      <div class="feature float">
+        <div class="feature-background">
+          <div class="feature-icon">
+            <img src="../image/home/Group 1171275076.svg" alt="Organic Products" />
+          </div>
+          <div class="feature-title">Organic Products</div>
+        </div>
+      </div>
+
+      <div class="feature float">
+        <div class="feature-background">
+          <div class="feature-icon">
+            <img src="../image/home/Group 1171275077.svg" alt="Daily Fresh" />
+          </div>
+          <div class="feature-title">Daily Fresh</div>
+        </div>
+      </div>
+
+      <div class="feature float">
+        <div class="feature-background position-relative feature-align">
+          <div class="feature-icon">
+            <img src="../image/home/Group 1171275078.svg" alt="Natural Items" />
+          </div>
+          <div class="feature-title">Natural Items</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr />
+  <section class="categories-section container">
+    <h2 class="heading text-em-3 sec-color font-bold">Our categories</h2>
+    <p class="subheading text-em-15 prim-color-dark font-semi-bold">
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration
+    </p>
+    <div class="categories" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+      <div class="category-card">
+        <div class="image">
+          <img src="../image/farmer.jpg" alt="Vegetables" />
+        </div>
+        <h5>VEGETABLES</h5>
+        <p class="hidden">
+          There are many variations of passages of Lorem Ipsum available
+        </p>
+        <div class="arrow hidden">
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.06 11.27L12.53 14.8C12.38 14.95 12.19 15.02 12 15.02C11.81 15.02 11.62 14.95 11.47 14.8L7.94 11.27C7.65 10.98 7.65 10.5 7.94 10.21C8.23 9.92 8.71 9.92 9 10.21L12 13.21L15 10.21C15.29 9.92 15.77 9.92 16.06 10.21C16.35 10.5 16.35 10.97 16.06 11.27Z"
+              fill="#292D32" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="image">
+          <img src="../image/farmer.jpg" alt="Fruit" />
+        </div>
+        <h5>FRUIT</h5>
+        <p class="hidden">
+          There are many variations of passages of Lorem Ipsum available
+        </p>
+        <div class="arrow hidden">
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.06 11.27L12.53 14.8C12.38 14.95 12.19 15.02 12 15.02C11.81 15.02 11.62 14.95 11.47 14.8L7.94 11.27C7.65 10.98 7.65 10.5 7.94 10.21C8.23 9.92 8.71 9.92 9 10.21L12 13.21L15 10.21C15.29 9.92 15.77 9.92 16.06 10.21C16.35 10.5 16.35 10.97 16.06 11.27Z"
+              fill="#292D32" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="image">
+          <img src="../image/farmer.jpg" alt="Corn" />
+        </div>
+        <h5>CORN</h5>
+        <p class="hidden">
+          There are many variations of passages of Lorem Ipsum available
+        </p>
+        <div class="arrow hidden">
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.06 11.27L12.53 14.8C12.38 14.95 12.19 15.02 12 15.02C11.81 15.02 11.62 14.95 11.47 14.8L7.94 11.27C7.65 10.98 7.65 10.5 7.94 10.21C8.23 9.92 8.71 9.92 9 10.21L12 13.21L15 10.21C15.29 9.92 15.77 9.92 16.06 10.21C16.35 10.5 16.35 10.97 16.06 11.27Z"
+              fill="#292D32" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="image">
+          <img src="../image/farmer.jpg" alt="Rice" />
+        </div>
+        <h5>RICE</h5>
+        <p class="hidden">
+          There are many variations of passages of Lorem Ipsum available
+        </p>
+        <div class="arrow hidden">
+          <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.06 11.27L12.53 14.8C12.38 14.95 12.19 15.02 12 15.02C11.81 15.02 11.62 14.95 11.47 14.8L7.94 11.27C7.65 10.98 7.65 10.5 7.94 10.21C8.23 9.92 8.71 9.92 9 10.21L12 13.21L15 10.21C15.29 9.92 15.77 9.92 16.06 10.21C16.35 10.5 16.35 10.97 16.06 11.27Z"
+              fill="#292D32" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr />
+  <section class="map-product-container position-relative flex align-center">
+    <object data="../image/svg/source-page-bg.svg" class="page-bg-svg" type="image/svg+xml">
+      Your browser does not support SVG
+    </object>
+    <div></div>
+    <div class="container flex position-absolute top-0" style="margin-top: 30rem">
+      <div class="left-content position-relative">
+        <div class="product-showcase-bg position-relative flex align-center">
+          <div class="product-showcase">
+            <img src="../image/fruits/tomato.png" alt="Fruits from Meghalaya" class="fade-transition product-images" />
+          </div>
+        </div>
+        <h2 class="font-semi-bold text-em-3 prim-color fade-transition">
+          MEGHALAYA
+        </h2>
+        <p class="font-semi-bold text-em-15 prim-color-dark fade-transition">
+          There are many variations of fruits and vegetables of Lorem Ipsum
+          available
+        </p>
+        <a href="#" class="button btn mt-5 flex align-center">
+          See More
+          <span class="arrow-icon">
+            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <g id="Arrow / Arrow_Right_SM">
+                <path id="Vector" d="M7 12H17M17 12L13 8M17 12L13 16" stroke="#ffffff" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div class="right-content">
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+          <h1 class="text-em-3 font-semi-bold sec-color">
+            Our various products<br />from North-East Location
+          </h1>
+          <div class="map-container position-relative">
+            <!-- <img class="map-image" src="../image/svg/IN-AR.svg" alt=""> -->
+            <!-- <object data="../image/svg/IN-AR.svg" type="image/svg+xml" id="map-container-map"
                             class="map-container-map">
                             Your browser does not support SVG
                         </object> -->
-              <svg
-                class="map-container-map"
-                version="1.1"
-                id="svg1"
-                viewBox="0 0 197.47546 175.07559"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:svg="http://www.w3.org/2000/svg"
-                xmlns:amcharts="http://amcharts.com/ammap"
-              >
-                <defs id="defs1">
-                  <style type="text/css" id="style1">
-                    .land {
-                      /* Use the fill attribute to reference the gradient */
-                      fill: url(#landGradient);
-                      fill-opacity: 1;
-                      stroke: white;
-                      stroke-opacity: 1;
-                      stroke-width: 0.5;
-                      transition: fill 0.3s ease-in-out;
-                      /* Add a smooth transition for the hover effect */
-                    }
+            <svg class="map-container-map" version="1.1" id="svg1" viewBox="0 0 197.47546 175.07559"
+              xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"
+              xmlns:amcharts="http://amcharts.com/ammap">
+              <defs id="defs1">
+                <style type="text/css" id="style1">
+                  .land {
+                    /* Use the fill attribute to reference the gradient */
+                    fill: url(#landGradient);
+                    fill-opacity: 1;
+                    stroke: white;
+                    stroke-opacity: 1;
+                    stroke-width: 0.5;
+                    transition: fill 0.3s ease-in-out;
+                    /* Add a smooth transition for the hover effect */
+                  }
 
-                    .land:hover {
-                      fill: #ffff;
-                      /* Change the fill color on hover */
-                      fill-opacity: 0.7;
-                      stroke: white;
-                      stroke-opacity: 1;
-                      stroke-width: 0.5;
-                    }
-                  </style>
-                  <amcharts:ammap
-                    projection="mercator"
-                    leftLongitude="68.189980"
-                    topLatitude="37.053798"
-                    rightLongitude="97.419638"
-                    bottomLatitude="6.746236"
-                  />
-                  <linearGradient
-                    id="landGradient"
-                    x1="0%"
-                    y1="0%"
-                    x2="0%"
-                    y2="100%"
-                  >
-                    <stop offset="0%" stop-color="#0263f5" stop-opacity="1" />
-                    <stop offset="100%" stop-color="#21851c" stop-opacity="1" />
-                  </linearGradient>
-                </defs>
-                <g id="g1" transform="translate(-414.85278,-290.41867)">
-                  <path
-                    id="IN-AR"
-                    onclick="updateMapProductShowcase('Arunachal')"
-                    title="Arunachal Pradesh"
-                    class="land"
-                    style="fill: #2948AE"
-                    d="m 585.597,292.679 0.586,0.923 -0.057,0.841 1.267,1.77 1.034,-0.016 1.469,-1.19 0.621,0.696 -0.973,2.039 -1.803,0.259 -1.561,1.563 -1.49,0.405 0.751,0.583 0.722,1.549 -0.829,1.205 0.445,0.751 1.713,-0.878 2.06,-2.129 1.865,-0.127 1.871,-0.993 -1,2.03 0.212,0.683 0.654,-0.134 0.39,2.067 1.644,2.509 -0.628,1.353 -2.37,0.793 0.447,1.187 -1.382,1.211 -0.568,-0.17 0.119,0.718 -1.089,0.082 -0.606,0.63 0.991,1.113 -2.287,1.745 1.174,0.645 1.07,-0.193 0.596,1.178 0.491,-0.153 0.742,-1.616 1.087,0.022 1.452,-1.06 1.779,-0.064 1.81,1.043 0.488,1.129 1.63,0.135 0.971,-0.416 0.571,0.968 1.478,0.681 2.011,-1.265 1.703,1.671 2.264,0.539 2.48,1.791 -0.774,0.095 -0.687,0.791 0.172,1.026 -0.653,1.002 1.376,0.162 0.074,0.735 0.798,0.354 -0.776,0.895 0.229,2.116 -1.421,0.162 -0.261,-0.953 -1.092,0.481 -3.224,2.735 -0.127,1.023 -1.421,0.019 -1.053,1.817 -0.752,0.104 -0.936,1.096 0.839,2.132 -0.541,1.582 5.44,7.636 -0.53,0.795 -0.792,-0.431 -0.775,0.283 -1.819,-1.347 -2.282,-0.628 -0.257,-0.601 0.558,-0.413 -0.103,-0.728 -0.489,-0.107 -1.243,-1.92 -1.88,-0.616 -0.282,0.356 -1.812,-0.09 -1.888,1.767 -1.08,-0.433 -4.949,0.647 -4.142,2.08 -2.098,3.346 -1.236,0.76 -1.45,10e-4 -1.615,3.106 -1.202,-0.53 -1.294,2.077 -1.649,-0.233 -2.175,3.059 -2.644,1.026 -1.359,-0.706 v 0 l -0.449,-1.143 0.601,-1.213 -0.623,-0.257 -0.136,-1.221 -0.505,-0.33 1.033,-0.607 -0.803,-3.554 v 0 l 1.104,0.297 2.101,-1.742 2.285,-0.723 0.041,-1.82 1.182,-1.293 1.547,0.916 4.526,-1.457 1.134,-0.058 0.701,0.73 0.261,-0.675 2.344,-1.782 -0.85,-1.586 -0.204,0.267 -0.38,-0.491 -0.692,0.044 -0.498,0.871 -0.092,-0.892 -0.445,0.632 -0.377,-0.309 0.842,-1.781 -0.173,-1.105 -0.868,-0.314 -0.328,-0.855 -0.776,-0.48 0.3,-0.601 -0.482,-0.549 0.377,-0.37 -0.801,-1.012 0.62,-0.257 -0.153,-0.381 0.893,-1.201 2.18,-1.837 1.05,-1.915 -3.173,-0.209 -4.587,0.462 -1.901,1.791 -2.755,0.937 -1.42,-0.686 -5.971,2.269 -3.568,0.83 -0.449,0.846 -0.922,0.128 -0.825,0.742 -1.393,-0.015 -0.144,0.413 -4.663,2.159 -0.602,-1.066 -1.329,0.619 -1.455,-0.647 -0.46,0.257 -0.498,-1.118 -0.86,0.707 0.949,1.255 0.054,0.818 -2.132,1.045 -2.016,2.686 -2.185,1.613 -3.313,3.69 0.569,0.417 0.2,1.037 -1.31,0.297 -2.023,2.132 -3.903,0.76 -2.96,-0.577 -6.879,1.084 -2.126,-1.107 -0.023,-0.477 -0.926,-0.538 -4.469,-0.721 -0.416,0.467 0.133,0.726 -1.26,0.598 -2.63,-0.033 -1.253,0.865 -0.977,-0.217 -1.605,0.773 -3.528,0.201 v 0 l -0.095,-2.66 -1.456,-1.335 -0.218,-2.281 0.97,-1.435 -0.63,-1.008 1.299,-0.058 0.397,-0.432 -1.294,-0.929 -0.091,-1.709 -0.748,-1.868 -1.661,0.449 -1.599,-0.504 -2.993,0.275 -0.627,-0.76 -0.893,0.423 -1.688,-2.121 0.196,-0.782 -0.385,-0.59 1.382,-1.706 0.332,-1.393 -0.24,-0.839 -0.614,-0.471 -0.698,0.13 -0.451,-0.947 2.47,-0.064 0.997,1.059 2.4,0.069 0.761,1.728 1.218,0.514 1.363,-1.292 1.498,0.256 3.244,-2.351 1.123,0.025 1.088,1.876 1.336,-0.395 0.566,-0.637 1.006,0.443 0.972,-0.9 1.243,0.482 0.928,-1.331 1.343,-0.532 1.471,-2.105 -1.602,-1.731 0.503,-1.487 2.358,-1.806 0.561,0.714 1.441,-0.77 1.45,-1.352 0.75,0.733 0.699,-0.764 -0.212,-0.948 4.089,-0.722 0.263,-1.585 -1.023,-0.93 1.953,-1.536 0.614,-1.456 -0.113,-0.79 0.582,-0.208 0.193,-0.756 2.276,-0.851 0.598,0.532 0.354,-0.72 0.895,0.596 1.805,0.027 2.334,-0.749 0.913,0.493 1.441,-0.924 1.719,0.846 1.576,-2.464 -0.338,-0.541 0.202,-1.023 3.354,-2.698 1.247,-3.08 1.528,-1.527 1.448,-0.106 0.322,-0.897 1.233,-0.874 2.652,-0.05 1.472,-2.858 1.735,1.058 1.388,1.509 0.432,1.825 1.545,-0.469 3.161,1.28 -0.529,-1.011 2.111,0.697 0.489,0.656 2.7,0.153 0.33,1.244 3.007,0.561 0.925,-0.068 0.6,-0.814 0.279,-1.649 1.057,0.278 -0.191,-2.036 1.007,-0.095 0.271,-1.047 0.823,0.287 2.922,-2.545 0.394,0.479 1.766,-1.317 1.597,0.21 2.584,-1.929 z"
-                  />
-                  <path
-                    id="Assam"
-                    onclick="updateMapProductShowcase('Assam')"
-                    title="Assam"
-                    class="land"
-                    style="fill: #5D882E"
-                    d="m 453.975,382.794 0.206,1.282 -0.521,0.291 v 0 z m 46.843,-31.323 3.527,-0.202 1.605,-0.773 0.977,0.217 1.253,-0.865 2.63,0.034 1.261,-0.598 -0.133,-0.726 0.415,-0.467 4.47,0.721 0.926,0.538 0.023,0.477 2.126,1.107 6.879,-1.084 2.96,0.577 3.902,-0.76 2.023,-2.132 1.31,-0.297 -0.199,-1.037 -0.569,-0.417 3.313,-3.69 2.186,-1.612 2.016,-2.686 2.132,-1.046 -0.054,-0.818 -0.949,-1.255 0.86,-0.707 0.498,1.118 0.46,-0.257 1.455,0.647 1.329,-0.619 0.602,1.066 4.663,-2.159 0.145,-0.414 1.393,0.016 0.825,-0.742 0.922,-0.128 0.449,-0.845 3.567,-0.831 5.972,-2.269 1.42,0.686 2.755,-0.937 1.9,-1.791 4.588,-0.462 3.173,0.209 -1.05,1.915 -2.181,1.837 -0.893,1.202 0.152,0.38 -0.619,0.257 0.801,1.012 -0.377,0.37 0.481,0.549 -0.3,0.602 0.776,0.479 0.328,0.855 0.867,0.314 0.174,1.105 -0.843,1.78 0.377,0.309 0.445,-0.632 0.092,0.892 0.498,-0.871 0.692,-0.044 0.38,0.491 0.204,-0.267 0.85,1.586 -2.344,1.782 -0.261,0.676 -0.701,-0.73 -1.134,0.058 -4.526,1.458 -1.547,-0.916 -1.182,1.293 -0.041,1.82 -2.285,0.723 -2.102,1.742 -1.104,-0.297 v 0 l -1.789,1.777 -1.856,0.97 -0.747,0.167 -1.204,-0.791 -0.878,0.459 -1.759,2.95 -2.42,1.713 -1.22,0.326 -0.506,-0.481 -0.617,1.125 -0.62,-0.463 -1.614,0.958 -0.114,0.801 -1.143,0.492 -0.177,1.91 -1.012,0.551 -0.725,1.063 -0.474,-0.415 -0.086,-1.94 -0.273,0.123 -1.888,2.288 -0.23,2.703 -1.413,0.414 -2.16,3.555 -0.287,2.333 -0.759,1.513 0.514,2.03 -1.33,0.741 -0.694,0.966 -0.846,-0.387 -0.974,1.117 -0.334,-0.739 0.388,-1.467 -0.53,-1.304 -0.443,0.687 -1.344,0.624 0.373,1.407 -2.768,2.031 -1.536,2.409 -1.515,0.579 -2.005,1.954 1.343,1.907 1.381,0.679 0.342,1.263 -0.551,0.822 0.463,0.804 v 0 l -1.785,1.459 -1.108,3.452 -0.652,1.1 -0.763,-0.039 -0.405,0.709 0.284,1.549 -0.47,0.287 0.278,0.459 -0.506,0.953 -0.668,0.478 0.004,1.037 -0.93,0.493 -0.634,-0.689 -0.27,0.231 -0.054,1.556 -0.656,0.723 0.604,0.802 -0.613,1.813 0.661,0.29 -0.961,0.2 0.242,0.314 -0.772,1.467 0.071,1.963 -0.81,0.181 v 0 l -1.356,0.177 -0.506,-0.397 -0.133,0.422 -0.886,-0.115 -0.71,0.497 -1.334,-3.272 -1.561,3.797 -1.391,0.506 -0.266,1.812 -1.275,0.17 -0.4,1.563 -0.956,0.347 -0.104,0.476 -0.927,-0.252 -0.298,-2.299 -2.632,0.031 v 0 l -1.754,0.056 1.249,-2.971 -0.867,-1.853 -0.002,-1 v 0 l 0.417,-3.502 0.991,-1.82 -1.209,-3.73 1.212,-0.479 1.948,1.608 0.855,-0.05 0.353,-0.577 0.893,0.074 0.271,-0.696 -0.323,-1.147 -0.432,0.273 -0.348,-0.252 0.453,-0.084 -0.275,-0.438 -0.672,0.082 -0.054,-1.361 v 0 l 0.782,-0.122 0.44,-1.63 1.228,0.194 -0.383,-0.929 2.03,0.513 0.947,-1.365 2.879,-0.973 -0.832,-0.69 0.576,-0.825 -0.163,-1.09 -0.499,-0.063 -0.492,-1.06 -0.396,0.145 -0.929,-0.971 -0.286,0.156 -0.122,-0.576 -0.945,0.433 -0.229,-1.271 -0.643,0.097 1.617,-1.614 0.184,-1.264 -1.065,0.803 -0.629,-0.07 -0.312,-1.19 -1.171,-0.252 -0.759,-1.375 -0.697,-0.197 0.021,-0.935 -1.007,-0.511 -1.078,0.655 -2.189,0.208 -1.429,1.024 -0.159,-3.256 0.56,-1.329 0.955,-0.853 -1.294,-0.11 -0.153,-0.764 2.951,-3.112 -1.176,0.384 -1.316,-0.393 -0.945,0.779 -1.681,0.303 -1.293,-0.19 -1.443,0.962 -1.088,-1.22 0.118,-1.056 -1.183,-0.487 -1.843,1.38 -0.231,2.436 -1.065,1.127 -1.218,-0.799 0.562,-0.577 -0.122,-1.333 -1.179,-0.248 -1.553,2.603 0.622,-0.068 -1.185,1.214 0.691,0.087 0.459,-0.514 -0.09,0.388 -1.696,0.737 -0.534,-0.317 -1.786,0.368 -1.213,2.125 -1.083,0.543 -0.668,-0.142 -0.253,-1.081 0.347,-1.913 -2.788,0.894 -0.28,-0.197 0.6,-0.549 -0.616,0.088 -1.012,0.614 0.596,-1.522 -1.293,0.02 -0.518,-1.398 -0.562,0.102 0.067,0.691 -0.756,-0.89 -0.968,0.314 -0.563,-0.323 -0.666,1.016 -0.785,-0.16 0.144,-0.975 -1.284,0.151 -1.282,1.202 -0.383,-0.31 0.471,-0.583 -0.975,-0.518 -1.463,1.471 0.458,-1.431 -1.196,-1.325 -1.019,0.607 -0.673,-0.582 -0.66,0.089 -0.851,0.833 -2.969,0.693 -1.337,-0.389 -2.385,1.912 0.36,0.304 -0.285,0.433 -1.334,0.517 0.223,1.157 -0.455,0.691 -0.855,0.221 2.61,3.068 -3.081,1.338 v 0 l 0.316,-1.976 -1.059,-2.024 0.187,-1.174 -0.608,-1.126 1.588,-2.853 -0.814,-0.144 -0.209,-0.405 0.71,-0.282 -0.75,-0.795 0.004,0.682 -0.352,-0.09 -0.396,-1.262 -0.547,0.057 0.534,-0.48 -0.124,-0.661 -0.805,-0.531 0.242,-0.427 -0.414,-0.653 -0.673,-0.242 v 0 l 0.322,-0.208 -0.823,-0.327 0.778,-0.539 -0.728,-0.115 0.659,-0.487 -0.501,-0.735 0.427,0.267 0.257,-0.294 -0.411,-0.804 0.854,0.38 -0.17,-0.747 0.635,-0.219 0.024,-0.52 1.576,-0.725 -0.219,-0.425 -0.409,0.146 0.907,-1.474 -0.376,-0.649 0.195,-2.097 0.325,-0.148 -0.429,-0.912 0.404,-0.608 -0.406,-1.265 v 0 l 0.113,-0.774 1.997,0.322 3.941,-0.74 0.893,-0.366 -0.098,-0.913 0.645,-1.026 1.814,0.128 1.121,-1.118 1.144,-0.135 3.145,2.354 3.189,0.78 7.153,-0.277 0.893,-0.94 3.469,0.345 1.549,0.591 1.508,-1.304 1.768,1.068 2.742,-0.736 1.329,0.378 2.4,-1.096 1.169,-1.447 0.826,-0.049 1.849,1.351 1.255,0.25 0.909,-0.314 z"
-                  />
-                  <path
-                    id="IN-ML"
-                    onclick="updateMapProductShowcase('Meghalaya')"
-                    title="Meghalaya"
-                    class="land"
-                    style="fill: #5D882E"
-                    d="m 453.975,382.794 3.081,-1.337 -2.611,-3.068 0.856,-0.221 0.455,-0.691 -0.223,-1.157 1.334,-0.517 0.285,-0.433 -0.36,-0.304 2.385,-1.912 1.337,0.389 2.968,-0.692 0.851,-0.833 0.66,-0.089 0.673,0.582 1.019,-0.607 1.196,1.325 -0.458,1.431 1.463,-1.472 0.974,0.518 -0.47,0.583 0.382,0.309 1.283,-1.202 1.284,-0.15 -0.144,0.975 0.785,0.16 0.666,-1.016 0.564,0.323 0.968,-0.313 0.756,0.89 -0.068,-0.692 0.562,-0.102 0.517,1.399 1.293,-0.02 -0.595,1.522 1.011,-0.615 0.617,-0.088 -0.6,0.549 0.28,0.197 2.788,-0.894 -0.346,1.913 0.253,1.08 0.667,0.142 1.083,-0.543 1.213,-2.125 1.787,-0.368 0.534,0.317 1.696,-0.737 0.09,-0.388 -0.459,0.514 -0.692,-0.088 1.185,-1.214 -0.622,0.068 1.553,-2.602 1.178,0.248 0.122,1.333 -0.561,0.577 1.218,0.8 1.065,-1.127 0.232,-2.436 1.842,-1.38 1.183,0.487 -0.118,1.056 1.088,1.22 1.443,-0.962 1.293,0.191 1.681,-0.303 0.945,-0.779 1.316,0.393 1.176,-0.385 -2.951,3.113 0.153,0.764 1.294,0.11 -0.955,0.853 -0.559,1.328 0.159,3.257 1.429,-1.025 2.189,-0.208 1.078,-0.656 1.007,0.512 -0.022,0.934 0.698,0.198 0.759,1.375 1.17,0.252 0.312,1.19 0.629,0.071 1.065,-0.803 -0.183,1.263 -1.618,1.614 0.643,-0.097 0.23,1.271 0.945,-0.433 0.122,0.576 0.286,-0.156 0.929,0.971 0.396,-0.145 0.492,1.06 0.499,0.063 0.164,1.09 -0.577,0.825 0.832,0.691 -2.878,0.972 -0.948,1.366 -2.03,-0.514 0.383,0.93 -1.228,-0.195 -0.44,1.631 -0.782,0.121 v 0 l -1.648,-0.467 0.014,-0.599 -2.393,-0.431 -3.482,-2.138 -5.973,0.499 -0.607,-0.266 -0.186,0.658 -0.767,-0.174 -1.315,0.829 -0.815,-0.53 0.247,-0.693 -3,0.967 -1.136,-0.833 -1.622,-0.05 -1.435,-0.738 -4.004,0.157 -4.512,0.952 -1.707,-0.64 -0.966,0.679 -0.973,-0.397 -3.686,-0.078 -1.347,0.703 -2.321,-1.127 -4.738,-0.769 -3.013,-1.752 -2.867,0.169 0.275,-0.335 -0.539,-1.73 0.7,-2.091 v 0 l 0.521,-0.29 z"
-                  />
-                  <path
-                    id="IN-MN"
-                    onclick="updateMapProductShowcase('Manipur')"
-                    title="Manipur"
-                    class="land"
-                    style="fill: #2948AE"
-                    d="m 529.416,388.21 0.058,0.697 0.713,0.079 -0.12,0.724 1.038,-0.147 1.116,1.116 1.775,-3.674 h 0.528 l 1.904,-2.397 -0.103,-0.771 -0.801,-0.02 0.102,-0.931 2.539,-0.65 1.534,0.273 0.947,-0.34 0.088,-0.572 1.493,0.84 0.128,0.623 0.976,0.208 0.448,-0.728 0.728,0.065 0.418,1.204 1.505,-0.264 0.56,0.397 2.236,-1.111 0.204,-1.156 0.92,-0.667 0.656,0.107 1.416,-1.863 0.474,0.147 -0.41,1.076 0.401,0.02 -0.826,1.339 0.035,1.687 1.582,1.085 1.034,0.137 v 0 l -0.18,1.004 -0.891,0.666 -0.96,3.95 3.355,1.822 -0.072,2.559 -0.818,1.079 0.333,0.822 -1.7,2.297 -0.564,2.758 -1.254,0.128 -0.408,1.927 -1.382,1.302 -0.751,1.881 -0.548,0.126 0.011,1.525 -0.808,0.491 0.377,0.463 -1.193,0.925 0.034,1.061 -1.367,2.848 -0.364,2.816 -1.033,2.426 -0.527,0.061 -0.195,1.874 -0.813,0.228 -0.556,-1.157 -2.978,-1.29 -0.98,-0.157 -1.906,0.621 -1.235,-1.814 -2.854,-0.108 -0.358,1.018 -0.836,-0.457 -1.015,0.966 -0.968,-0.609 -1.119,-2.399 -1.289,-0.421 -0.415,0.171 0.071,0.838 v 0 l -1.03,0.042 -0.689,0.633 0.237,-0.831 -0.388,-0.572 -0.507,0.03 -0.149,0.775 -0.981,-0.113 -0.459,-0.755 -0.984,0.981 -0.449,-1.32 -0.54,0.28 -1.618,-0.551 0.961,-2.172 -0.295,-1.608 0.736,-1.437 -0.457,-0.078 0.059,-0.998 -0.499,-0.292 v 0 l 0.809,-0.181 -0.071,-1.963 0.773,-1.466 -0.243,-0.315 0.961,-0.2 -0.661,-0.29 0.614,-1.812 -0.604,-0.802 0.656,-0.723 0.054,-1.556 0.27,-0.231 0.633,0.689 0.93,-0.493 -0.004,-1.037 0.668,-0.477 0.506,-0.953 -0.278,-0.46 0.469,-0.287 -0.284,-1.549 0.405,-0.709 0.763,0.038 0.652,-1.1 1.109,-3.452 z"
-                  />
-                  <path
-                    id="IN-MZ"
-                    onclick="updateMapProductShowcase('Mizoram')"
-                    title="Mizoram"
-                    class="land"
-                    style="fill: #2948AE"
-                    d="m 504.77,412.459 2.631,-0.031 0.298,2.299 0.927,0.252 0.104,-0.476 0.957,-0.347 0.4,-1.563 1.275,-0.17 0.266,-1.812 1.391,-0.506 1.56,-3.796 1.334,3.272 0.71,-0.497 0.886,0.115 0.133,-0.422 0.505,0.398 1.357,-0.177 v 0 l 0.499,0.292 -0.059,0.998 0.457,0.078 -0.736,1.437 0.295,1.608 -0.961,2.172 1.618,0.551 0.54,-0.28 0.449,1.32 0.984,-0.981 0.459,0.755 0.981,0.113 0.149,-0.775 0.507,-0.03 0.388,0.572 -0.237,0.831 0.689,-0.633 1.03,-0.042 v 0 l -0.062,1.515 1.346,1.29 0.139,3.839 0.824,1.801 -0.994,5.657 0.355,1.027 -1.013,0.76 0.606,2.951 -0.435,1.675 0.412,0.265 -2.008,3.004 -0.932,-0.014 -1.23,-1.218 -1.288,0.289 -0.078,1.057 0.82,1.846 -0.62,0.134 -0.472,2.189 -0.355,0.133 0.282,1.494 -0.439,0.787 1.102,2.491 -0.684,1.513 0.46,0.266 0.176,1.278 1.02,0.809 0.371,3.741 -1.286,0.327 0.476,1.045 -0.322,0.491 -1.622,-0.718 -0.635,0.281 0.396,2.148 -1.095,-0.003 -0.084,2.655 -0.445,0.023 -0.674,-1.055 -0.505,0.278 -0.435,1.601 -0.903,-2.675 -0.484,0.044 -2.653,-2.004 -0.388,0.096 -0.314,2.929 -1.564,0.922 -0.098,-1.813 -0.723,-1.606 0.36,-0.237 0.468,0.412 0.081,-1.16 -1.724,-8.765 0.005,-2.114 -0.425,-1.815 -0.561,-0.308 -0.564,-1.601 -0.212,-1.636 -0.307,0.15 -0.24,-0.75 -0.963,-0.333 0.382,-2.788 -0.583,-1.081 -0.099,-2.98 0.995,-0.193 -0.749,-1.741 0.157,-0.898 -1.196,-2.524 -0.482,-3.439 -0.392,-0.109 0.289,-1.424 -0.56,-0.817 v 0 l -0.191,-1.964 0.573,-0.041 -0.251,-0.734 0.36,-0.51 0.591,0.128 0.229,-1.047 -0.412,-1.11 0.368,-0.662 -0.312,-1.028 0.475,-2.556 z"
-                  />
-                  <path
-                    id="IN-NL"
-                    onclick="updateMapProductShowcase('Nagaland')"
-                    title="Nagaland"
-                    class="land"
-                    style="fill: #5D882E"
-                    d="m 565.453,347.987 0.803,3.554 -1.033,0.607 0.505,0.33 0.136,1.221 0.623,0.257 -0.601,1.213 0.449,1.143 v 0 l -1.736,1.556 -0.004,0.901 -1.828,2.775 0.816,0.734 -0.029,0.668 0.648,0.312 -0.304,3.464 0.446,0.568 -0.513,1.051 0.053,1.373 1.364,0.682 -1.659,2.599 -1.46,0.766 -0.319,0.603 -0.126,0.856 0.777,2.53 -2.407,2.163 -0.375,1.337 -0.643,0.416 0.335,0.6 -1.163,0.149 -0.772,1.506 -2.724,0.822 v 0 l -1.034,-0.137 -1.582,-1.085 -0.035,-1.687 0.826,-1.339 -0.401,-0.02 0.41,-1.076 -0.474,-0.147 -1.416,1.863 -0.656,-0.107 -0.92,0.667 -0.204,1.156 -2.236,1.111 -0.56,-0.397 -1.505,0.264 -0.418,-1.204 -0.728,-0.065 -0.448,0.728 -0.976,-0.208 -0.128,-0.623 -1.493,-0.84 -0.088,0.572 -0.947,0.34 -1.534,-0.273 -2.539,0.65 -0.102,0.931 0.801,0.02 0.103,0.771 -1.904,2.397 h -0.528 l -1.775,3.674 -1.116,-1.116 -1.038,0.147 0.12,-0.724 -0.713,-0.079 -0.058,-0.697 v 0 l -0.463,-0.804 0.551,-0.822 -0.342,-1.263 -1.381,-0.679 -1.343,-1.907 2.005,-1.954 1.515,-0.579 1.536,-2.41 2.768,-2.031 -0.373,-1.407 1.343,-0.624 0.444,-0.686 0.53,1.304 -0.388,1.467 0.334,0.739 0.974,-1.116 0.846,0.386 0.694,-0.966 1.33,-0.741 -0.514,-2.03 0.759,-1.513 0.287,-2.333 2.16,-3.555 1.414,-0.415 0.23,-2.703 1.888,-2.287 0.273,-0.123 0.086,1.94 0.474,0.414 0.724,-1.063 1.012,-0.551 0.177,-1.91 1.142,-0.491 0.115,-0.801 1.614,-0.958 0.62,0.464 0.617,-1.125 0.506,0.482 1.22,-0.326 2.42,-1.713 1.759,-2.951 0.877,-0.459 1.205,0.791 0.747,-0.167 1.856,-0.97 z"
-                  />
-                  <path
-                    id="IN-SK"
-                    onclick="updateMapProductShowcase('Sikkim')"
-                    title="Sikkim"
-                    class="land"
-                    style="fill: #5D882E"
-                    d="m 428.334,323.177 0.449,0.591 1.766,0.018 1.713,1.457 0.07,1.876 0.523,0.201 0.512,1.464 -0.658,1.055 -0.16,3.473 -1.665,2.443 0.885,3.75 2.366,1.849 -0.486,1.204 -2.052,0.641 -0.271,1.446 -0.764,0.88 v 0 l -0.569,0.227 -0.84,-0.976 -0.585,0.417 -0.783,-0.595 -1.257,-0.021 -0.8,0.247 0.192,0.656 -2.051,1.603 -2.264,-0.544 -0.405,-0.555 -1.506,0.207 -0.772,-0.385 -1.235,0.452 -1.064,-0.576 -0.228,-1.389 -1.213,-0.421 v 0 l 1.092,-2.735 -0.517,-0.824 0.104,-0.809 0.695,-0.497 -0.759,-1.628 3.215,-6.928 -0.507,-0.699 0.591,-0.402 -0.106,-0.382 -1.443,-0.66 -0.127,-1.635 0.317,-0.297 1.038,0.467 0.86,-0.572 0.298,0.458 2.12,-0.966 0.933,0.269 1.953,-1.592 1.169,0.158 0.325,-1.084 1.298,-0.445 -0.097,-0.612 z"
-                  />
-                  <path
-                    id="IN-TR"
-                    onclick="updateMapProductShowcase('Tripura')"
-                    title="Tripura"
-                    class="land"
-                    style="fill: #5D882E"
-                    d="m 502.437,406.262 0.959,0.429 v 0 l 10e-4,1 0.868,1.853 -1.249,2.971 1.754,-0.056 v 0 l 0.841,2.395 -0.475,2.556 0.312,1.028 -0.368,0.662 0.412,1.11 -0.229,1.047 -0.591,-0.128 -0.36,0.51 0.251,0.734 -0.573,0.041 0.191,1.964 v 0 l -0.441,0.102 -0.49,1.519 -0.133,-0.86 -0.652,-0.349 -0.13,-0.727 -0.36,0.064 -1.936,2.16 -0.995,-0.303 -0.827,-1.631 -0.449,0.046 -0.415,1.043 0.687,4.529 -0.697,0.302 -0.001,0.715 -0.802,-0.087 -1.176,0.935 -1.517,2.769 1.268,4.136 -0.425,0.579 -0.768,0.073 -1.139,1.761 -0.538,-0.314 -0.967,0.241 -0.99,0.813 -0.776,-0.369 -1.471,-4.089 0.281,-0.656 -0.767,-0.154 0.245,-0.529 -0.55,-0.962 -0.754,-0.007 -0.729,1.711 0.693,2.721 -0.928,-0.109 -0.99,-2.119 0.041,-2.153 -0.542,-0.857 0.317,-0.263 -0.508,-0.426 0.593,-0.938 -0.606,0.178 -0.898,-3.067 -0.982,-0.637 0.233,-0.695 -0.388,0.008 -0.704,-1.231 -0.096,-1.554 0.788,0.537 0.233,-0.922 -1.084,-0.083 0.045,-1.097 0.736,-0.315 0.608,0.3 0.692,-2.264 -0.526,-0.992 0.355,-0.685 -0.298,-0.349 0.859,0.054 -0.093,-0.851 0.248,-0.443 0.334,0.236 0.142,-0.589 1.502,0.495 0.384,-1.698 -0.387,-1.326 3.5,0.761 1.86,-0.604 0.547,-1.938 -0.254,-0.611 0.408,-0.367 0.364,1.394 0.98,0.615 0.637,-0.023 -0.392,-2.368 1.509,0.873 0.668,-0.443 -0.12,0.698 0.974,1.384 0.453,-0.119 0.67,-2.859 -0.449,-1.557 0.768,-0.469 0.801,0.799 -0.446,-1.539 3.038,0.11 0.417,-0.928 0.704,-0.148 -0.426,-1.587 0.072,-0.548 z"
-                  />
-                </g>
-              </svg>
-            </div>
+                  .land:hover {
+                    fill: #ffff;
+                    /* Change the fill color on hover */
+                    fill-opacity: 0.7;
+                    stroke: white;
+                    stroke-opacity: 1;
+                    stroke-width: 0.5;
+                  }
+                </style>
+                <amcharts:ammap projection="mercator" leftLongitude="68.189980" topLatitude="37.053798"
+                  rightLongitude="97.419638" bottomLatitude="6.746236" />
+                <linearGradient id="landGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#0263f5" stop-opacity="1" />
+                  <stop offset="100%" stop-color="#21851c" stop-opacity="1" />
+                </linearGradient>
+              </defs>
+              <g id="g1" transform="translate(-414.85278,-290.41867)">
+                <path id="IN-AR" onclick="updateMapProductShowcase('Arunachal')" title="Arunachal Pradesh" class="land"
+                  style="fill: #2948AE"
+                  d="m 585.597,292.679 0.586,0.923 -0.057,0.841 1.267,1.77 1.034,-0.016 1.469,-1.19 0.621,0.696 -0.973,2.039 -1.803,0.259 -1.561,1.563 -1.49,0.405 0.751,0.583 0.722,1.549 -0.829,1.205 0.445,0.751 1.713,-0.878 2.06,-2.129 1.865,-0.127 1.871,-0.993 -1,2.03 0.212,0.683 0.654,-0.134 0.39,2.067 1.644,2.509 -0.628,1.353 -2.37,0.793 0.447,1.187 -1.382,1.211 -0.568,-0.17 0.119,0.718 -1.089,0.082 -0.606,0.63 0.991,1.113 -2.287,1.745 1.174,0.645 1.07,-0.193 0.596,1.178 0.491,-0.153 0.742,-1.616 1.087,0.022 1.452,-1.06 1.779,-0.064 1.81,1.043 0.488,1.129 1.63,0.135 0.971,-0.416 0.571,0.968 1.478,0.681 2.011,-1.265 1.703,1.671 2.264,0.539 2.48,1.791 -0.774,0.095 -0.687,0.791 0.172,1.026 -0.653,1.002 1.376,0.162 0.074,0.735 0.798,0.354 -0.776,0.895 0.229,2.116 -1.421,0.162 -0.261,-0.953 -1.092,0.481 -3.224,2.735 -0.127,1.023 -1.421,0.019 -1.053,1.817 -0.752,0.104 -0.936,1.096 0.839,2.132 -0.541,1.582 5.44,7.636 -0.53,0.795 -0.792,-0.431 -0.775,0.283 -1.819,-1.347 -2.282,-0.628 -0.257,-0.601 0.558,-0.413 -0.103,-0.728 -0.489,-0.107 -1.243,-1.92 -1.88,-0.616 -0.282,0.356 -1.812,-0.09 -1.888,1.767 -1.08,-0.433 -4.949,0.647 -4.142,2.08 -2.098,3.346 -1.236,0.76 -1.45,10e-4 -1.615,3.106 -1.202,-0.53 -1.294,2.077 -1.649,-0.233 -2.175,3.059 -2.644,1.026 -1.359,-0.706 v 0 l -0.449,-1.143 0.601,-1.213 -0.623,-0.257 -0.136,-1.221 -0.505,-0.33 1.033,-0.607 -0.803,-3.554 v 0 l 1.104,0.297 2.101,-1.742 2.285,-0.723 0.041,-1.82 1.182,-1.293 1.547,0.916 4.526,-1.457 1.134,-0.058 0.701,0.73 0.261,-0.675 2.344,-1.782 -0.85,-1.586 -0.204,0.267 -0.38,-0.491 -0.692,0.044 -0.498,0.871 -0.092,-0.892 -0.445,0.632 -0.377,-0.309 0.842,-1.781 -0.173,-1.105 -0.868,-0.314 -0.328,-0.855 -0.776,-0.48 0.3,-0.601 -0.482,-0.549 0.377,-0.37 -0.801,-1.012 0.62,-0.257 -0.153,-0.381 0.893,-1.201 2.18,-1.837 1.05,-1.915 -3.173,-0.209 -4.587,0.462 -1.901,1.791 -2.755,0.937 -1.42,-0.686 -5.971,2.269 -3.568,0.83 -0.449,0.846 -0.922,0.128 -0.825,0.742 -1.393,-0.015 -0.144,0.413 -4.663,2.159 -0.602,-1.066 -1.329,0.619 -1.455,-0.647 -0.46,0.257 -0.498,-1.118 -0.86,0.707 0.949,1.255 0.054,0.818 -2.132,1.045 -2.016,2.686 -2.185,1.613 -3.313,3.69 0.569,0.417 0.2,1.037 -1.31,0.297 -2.023,2.132 -3.903,0.76 -2.96,-0.577 -6.879,1.084 -2.126,-1.107 -0.023,-0.477 -0.926,-0.538 -4.469,-0.721 -0.416,0.467 0.133,0.726 -1.26,0.598 -2.63,-0.033 -1.253,0.865 -0.977,-0.217 -1.605,0.773 -3.528,0.201 v 0 l -0.095,-2.66 -1.456,-1.335 -0.218,-2.281 0.97,-1.435 -0.63,-1.008 1.299,-0.058 0.397,-0.432 -1.294,-0.929 -0.091,-1.709 -0.748,-1.868 -1.661,0.449 -1.599,-0.504 -2.993,0.275 -0.627,-0.76 -0.893,0.423 -1.688,-2.121 0.196,-0.782 -0.385,-0.59 1.382,-1.706 0.332,-1.393 -0.24,-0.839 -0.614,-0.471 -0.698,0.13 -0.451,-0.947 2.47,-0.064 0.997,1.059 2.4,0.069 0.761,1.728 1.218,0.514 1.363,-1.292 1.498,0.256 3.244,-2.351 1.123,0.025 1.088,1.876 1.336,-0.395 0.566,-0.637 1.006,0.443 0.972,-0.9 1.243,0.482 0.928,-1.331 1.343,-0.532 1.471,-2.105 -1.602,-1.731 0.503,-1.487 2.358,-1.806 0.561,0.714 1.441,-0.77 1.45,-1.352 0.75,0.733 0.699,-0.764 -0.212,-0.948 4.089,-0.722 0.263,-1.585 -1.023,-0.93 1.953,-1.536 0.614,-1.456 -0.113,-0.79 0.582,-0.208 0.193,-0.756 2.276,-0.851 0.598,0.532 0.354,-0.72 0.895,0.596 1.805,0.027 2.334,-0.749 0.913,0.493 1.441,-0.924 1.719,0.846 1.576,-2.464 -0.338,-0.541 0.202,-1.023 3.354,-2.698 1.247,-3.08 1.528,-1.527 1.448,-0.106 0.322,-0.897 1.233,-0.874 2.652,-0.05 1.472,-2.858 1.735,1.058 1.388,1.509 0.432,1.825 1.545,-0.469 3.161,1.28 -0.529,-1.011 2.111,0.697 0.489,0.656 2.7,0.153 0.33,1.244 3.007,0.561 0.925,-0.068 0.6,-0.814 0.279,-1.649 1.057,0.278 -0.191,-2.036 1.007,-0.095 0.271,-1.047 0.823,0.287 2.922,-2.545 0.394,0.479 1.766,-1.317 1.597,0.21 2.584,-1.929 z" />
+                <path id="Assam" onclick="updateMapProductShowcase('Assam')" title="Assam" class="land"
+                  style="fill: #5D882E"
+                  d="m 453.975,382.794 0.206,1.282 -0.521,0.291 v 0 z m 46.843,-31.323 3.527,-0.202 1.605,-0.773 0.977,0.217 1.253,-0.865 2.63,0.034 1.261,-0.598 -0.133,-0.726 0.415,-0.467 4.47,0.721 0.926,0.538 0.023,0.477 2.126,1.107 6.879,-1.084 2.96,0.577 3.902,-0.76 2.023,-2.132 1.31,-0.297 -0.199,-1.037 -0.569,-0.417 3.313,-3.69 2.186,-1.612 2.016,-2.686 2.132,-1.046 -0.054,-0.818 -0.949,-1.255 0.86,-0.707 0.498,1.118 0.46,-0.257 1.455,0.647 1.329,-0.619 0.602,1.066 4.663,-2.159 0.145,-0.414 1.393,0.016 0.825,-0.742 0.922,-0.128 0.449,-0.845 3.567,-0.831 5.972,-2.269 1.42,0.686 2.755,-0.937 1.9,-1.791 4.588,-0.462 3.173,0.209 -1.05,1.915 -2.181,1.837 -0.893,1.202 0.152,0.38 -0.619,0.257 0.801,1.012 -0.377,0.37 0.481,0.549 -0.3,0.602 0.776,0.479 0.328,0.855 0.867,0.314 0.174,1.105 -0.843,1.78 0.377,0.309 0.445,-0.632 0.092,0.892 0.498,-0.871 0.692,-0.044 0.38,0.491 0.204,-0.267 0.85,1.586 -2.344,1.782 -0.261,0.676 -0.701,-0.73 -1.134,0.058 -4.526,1.458 -1.547,-0.916 -1.182,1.293 -0.041,1.82 -2.285,0.723 -2.102,1.742 -1.104,-0.297 v 0 l -1.789,1.777 -1.856,0.97 -0.747,0.167 -1.204,-0.791 -0.878,0.459 -1.759,2.95 -2.42,1.713 -1.22,0.326 -0.506,-0.481 -0.617,1.125 -0.62,-0.463 -1.614,0.958 -0.114,0.801 -1.143,0.492 -0.177,1.91 -1.012,0.551 -0.725,1.063 -0.474,-0.415 -0.086,-1.94 -0.273,0.123 -1.888,2.288 -0.23,2.703 -1.413,0.414 -2.16,3.555 -0.287,2.333 -0.759,1.513 0.514,2.03 -1.33,0.741 -0.694,0.966 -0.846,-0.387 -0.974,1.117 -0.334,-0.739 0.388,-1.467 -0.53,-1.304 -0.443,0.687 -1.344,0.624 0.373,1.407 -2.768,2.031 -1.536,2.409 -1.515,0.579 -2.005,1.954 1.343,1.907 1.381,0.679 0.342,1.263 -0.551,0.822 0.463,0.804 v 0 l -1.785,1.459 -1.108,3.452 -0.652,1.1 -0.763,-0.039 -0.405,0.709 0.284,1.549 -0.47,0.287 0.278,0.459 -0.506,0.953 -0.668,0.478 0.004,1.037 -0.93,0.493 -0.634,-0.689 -0.27,0.231 -0.054,1.556 -0.656,0.723 0.604,0.802 -0.613,1.813 0.661,0.29 -0.961,0.2 0.242,0.314 -0.772,1.467 0.071,1.963 -0.81,0.181 v 0 l -1.356,0.177 -0.506,-0.397 -0.133,0.422 -0.886,-0.115 -0.71,0.497 -1.334,-3.272 -1.561,3.797 -1.391,0.506 -0.266,1.812 -1.275,0.17 -0.4,1.563 -0.956,0.347 -0.104,0.476 -0.927,-0.252 -0.298,-2.299 -2.632,0.031 v 0 l -1.754,0.056 1.249,-2.971 -0.867,-1.853 -0.002,-1 v 0 l 0.417,-3.502 0.991,-1.82 -1.209,-3.73 1.212,-0.479 1.948,1.608 0.855,-0.05 0.353,-0.577 0.893,0.074 0.271,-0.696 -0.323,-1.147 -0.432,0.273 -0.348,-0.252 0.453,-0.084 -0.275,-0.438 -0.672,0.082 -0.054,-1.361 v 0 l 0.782,-0.122 0.44,-1.63 1.228,0.194 -0.383,-0.929 2.03,0.513 0.947,-1.365 2.879,-0.973 -0.832,-0.69 0.576,-0.825 -0.163,-1.09 -0.499,-0.063 -0.492,-1.06 -0.396,0.145 -0.929,-0.971 -0.286,0.156 -0.122,-0.576 -0.945,0.433 -0.229,-1.271 -0.643,0.097 1.617,-1.614 0.184,-1.264 -1.065,0.803 -0.629,-0.07 -0.312,-1.19 -1.171,-0.252 -0.759,-1.375 -0.697,-0.197 0.021,-0.935 -1.007,-0.511 -1.078,0.655 -2.189,0.208 -1.429,1.024 -0.159,-3.256 0.56,-1.329 0.955,-0.853 -1.294,-0.11 -0.153,-0.764 2.951,-3.112 -1.176,0.384 -1.316,-0.393 -0.945,0.779 -1.681,0.303 -1.293,-0.19 -1.443,0.962 -1.088,-1.22 0.118,-1.056 -1.183,-0.487 -1.843,1.38 -0.231,2.436 -1.065,1.127 -1.218,-0.799 0.562,-0.577 -0.122,-1.333 -1.179,-0.248 -1.553,2.603 0.622,-0.068 -1.185,1.214 0.691,0.087 0.459,-0.514 -0.09,0.388 -1.696,0.737 -0.534,-0.317 -1.786,0.368 -1.213,2.125 -1.083,0.543 -0.668,-0.142 -0.253,-1.081 0.347,-1.913 -2.788,0.894 -0.28,-0.197 0.6,-0.549 -0.616,0.088 -1.012,0.614 0.596,-1.522 -1.293,0.02 -0.518,-1.398 -0.562,0.102 0.067,0.691 -0.756,-0.89 -0.968,0.314 -0.563,-0.323 -0.666,1.016 -0.785,-0.16 0.144,-0.975 -1.284,0.151 -1.282,1.202 -0.383,-0.31 0.471,-0.583 -0.975,-0.518 -1.463,1.471 0.458,-1.431 -1.196,-1.325 -1.019,0.607 -0.673,-0.582 -0.66,0.089 -0.851,0.833 -2.969,0.693 -1.337,-0.389 -2.385,1.912 0.36,0.304 -0.285,0.433 -1.334,0.517 0.223,1.157 -0.455,0.691 -0.855,0.221 2.61,3.068 -3.081,1.338 v 0 l 0.316,-1.976 -1.059,-2.024 0.187,-1.174 -0.608,-1.126 1.588,-2.853 -0.814,-0.144 -0.209,-0.405 0.71,-0.282 -0.75,-0.795 0.004,0.682 -0.352,-0.09 -0.396,-1.262 -0.547,0.057 0.534,-0.48 -0.124,-0.661 -0.805,-0.531 0.242,-0.427 -0.414,-0.653 -0.673,-0.242 v 0 l 0.322,-0.208 -0.823,-0.327 0.778,-0.539 -0.728,-0.115 0.659,-0.487 -0.501,-0.735 0.427,0.267 0.257,-0.294 -0.411,-0.804 0.854,0.38 -0.17,-0.747 0.635,-0.219 0.024,-0.52 1.576,-0.725 -0.219,-0.425 -0.409,0.146 0.907,-1.474 -0.376,-0.649 0.195,-2.097 0.325,-0.148 -0.429,-0.912 0.404,-0.608 -0.406,-1.265 v 0 l 0.113,-0.774 1.997,0.322 3.941,-0.74 0.893,-0.366 -0.098,-0.913 0.645,-1.026 1.814,0.128 1.121,-1.118 1.144,-0.135 3.145,2.354 3.189,0.78 7.153,-0.277 0.893,-0.94 3.469,0.345 1.549,0.591 1.508,-1.304 1.768,1.068 2.742,-0.736 1.329,0.378 2.4,-1.096 1.169,-1.447 0.826,-0.049 1.849,1.351 1.255,0.25 0.909,-0.314 z" />
+                <path id="IN-ML" onclick="updateMapProductShowcase('Meghalaya')" title="Meghalaya" class="land"
+                  style="fill: #5D882E"
+                  d="m 453.975,382.794 3.081,-1.337 -2.611,-3.068 0.856,-0.221 0.455,-0.691 -0.223,-1.157 1.334,-0.517 0.285,-0.433 -0.36,-0.304 2.385,-1.912 1.337,0.389 2.968,-0.692 0.851,-0.833 0.66,-0.089 0.673,0.582 1.019,-0.607 1.196,1.325 -0.458,1.431 1.463,-1.472 0.974,0.518 -0.47,0.583 0.382,0.309 1.283,-1.202 1.284,-0.15 -0.144,0.975 0.785,0.16 0.666,-1.016 0.564,0.323 0.968,-0.313 0.756,0.89 -0.068,-0.692 0.562,-0.102 0.517,1.399 1.293,-0.02 -0.595,1.522 1.011,-0.615 0.617,-0.088 -0.6,0.549 0.28,0.197 2.788,-0.894 -0.346,1.913 0.253,1.08 0.667,0.142 1.083,-0.543 1.213,-2.125 1.787,-0.368 0.534,0.317 1.696,-0.737 0.09,-0.388 -0.459,0.514 -0.692,-0.088 1.185,-1.214 -0.622,0.068 1.553,-2.602 1.178,0.248 0.122,1.333 -0.561,0.577 1.218,0.8 1.065,-1.127 0.232,-2.436 1.842,-1.38 1.183,0.487 -0.118,1.056 1.088,1.22 1.443,-0.962 1.293,0.191 1.681,-0.303 0.945,-0.779 1.316,0.393 1.176,-0.385 -2.951,3.113 0.153,0.764 1.294,0.11 -0.955,0.853 -0.559,1.328 0.159,3.257 1.429,-1.025 2.189,-0.208 1.078,-0.656 1.007,0.512 -0.022,0.934 0.698,0.198 0.759,1.375 1.17,0.252 0.312,1.19 0.629,0.071 1.065,-0.803 -0.183,1.263 -1.618,1.614 0.643,-0.097 0.23,1.271 0.945,-0.433 0.122,0.576 0.286,-0.156 0.929,0.971 0.396,-0.145 0.492,1.06 0.499,0.063 0.164,1.09 -0.577,0.825 0.832,0.691 -2.878,0.972 -0.948,1.366 -2.03,-0.514 0.383,0.93 -1.228,-0.195 -0.44,1.631 -0.782,0.121 v 0 l -1.648,-0.467 0.014,-0.599 -2.393,-0.431 -3.482,-2.138 -5.973,0.499 -0.607,-0.266 -0.186,0.658 -0.767,-0.174 -1.315,0.829 -0.815,-0.53 0.247,-0.693 -3,0.967 -1.136,-0.833 -1.622,-0.05 -1.435,-0.738 -4.004,0.157 -4.512,0.952 -1.707,-0.64 -0.966,0.679 -0.973,-0.397 -3.686,-0.078 -1.347,0.703 -2.321,-1.127 -4.738,-0.769 -3.013,-1.752 -2.867,0.169 0.275,-0.335 -0.539,-1.73 0.7,-2.091 v 0 l 0.521,-0.29 z" />
+                <path id="IN-MN" onclick="updateMapProductShowcase('Manipur')" title="Manipur" class="land"
+                  style="fill: #2948AE"
+                  d="m 529.416,388.21 0.058,0.697 0.713,0.079 -0.12,0.724 1.038,-0.147 1.116,1.116 1.775,-3.674 h 0.528 l 1.904,-2.397 -0.103,-0.771 -0.801,-0.02 0.102,-0.931 2.539,-0.65 1.534,0.273 0.947,-0.34 0.088,-0.572 1.493,0.84 0.128,0.623 0.976,0.208 0.448,-0.728 0.728,0.065 0.418,1.204 1.505,-0.264 0.56,0.397 2.236,-1.111 0.204,-1.156 0.92,-0.667 0.656,0.107 1.416,-1.863 0.474,0.147 -0.41,1.076 0.401,0.02 -0.826,1.339 0.035,1.687 1.582,1.085 1.034,0.137 v 0 l -0.18,1.004 -0.891,0.666 -0.96,3.95 3.355,1.822 -0.072,2.559 -0.818,1.079 0.333,0.822 -1.7,2.297 -0.564,2.758 -1.254,0.128 -0.408,1.927 -1.382,1.302 -0.751,1.881 -0.548,0.126 0.011,1.525 -0.808,0.491 0.377,0.463 -1.193,0.925 0.034,1.061 -1.367,2.848 -0.364,2.816 -1.033,2.426 -0.527,0.061 -0.195,1.874 -0.813,0.228 -0.556,-1.157 -2.978,-1.29 -0.98,-0.157 -1.906,0.621 -1.235,-1.814 -2.854,-0.108 -0.358,1.018 -0.836,-0.457 -1.015,0.966 -0.968,-0.609 -1.119,-2.399 -1.289,-0.421 -0.415,0.171 0.071,0.838 v 0 l -1.03,0.042 -0.689,0.633 0.237,-0.831 -0.388,-0.572 -0.507,0.03 -0.149,0.775 -0.981,-0.113 -0.459,-0.755 -0.984,0.981 -0.449,-1.32 -0.54,0.28 -1.618,-0.551 0.961,-2.172 -0.295,-1.608 0.736,-1.437 -0.457,-0.078 0.059,-0.998 -0.499,-0.292 v 0 l 0.809,-0.181 -0.071,-1.963 0.773,-1.466 -0.243,-0.315 0.961,-0.2 -0.661,-0.29 0.614,-1.812 -0.604,-0.802 0.656,-0.723 0.054,-1.556 0.27,-0.231 0.633,0.689 0.93,-0.493 -0.004,-1.037 0.668,-0.477 0.506,-0.953 -0.278,-0.46 0.469,-0.287 -0.284,-1.549 0.405,-0.709 0.763,0.038 0.652,-1.1 1.109,-3.452 z" />
+                <path id="IN-MZ" onclick="updateMapProductShowcase('Mizoram')" title="Mizoram" class="land"
+                  style="fill: #2948AE"
+                  d="m 504.77,412.459 2.631,-0.031 0.298,2.299 0.927,0.252 0.104,-0.476 0.957,-0.347 0.4,-1.563 1.275,-0.17 0.266,-1.812 1.391,-0.506 1.56,-3.796 1.334,3.272 0.71,-0.497 0.886,0.115 0.133,-0.422 0.505,0.398 1.357,-0.177 v 0 l 0.499,0.292 -0.059,0.998 0.457,0.078 -0.736,1.437 0.295,1.608 -0.961,2.172 1.618,0.551 0.54,-0.28 0.449,1.32 0.984,-0.981 0.459,0.755 0.981,0.113 0.149,-0.775 0.507,-0.03 0.388,0.572 -0.237,0.831 0.689,-0.633 1.03,-0.042 v 0 l -0.062,1.515 1.346,1.29 0.139,3.839 0.824,1.801 -0.994,5.657 0.355,1.027 -1.013,0.76 0.606,2.951 -0.435,1.675 0.412,0.265 -2.008,3.004 -0.932,-0.014 -1.23,-1.218 -1.288,0.289 -0.078,1.057 0.82,1.846 -0.62,0.134 -0.472,2.189 -0.355,0.133 0.282,1.494 -0.439,0.787 1.102,2.491 -0.684,1.513 0.46,0.266 0.176,1.278 1.02,0.809 0.371,3.741 -1.286,0.327 0.476,1.045 -0.322,0.491 -1.622,-0.718 -0.635,0.281 0.396,2.148 -1.095,-0.003 -0.084,2.655 -0.445,0.023 -0.674,-1.055 -0.505,0.278 -0.435,1.601 -0.903,-2.675 -0.484,0.044 -2.653,-2.004 -0.388,0.096 -0.314,2.929 -1.564,0.922 -0.098,-1.813 -0.723,-1.606 0.36,-0.237 0.468,0.412 0.081,-1.16 -1.724,-8.765 0.005,-2.114 -0.425,-1.815 -0.561,-0.308 -0.564,-1.601 -0.212,-1.636 -0.307,0.15 -0.24,-0.75 -0.963,-0.333 0.382,-2.788 -0.583,-1.081 -0.099,-2.98 0.995,-0.193 -0.749,-1.741 0.157,-0.898 -1.196,-2.524 -0.482,-3.439 -0.392,-0.109 0.289,-1.424 -0.56,-0.817 v 0 l -0.191,-1.964 0.573,-0.041 -0.251,-0.734 0.36,-0.51 0.591,0.128 0.229,-1.047 -0.412,-1.11 0.368,-0.662 -0.312,-1.028 0.475,-2.556 z" />
+                <path id="IN-NL" onclick="updateMapProductShowcase('Nagaland')" title="Nagaland" class="land"
+                  style="fill: #5D882E"
+                  d="m 565.453,347.987 0.803,3.554 -1.033,0.607 0.505,0.33 0.136,1.221 0.623,0.257 -0.601,1.213 0.449,1.143 v 0 l -1.736,1.556 -0.004,0.901 -1.828,2.775 0.816,0.734 -0.029,0.668 0.648,0.312 -0.304,3.464 0.446,0.568 -0.513,1.051 0.053,1.373 1.364,0.682 -1.659,2.599 -1.46,0.766 -0.319,0.603 -0.126,0.856 0.777,2.53 -2.407,2.163 -0.375,1.337 -0.643,0.416 0.335,0.6 -1.163,0.149 -0.772,1.506 -2.724,0.822 v 0 l -1.034,-0.137 -1.582,-1.085 -0.035,-1.687 0.826,-1.339 -0.401,-0.02 0.41,-1.076 -0.474,-0.147 -1.416,1.863 -0.656,-0.107 -0.92,0.667 -0.204,1.156 -2.236,1.111 -0.56,-0.397 -1.505,0.264 -0.418,-1.204 -0.728,-0.065 -0.448,0.728 -0.976,-0.208 -0.128,-0.623 -1.493,-0.84 -0.088,0.572 -0.947,0.34 -1.534,-0.273 -2.539,0.65 -0.102,0.931 0.801,0.02 0.103,0.771 -1.904,2.397 h -0.528 l -1.775,3.674 -1.116,-1.116 -1.038,0.147 0.12,-0.724 -0.713,-0.079 -0.058,-0.697 v 0 l -0.463,-0.804 0.551,-0.822 -0.342,-1.263 -1.381,-0.679 -1.343,-1.907 2.005,-1.954 1.515,-0.579 1.536,-2.41 2.768,-2.031 -0.373,-1.407 1.343,-0.624 0.444,-0.686 0.53,1.304 -0.388,1.467 0.334,0.739 0.974,-1.116 0.846,0.386 0.694,-0.966 1.33,-0.741 -0.514,-2.03 0.759,-1.513 0.287,-2.333 2.16,-3.555 1.414,-0.415 0.23,-2.703 1.888,-2.287 0.273,-0.123 0.086,1.94 0.474,0.414 0.724,-1.063 1.012,-0.551 0.177,-1.91 1.142,-0.491 0.115,-0.801 1.614,-0.958 0.62,0.464 0.617,-1.125 0.506,0.482 1.22,-0.326 2.42,-1.713 1.759,-2.951 0.877,-0.459 1.205,0.791 0.747,-0.167 1.856,-0.97 z" />
+                <path id="IN-SK" onclick="updateMapProductShowcase('Sikkim')" title="Sikkim" class="land"
+                  style="fill: #5D882E"
+                  d="m 428.334,323.177 0.449,0.591 1.766,0.018 1.713,1.457 0.07,1.876 0.523,0.201 0.512,1.464 -0.658,1.055 -0.16,3.473 -1.665,2.443 0.885,3.75 2.366,1.849 -0.486,1.204 -2.052,0.641 -0.271,1.446 -0.764,0.88 v 0 l -0.569,0.227 -0.84,-0.976 -0.585,0.417 -0.783,-0.595 -1.257,-0.021 -0.8,0.247 0.192,0.656 -2.051,1.603 -2.264,-0.544 -0.405,-0.555 -1.506,0.207 -0.772,-0.385 -1.235,0.452 -1.064,-0.576 -0.228,-1.389 -1.213,-0.421 v 0 l 1.092,-2.735 -0.517,-0.824 0.104,-0.809 0.695,-0.497 -0.759,-1.628 3.215,-6.928 -0.507,-0.699 0.591,-0.402 -0.106,-0.382 -1.443,-0.66 -0.127,-1.635 0.317,-0.297 1.038,0.467 0.86,-0.572 0.298,0.458 2.12,-0.966 0.933,0.269 1.953,-1.592 1.169,0.158 0.325,-1.084 1.298,-0.445 -0.097,-0.612 z" />
+                <path id="IN-TR" onclick="updateMapProductShowcase('Tripura')" title="Tripura" class="land"
+                  style="fill: #5D882E"
+                  d="m 502.437,406.262 0.959,0.429 v 0 l 10e-4,1 0.868,1.853 -1.249,2.971 1.754,-0.056 v 0 l 0.841,2.395 -0.475,2.556 0.312,1.028 -0.368,0.662 0.412,1.11 -0.229,1.047 -0.591,-0.128 -0.36,0.51 0.251,0.734 -0.573,0.041 0.191,1.964 v 0 l -0.441,0.102 -0.49,1.519 -0.133,-0.86 -0.652,-0.349 -0.13,-0.727 -0.36,0.064 -1.936,2.16 -0.995,-0.303 -0.827,-1.631 -0.449,0.046 -0.415,1.043 0.687,4.529 -0.697,0.302 -0.001,0.715 -0.802,-0.087 -1.176,0.935 -1.517,2.769 1.268,4.136 -0.425,0.579 -0.768,0.073 -1.139,1.761 -0.538,-0.314 -0.967,0.241 -0.99,0.813 -0.776,-0.369 -1.471,-4.089 0.281,-0.656 -0.767,-0.154 0.245,-0.529 -0.55,-0.962 -0.754,-0.007 -0.729,1.711 0.693,2.721 -0.928,-0.109 -0.99,-2.119 0.041,-2.153 -0.542,-0.857 0.317,-0.263 -0.508,-0.426 0.593,-0.938 -0.606,0.178 -0.898,-3.067 -0.982,-0.637 0.233,-0.695 -0.388,0.008 -0.704,-1.231 -0.096,-1.554 0.788,0.537 0.233,-0.922 -1.084,-0.083 0.045,-1.097 0.736,-0.315 0.608,0.3 0.692,-2.264 -0.526,-0.992 0.355,-0.685 -0.298,-0.349 0.859,0.054 -0.093,-0.851 0.248,-0.443 0.334,0.236 0.142,-0.589 1.502,0.495 0.384,-1.698 -0.387,-1.326 3.5,0.761 1.86,-0.604 0.547,-1.938 -0.254,-0.611 0.408,-0.367 0.364,1.394 0.98,0.615 0.637,-0.023 -0.392,-2.368 1.509,0.873 0.668,-0.443 -0.12,0.698 0.974,1.384 0.453,-0.119 0.67,-2.859 -0.449,-1.557 0.768,-0.469 0.801,0.799 -0.446,-1.539 3.038,0.11 0.417,-0.928 0.704,-0.148 -0.426,-1.587 0.072,-0.548 z" />
+              </g>
+            </svg>
           </div>
         </div>
       </div>
-    </section>
-    <hr />
-    <section class="empowerment">
-      <div class="flex empowerment">
-        <div class="flex flex-row features seven columns empowerment-content">
-          <div class="empowerment-content-0 position-relative">
-            <h2 class="font-bold text-em-3 sec-color">
-              We empower Smallholder farmers
-            </h2>
-            <p class="font-semi-bold text-em-15 prim-color-dark">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration
-            </p>
-            <p class="font-bold prim-color text-em-2 mt-5 mb-3">
-              Farmer <br />
-              Development
-            </p>
-            <div class="grid">
-              <div>
-                <ul>
-                  <li class="text-em-15">Training</li>
-                  <li class="text-em-15">Pre-Financing</li>
-                  <li class="text-em-15">Support</li>
-                </ul>
-              </div>
-              <div class="position-relative empowerment-image-content">
-                <div class="position-absolute top-0 flex mt-5">
-                  <div class="empowerment-images position-relative">
-                    <object
-                      data="../image/svg/empowerment.svg"
-                      class="rotate-90"
-                      type="image/svg+xml"
-                    >
-                      Your browser does not support SVG
-                    </object>
-                    <div
-                      class="position-absolute top-0 left-0 flex align-center"
-                    >
-                      <img
-                        src="../image/farmer1.jpeg"
-                        alt
-                        class="circular--square"
-                        srcset
-                      />
-                    </div>
-                    <p>Living Wage</p>
+    </div>
+  </section>
+  <hr />
+  <section class="empowerment">
+    <div class="flex empowerment">
+      <div class="flex flex-row features seven columns empowerment-content">
+        <div class="empowerment-content-0 position-relative">
+          <h2 class="font-bold text-em-3 sec-color">
+            We empower Smallholder farmers
+          </h2>
+          <p class="font-semi-bold text-em-15 prim-color-dark">
+            There are many variations of passages of Lorem Ipsum available,
+            but the majority have suffered alteration
+          </p>
+          <p class="font-bold prim-color text-em-2 mt-5 mb-3">
+            Farmer <br />
+            Development
+          </p>
+          <div class="grid">
+            <div>
+              <ul>
+                <li class="text-em-15">Training</li>
+                <li class="text-em-15">Pre-Financing</li>
+                <li class="text-em-15">Support</li>
+              </ul>
+            </div>
+            <div class="position-relative empowerment-image-content">
+              <div class="position-absolute top-0 flex mt-5">
+                <div class="empowerment-images position-relative">
+                  <object data="../image/svg/empowerment.svg" class="rotate-90" type="image/svg+xml">
+                    Your browser does not support SVG
+                  </object>
+                  <div class="position-absolute top-0 left-0 flex align-center">
+                    <img src="../image/farmer1.jpeg" alt class="circular--square" srcset />
                   </div>
-                  <div
-                    class="empowerment-images align-bottom position-relative"
-                  >
-                    <object
-                      data="../image/svg/empowerment.svg"
-                      class="-rotate-90"
-                      type="image/svg+xml"
-                    >
-                      Your browser does not support SVG
-                    </object>
-                    <div
-                      class="position-absolute top-0 left-0 flex align-center"
-                    >
-                      <img
-                        src="../image/farmer4.jpg"
-                        alt
-                        class="circular--square"
-                        srcset
-                      />
-                    </div>
-                    <p>41% Female</p>
+                  <p>Living Wage</p>
+                </div>
+                <div class="empowerment-images align-bottom position-relative">
+                  <object data="../image/svg/empowerment.svg" class="-rotate-90" type="image/svg+xml">
+                    Your browser does not support SVG
+                  </object>
+                  <div class="position-absolute top-0 left-0 flex align-center">
+                    <img src="../image/farmer4.jpg" alt class="circular--square" srcset />
                   </div>
-                  <div
-                    class="empowerment-images align-bottom position-relative"
-                  >
-                    <object
-                      data="../image/svg/empowerment.svg"
-                      class
-                      type="image/svg+xml"
-                    >
-                      Your browser does not support SVG
-                    </object>
-                    <div
-                      class="position-absolute top-0 left-0 flex align-center"
-                    >
-                      <img
-                        src="../image/farmer2.webp"
-                        alt
-                        class="circular--square"
-                        srcset
-                      />
-                    </div>
-                    <p>Locals for Locals</p>
+                  <p>41% Female</p>
+                </div>
+                <div class="empowerment-images align-bottom position-relative">
+                  <object data="../image/svg/empowerment.svg" class type="image/svg+xml">
+                    Your browser does not support SVG
+                  </object>
+                  <div class="position-absolute top-0 left-0 flex align-center">
+                    <img src="../image/farmer2.webp" alt class="circular--square" srcset />
                   </div>
-                  <div class="empowerment-images position-relative">
-                    <object
-                      data="../image/svg/empowerment.svg"
-                      class="rotate-180"
-                      type="image/svg+xml"
-                    >
-                      Your browser does not support SVG
-                    </object>
-                    <div
-                      class="position-absolute top-0 left-0 flex align-center"
-                    >
-                      <img
-                        src="../image/farmer3.jpg"
-                        alt
-                        class="circular--square"
-                        srcset
-                      />
-                    </div>
-                    <p>Health checks</p>
+                  <p>Locals for Locals</p>
+                </div>
+                <div class="empowerment-images position-relative">
+                  <object data="../image/svg/empowerment.svg" class="rotate-180" type="image/svg+xml">
+                    Your browser does not support SVG
+                  </object>
+                  <div class="position-absolute top-0 left-0 flex align-center">
+                    <img src="../image/farmer3.jpg" alt class="circular--square" srcset />
                   </div>
+                  <p>Health checks</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="seven columns empowerment-content-1 position-relative">
-          <!-- <object data="../image/svg/hero_background.svg" type="image/svg+xml">
+      </div>
+      <div class="seven columns empowerment-content-1 position-relative">
+        <!-- <object data="../image/svg/hero_background.svg" type="image/svg+xml">
                     Your browser does not support SVG
                 </object> -->
-          <img
-            src="../image/farmer.jpg"
-            alt
-            class="position-absolute bottom-0 reght-0 circular--square"
-          />
-          <img
-            src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-            alt
-            class="hidden position-absolute bottom-0 reght-0 circular--square"
-          />
-          <img
-            src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-            alt
-            class="hidden position-absolute bottom-0 reght-0 circular--square"
-          />
-          <img
-            src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-            alt
-            class="hidden position-absolute bottom-0 reght-0 circular--square"
-          />
-        </div>
+        <img src="../image/farmer.jpg" alt class="position-absolute bottom-0 reght-0 circular--square" />
+        <img
+          src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
+          alt class="hidden position-absolute bottom-0 reght-0 circular--square" />
+        <img
+          src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
+          alt class="hidden position-absolute bottom-0 reght-0 circular--square" />
+        <img
+          src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
+          alt class="hidden position-absolute bottom-0 reght-0 circular--square" />
       </div>
-      <div class="position-relative">
-        <div class="image-slider flex">
-          <svg
-            width="30px"
-            height="30px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.9783 5.31877L10.7683 8.52877L8.79828 10.4888C7.96828 11.3188 7.96828 12.6688 8.79828 13.4988L13.9783 18.6788C14.6583 19.3588 15.8183 18.8688 15.8183 17.9188V12.3088V6.07877C15.8183 5.11877 14.6583 4.63877 13.9783 5.31877Z"
-              fill="#292D32"
-            />
-          </svg>
-          <div class="image-slider-dash active"></div>
-          <div class="image-slider-dash"></div>
-          <div class="image-slider-dash"></div>
-          <div class="image-slider-dash"></div>
-          <svg
-            width="30px"
-            height="30px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M15.1997 10.4919L13.2297 8.52188L10.0197 5.31188C9.33969 4.64188 8.17969 5.12188 8.17969 6.08188V12.3119V17.9219C8.17969 18.8819 9.33969 19.3619 10.0197 18.6819L15.1997 13.5019C16.0297 12.6819 16.0297 11.3219 15.1997 10.4919Z"
-              fill="#292D32"
-            />
-          </svg>
-        </div>
-        <span
-          class="blur_bg position-absolute right-0 bottom-0 mt-5 hero-background-3"
-        ></span>
+    </div>
+    <div class="position-relative">
+      <div class="image-slider flex">
+        <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.9783 5.31877L10.7683 8.52877L8.79828 10.4888C7.96828 11.3188 7.96828 12.6688 8.79828 13.4988L13.9783 18.6788C14.6583 19.3588 15.8183 18.8688 15.8183 17.9188V12.3088V6.07877C15.8183 5.11877 14.6583 4.63877 13.9783 5.31877Z"
+            fill="#292D32" />
+        </svg>
+        <div class="image-slider-dash active"></div>
+        <div class="image-slider-dash"></div>
+        <div class="image-slider-dash"></div>
+        <div class="image-slider-dash"></div>
+        <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15.1997 10.4919L13.2297 8.52188L10.0197 5.31188C9.33969 4.64188 8.17969 5.12188 8.17969 6.08188V12.3119V17.9219C8.17969 18.8819 9.33969 19.3619 10.0197 18.6819L15.1997 13.5019C16.0297 12.6819 16.0297 11.3219 15.1997 10.4919Z"
+            fill="#292D32" />
+        </svg>
       </div>
-    </section>
+      <span class="blur_bg position-absolute right-0 bottom-0 mt-5 hero-background-3"></span>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="footer-about">
-        <object
-          data="../image/svg/header/logo.svg"
-          style="filter: invert(1)"
-          class="logo"
-          type="image/svg+xml"
-        >
-          Your browser does not support SVG
-        </object>
-        <h4>Kiega Exims</h4>
-        <p>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration
-        </p>
+  <footer class="footer">
+    <div class="footer-about">
+      <object data="../image/svg/header/logo.svg" style="filter:invert(1)" class="logo" type="image/svg+xml">
+        Your browser does not support SVG
+      </object>
+      <h4>Kiega Exims</h4>
+      <p>
+        There are many variations of passages of Lorem Ipsum available, but
+        the majority have suffered alteration
+      </p>
 
-        <div class="contact-icons">
-          <a href="mailto:Kiegawebsite@example.com">
-            <i class="fas fa-envelope"></i>
-            Kiegawebsite@example.com
-          </a>
-          <a href="#">
-            <i class="fas fa-map-marker-alt"></i>
-            No 23 Meghalaya Street, 123/34, India
-          </a>
-          <a href="tel:+918744539234">
-            <i class="fas fa-phone-alt"></i>
-            +91 8744539234
-          </a>
-        </div>
-
-        <div class="social-icons">
-          <a href="#" aria-label="LinkedIn"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a href="#" aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="#" aria-label="Facebook"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        </div>
+      <div class="contact-icons">
+        <a href="mailto:Kiegawebsite@example.com">
+          <i class="fas fa-envelope"></i>
+          Kiegawebsite@example.com
+        </a>
+        <a href="#">
+          <i class="fas fa-map-marker-alt"></i>
+          No 23 Meghalaya Street, 123/34, India
+        </a>
+        <a href="tel:+918744539234">
+          <i class="fas fa-phone-alt"></i>
+          +91 8744539234
+        </a>
       </div>
 
-      <div class="footer-links">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="/pages/index.html">Home</a></li>
-          <li><a href="/pages/about-us.html">About Us</a></li>
-          <li><a href="/pages/rice-corn.html">Rice and Corn</a></li>
-          <li><a href="/pages/northeast-source.html">North East Source</a></li>
-          <li><a href="/pages/social-impact.html">Social Impact</a></li>
-          <li><a href="/pages/fruits.html">Fruits</a></li>
-          <li><a href="/pages/vegetables.html">Vegetables</a></li>
-          <li><a href="/pages/contact.html">Contact</a></li>
-        </ul>
+      <div class="social-icons">
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
       </div>
+    </div>
 
-      <div class="footer-gallery">
-        <h4>Gallery</h4>
-        <div class="gallery-images">
-          <img
-            src="../image/products/vegetables/beetroot.png"
-            data-aos="flip-left"
-            alt="Fresh fruits and vegetables"
-          />
-          <img
-            src="../image/fruits/tomato.png"
-            data-aos="flip-up"
-            alt="Colorful vegetable harvest"
-          />
-          <img
-            src="../image/products/fruits/strawberry.png"
-            data-aos="flip-down"
-            alt="Organic produce assortment"
-          />
-          <img
-            src="../image/products/fruits/pineapple.jpg"
-            data-aos="flip-left"
-            alt="Pumpkin harvest"
-          />
-          <img
-            src="../image/products/vegetables/red-pepper.jpg"
-            alt="Tomato plants"
-          />
-          <img
-            src="../image/products/vegetables/bitter-gourd.png"
-            data-aos="flip-right"
-            alt="Fresh carrots"
-          />
-          <img src="../image/farmer3.jpg" alt="Pumpkin harvest" />
-          <img
-            src="../image/farmer1.jpeg"
-            data-aos="flip-left"
-            alt="Tomato plants"
-          />
-          <img
-            src="../image/farmer.jpg"
-            data-aos="flip-right"
-            alt="Fresh carrots"
-          />
-        </div>
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="/pages/index.html">Home</a></li>
+        <li><a href="/pages/about-us.html">About Us</a></li>
+        <li><a href="/pages/rice-corn.html">Rice and Corn</a></li>
+        <li><a href="/pages/northeast-source.html">North East Source</a></li>
+        <li><a href="/pages/social-impact.html">Social Impact</a></li>
+        <li><a href="/pages/fruits.html">Fruits</a></li>
+        <li><a href="/pages/vegetables.html">Vegetables</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-gallery">
+      <h4>Gallery</h4>
+      <div class="gallery-images">
+        <img src="../image/products/vegetables/beetroot.png" data-aos="flip-left" alt="Fresh fruits and vegetables" />
+        <img src="../image/fruits/tomato.png" data-aos="flip-up" alt="Colorful vegetable harvest" />
+        <img src="../image/products/fruits/strawberry.png" data-aos="flip-down" alt="Organic produce assortment" />
+        <img src="../image/products/fruits/pineapple.jpg" data-aos="flip-left" alt="Pumpkin harvest" />
+        <img src="../image/products/vegetables/red-pepper.jpg" alt="Tomato plants" />
+        <img src="../image/products/vegetables/bitter-gourd.png" data-aos="flip-right" alt="Fresh carrots" />
+        <img src="../image/farmer3.jpg" alt="Pumpkin harvest" />
+        <img src="../image/farmer1.jpeg" data-aos="flip-left" alt="Tomato plants" />
+        <img src="../image/farmer.jpg" data-aos="flip-right" alt="Fresh carrots" />
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="../js/index.js"></script>
-    
-  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="../js/index.js"></script>
+
+</body>
+
 </html>

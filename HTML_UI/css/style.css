@@ -393,7 +393,7 @@ body {
   width: 15vw;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 60px;
   max-width: 1300px;
   margin: 0 auto;
