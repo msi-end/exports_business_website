@@ -42,6 +42,8 @@
   filter: blur(95px);
   width: 40vh;
   height: 40vh;
+
+  z-index: -1;
 }
 
 .organic-section {
@@ -952,8 +954,6 @@ td:first-child {
   filter: blur(96px);
   width: 40vh;
   height: 40vh;
-  top: 0;
-  left: -3%;
 }
 
 .rn-blur {
