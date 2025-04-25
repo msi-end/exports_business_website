@@ -137,3 +137,4 @@ dist
 HTML_UI/test/animate.js
 HTML_UI/test/bulm.css
 HTML_UI/test/repel_image.html
+NODE_JS/views/minified
