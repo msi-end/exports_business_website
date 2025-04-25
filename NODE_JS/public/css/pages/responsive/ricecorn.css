@@ -1,0 +1,139 @@
+@media (max-width: 576px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+  }
+
+  /* Track (the background) */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #05478e;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+  }
+
+  /* Thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+  /* Hero section CSS */
+
+  .rc-img {
+    max-width: 100%;
+  }
+
+  .text-transparent {
+    font-size: 3.2rem;
+  }
+
+  .organic-section {
+    min-height: max-content;
+  }
+
+  /* Wheel Area Image */
+
+  .mx-5 {
+    padding: 1rem;
+  }
+
+  .w-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .w-content ul li {
+    font-size: 14px;
+  }
+
+  .certifications {
+    margin-right: 10%;
+  }
+
+  .certification-wheel img {
+    width: 280px;
+    margin-right: 10%;
+  }
+
+  /* Table section */
+
+  .title {
+    font-size: 2rem;
+  }
+
+  th,
+  td {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  .fruit {
+    height: fit-content;
+  }
+
+  .fruit img {
+    width: 300px;
+  }
+
+  .t-container {
+    padding: 1rem;
+  }
+
+  .m-fruit-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-table {
+    overflow-x: scroll;
+  }
+
+  .table-list {
+    height: max-content;
+    max-width: 100%;
+  }
+
+  .ring {
+    left: -80%;
+  }
+
+  .tag {
+    padding: 6px;
+    padding-inline: 12px;
+    font-size: 14px;
+  }
+
+  /* Key facts area */
+  .mb-5 {
+    margin-top: 15%;
+  }
+
+  .k-container {
+    margin-top: 10%;
+  }
+
+  .circle-image {
+    max-width: 80%;
+  }
+
+  .text-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-content p {
+    font-size: 14px;
+  }
+
+  .packing-title {
+    font-size: 1.5rem;
+    margin-left: 10%;
+  }
+
+  .packing-list li {
+    font-size: 14px;
+    margin-left: 10%;
+  }
+}

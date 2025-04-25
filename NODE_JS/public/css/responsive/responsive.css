@@ -1,0 +1,183 @@
+
+ /* Styles applies to all screens) */ 
+:root {
+    --primary-color: #003366;
+    --secondary-color: #004080;
+    --accent-color: #f7931e;
+    --text-color: #333;
+    --light-text: #fff;
+    --bg-light: #f9f9f9;
+    --border-radius: 4px;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-light);
+  }
+  
+  /* Header */
+  header {
+    background: var(--primary-color);
+    color: var(--light-text);
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+  
+  /* Navigation */
+  nav {
+    background: var(--secondary-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  nav a {
+    display: block;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Main Content */
+  main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* Products Grid */
+  .products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact Form */
+  form div {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+  }
+  
+  button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background: var(--secondary-color);
+  }
+  
+  /* Footer */
+  footer {
+    background: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+  }
+  
+  footer a {
+    color: var(--light-text);
+    margin: 0 0.5rem;
+  }
+  
+  /* Tablet Breakpoint (768px and up) */
+  @media screen and (min-width: 768px) {
+    nav ul {
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    nav li {
+      width: auto;
+    }
+  
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+  }
+  
+  /* Desktop Breakpoint (1024px and up) */
+  @media screen and (min-width: 1024px) {
+    .products-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .hero-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+  
+  /* Large Desktop Breakpoint (1200px and up) */
+  @media screen and (min-width: 1200px) {
+    .products-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }

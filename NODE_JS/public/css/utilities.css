@@ -1,0 +1,95 @@
+
+
+/*
+* Typography
+* ----------
+*/
+
+:root {
+    --font-family-base: 'Arial, sans-serif';  
+    --font-family-heading: 'Arial, serif'; 
+    --font-size-base: 16px;           
+    --font-size-sm: 0.8rem;         /* 12.8px */
+    --font-size-md: 1rem;           /* 16px */
+    --font-size-lg: 1.25rem;          /* 20px */
+    --font-size-xl: 1.5rem;          /* 24px */
+    --font-size-h1: 2.5rem;         /* 40px */
+    --font-size-h2: 2rem;           /* 32px */
+    --font-size-h3: 1.75rem;         /* 28px */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --line-height-base: 1.5;
+    --line-height-heading: 1.2;
+}
+
+/*
+* Spacing
+* -------
+*/
+:root {
+    --space-unit: 1rem; /* 16px */
+    --space-xxs: calc(0.25 * var(--space-unit)); /* 4px */
+    --space-xs: calc(0.5 * var(--space-unit));  /* 8px */
+    --space-sm: calc(0.75 * var(--space-unit));  /* 12px */
+    --space-md: var(--space-unit);             /* 16px */
+    --space-lg: calc(1.25 * var(--space-unit)); /* 20px */
+    --space-xl: calc(1.5 * var(--space-unit));  /* 24px */
+    --space-xxl: calc(2 * var(--space-unit));  /* 32px */
+    --space-3xl: calc(3 * var(--space-unit));  /* 48px */
+}
+
+/*
+* Borders
+* ------
+*/
+:root{
+  --border-width: 1px;
+  --border-radius: 0.25rem; /* 4px */
+  --border-radius-sm: 0.2rem;
+  --border-radius-lg: 0.3rem;
+  --border-radius-pill: 50rem; 
+}
+
+/*
+* Width & Height
+* ------------
+*/
+
+:root {
+    --width-full: 100%;
+    --width-half: 50%;
+    --width-third: 33.33%;
+    --width-quarter: 25%;
+    --width-auto: auto;
+    --height-full: 100%;
+    --height-half: 50%;
+    --height-third: 33.33%;
+    --height-quarter: 25%;
+    --height-auto: auto;
+    --max-width: 1200px; 
+}
+
+/*
+* Shadows
+* -------
+*/
+:root {
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.16);
+    --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.20);
+}
+
+
+/*
+* Transition
+* ----------
+*/
+:root {
+    --transition-fast: 0.2s ease-in-out;
+    --transition-medium: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in-out;
+}

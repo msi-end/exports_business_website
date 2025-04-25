@@ -1,0 +1,121 @@
+.navigation-container {
+}
+.header-background-0 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+.header-background-0 svg path {
+  fill: url(--primary-color-light);
+}
+.navigation-container .navigation {
+  width: 25%;
+  margin: 0.5rem 1.5rem;
+  background-color: #fff;
+  border: 1px slid white;
+  height: 54px;
+  z-index: 3;
+  position: absolute;
+  padding: 14px 25px;
+  border-radius: 30px;
+  left: 65%;
+  flex-direction: column;
+  box-shadow: 1px 0px 7px -2px #95af6d;
+}
+.navigation-active {
+  height: auto !important;
+  padding: 0px 0px !important;
+}
+.navigation-active .navigation-head {
+  padding: 10px 20px;
+  background-color: var(--primary-color-light);
+  border-radius: 20px 20px 0px 0px;
+}
+.navigation-head {
+  justify-content: space-between;
+}
+.navigation-active .navigation-content {
+  display: block !important;
+  top: -5px;
+  position: relative;
+}
+.navigation-active .menu-svg {
+  display: none !important;
+}
+.navigation-active .close-svg {
+  display: block !important;
+}
+.navigation .logo {
+  width: 75px;
+}
+.navigation .menu-svg {
+  width: 25px;
+  height: 25px;
+  fill: var(--primary-color-dark);
+}
+.navigation .menu-svg path {
+  fill: var(--primary-color-dark);
+  stroke: red;
+}
+
+.navigation .menu-svg object {
+}
+.menu-ctn {
+  padding: 0px 50px;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.menu-ctn li {
+  padding: 10px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-plus-icon::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../image/svg/header/plus-circle.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.navigation-plus-icon.rotate::before {
+  transform: rotate(45deg);
+}
+
+.dropdown.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+
+}
+.dropdown.submenu li{
+font-size: 14px;
+padding-left: 20px;
+}
+.dropdown.submenu li:hover{
+  font-size: 15px;
+  padding-left: 40px;
+  color: var(--primary-color-dark);
+  transition: all .1s ease-in;
+  }
+  
+
+.dropdown.submenu.show {
+  max-height: 500px; /* adjust as needed */
+  opacity: 1;
+}
+@media only screen and (max-width: 767px) {
+  .navigation-container .navigation {
+    width: 98%;
+    left: unset;
+    margin: 5px 5px;
+    right: 0;
+  }
+}
