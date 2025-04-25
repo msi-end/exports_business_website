@@ -26,7 +26,7 @@
       <h1 class="text-transparent">
         <span class="rice-text">Northeast</span>
       </h1>
-      <p class="h-desc" >
+      <p class="h-desc">
         <span style="font-weight: 600">We farm, export, import...</span> and
         we also train and support. We are on the ground with growers,
         empowering them to leave poverty ehind and restore ecosystems.
@@ -133,9 +133,9 @@
         </p>
       </div>
     </div>
-    
+
   </section>
-  
+
   <!-- Product section -->
   <section class="p-section" data-aos="fade-up">
     <span class="blur_bg rn-blur bottom-0 right-0"></span>
@@ -151,8 +151,8 @@
     </div>
 
     <div class="carousel">
-      <button class="p-btn">
-        <div class="nav-btn prev">
+      <button class="p-btn ">
+        <div class="nav-btn prev" id="prev-btn">
           <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.9783 5.31877L10.7683 8.52877L8.79828 10.4888C7.96828 11.3188 7.96828 12.6688 8.79828 13.4988L13.9783 18.6788C14.6583 19.3588 15.8183 18.8688 15.8183 17.9188V12.3088V6.07877C15.8183 5.11877 14.6583 4.63877 13.9783 5.31877Z"
@@ -177,7 +177,7 @@
       </div>
 
       <button class="p-btn">
-        <div class="nav-btn next">
+        <div class="nav-btn next" id="next-btn">
           <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M15.1997 10.4919L13.2297 8.52188L10.0197 5.31188C9.33969 4.64188 8.17969 5.12188 8.17969 6.08188V12.3119V17.9219C8.17969 18.8819 9.33969 19.3619 10.0197 18.6819L15.1997 13.5019C16.0297 12.6819 16.0297 11.3219 15.1997 10.4919Z"
@@ -187,7 +187,7 @@
       </button>
     </div>
   </section>
-  
+
   <!-- Key benefit section -->
   <section class="c-container" data-aos="fade-up">
     <span class="blur_bg rn-blur top-0 left-0"></span>
@@ -214,7 +214,7 @@
 
     <!-- Second Row -->
     <div class="second-row" data-aos="fade-up">
-    <span class="blur_bg rn-blur top-0 right-0"></span>
+      <span class="blur_bg rn-blur top-0 right-0"></span>
 
       <div class="packing-section">
         <h2 class="packing-title">We can pack</h2>
@@ -234,7 +234,7 @@
 
     <!-- Third row -->
     <div class="content-wrapper" data-aos="fade-up">
-    <span class="blur_bg rn-blur bottom-0 left-0"></span>
+      <span class="blur_bg rn-blur bottom-0 left-0"></span>
 
       <div class="section-content">
         <h2>Health benefits</h2>
@@ -273,48 +273,119 @@
     AOS.init();
   </script>
   <script>
-    const tags = document.querySelectorAll(".tag");
+    const tags = document.querySelectorAll('.tag');
 
-    const data = {
-      Chilli: ["Lemon", "Chilli", "Ginger"],
-      Lemon: ["Ginger", "Lemon", "Turmeric"],
-      Ginger: ["Turmeric", "Ginger", "Corn"],
-      Pineapple: ["Corn", "Pineapple", "Chilli"],
-      Turmeric: ["Chilli", "Turmeric", "Lemon"],
-      Corn: ["Ginger", "Corn", "Pineapple"],
+    const itemImgs = {
+      'Chilli': [
+        '../image/vegetables/lemon_image_.png',
+        '../image/fruits/berry.png',
+        '../image/fruits/berry.png'
+      ],
+      'Lemon': [
+        '../image/vegetables/corn_image_.png',
+        '../image/vegetables/lemon_image_.png',
+        '../image/fruits/berrye_.png'
+      ],
+      'Ginger': [
+        '../image/fruits/ava.png',
+        '../image/fruits/berry.png',
+        '../image/fruits/berry.png'
+      ],
+      'Pineapple': [
+        '../image/fruits/berry.png',
+        '../image/fruits/ava.png',
+        '../image/vegetables/corn_image_.png'
+      ],
+      'Turmeric': [
+        '../image/vegetables/lemon_image_.png',
+        '../image/fruits/berrye_.png',
+        '../image/fruits/ava.png'
+      ],
+      'Corn': [
+        '../image/fruits/berrye_.png',
+        '../image/vegetables/corn_image_.png',
+        '../image/fruits/berry.png'
+      ]
     };
 
-    const leftItem = document.getElementById("left-item");
-    const centerItem = document.getElementById("center-item");
-    const rightItem = document.getElementById("right-item");
+    // ✅ Preload all images
+    Object.values(itemImgs).flat().forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
 
-    function updateItems(selected) {
-      const [left, center, right] = data[selected];
-
-      leftItem.querySelector("img").src =
-        "../image/sourcenortheast/p-ginger.png";
-      leftItem.querySelector(".label").textContent = left;
-
-      centerItem.querySelector("img").src =
-        "../image/sourcenortheast/p-corn.png";
-      centerItem.querySelector(".label").textContent = center;
-
-      rightItem.querySelector(
-        "img"
-      ).src = `../image/sourcenortheast/p-corn.png`;
-      rightItem.querySelector(".label").textContent = right;
+    function getLabel(path) {
+      const file = path.split('/').pop(); // e.g., ginger_image_.png
+      const name = file.split('.')[0]; // "ginger"
+      return name.charAt(0).toUpperCase() + name.slice(1); // "Ginger"
     }
-    tags.forEach((tag) => {
-      tag.addEventListener("click", () => {
-        tags.forEach((t) => t.classList.remove("active"));
-        tag.classList.add("active");
 
-        const selected = tag.getAttribute("data-name");
-        updateItems(selected);
+    const leftItem = document.getElementById('left-item');
+    const centerItem = document.getElementById('center-item');
+    const rightItem = document.getElementById('right-item');
+
+    function updateCarousel(values) {
+      [leftItem, centerItem, rightItem].forEach(item => {
+        item.classList.add('fade-out');
+      });
+
+      setTimeout(() => {
+        leftItem.querySelector('img').src = values[0];
+        centerItem.querySelector('img').src = values[1];
+        rightItem.querySelector('img').src = values[2];
+
+        leftItem.querySelector('.label').textContent = getLabel(values[0]);
+        centerItem.querySelector('.label').textContent = getLabel(values[1]);
+        rightItem.querySelector('.label').textContent = getLabel(values[2]);
+
+        [leftItem, centerItem, rightItem].forEach(item => {
+          item.classList.remove('fade-out');
+          item.classList.add('fade-in');
+        });
+
+        setTimeout(() => {
+          [leftItem, centerItem, rightItem].forEach(item => {
+            item.classList.remove('fade-in');
+          });
+        }, 500);
+      }, 200);
+    }
+
+    // Tag click
+    tags.forEach(tag => {
+      tag.addEventListener('click', () => {
+        document.querySelector('.tag.active')?.classList.remove('active');
+        tag.classList.add('active');
+        const text = tag.textContent.trim();
+        const values = itemImgs[text];
+        updateCarousel(values);
       });
     });
-    updateItems("Chilli");
+
+    // Prev/Next logic
+    const tagOrder = Object.keys(itemImgs);
+    let currentIndex = 0;
+
+    function goToIndex(index) {
+      currentIndex = (index + tagOrder.length) % tagOrder.length;
+      const tagName = tagOrder[currentIndex];
+      document.querySelector('.tag.active')?.classList.remove('active');
+      tags[currentIndex].classList.add('active');
+      updateCarousel(itemImgs[tagName]);
+    }
+
+    document.getElementById('prev-btn').addEventListener('click', () => {
+      goToIndex(currentIndex - 1);
+    });
+
+    document.getElementById('next-btn').addEventListener('click', () => {
+      goToIndex(currentIndex + 1);
+    });
+
+    // Set initial index
+    goToIndex(0);
   </script>
+
 </body>
 
 </html>
