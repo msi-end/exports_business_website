@@ -19,163 +19,8 @@
   <link rel="stylesheet" href="../css/footer.css" />
   <link rel="stylesheet" href="../css/responsive/mobile-responsive.css" />
 </head>
-<style>
-  #loader-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    transition: opacity 0.8s ease-out;
-  }
-
-  .loader-wrapper {
-    position: relative;
-    width: 240px;
-    height: 240px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-
-  .loader {
-    position: absolute;
-    width: 240px;
-    height: 240px;
-    padding: 10px;
-    box-sizing: border-box;
-    background: #fff;
-    mix-blend-mode: darken;
-    display: grid;
-    filter: blur(6px) contrast(10) hue-rotate(270deg);
-  }
-
-  .loader:before,
-  .loader:after {
-    content: "";
-    grid-area: 1/1;
-    animation: l2 3s infinite linear;
-    background: #ff00ff;
-    border-radius: 50%;
-  }
-
-  .loader:after {
-    animation-delay: -.8s;
-  }
-
-  @keyframes l2 {
-    12.5% {
-      border-radius: 37% 63% 70% 30% / 30% 62% 38% 70%
-    }
-
-    25% {
-      border-radius: 84% 16% 15% 85% / 55% 79% 21% 45%
-    }
-
-    37.5% {
-      border-radius: 73% 27% 74% 26% / 64% 32% 68% 36%
-    }
-
-    50% {
-      border-radius: 73% 27% 18% 82% / 52% 32% 68% 48%
-    }
-
-    62.5% {
-      border-radius: 33% 67% 18% 82% / 52% 75% 25% 48%
-    }
-
-    75% {
-      border-radius: 12% 88% 69% 31% / 10% 66% 34% 90%
-    }
-
-    87.5% {
-      border-radius: 50% 50% 70% 30% / 52% 62% 38% 48%
-    }
-  }
-
-  .logo-container {
-    position: relative;
-    z-index: 2;
-    width: 120px;
-    height: 120px;
-    background: #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-
-  .logo-placeholder {
-    font-size: 24px;
-    font-weight: bold;
-    color: #777;
-  }
-
-  .progress-container {
-    width: 300px;
-    height: 6px;
-    background-color: #e0e0e0;
-    border-radius: 4px;
-    margin-top: 20px;
-    overflow: hidden;
-  }
-
-  .progress-bar {
-    height: 100%;
-    width: 0%;
-    background-color: #ff00ff;
-    border-radius: 4px;
-    transition: width 0.3s ease;
-  }
-
-  .progress-text {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #666;
-  }
-
-  .page-content {
-    text-align: center;
-    padding: 20px;
-    opacity: 0;
-    transition: opacity 1s ease-in;
-  }
-
-  .page-content h1 {
-    margin-bottom: 20px;
-  }
-
-  .loader-container .fade-out {
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .loader-container .fade-in {
-    opacity: 1;
-  }
-</style>
 
 <body>
-  <div id="loader-container">
-    <div class="loader-wrapper">
-      <div class="loader"></div>
-      <div class="logo-container">
-        <div class="logo-placeholder">LOGO</div>
-      </div>
-    </div>
-    <div class="progress-container">
-      <div class="progress-bar" id="progress-bar"></div>
-    </div>
-    <div class="progress-text" id="progress-text">Loading... 0%</div>
-  </div>
   <header class="navigation-container">
     <nav class="navigation flex" data-aos="fade-left">
       <div class="navigation-head flex align-center position-relative">
@@ -305,7 +150,7 @@
             </p>
           </div>
         </div>
-        <div class="row mission-content">
+        <div class="row mission-content"> 
           <div class="two" data-aos="fade-right">
             <p class="text-em-15 prim-color-dark">
               <strong>We farm, export, import...</strong> and we also train
@@ -443,8 +288,7 @@
 
   <section class="why-choose container">
     <h2 class="sec-color font-black text-em-3">Why choose Kiega</h2>
-    <div class="features feature-main" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
-      data-aos-offset="-730">
+    <div class="features feature-main" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"  data-aos-offset="-730">
       <div class="feature float">
         <div class="feature-background position-relative feature-align">
           <div class="feature-icon">
@@ -491,7 +335,7 @@
       There are many variations of passages of Lorem Ipsum available, but the
       majority have suffered alteration
     </p>
-    <div class="categories" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-offset="-200">
+    <div class="categories" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"  data-aos-offset="-200">
       <div class="category-card">
         <div class="image">
           <img src="../image/veg-cat.png" alt="Vegetables" />
@@ -563,8 +407,7 @@
   </section>
   <hr />
   <section class="map-product-container position-relative flex align-center">
-    <span class="blur_bg position-absolute  right-0 mb-5 "
-      style="width: 50vw;height: 50vw;top:-400px;right: -27%;filter: blur(130px);"></span>
+    <span class="blur_bg position-absolute  right-0 mb-5 " style="width: 50vw;height: 50vw;top:-400px;right: -27%;filter: blur(130px);"></span>
     <object data="../image/svg/source-page-bg.svg" class="page-bg-svg" type="image/svg+xml">
       Your browser does not support SVG
     </object>
@@ -596,7 +439,7 @@
         </a>
       </div>
       <div class="right-content">
-        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-offset="-600">
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"  data-aos-offset="-600">
           <h1 class="text-em-3 font-semi-bold sec-color">
             Our various products<br />from North-East Location
           </h1>
@@ -672,7 +515,7 @@
   </section>
   <hr />
   <section class="empowerment position-relative">
-    <span class="blur_bg position-absolute top-0  left-0 mb-5 "></span>
+    <span class="blur_bg position-absolute top-0  left-0 mb-5 " ></span>
     <div class="flex empowerment" data-aos="flip-left">
       <div class="flex flex-row features seven columns empowerment-content">
         <div class="empowerment-content-0 position-relative">
@@ -773,10 +616,10 @@
       </div>
       <span class="blur_bg position-absolute right-0 bottom-0 mt-5 hero-background-3"></span>
     </div>
-    <span class="blur_bg position-absolute bottom-0 left-0 "></span>
+    <span class="blur_bg position-absolute bottom-0 left-0 " ></span>
   </section>
 
-  <footer class="footer position-relative">
+  <footer class="footer position-relative" >
     <div class="footer-about">
       <object data="../image/svg/header/logo.svg" style="filter:invert(1)" class="logo" type="image/svg+xml">
         Your browser does not support SVG
@@ -802,7 +645,7 @@
         </a>
       </div>
 
-      <div class="social-icons">
+      <div class="social-icons" >
         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -824,24 +667,22 @@
       </ul>
     </div>
 
-    <div class="footer-gallery">
+    <div class="footer-gallery" >
       <h4>Gallery</h4>
       <div class="gallery-images">
-        <img src="../image/products/vegetables/beetroot.png" alt="Fresh fruits and vegetables" />
-        <img src="../image/fruits/tomato.png" alt="Colorful vegetable harvest" />
-        <img src="../image/products/fruits/strawberry.png" alt="Organic produce assortment" />
-        <img src="../image/products/fruits/pineapple.jpg" alt="Pumpkin harvest" />
+        <img src="../image/products/vegetables/beetroot.png"  alt="Fresh fruits and vegetables" />
+        <img src="../image/fruits/tomato.png"  alt="Colorful vegetable harvest" />
+        <img src="../image/products/fruits/strawberry.png"  alt="Organic produce assortment" />
+        <img src="../image/products/fruits/pineapple.jpg"  alt="Pumpkin harvest" />
         <img src="../image/products/vegetables/red-pepper.jpg" alt="Tomato plants" />
         <img src="../image/products/vegetables/bitter-gourd.png" alt="Fresh carrots" />
         <img src="../image/farmer3.jpg" alt="Pumpkin harvest" />
-        <img src="../image/farmer1.jpeg" alt="Tomato plants" />
+        <img src="../image/farmer1.jpeg"  alt="Tomato plants" />
         <img src="../image/farmer.jpg" alt="Fresh carrots" />
       </div>
     </div>
   </footer>
-  <script>
-    document.addEventListener("DOMContentLoaded",(function(){const t=document.getElementById("loader-container"),e=document.getElementById("progress-bar"),n=document.getElementById("progress-text"),o=document.getElementById("page-content");let d=0;setTimeout((function a(){const s=Math.floor(5*Math.random())+1;d=Math.min(d+s,100);const m=d/100*100;e.style.width=m+"%",n.textContent=`Loading... ${Math.floor(m)}%`,m>=50&&m<51&&(t.classList.add("fade-out"),o.classList.add("fade-in")),d<100?setTimeout(a,100+200*Math.random()):setTimeout((()=>{t.style.display="none"}),800)}),500)}));
-  </script>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
