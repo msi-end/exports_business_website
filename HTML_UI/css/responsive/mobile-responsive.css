@@ -168,7 +168,7 @@
   .mission-content .one,
   .mission-content .two,
   .mission-content .three {
-    padding: 30px 20px !important;
+    padding: 40px 24px !important;
     margin-left: 0 !important;
   }
   .mission-content p {
@@ -467,7 +467,7 @@
     width: 95vw;
     left: 0vw;
     bottom: 43px;
-}
+  }
   .hero-two-content-0 {
     padding: 10px;
   }
@@ -521,8 +521,77 @@
     width: 115px !important;
     height: 117px !important;
   }
-  .category-card  {
+  .category-card {
     width: 120px !important;
+  }
+
+  /* Hero section css */
+  .hero-intro h1 {
+    margin-top: 3%;
+  }
+
+  /* Farm section Css */
+  .hero-two {
+    margin-top: -20%;
+  }
+
+  /* Mission Section Css */
+
+
+  /* fruit animation section */
+  .carousel-container {
+    margin-left: 44%;
+    margin-top: 38%;
+  }
+
+  .fruit h2 {
+    font-size: 1.2rem;
+    margin-top: -7%;
+  }
+
+  /* Map section css */
+  .product-showcase-bg {
+    left: 9%;
+    width: 300px;
+    height: 300px;
+  }
+
+  .map-product-container .product-showcase {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+
+@media (max-width: 391px) {
+    /* Hero Section CSS */
+    .hero-background  {
+      left: 21%;
+    }
+    .hero-image {
+      left: -2%;
+    }
+}
+
+@media (max-width: 376px) {
+
+  /* Map section CSS */
+  .product-showcase-bg {
+    left: 4%;
+    width: 300px;
+    height: 300px;
+  }
+  /* Mission section CSS */
+  .mission {
+    margin-top: 1rem;
+  }
+  .mission .one {
+    margin-top: 28%;
+  }
+
+  .mission-content:nth-child(3) {
+    left: -8vw;
+    bottom: 20vw
   }
 }
 
