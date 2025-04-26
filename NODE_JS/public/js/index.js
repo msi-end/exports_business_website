@@ -183,13 +183,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 1500);
 });
 
-const nav = document.querySelector(".navigation");
-const menuToggleBtns = document.querySelectorAll(".menu-toggle-btn");
-const navContent = document.querySelector(".navigation-content");
-function toggleMenu() {
-  nav.removeAttribute("data-aos");
-  nav.classList.toggle("navigation-active");
-}
 
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.getElementById("carousel");

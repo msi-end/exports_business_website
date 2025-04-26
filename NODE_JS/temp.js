@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -21,6 +22,8 @@
 </head>
 
 <body>
+
+
   <header class="navigation-container">
     <nav class="navigation flex" data-aos="fade-left">
       <div class="navigation-head flex align-center position-relative">
@@ -47,7 +50,7 @@
         </div>
         <ul class="menu-ctn">
           <li class="has-dropdown">
-            <a href="/">Home</a>
+            <a href="/pages/../pages/index.html">Home</a>
             <span class="navigation-plus-icon"></span>
           </li>
           <ul class="dropdown submenu">
@@ -56,7 +59,7 @@
             <li>Pineapple</li>
           </ul>
           <li class="has-dropdown">
-            <a href="/fruits">Fruits</a>
+            <a href="/pages/../pages/fruits.html">Fruits</a>
             <span class="navigation-plus-icon"></span>
           </li>
           <ul class="dropdown submenu">
@@ -65,35 +68,34 @@
             <li>Pineapple</li>
           </ul>
           <li>
-            <a href="/about-us">About Us</a>
+            <a href="/pages/../pages/about-us.html">About Us</a>
             <span class="navigation-plus-icon"></span>
           </li>
           <li>
-            <a href="/vegetables">Vegetables</a>
+            <a href="/pages/../pages/vegetables.html">Vegetables</a>
             <span class="navigation-plus-icon"></span>
           </li>
           <li>
-            <a href="/rice-corn">Rice & Corn</a>
+            <a href="/pages/../pages/rice-corn.html">Rice & Corn</a>
             <span class="navigation-plus-icon"></span>
           </li>
           <li>
-            <a href="/northeast-source">Source from Northeast</a>
+            <a href="/pages/../pages/northeast-source.html">Source from Northeast</a>
             <span class="navigation-plus-icon"></span>
           </li>
           <li>
-            <a href="/social-impact">Social Impact</a>
+            <a href="/pages/../pages/social-impact.html">Social Impact</a>
             <span class="navigation-plus-icon"></span>
           </li>
           <li>
-            <a href="/cultivate-northeast">Cultivate in Northeast</a>
+            <a href="/pages/../pages/cultivate-northeast.html">Cultivate in Northeast</a>
             <span class="navigation-plus-icon"></span>
           </li>
           <li>
-            <a href="/contact">Contact Us</a>
+            <a href="/pages/../pages/contact.html">Contact Us</a>
             <span class="navigation-plus-icon"></span>
           </li>
         </ul>
-        
         <span class="blur_bg position-absolute block bottom-0 right-0" style="z-index: -1"></span>
       </div>
     </nav>
@@ -125,7 +127,7 @@
         type="image/svg+xml">
         Your browser does not support SVG
       </object>
-      <img src="../image/home/hero-background-2.png" class="hero-image float-lite" alt />
+      <img src="../image/home/hero-background-2.png" loading="eager" class="hero-image float-lite" alt />
     </div>
     <span class="blur_bg position-absolute right-0 bottom-0 hero-background-3"></span>
   </section>
@@ -151,7 +153,7 @@
             </p>
           </div>
         </div>
-        <div class="row mission-content"> 
+        <div class="row mission-content">
           <div class="two" data-aos="fade-right">
             <p class="text-em-15 prim-color-dark">
               <strong>We farm, export, import...</strong> and we also train
@@ -189,7 +191,7 @@
     <span class="blur_bg left-0 top-0 fruit_silder-background-1"></span>
     <div class="carousel-container" id="carousel">
       <div class="fruit">
-        <img src="../image/products/vegetables/beetroot.png" alt="Apple" />
+        <img src="../image/products/vegetables/beetroot.png" loading="eager" alt="Apple" />
         <h2>Apple</h2>
         <p>A sweet, crunchy fruit rich in fiber and vitamin C.</p>
       </div>
@@ -199,17 +201,17 @@
         <p>A soft, energy-boosting fruit packed with potassium.</p>
       </div>
       <div class="fruit">
-        <img src="../image/products/vegetables/cauliflower.png" alt="Mango" />
+        <img src="../image/products/vegetables/cauliflower.png"  alt="Mango" />
         <h2>Mango</h2>
         <p>The king of fruits, juicy and full of tropical flavor.</p>
       </div>
       <div class="fruit">
-        <img src="../image/products/fruits/strawberry.png" alt="Orange" />
+        <img src="../image/products/fruits/strawberry.png" loading="lazy" alt="Orange" />
         <h2>Orange</h2>
         <p>A citrus fruit loaded with vitamin C and antioxidants.</p>
       </div>
       <div class="fruit">
-        <img src="../image/fruits/orange.png" alt="Grapes" />
+        <img src="../image/fruits/orange.png" loading="lazy" alt="Grapes" />
         <h2>Grapes</h2>
         <p>Small, juicy fruits that come in many varieties and colors.</p>
       </div>
@@ -250,20 +252,20 @@
                     Your browser does not support SVG
                 </object> -->
         <img src="../image/products/fruits/healthy-vegetables-wooden-table.avif" alt
-          class="hidden position-absolute bottom-0 reght-0 circular--square">
+        loading="lazy"  class="hidden position-absolute bottom-0 reght-0 circular--square">
         <img
           src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-          alt class="hidden position-absolute bottom-0 reght-0 circular--square">
+          loading="eager" alt class="hidden position-absolute bottom-0 reght-0 circular--square">
         <img
           src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-          alt class="hidden position-absolute bottom-0 reght-0 circular--square">
+          loading="lazy" alt class="hidden position-absolute bottom-0 reght-0 circular--square">
         <img
           src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-          alt class="hidden position-absolute bottom-0 reght-0 circular--square">
+          loading="lazy"  alt class="hidden position-absolute bottom-0 reght-0 circular--square">
       </div>
     </div>
     <div class="position-relative">
-      <div class="image-slider flex" data-aos="zoom-in-up">
+      <div class="image-slider flex" data-aos="zoom-in-up" data-aos-offset="-200">
         <svg width="30px" class="left" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M13.9783 5.31877L10.7683 8.52877L8.79828 10.4888C7.96828 11.3188 7.96828 12.6688 8.79828 13.4988L13.9783 18.6788C14.6583 19.3588 15.8183 18.8688 15.8183 17.9188V12.3088V6.07877C15.8183 5.11877 14.6583 4.63877 13.9783 5.31877Z"
@@ -289,11 +291,12 @@
 
   <section class="why-choose container">
     <h2 class="sec-color font-black text-em-3">Why choose Kiega</h2>
-    <div class="features feature-main" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"  data-aos-offset="-400">
+    <div class="features feature-main" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+      data-aos-offset="-730">
       <div class="feature float">
         <div class="feature-background position-relative feature-align">
           <div class="feature-icon">
-            <img src="../image/home/Group 1171275072.svg" alt="Fresh Harvest" />
+            <img src="../image/home/Group 1171275072.svg" loading="lazy" alt="Fresh Harvest" />
           </div>
           <div class="feature-title">Fresh Harvest</div>
         </div>
@@ -302,7 +305,7 @@
       <div class="feature float">
         <div class="feature-background">
           <div class="feature-icon">
-            <img src="../image/home/Group 1171275076.svg" alt="Organic Products" />
+            <img src="../image/home/Group 1171275076.svg" loading="lazy" alt="Organic Products" />
           </div>
           <div class="feature-title">Organic Products</div>
         </div>
@@ -311,7 +314,7 @@
       <div class="feature float">
         <div class="feature-background">
           <div class="feature-icon">
-            <img src="../image/home/Group 1171275077.svg" alt="Daily Fresh" />
+            <img src="../image/home/Group 1171275077.svg" loading="lazy" alt="Daily Fresh" />
           </div>
           <div class="feature-title">Daily Fresh</div>
         </div>
@@ -320,7 +323,7 @@
       <div class="feature float">
         <div class="feature-background position-relative feature-align">
           <div class="feature-icon">
-            <img src="../image/home/Group 1171275078.svg" alt="Natural Items" />
+            <img src="../image/home/Group 1171275078.svg" loading="lazy" alt="Natural Items" />
           </div>
           <div class="feature-title">Natural Items</div>
         </div>
@@ -336,10 +339,10 @@
       There are many variations of passages of Lorem Ipsum available, but the
       majority have suffered alteration
     </p>
-    <div class="categories" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"  data-aos-offset="-200">
+    <div class="categories" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-offset="-200">
       <div class="category-card">
         <div class="image">
-          <img src="../image/farmer.jpg" alt="Vegetables" />
+          <img src="../image/veg-cat.png" loading="lazy" alt="Vegetables" />
         </div>
         <h5>VEGETABLES</h5>
         <p class="hidden">
@@ -356,7 +359,7 @@
 
       <div class="category-card">
         <div class="image">
-          <img src="../image/farmer.jpg" alt="Fruit" />
+          <img src="../image/fruit-cat.png" loading="lazy" alt="Fruit" />
         </div>
         <h5>FRUIT</h5>
         <p class="hidden">
@@ -373,7 +376,7 @@
 
       <div class="category-card">
         <div class="image">
-          <img src="../image/farmer.jpg" alt="Corn" />
+          <img src="../image/corn-cat.png" loading="lazy" alt="Corn" />
         </div>
         <h5>CORN</h5>
         <p class="hidden">
@@ -390,7 +393,7 @@
 
       <div class="category-card">
         <div class="image">
-          <img src="../image/farmer.jpg" alt="Rice" />
+          <img src="../image/rice-cat.png" loading="lazy" alt="Rice" />
         </div>
         <h5>RICE</h5>
         <p class="hidden">
@@ -408,7 +411,8 @@
   </section>
   <hr />
   <section class="map-product-container position-relative flex align-center">
-    <span class="blur_bg position-absolute  right-0 mb-5 " style="width: 50vw;height: 50vw;top:-400px;right: -27%;filter: blur(130px);"></span>
+    <span class="blur_bg position-absolute  right-0 mb-5 "
+      style="width: 50vw;height: 50vw;top:-400px;right: -27%;filter: blur(130px);"></span>
     <object data="../image/svg/source-page-bg.svg" class="page-bg-svg" type="image/svg+xml">
       Your browser does not support SVG
     </object>
@@ -417,7 +421,7 @@
       <div class="left-content position-relative">
         <div class="product-showcase-bg position-relative flex align-center">
           <div class="product-showcase">
-            <img src="../image/fruits/tomato.png" alt="Fruits from Meghalaya" class="fade-transition product-images" />
+            <img src="../image/fruits/tomato.png" loading="lazy" alt="Fruits from Meghalaya" class="fade-transition product-images" />
           </div>
         </div>
         <h2 class="font-semi-bold text-em-3 prim-color fade-transition">
@@ -440,7 +444,7 @@
         </a>
       </div>
       <div class="right-content">
-        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"  data-aos-offset="-200">
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-offset="-600">
           <h1 class="text-em-3 font-semi-bold sec-color">
             Our various products<br />from North-East Location
           </h1>
@@ -502,7 +506,7 @@
                   style="fill: #5D882E"
                   d="m 565.453,347.987 0.803,3.554 -1.033,0.607 0.505,0.33 0.136,1.221 0.623,0.257 -0.601,1.213 0.449,1.143 v 0 l -1.736,1.556 -0.004,0.901 -1.828,2.775 0.816,0.734 -0.029,0.668 0.648,0.312 -0.304,3.464 0.446,0.568 -0.513,1.051 0.053,1.373 1.364,0.682 -1.659,2.599 -1.46,0.766 -0.319,0.603 -0.126,0.856 0.777,2.53 -2.407,2.163 -0.375,1.337 -0.643,0.416 0.335,0.6 -1.163,0.149 -0.772,1.506 -2.724,0.822 v 0 l -1.034,-0.137 -1.582,-1.085 -0.035,-1.687 0.826,-1.339 -0.401,-0.02 0.41,-1.076 -0.474,-0.147 -1.416,1.863 -0.656,-0.107 -0.92,0.667 -0.204,1.156 -2.236,1.111 -0.56,-0.397 -1.505,0.264 -0.418,-1.204 -0.728,-0.065 -0.448,0.728 -0.976,-0.208 -0.128,-0.623 -1.493,-0.84 -0.088,0.572 -0.947,0.34 -1.534,-0.273 -2.539,0.65 -0.102,0.931 0.801,0.02 0.103,0.771 -1.904,2.397 h -0.528 l -1.775,3.674 -1.116,-1.116 -1.038,0.147 0.12,-0.724 -0.713,-0.079 -0.058,-0.697 v 0 l -0.463,-0.804 0.551,-0.822 -0.342,-1.263 -1.381,-0.679 -1.343,-1.907 2.005,-1.954 1.515,-0.579 1.536,-2.41 2.768,-2.031 -0.373,-1.407 1.343,-0.624 0.444,-0.686 0.53,1.304 -0.388,1.467 0.334,0.739 0.974,-1.116 0.846,0.386 0.694,-0.966 1.33,-0.741 -0.514,-2.03 0.759,-1.513 0.287,-2.333 2.16,-3.555 1.414,-0.415 0.23,-2.703 1.888,-2.287 0.273,-0.123 0.086,1.94 0.474,0.414 0.724,-1.063 1.012,-0.551 0.177,-1.91 1.142,-0.491 0.115,-0.801 1.614,-0.958 0.62,0.464 0.617,-1.125 0.506,0.482 1.22,-0.326 2.42,-1.713 1.759,-2.951 0.877,-0.459 1.205,0.791 0.747,-0.167 1.856,-0.97 z" />
                 <path id="IN-SK" onclick="updateMapProductShowcase('Sikkim')" title="Sikkim" class="land"
-                  style="fill: #5D882E"
+                  style="fill: #5D882E; display: none;"
                   d="m 428.334,323.177 0.449,0.591 1.766,0.018 1.713,1.457 0.07,1.876 0.523,0.201 0.512,1.464 -0.658,1.055 -0.16,3.473 -1.665,2.443 0.885,3.75 2.366,1.849 -0.486,1.204 -2.052,0.641 -0.271,1.446 -0.764,0.88 v 0 l -0.569,0.227 -0.84,-0.976 -0.585,0.417 -0.783,-0.595 -1.257,-0.021 -0.8,0.247 0.192,0.656 -2.051,1.603 -2.264,-0.544 -0.405,-0.555 -1.506,0.207 -0.772,-0.385 -1.235,0.452 -1.064,-0.576 -0.228,-1.389 -1.213,-0.421 v 0 l 1.092,-2.735 -0.517,-0.824 0.104,-0.809 0.695,-0.497 -0.759,-1.628 3.215,-6.928 -0.507,-0.699 0.591,-0.402 -0.106,-0.382 -1.443,-0.66 -0.127,-1.635 0.317,-0.297 1.038,0.467 0.86,-0.572 0.298,0.458 2.12,-0.966 0.933,0.269 1.953,-1.592 1.169,0.158 0.325,-1.084 1.298,-0.445 -0.097,-0.612 z" />
                 <path id="IN-TR" onclick="updateMapProductShowcase('Tripura')" title="Tripura" class="land"
                   style="fill: #5D882E"
@@ -516,7 +520,7 @@
   </section>
   <hr />
   <section class="empowerment position-relative">
-    <span class="blur_bg position-absolute top-0  left-0 mb-5 " ></span>
+    <span class="blur_bg position-absolute top-0  left-0 mb-5 "></span>
     <div class="flex empowerment" data-aos="flip-left">
       <div class="flex flex-row features seven columns empowerment-content">
         <div class="empowerment-content-0 position-relative">
@@ -546,7 +550,7 @@
                     Your browser does not support SVG
                   </object>
                   <div class="position-absolute top-0 left-0 flex align-center">
-                    <img src="../image/farmer1.jpeg" alt class="circular--square" srcset />
+                    <img src="../image/farmer1.jpeg" loading="lazy" alt class="circular--square" srcset />
                   </div>
                   <p>Living Wage</p>
                 </div>
@@ -555,7 +559,7 @@
                     Your browser does not support SVG
                   </object>
                   <div class="position-absolute top-0 left-0 flex align-center">
-                    <img src="../image/farmer4.jpg" alt class="circular--square" srcset />
+                    <img src="../image/farmer4.jpg" loading="lazy" alt class="circular--square" srcset />
                   </div>
                   <p>41% Female</p>
                 </div>
@@ -564,7 +568,7 @@
                     Your browser does not support SVG
                   </object>
                   <div class="position-absolute top-0 left-0 flex align-center">
-                    <img src="../image/farmer2.webp" alt class="circular--square" srcset />
+                    <img src="../image/farmer2.webp" loading="lazy" alt class="circular--square" srcset />
                   </div>
                   <p>Locals for Locals</p>
                 </div>
@@ -573,7 +577,7 @@
                     Your browser does not support SVG
                   </object>
                   <div class="position-absolute top-0 left-0 flex align-center">
-                    <img src="../image/farmer3.jpg" alt class="circular--square" srcset />
+                    <img src="../image/farmer3.jpg" loading="lazy" alt class="circular--square" srcset />
                   </div>
                   <p>Health checks</p>
                 </div>
@@ -586,16 +590,16 @@
         <!-- <object data="../image/svg/hero_background.svg" type="image/svg+xml">
                     Your browser does not support SVG
                 </object> -->
-        <img src="../image/farmer.jpg" alt class="position-absolute bottom-0 reght-0 circular--square" />
+        <img src="../image/farmer.jpg" loading="lazy" alt class="position-absolute bottom-0 reght-0 circular--square"  />
         <img
           src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-          alt class="hidden position-absolute bottom-0 reght-0 circular--square" />
+          loading="lazy" alt class="hidden position-absolute bottom-0 reght-0 circular--square" />
         <img
           src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-          alt class="hidden position-absolute bottom-0 reght-0 circular--square" />
+          loading="lazy" alt class="hidden position-absolute bottom-0 reght-0 circular--square" />
         <img
           src="../image/home/generous-fruit-and-vegetable-basket-regular-20-pounds-gift-baskets-410-removebg-preview 1.png"
-          alt class="hidden position-absolute bottom-0 reght-0 circular--square" />
+          loading="lazy" alt class="hidden position-absolute bottom-0 reght-0 circular--square" />
       </div>
     </div>
     <div class="position-relative" data-aos="zoom-in-up">
@@ -617,10 +621,10 @@
       </div>
       <span class="blur_bg position-absolute right-0 bottom-0 mt-5 hero-background-3"></span>
     </div>
-    <span class="blur_bg position-absolute bottom-0 left-0 " ></span>
+    <span class="blur_bg position-absolute bottom-0 left-0 "></span>
   </section>
 
-  <footer class="footer position-relative" >
+  <footer class="footer position-relative">
     <div class="footer-about">
       <object data="../image/svg/header/logo.svg" style="filter:invert(1)" class="logo" type="image/svg+xml">
         Your browser does not support SVG
@@ -646,7 +650,7 @@
         </a>
       </div>
 
-      <div class="social-icons" data-aos="zoom-in-up">
+      <div class="social-icons">
         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -668,23 +672,23 @@
       </ul>
     </div>
 
-    <div class="footer-gallery" >
+    <div class="footer-gallery">
       <h4>Gallery</h4>
       <div class="gallery-images">
-        <img src="../image/products/vegetables/beetroot.png"  alt="Fresh fruits and vegetables" />
-        <img src="../image/fruits/tomato.png"  alt="Colorful vegetable harvest" />
-        <img src="../image/products/fruits/strawberry.png"  alt="Organic produce assortment" />
-        <img src="../image/products/fruits/pineapple.jpg"  alt="Pumpkin harvest" />
-        <img src="../image/products/vegetables/red-pepper.jpg" alt="Tomato plants" />
-        <img src="../image/products/vegetables/bitter-gourd.png" alt="Fresh carrots" />
-        <img src="../image/farmer3.jpg" alt="Pumpkin harvest" />
-        <img src="../image/farmer1.jpeg"  alt="Tomato plants" />
-        <img src="../image/farmer.jpg" alt="Fresh carrots" />
+        <img src="../image/products/vegetables/beetroot.png" loading="lazy" alt="Fresh fruits and vegetables" />
+        <img src="../image/fruits/tomato.png" loading="lazy" alt="Colorful vegetable harvest" />
+        <img src="../image/products/fruits/strawberry.png" loading="lazy" alt="Organic produce assortment" />
+        <img src="../image/products/fruits/pineapple.jpg" loading="lazy" alt="Pumpkin harvest" />
+        <img src="../image/products/vegetables/red-pepper.jpg" loading="lazy" alt="Tomato plants" />
+        <img src="../image/products/vegetables/bitter-gourd.png" loading="lazy" alt="Fresh carrots" />
+        <img src="../image/farmer3.jpg" loading="lazy" alt="Pumpkin harvest" />
+        <img src="../image/farmer1.jpeg" loading="lazy" alt="Tomato plants" />
+        <img src="../image/farmer.jpg" loading="lazy" alt="Fresh carrots" />
       </div>
     </div>
   </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>

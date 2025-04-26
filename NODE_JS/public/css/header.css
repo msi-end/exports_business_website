@@ -7,7 +7,7 @@
   width: 100%;
 }
 .header-background-0 svg path {
-  fill: url(--primary-color-light);
+  fill: rgb(216, 239, 167);
 }
 .navigation-container .navigation {
   width: 25%;
@@ -20,16 +20,27 @@
   padding: 14px 25px;
   border-radius: 30px;
   left: 65%;
+  gap: unset;
   flex-direction: column;
   box-shadow: 1px 0px 7px -2px #95af6d;
 }
+.navigation a {
+  color: rgb(3, 78, 3);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.navigation a:hover {
+  color: rgb(1, 43, 1);
+}
+
 .navigation-active {
   height: auto !important;
   padding: 0px 0px !important;
 }
 .navigation-active .navigation-head {
   padding: 10px 20px;
-  background-color: var(--primary-color-light);
+  background-color: rgb(216, 239, 167);
   border-radius: 20px 20px 0px 0px;
 }
 .navigation-head {
@@ -93,19 +104,17 @@
   overflow: hidden;
   transition: max-height 0.5s ease, opacity 0.5s ease;
   opacity: 0;
-
 }
-.dropdown.submenu li{
-font-size: 14px;
-padding-left: 20px;
+.dropdown.submenu li {
+  font-size: 14px;
+  padding-left: 20px;
 }
-.dropdown.submenu li:hover{
+.dropdown.submenu li:hover {
   font-size: 15px;
   padding-left: 40px;
   color: var(--primary-color-dark);
-  transition: all .1s ease-in;
-  }
-  
+  transition: all 0.1s ease-in;
+}
 
 .dropdown.submenu.show {
   max-height: 500px; /* adjust as needed */
@@ -118,4 +127,133 @@ padding-left: 20px;
     margin: 5px 5px;
     right: 0;
   }
+}
+
+/* Animation  */
+.navigation {
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+.navigation.navigation-active .navigation-content {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+.navigation-content {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.menu-svg {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.close-svg {
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.navigation-active .menu-svg {
+  opacity: 0;
+}
+
+.navigation-active .close-svg {
+  opacity: 1;
+}
+
+/* ======================================= */
+/* Base Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Media elements */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Form elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Text elements */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* List elements (only if role="list") */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Accessibility: Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Flexbox Utilities */
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* Position Utilities */
+.position-relative {
+  position: relative;
+}
+
+/* Hidden Utility */
+.hidden {
+  display: none !important;
 }

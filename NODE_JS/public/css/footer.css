@@ -46,6 +46,8 @@
   line-height: 1.6;
   opacity: 0.9;
   max-width: 90%;
+  color: white;
+  font-size: 15px;
 }
 
 .contact-icons {
@@ -132,7 +134,7 @@
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s;
-  background-color: var(--primary-color-light);
+  background-color: rgb(202, 236, 195);
 }
 
 .gallery-images img:hover {
