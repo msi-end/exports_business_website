@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pumpkin Section</title>
     <link rel="stylesheet" href="../css/pages/ricecorn.css" />
+    <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/pages/responsive/ricecorn.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
     />
-  <link href="../css/scroll-animation.css" rel="stylesheet" />
+    <link href="../css/scroll-animation.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/footer.css" />
 
   </head>
   <body>
+  <%- include('./partials/header.ejs') %>
+
     <!-- Hero Section -->
     <section class="organic-section position-relative" data-aos="fade-up">
       <div class="line-f">
@@ -312,6 +316,7 @@
       <span class="blur_bg position-absolute left-0 bottom-0 "></span>
 
     </section>
+  <%- include('./partials/footer.ejs') %>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

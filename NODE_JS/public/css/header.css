@@ -1,3 +1,22 @@
+:root {
+  --primary-color: #74A528;     
+  --primary-color-dark:  #18492B;
+  --primary-color-light: #d8efa7;  
+  --primary-color-light-2: #E7F3C6;  
+  --secondary-color: #004391;   
+  --secondary-color-dark: #042a57;
+  --secondary-color-light: #f8f9fa;
+  --tertiary-color: #2E5848;    
+  --tertiary-color-dark: #218838;
+  --tertiary-color-light: #eff6e9;
+  --accent-color: #ffc107;      
+  --text-color: #003597;         
+  --text-color-light: #6c757d; 
+  --background-color: #ffffff;   
+  --border-color: #ddd;        
+  --muted-color: #e9ecef;     
+}
+
 .navigation-container {
 }
 .header-background-0 {
@@ -163,6 +182,24 @@
 }
 
 /* ======================================= */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  /* border-radius: 10px; */
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color-dark);
+}
+html,
+body {
+  overflow-x: hidden;
+}
 /* Base Reset */
 *,
 *::before,

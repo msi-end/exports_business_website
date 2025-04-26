@@ -300,6 +300,7 @@
 @media (max-width: 480px) {
   .content {
     padding: 5%;
+    margin-top: 100px;
   }
 
   .header {
@@ -750,6 +751,13 @@ td:first-child {
 }
 
 @media (max-width: 480px) {
+  .hero-imgs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
   .certification-wheel {
     max-width: 280px;
   }
