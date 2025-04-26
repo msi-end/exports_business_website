@@ -30,6 +30,7 @@ body {
   float: right;
   z-index: -1;
   width: 45vw;
+  rotate: 20deg;
 }
 .hero-background-1 {
   top: -10%;
@@ -119,7 +120,7 @@ body {
   padding-left: 170px;
   padding-top: 220px;
   width: 800px;
-  margin-top: 8%;
+  margin-top: 5%;
 }
 .mission-content .two {
   margin-left: 450px;
@@ -464,7 +465,7 @@ body {
 }
 
 .subheading {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto 40px;
   text-align: center;
 }
