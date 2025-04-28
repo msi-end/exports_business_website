@@ -327,6 +327,7 @@
 
   .category-card.active p {
     margin: 0px 5px;
+    font-size: 16px;
   }
 
   /* sources from northeaset Section */

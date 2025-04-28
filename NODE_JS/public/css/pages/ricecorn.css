@@ -53,6 +53,7 @@
   padding: 5% 8%;
   min-height: 100vh;
   overflow: hidden;
+  padding-top: 110px !important;
 }
 
 .organic-content {
@@ -87,7 +88,7 @@
 }
 
 .rice-text {
-  background-image: url("/HTML_UI/image/ricecorn/rice-hero.png");
+  background-image: url("/image/ricecorn/rice-hero.png");
   background-size: cover;
   background-position: center;
   background-clip: text;
@@ -95,7 +96,7 @@
 }
 
 .corn-text {
-  background-image: url("/HTML_UI/image/ricecorn/rice-hero.png");
+  background-image: url("/image/ricecorn/rice-hero.png");
   background-size: cover;
   background-position: center;
   background-clip: text;
@@ -760,11 +761,6 @@ td:first-child {
   filter: blur(15px);
 }
 
-
 .h-benefit {
   margin-top: 8%;
 }
-
-
-
-
