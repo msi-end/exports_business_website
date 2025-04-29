@@ -483,6 +483,11 @@ p {
   grid-column: 1 / 3;
   position: relative;
 }
+.fruit img {
+  width: 80%;
+
+}
+
 
 .title {
   font-size: 6rem;

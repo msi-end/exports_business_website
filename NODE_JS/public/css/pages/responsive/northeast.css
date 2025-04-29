@@ -3,9 +3,13 @@
     flex-direction: column-reverse;
   }
   /* hero section css */
-
+  section div {
+    z-index: 1;
+    position: relative;
+  }
   .organic-section {
     min-height: fit-content;
+    z-index: 1;
   }
 
   .line-f {

@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -164,10 +163,12 @@
 }
 
 @media screen and (max-width: 576px) {
+  .curve-container {
+    min-height: 60vh!important;
+  }
   .organic-section {
-
     padding-top: 100px;
-}
+  }
   .heading-primary {
     font-size: 2.5rem;
   }
@@ -406,16 +407,16 @@
 }
 
 .image-content img {
-   width: 260px;
+  width: 260px;
 }
 
-.image-content img:nth-child(2){
+.image-content img:nth-child(2) {
   width: 180px;
   margin-left: 50%;
   margin-top: -10%;
 }
 
-.image-content img:nth-child(3){
+.image-content img:nth-child(3) {
   width: 160px;
   margin-right: 10%;
   margin-top: -12%;
@@ -449,7 +450,7 @@ h2 {
 
 p {
   color: #2e5949;
-  font-size: 1.10rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 20px;
   font-weight: 500;
@@ -465,9 +466,8 @@ p {
   min-width: 300px;
 }
 
-
 .packing-title {
-  color: #05478e; 
+  color: #05478e;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
@@ -478,7 +478,7 @@ p {
 
 .packing-list li {
   color: #2e5949;
-  font-size: 1.10rem;
+  font-size: 1.1rem;
   margin-bottom: 15px;
   display: flex;
   gap: 2rem;
@@ -552,7 +552,6 @@ p {
 .mb-5 {
   margin-top: -10%;
 }
-
 
 .btn {
   background-color: #05478e;
@@ -671,7 +670,7 @@ p {
 }
 
 .title h1 {
-  color: #004A8F;
+  color: #004a8f;
   font-size: 3.5rem;
   font-weight: bold;
   line-height: 1.2;
@@ -705,7 +704,7 @@ p {
   font-size: 1.75rem;
   font-weight: bold;
   color: #888;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
   z-index: 2;
   position: absolute;
@@ -713,7 +712,7 @@ p {
 }
 
 .text {
-  background: linear-gradient(to right, #0451AB, #096CDE);
+  background: linear-gradient(to right, #0451ab, #096cde);
   color: white;
   border-radius: 70px;
   padding: 12px 30px 12px 45px;
@@ -722,7 +721,7 @@ p {
   margin-left: 25px;
   text-align: center;
   font-size: 1.1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 73px;
   display: flex;
   align-items: center;
@@ -732,43 +731,44 @@ p {
 /* Responsive design */
 @media (max-width: 768px) {
   .curve-container {
-      flex-direction: column;
-      gap: 40px;
+    flex-direction: column;
+    gap: 40px;
   }
-  
-  .title, .initiatives {
-      max-width: 100%;
+
+  .title,
+  .initiatives {
+    max-width: 100%;
   }
-  
+
   .title h1 {
-      font-size: 2.2rem;
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 480px) {
   .curve-container {
-      padding: 15px;
+    padding: 15px;
   }
-  
+
   .title h1 {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
-  
+
   .number {
-      width: 45px;
-      height: 45px;
-      font-size: 1.5rem;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
   }
-  
+
   .text {
-      padding: 10px 20px 10px 35px;
-      font-size: 1rem;
-      height: 40px;
-      width: 90%
+    padding: 10px 20px 10px 35px;
+    font-size: 1rem;
+    height: 40px;
+    width: 90%;
   }
-  
+
   .initiative-item {
-      height: 45px;
+    height: 45px;
   }
 }
 

@@ -91,6 +91,19 @@ body {
   align-items: center;
   border-radius: 60% 40% 30% 70% / 50% 30% 70% 40%;
 }
+.veg-circle {
+  animation: breath 2.5s ease-in-out infinite;
+}
+
+@keyframes breath {
+  0%,
+  100% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
 
 .lettuce {
   width: 200px;
@@ -159,6 +172,15 @@ body {
   .veg-circle {
     transform: scale(0.8);
   }
+  @keyframes breath {
+    0%,
+    100% {
+      transform: scale(0.6);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -210,6 +232,14 @@ body {
 
   .veg-circle {
     transform: scale(0.6);
+  }
+  @keyframes breath {
+    0%, 100% {
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(.6);
+    }
   }
 
   .bell-peppers {
@@ -672,7 +702,6 @@ td:first-child {
   border-radius: 50%;
   filter: blur(15px);
 }
-
 
 .h-benefit {
   margin-top: 8%;

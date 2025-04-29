@@ -44,6 +44,13 @@
   height: 40vh;
   z-index: -1;
 }
+.blur_bg-hide {
+  background: rgba(161, 238, 82, 0.36);
+  filter: blur(95px);
+  width: 40vh;
+  height: 40vh;
+  z-index: -1;
+}
 
 .organic-section {
   position: relative;
@@ -138,6 +145,7 @@
     flex-direction: column;
     text-align: center;
     padding: 8% 5%;
+    
   }
   .image-container {
     margin-left: 0;
@@ -151,6 +159,10 @@
 }
 
 @media screen and (max-width: 576px) {
+  .blur_bg-hide {
+    display: none !important;
+  }
+
   .heading-primary {
     font-size: 2.5rem;
   }
