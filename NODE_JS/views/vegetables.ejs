@@ -7,6 +7,7 @@
   <title>Pumpkin Section</title>
   <link rel="stylesheet" href="../css/pages/vegetable.css" />
   <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/animation.css" />
 
   <link rel="stylesheet" href="../css/pages/responsive/vegetable.css" />
   <link
@@ -34,39 +35,41 @@
       </div>
 
       <!-- Vegetable image placeholders with colorful background circles -->
-      <div class="veg-circle lettuce">
+      <div class="veg-circle lettuce float-lite" >
         <img src="../image/vegetables/xaak.png" alt="" srcset="" />
       </div>
 
-      <div class="veg-circle bell-peppers">
+      <div class="veg-circle bell-peppers float-lite">
         <img src="../image/vegetables/potato.png" alt="" srcset="" />
       </div>
 
-      <div class="veg-circle potatoes">
+      <div class="veg-circle potatoes float-lite">
         <img src="../image/vegetables/Objects.png" alt="" srcset="" />
       </div>
 
-      <div class="veg-circle cabbage">
+      <div class="veg-circle cabbage float-lite">
         <img src="../image/vegetables/cabbage.png" alt="" srcset="" />
       </div>
 
-      <div class="veg-circle lemon">
+      <div class="veg-circle lemon float-lite">
         <img src="../image/vegetables/brinjal.png" alt="" srcset="" />
       </div>
 
-      <div class="veg-circle eggplant">
+      <div class="veg-circle eggplant float-lite">
         <img src="../image/vegetables/h-tomato.png" alt="" srcset="" />
       </div>
 
-      <div class="m-line-f">
+      <div class="m-line-f float-lite">
         <img src="../image/vegetables/mobile-line.png" alt="" srcset="" />
       </div>
-      <span class="blur_bg position-absolute right-0  "></span>
 
+      <span class="blur_bg position-absolute right-0 top-0" style=""></span>
     </section>
 
     <!-- Descript section with Wheel -->
     <section class="w-container" data-aos="fade-up">
+      <span class="blur_bg position-absolute right-0 " style="top: -200px;"></span>
+
       <div class="certifications">
         <div class="certification-wheel">
           <img src="../image/vegetables/v-circle.png" alt="" srcset="">
@@ -320,6 +323,106 @@
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init();
+      </script>
+      <script>
+        const fruitsData = {
+          Tomato: {
+            image: "../image/fruits/tomato.png",
+            availability: {
+              Assam: [0],
+              Meghalaya: [4, 5, 6, 7, 8, 9],
+              Tripura: [4],
+            },
+          },
+          Pumpkin: {
+            image: "../image/fruits/pumpkin.png",
+            availability: {
+              Assam: [1, 2],
+              Meghalaya: [3, 4],
+              Tripura: [2, 5],
+            },
+          },
+          Apple: {
+            image: "../image/fruits/apple.png",
+            availability: {
+              Assam: [9, 10],
+              Meghalaya: [8, 9],
+              Tripura: [10, 11],
+            },
+          },
+          Avacoda: {
+            image: "../image/fruits/avacoda.png",
+            availability: {
+              Assam: [2, 3],
+              Meghalaya: [1, 2],
+              Tripura: [3],
+            },
+          },
+          Banana: {
+            image: "../image/fruits/banana.png",
+            availability: {
+              Assam: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+              Meghalaya: [0, 2, 4, 6],
+              Tripura: [1, 3, 5, 7],
+            },
+          },
+        };
+
+        const fruitOrder = Object.keys(fruitsData);
+        let currentFruitIndex = fruitOrder.indexOf("Pumpkin");
+        const titleEl = document.querySelector("h2.title");
+        const imageEl = document.querySelector(".fruit img");
+        const tags = document.querySelectorAll(".tags .tag");
+        const tableRows = document.querySelectorAll("tbody tr");
+
+        function updateFruitDisplay(fruitName) {
+          const data = fruitsData[fruitName];
+          if (!data) return;
+
+          titleEl.textContent = fruitName;
+          imageEl.src = data.image;
+          imageEl.alt = fruitName;
+
+          tableRows.forEach(row => {
+            const region = row.children[0].textContent.trim();
+            for (let i = 1; i <= 12; i++) {
+              const cell = row.children[i];
+              cell.innerHTML = "";
+              if (data.availability[region]?.includes(i - 1)) {
+                const dot = document.createElement("div");
+                dot.className = "availability-dot";
+                cell.appendChild(dot);
+              }
+            }
+          });
+
+          tags.forEach(tag => {
+            tag.classList.remove("active");
+            if (tag.textContent.trim() === fruitName) {
+              tag.classList.add("active");
+            }
+          });
+        }
+
+        tags.forEach(tag => {
+          tag.addEventListener("click", () => {
+            const fruitName = tag.textContent.trim();
+            currentFruitIndex = fruitOrder.indexOf(fruitName);
+            updateFruitDisplay(fruitName);
+          });
+        });
+
+        document.querySelector(".nav-btn.prev").addEventListener("click", () => {
+          currentFruitIndex = (currentFruitIndex - 1 + fruitOrder.length) % fruitOrder.length;
+          updateFruitDisplay(fruitOrder[currentFruitIndex]);
+        });
+
+        document.querySelector(".nav-btn.next").addEventListener("click", () => {
+          currentFruitIndex = (currentFruitIndex + 1) % fruitOrder.length;
+          updateFruitDisplay(fruitOrder[currentFruitIndex]);
+        });
+
+        updateFruitDisplay(fruitOrder[currentFruitIndex]);
       </script>
 </body>
 

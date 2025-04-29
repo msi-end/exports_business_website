@@ -139,7 +139,7 @@
   }
 
   .mission-background-0-mobile {
-    display: block;
+    display: block !important;
     width: 100%;
   }
 
@@ -327,6 +327,7 @@
 
   .category-card.active p {
     margin: 0px 5px;
+    font-size: 16px;
   }
 
   /* sources from northeaset Section */
@@ -537,7 +538,6 @@
 
   /* Mission Section Css */
 
-
   /* fruit animation section */
   .carousel-container {
     margin-left: 44%;
@@ -562,19 +562,17 @@
   }
 }
 
-
 @media (max-width: 391px) {
-    /* Hero Section CSS */
-    .hero-background  {
-      left: 21%;
-    }
-    .hero-image {
-      left: -2%;
-    }
+  /* Hero Section CSS */
+  .hero-background {
+    left: 21%;
+  }
+  .hero-image {
+    left: -2%;
+  }
 }
 
 @media (max-width: 376px) {
-
   /* Map section CSS */
   .product-showcase-bg {
     left: 4%;
@@ -591,7 +589,7 @@
 
   .mission-content:nth-child(3) {
     left: -8vw;
-    bottom: 20vw
+    bottom: 20vw;
   }
 }
 

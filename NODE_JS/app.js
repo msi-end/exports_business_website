@@ -14,33 +14,33 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 
-app.use(async (req, res, next) => {
-  if (req.url.endsWith(".js")) {
-    const filePath = path.join(__dirname, "public", req.url);
-    try {
-      const jsContent = fs.readFileSync(filePath, "utf8");
-      const minified = await minify(jsContent);
-      res.setHeader("Content-Type", "application/javascript");
-      res.setHeader("Cache-Control", "public, max-age=86400"); 
-      res.send(minified.code);
-    } catch (err) {
-      next();
-    }
-  } else if (req.url.endsWith(".css")) {
-    const filePath = path.join(__dirname, "public", req.url);
-    try {
-      const cssContent = fs.readFileSync(filePath, "utf8");
-      const minified = new CleanCSS().minify(cssContent);
-      res.setHeader("Content-Type", "text/css");
-      res.setHeader("Cache-Control", "public, max-age=86400");
-      res.send(minified.styles);
-    } catch (err) {
-      next();
-    }
-  } else {
-    next();
-  }
-});
+// app.use(async (req, res, next) => {
+//   if (req.url.endsWith(".js")) {
+//     const filePath = path.join(__dirname, "public", req.url);
+//     try {
+//       const jsContent = fs.readFileSync(filePath, "utf8");
+//       const minified = await minify(jsContent);
+//       res.setHeader("Content-Type", "application/javascript");
+//       res.setHeader("Cache-Control", "public, max-age=86400"); 
+//       res.send(minified.code);
+//     } catch (err) {
+//       next();
+//     }
+//   } else if (req.url.endsWith(".css")) {
+//     const filePath = path.join(__dirname, "public", req.url);
+//     try {
+//       const cssContent = fs.readFileSync(filePath, "utf8");
+//       const minified = new CleanCSS().minify(cssContent);
+//       res.setHeader("Content-Type", "text/css");
+//       res.setHeader("Cache-Control", "public, max-age=86400");
+//       res.send(minified.styles);
+//     } catch (err) {
+//       next();
+//     }
+//   } else {
+//     next();
+//   }
+// });
 
 app.use(express.static(path.join(__dirname, "public"), { maxAge: '1d' }));
 
@@ -61,7 +61,7 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on port http://localhost:${port}`);
 });
 
 

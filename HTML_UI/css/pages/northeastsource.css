@@ -829,6 +829,10 @@ td:first-child {
 }
 
 @media (max-width: 480px) {
+  .h-desc {
+    width: 55%;
+    margin: auto;
+  }
   .rn-circle-image {
     width: 140px;
     height: 140px;
@@ -970,8 +974,6 @@ td:first-child {
   border-radius: 50%;
   filter: blur(15px);
 }
-
-
 
 .tags {
   display: flex;

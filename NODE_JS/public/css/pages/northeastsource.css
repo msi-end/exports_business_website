@@ -86,7 +86,7 @@
 }
 
 .rice-text {
-  background-image: url("/HTML_UI/image/sourcenortheast/text-bg.png");
+  background-image: url("/image/sourcenortheast/text-bg.png");
   background-size: contain;
   background-position: center;
   background-clip: text;
@@ -407,7 +407,7 @@ p {
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .content-wrapper,
   .second-row {
     flex-direction: column;
@@ -707,6 +707,10 @@ td:first-child {
 }
 
 @media (max-width: 480px) {
+  .h-desc {
+    width: 55%;
+    margin: auto;
+  }
   .certification-wheel {
     max-width: 280px;
   }
@@ -970,8 +974,6 @@ td:first-child {
   border-radius: 50%;
   filter: blur(15px);
 }
-
-
 
 .tags {
   display: flex;

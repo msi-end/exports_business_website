@@ -505,10 +505,10 @@
 
 .category-card.active p {
   margin: 10px 15px;
-  display: block;
+  display: block!important;
 }
 .category-card.active div {
-  display: block;
+  display: block!important;
 }
 /* =========== */
 .category-card {

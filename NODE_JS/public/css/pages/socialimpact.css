@@ -54,6 +54,7 @@
   padding: 5% 8%;
   min-height: 100vh;
   overflow: hidden;
+  padding-top: 100px;
 }
 
 .organic-content {
@@ -93,7 +94,7 @@
 }
 
 .rice-text {
-  background-image: url("../../image/social/hero-social.png");
+  background-image: url("/image/social/hero-social.png");
   background-size: cover;
   background-position: center;
   background-clip: text;
@@ -163,6 +164,10 @@
 }
 
 @media screen and (max-width: 576px) {
+  .organic-section {
+
+    padding-top: 100px;
+}
   .heading-primary {
     font-size: 2.5rem;
   }
