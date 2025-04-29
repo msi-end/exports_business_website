@@ -49,6 +49,9 @@
   }
   
   @media (max-width: 576px) {
+    body {
+      overflow-x: hidden;
+    }
     ::-webkit-scrollbar {
       width: 10px;
       height: 8px;
@@ -100,13 +103,13 @@
     }
   
     .lettuce {
-      transform: scale(0.5);
+      transform: scale(0.6);
     }
   
     .cabbage {
       right: 100px;
       bottom: 25%;
-      transform: scale(0.5);
+      transform: scale(0.8);
     }
   
     .lemon {
@@ -203,6 +206,9 @@
   }
   
   @media (max-width: 480px) {
+    .hero-section{
+      margin-top: 15%;
+    }
     .content {
       margin-top: 15%;
     }
@@ -218,7 +224,7 @@
   
     /* Wheel area */
     .certification-wheel img {
-      width: 300px;
+      width: 380px;
     }
   
     /* Utility */

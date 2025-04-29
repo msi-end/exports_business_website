@@ -5,6 +5,10 @@
   font-family: -apple-system, poppins, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, sans-serif;
 }
+
+body {
+  overflow-x: hidden;
+}
 /* Position */
 .position-static {
   position: static;
@@ -623,7 +627,7 @@ td:first-child {
 
 @media (max-width: 480px) {
   .certification-wheel {
-    max-width: 280px;
+    max-width: 350px;
   }
 
   .content h1 {
