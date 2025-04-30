@@ -970,10 +970,13 @@ td:first-child {
   height: 40vh;
 }
 
+
+
 .rn-blur {
   width: 50vh;
   height: 50vh;
   top: -40%;
+  left: 90%;
   filter: blur(120px);
 }
 
