@@ -45,6 +45,11 @@
   z-index: -1;
 }
 
+.background-1,.background-2{
+
+  bottom: 300px;
+  top: unset;
+}
 
 .hero-section {
   position: relative;
@@ -119,7 +124,7 @@
 .cabbage {
   width: 150px;
   height: 150px;
-  background-color: rgba(183, 233, 136, 0.5);
+  /* background-color: rgba(183, 233, 136, 0.5); */
   bottom: 100px;
   right: 200px;
   overflow: visible;
