@@ -132,7 +132,6 @@
 
   /* fruit table */
 
-
   th,
   td {
     padding: 6px;
@@ -204,6 +203,11 @@
 }
 
 @media (max-width: 480px) {
+  .background-2 {
+    display: none!important;
+    bottom: 100px;
+  }
+
   .content {
     margin-top: 15%;
   }

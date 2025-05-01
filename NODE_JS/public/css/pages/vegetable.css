@@ -45,11 +45,6 @@
   z-index: -1;
 }
 
-.background-1,.background-2{
-
-  bottom: 300px;
-  top: unset;
-}
 
 .hero-section {
   position: relative;
