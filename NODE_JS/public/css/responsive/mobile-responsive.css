@@ -6,6 +6,12 @@
   height: 40vh;
 }
 
+.blur-m-left {
+  left: -20%;
+}
+
+
+
 /* Tablet styles (768px - 1024px) */
 @media only screen and (max-width: 1024px) {
   /* .navigation-container .navigation {
@@ -20,6 +26,16 @@
     float: right;
     z-index: -1;
   } */
+
+  .blur-m-right {
+    left: 90%;
+    top: 50%
+
+  }
+
+  .m-none {
+    display: inline;
+  }
 
   .hero-intro h1 {
     font-size: 55px !important;
@@ -99,9 +115,14 @@
     left: -15% !important;
   }
 
+  .mission-background-1 {
+    left: 80%;
+  }
+
   .mission-background-2 {
-    right: -30% !important;
+    right: -90% !important;
     width: 50vh !important;
+    z-index: -1;
   }
 
   /* Hero Section */
@@ -394,8 +415,10 @@
   }
 
   .empowerment-images img {
-    width: 160px !important;
-    height: 160px !important;
+    width: 130px !important;
+    height: 130px !important;
+    margin-left: 8%;
+    
   }
 }
 

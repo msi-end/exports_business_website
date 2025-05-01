@@ -571,7 +571,7 @@ td:first-child {
 .blur_bg {
   position: absolute;
   background: rgba(161, 238, 82, 0.36);
-  filter: blur(95px);
+  filter: blur(96px);
   width: 40vh;
   height: 40vh;
 }
