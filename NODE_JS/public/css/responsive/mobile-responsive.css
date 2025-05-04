@@ -5,7 +5,14 @@
   width: 40vh;
   height: 40vh;
 }
-
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .empowerment-images-ctn {
+    top: 150px !important;
+  }
+  footer {
+    margin-top: 67vh !important;
+  }
+}
 /* Tablet styles (768px - 1024px) */
 @media only screen and (max-width: 1024px) {
   /* .navigation-container .navigation {

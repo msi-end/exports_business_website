@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeSlider(".empowerment");
 });
 
-
 function animateFarmerCard(card) {
   const img = card.querySelector("img");
   const svg = card.querySelector("object");
@@ -172,17 +171,21 @@ function setRandomFloatingFeatures() {
 setRandomFloatingFeatures();
 setInterval(setRandomFloatingFeatures, 6000);
 
+// Categorie Hover Animation
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".category-card");
-  let currentIndex = 0;
 
-  setInterval(() => {
-    cards.forEach((card) => card.classList.remove("active"));
-    cards[currentIndex].classList.add("active");
-    currentIndex = (currentIndex + 1) % cards.length;
-  }, 1500);
+  cards.forEach((card) => {
+    card.addEventListener("mouseover", () => {
+      cards.forEach((c) => c.classList.remove("active"));
+      card.classList.add("active");
+    });
+
+    card.addEventListener("mouseout", () => {
+      card.classList.remove("active");
+    });
+  });
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.getElementById("carousel");
@@ -197,8 +200,6 @@ document.addEventListener("DOMContentLoaded", function () {
       carousel.style.transform = "translateX(0)";
       const clone = firstFruit.cloneNode(true);
       clone.classList.remove("fade-out", "first");
-
-      // Trigger fade-in animation
       requestAnimationFrame(() => {
         clone.classList.add("fade-in");
         setTimeout(() => {
