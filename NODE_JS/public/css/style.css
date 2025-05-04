@@ -1,11 +1,16 @@
 
 /* //// Root Backgrounds /// */
+.m-none {
+  display: none;
+}
+
 .blur_bg {
   background: rgba(161, 238, 82, 0.36);
   filter: blur(95px);
   width: 40vh;
   height: 40vh;
 }
+
 .hero-background {
   position: absolute;
   top: 5%;

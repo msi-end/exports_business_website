@@ -1,4 +1,11 @@
 @media (max-width: 576px) {
+  .blur_bg {
+    left: -80%;
+  }
+  .btn {
+    font-size: .8rem;
+    margin-top: -3%;
+  }
   ::-webkit-scrollbar {
     width: 10px;
     height: 8px;

@@ -14,6 +14,15 @@
 }
 
 @media (max-width: 768px) {
+
+  .m-none {
+    display: none;
+  }
+
+  .blur-m-left {
+    left: -100%;
+  }
+
   .title {
     font-size: 2rem;
   }
@@ -23,28 +32,28 @@
   }
 
   .lettuce {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     left: 10px;
-    top: -20px;
+    top: 35px;
   }
 
   .bell-peppers {
-    width: 120px;
-    height: 120px;
+    width: 60px;
+    height: 60px;
     right: 30%;
   }
 
   .potatoes,
   .cabbage,
   .lemon {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
 
   .eggplant {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -88,14 +97,14 @@
   }
 
   .bell-peppers {
-    top: -5%;
+    top: 10%;
     left: 35%;
     transform: scale(0.4);
   }
 
   .potatoes {
     left: -25px;
-    top: 15%;
+    top: 29%;
     transform: scale(0.4);
   }
 
@@ -115,7 +124,7 @@
   }
 
   .eggplant {
-    bottom: 20%;
+    bottom: 35%;
     right: -8%;
   }
 
@@ -144,6 +153,7 @@
 
   .fruit img {
     width: 300px;
+    margin-left: 8%;
   }
 
   .t-container {
@@ -231,7 +241,11 @@
     filter: blur(80px);
     width: 30vh;
     height: 30vh;
-    left: -25%;
+    left: -45%;
+  }
+
+  .line-f {
+    top: 10%
   }
 
   .m-line-f {
