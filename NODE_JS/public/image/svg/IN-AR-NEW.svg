@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
    class="map-container-map"
    version="1.1"
    id="svg1"
@@ -20,9 +20,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="3.4370746"
-     inkscape:cx="148.23653"
-     inkscape:cy="61.243943"
+     inkscape:zoom="2.4303788"
+     inkscape:cx="152.44537"
+     inkscape:cy="82.908888"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -34,26 +34,26 @@
     <style
        type="text/css"
        id="style1">
-                  .land {
-                    /* Use the fill attribute to reference the gradient */
-                    fill: url(#landGradient);
-                    fill-opacity: 1;
-                    stroke: white;
-                    stroke-opacity: 1;
-                    stroke-width: 0.5;
-                    transition: fill 0.3s ease-in-out;
-                    /* Add a smooth transition for the hover effect */
-                  }
+                    .land {
+                      /* Use the fill attribute to reference the gradient */
+                      fill: url(#landGradient);
+                      fill-opacity: 1;
+                      stroke: white;
+                      stroke-opacity: 1;
+                      stroke-width: 0.5;
+                      transition: fill 0.3s ease-in-out;
+                      /* Add a smooth transition for the hover effect */
+                    }
 
-                  .land:hover {
-                    fill: #ffff;
-                    /* Change the fill color on hover */
-                    fill-opacity: 0.7;
-                    stroke: white;
-                    stroke-opacity: 1;
-                    stroke-width: 0.5;
-                  }
-                </style>
+                    .land:hover {
+                      fill: #ffff;
+                      /* Change the fill color on hover */
+                      fill-opacity: 0.7;
+                      stroke: white;
+                      stroke-opacity: 1;
+                      stroke-width: 0.5;
+                    }
+                  </style>
     <amcharts:ammap
        projection="mercator"
        leftLongitude="68.189980"
@@ -140,88 +140,92 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-weight:bold;font-size:7.68197px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.054996px;word-spacing:0.00261886px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40158;stroke-dasharray:6.80315, 6.80315"
-     x="92.470322"
-     y="75.019348"
-     id="text2"><tspan
+     style="font-weight:bold;font-size:9.50243px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.0680289px;word-spacing:0.00323947px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40157;stroke-dasharray:6.80315, 6.80315"
+     x="90.133492"
+     y="77.327324"
+     id="text1"><tspan
        sodipodi:role="line"
-       id="tspan2"
-       x="92.470322"
-       y="75.019348"
-       style="stroke-width:3.40158">Assam</tspan></text>
+       id="tspan1"
+       x="90.133492"
+       y="77.327324"
+       style="stroke-width:3.40157">Assam</tspan></text>
   <text
      xml:space="preserve"
-     style="font-weight:bold;font-size:6.70326px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.0479893px;word-spacing:0.00228521px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40158;stroke-dasharray:6.80315, 6.80315"
-     x="70.526894"
-     y="92.008522"
-     id="text3"
-     transform="rotate(-27.207855)"><tspan
-       sodipodi:role="line"
-       id="tspan3"
-       x="70.526894"
-       y="92.008522"
-       style="stroke-width:3.40158">Arunachal Pradesh</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-weight:bold;font-size:6.70326px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.0479893px;word-spacing:0.00228521px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40158;stroke-dasharray:6.80315, 6.80315"
-     x="49.3158"
-     y="95.135971"
+     style="font-weight:bold;font-size:29.3333px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.21px;word-spacing:0.01px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40157;stroke-dasharray:6.80315, 6.80315"
+     x="18.32954"
+     y="49.460667"
      id="text4"><tspan
        sodipodi:role="line"
-       id="tspan4"
-       x="49.3158"
-       y="95.135971"
-       style="stroke-width:3.40158">Meghalaya</tspan></text>
+       id="tspan4"></tspan></text>
   <text
      xml:space="preserve"
-     style="font-weight:bold;font-size:6.70326px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.0479893px;word-spacing:0.00228521px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40158;stroke-dasharray:6.80315, 6.80315"
-     x="11.413375"
-     y="155.73128"
-     id="text5"
-     transform="rotate(-50.653901)"><tspan
+     style="font-weight:bold;font-size:6.89889px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.0493899px;word-spacing:0.0023519px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40157;stroke-dasharray:6.80315, 6.80315"
+     x="48.942837"
+     y="94.785332"
+     id="text5"><tspan
        sodipodi:role="line"
        id="tspan5"
-       x="11.413375"
-       y="155.73128"
-       style="stroke-width:3.40158">Nagaland</tspan></text>
+       x="48.942837"
+       y="94.785332"
+       style="stroke-width:3.40157">Meghalaya</tspan></text>
   <text
      xml:space="preserve"
-     style="font-weight:bold;font-size:6.70326px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.0479893px;word-spacing:0.00228521px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40158;stroke-dasharray:6.80315, 6.80315"
-     x="-14.974222"
-     y="166.90073"
+     style="font-weight:bold;font-size:6.89889px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.0493899px;word-spacing:0.0023519px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40157;stroke-dasharray:6.80315, 6.80315"
+     x="66.335945"
+     y="95.532181"
      id="text6"
-     transform="rotate(-49.11405)"><tspan
+     transform="rotate(-29.319954)"><tspan
        sodipodi:role="line"
        id="tspan6"
-       x="-14.974222"
-       y="166.90073"
-       style="stroke-width:3.40158">Manipur</tspan></text>
+       x="66.335945"
+       y="95.532181"
+       style="stroke-width:3.40157">Arunachal Pradesh</tspan></text>
   <text
      xml:space="preserve"
-     style="font-weight:bold;font-size:6.70326px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.0479893px;word-spacing:0.00228521px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40158;stroke-dasharray:6.80315, 6.80315"
-     x="-145.73956"
-     y="112.25498"
+     style="font-weight:bold;font-size:6.89889px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.0493899px;word-spacing:0.0023519px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40157;stroke-dasharray:6.80315, 6.80315"
+     x="-15.344913"
+     y="166.64044"
      id="text7"
-     transform="rotate(-86.15895)"
-     inkscape:transform-center-x="0.094731172"
-     inkscape:transform-center-y="0.41470497"><tspan
+     transform="rotate(-48.48319)"><tspan
        sodipodi:role="line"
        id="tspan7"
-       x="-145.73956"
-       y="112.25498"
-       style="stroke-width:3.40158">Mizoram</tspan></text>
+       x="-15.344913"
+       y="166.64044"
+       style="stroke-width:3.40157">Manipur</tspan></text>
   <text
      xml:space="preserve"
-     style="font-weight:bold;font-size:6.70326px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.0479893px;word-spacing:0.00228521px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40158;stroke-dasharray:6.80315, 6.80315"
-     x="-58.744511"
-     y="148.15976"
+     style="font-weight:bold;font-size:6.89889px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.0493899px;word-spacing:0.0023519px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40157;stroke-dasharray:6.80315, 6.80315"
+     x="-144.5419"
+     y="118.74988"
+     id="text8"
+     transform="rotate(-83.424231)"><tspan
+       sodipodi:role="line"
+       id="tspan8"
+       x="-144.5419"
+       y="118.74988"
+       style="stroke-width:3.40157">Mizoram</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:6.89889px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.0493899px;word-spacing:0.0023519px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40157;stroke-dasharray:6.80315, 6.80315"
+     x="13.506529"
+     y="156.24716"
      id="text9"
-     transform="rotate(-49.072841)"
-     inkscape:transform-center-x="0.30533279"
-     inkscape:transform-center-y="0.57617939"><tspan
+     transform="rotate(-49.975328)"><tspan
        sodipodi:role="line"
        id="tspan9"
-       x="-58.744511"
-       y="148.15976"
-       style="stroke-width:3.40158">Tripura</tspan></text>
+       x="13.506529"
+       y="156.24716"
+       style="stroke-width:3.40157">Nagaland</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:6.89889px;line-height:0%;font-family:'Avignon Pro';-inkscape-font-specification:'Avignon Pro, Bold';text-align:start;letter-spacing:0.0493899px;word-spacing:0.0023519px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f9f9f9;stroke-width:3.40157;stroke-dasharray:6.80315, 6.80315"
+     x="-61.337742"
+     y="148.21089"
+     id="text10"
+     transform="rotate(-49.975328)"><tspan
+       sodipodi:role="line"
+       id="tspan10"
+       x="-61.337742"
+       y="148.21089"
+       style="stroke-width:3.40157">Tripura</tspan></text>
 </svg>
