@@ -134,68 +134,8 @@
                 <th>Dec</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Assam</td>
-                <td>
-                  <div class="availability-dot"></div>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Meghalaya</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  <div class="availability-dot"></div>
-                </td>
-                <td>
-                  <div class="availability-dot"></div>
-                </td>
-                <td>
-                  <div class="availability-dot"></div>
-                </td>
-                <td>
-                  <div class="availability-dot"></div>
-                </td>
-                <td>
-                  <div class="availability-dot"></div>
-                </td>
-                <td>
-                  <div class="availability-dot"></div>
-                </td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Tripura</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  <div class="availability-dot"></div>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
+            <tbody id="table-row-list">
+     
             </tbody>
           </table>
         </div>
@@ -218,18 +158,14 @@
         </div>
 
         <div class="tags">
-          <div class="tag active">Pumpkin</div>
+          <div class="tag active">Mango</div>
           <div class="tag">Apple</div>
-          <div class="tag">Avacoda</div>
+          <div class="tag">Papaya</div>
           <div class="tag">Banana</div>
-          <div class="tag">Apple</div>
-          <div class="tag">Avacoda</div>
-          <div class="tag">Banana</div>
-          <div class="tag">Apple</div>
-          <div class="tag">Banana</div>
-          <div class="tag">Apple</div>
-          <div class="tag">Avacoda</div>
-          <div class="tag">Banana</div>
+          <div class="tag">Grapes</div>
+          <div class="tag">Pineapple</div>
+          <div class="tag">Pomegranate</div>
+          <div class="tag">Orange</div>
         </div>
       </div>
     </div>
@@ -320,74 +256,127 @@
   <script>
     AOS.init();
   </script>
-  <script>    
-    const fruitsData = {
-      Tomato: {
-        image: "../image/fruits/tomato.png",
-        availability: {
-          Assam: [0],
-          Meghalaya: [4, 5, 6, 7, 8, 9],
-          Tripura: [4],
-        },
-      },
-      Pumpkin: {
-        image: "../image/fruits/pumpkin.png",
-        availability: {
-          Assam: [1, 2],
-          Meghalaya: [3, 4],
-          Tripura: [2, 5],
-        },
-      },
-      Apple: {
-        image: "../image/fruits/apple.png",
-        availability: {
-          Assam: [9, 10],
-          Meghalaya: [8, 9],
-          Tripura: [10, 11],
-        },
-      },
-      Avacoda: {
-        image: "../image/fruits/avacoda.png",
-        availability: {
-          Assam: [2, 3],
-          Meghalaya: [1, 2],
-          Tripura: [3],
-        },
-      },
-      Banana: {
-        image: "../image/fruits/banana.png",
-        availability: {
-          Assam: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-          Meghalaya: [0, 2, 4, 6],
-          Tripura: [1, 3, 5, 7],
-        },
-      },
-    };
-    const fruitOrder = Object.keys(fruitsData);
+  <script>
+const fruitsData = {
+  Mango: {
+    image: "../image/fruits/mango.png",
+    availability: {
+      UP: [4, 5, 6, 7],
+      Maharashtra: [3, 4, 5, 6],
+      Gujrat: [3, 4, 5, 6],
+      Karnataka: [4, 5, 6],
+      AP: [2, 3, 4],
+    },
+  },
+  Banana: {
+    image: "../image/fruits/banana.png",
+    availability: {
+      Maharashtra: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      TamilNadu: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      Karnataka: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      Assam: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      Gujarat: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      MP: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      AP: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      Bihar: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      Kerela: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    },
+  },
+  Apple: {
+    image: "../image/fruits/apple.png",
+    availability: {
+      Arunachal: [6, 7, 8],
+      Himachal: [6, 7, 8],
+      "J & K": [6, 7, 8],
+      Uttaranchal: [6, 7, 8],
+    },
+  },
+  Grapes: {
+    image: "../image/fruits/grapes.png",
+    availability: {
+      Maharashtra: [2, 3, 4, 5],
+      AP: [2, 3, 4, 5],
+      Karnataka: [2, 3, 4, 5],
+    },
+  },
+  Pomegranate: {
+    image: "../image/fruits/pomegranate.png",
+    availability: {
+      Gujarat: [1, 2, 3, 4, 5, 6, 7, 8],
+      Maharashtra: [1, 2, 3, 4, 5, 6, 7, 8],
+      WB: [2, 3, 4, 5],
+      AP: [1, 2, 3, 4, 5, 6],
+      Karnataka: [2, 3, 4, 5, 6],
+    },
+  },
+  Pineapple: {
+    image: "../image/fruits/pineapple.png",
+    availability: {
+      Assam: [3, 4, 5, 6, 7],
+      Arunachal: [3, 4, 5, 6, 7],
+      Tripura: [3, 4, 5, 6, 7],
+      Meghalaya: [3, 4, 5, 6, 7],
+      Manipur: [3, 4, 5, 6, 7],
+    },
+  },
+  Orange: {
+    image: "../image/fruits/orange.png",
+    availability: {
+      AP: [10, 11, 0],
+      Assam: [10, 11, 0],
+      Chattisgarh: [10, 11, 0],
+      Meghalaya: [10, 11, 0],
+      Maharashtra: [10, 11, 0],
+      WB: [10, 11, 0],
+      Manipur: [10, 11, 0],
+    },
+  },
+  Papaya: {
+    image: "../image/fruits/papaya.png",
+    availability: {
+      AP: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      Arunachal: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      Assam: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      Gujarat: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      Karnataka: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      Kerela: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      Maharashtra: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "West Bengal": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    },
+  },
+};
+
+const fruitOrder = Object.keys(fruitsData);
     let currentFruitIndex = fruitOrder.indexOf("Tomato");
     const titleEl = document.querySelector("h2.title");
     const imageEl = document.querySelector(".fruit img");
     const tags = document.querySelectorAll(".tag");
-    const tableRows = document.querySelectorAll("tbody tr");
     function updateFruitDisplay(fruitName) {
       const data = fruitsData[fruitName];
       if (!data) return;
       titleEl.textContent = fruitName;
       imageEl.src = data.image;
       imageEl.alt = fruitName;
-      tableRows.forEach(row => {
-        const region = row.children[0].textContent.trim();
-        for (let i = 1; i <= 12; i++) {
-          const cell = row.children[i];
-          cell.innerHTML = "";
-          if (data.availability[region]?.includes(i - 1)) {
+      const tableBody = document.getElementById("table-row-list");
+      tableBody.innerHTML = ""; // Clear previous rows
+      const availability = data.availability;
+      Object.keys(availability).forEach(region => {
+        const availableMonths = availability[region];
+        const tr = document.createElement("tr");
+        const regionTd = document.createElement("td");
+        regionTd.textContent = region;
+        tr.appendChild(regionTd);
+        for (let i = 0; i < 12; i++) {
+          const td = document.createElement("td");
+          if (availableMonths.includes(i)) {
             const dot = document.createElement("div");
             dot.className = "availability-dot";
-            cell.appendChild(dot);
+            td.appendChild(dot);
           }
+          tr.appendChild(td);
         }
+        tableBody.appendChild(tr);
       });
-
       tags.forEach(tag => {
         if (tag.textContent.trim() === fruitName) {
           document.querySelector(".tag.active")?.classList.remove("active");
@@ -395,6 +384,8 @@
         }
       });
     }
+
+
     tags.forEach(tag => {
       tag.addEventListener("click", () => {
         const fruitName = tag.textContent.trim();
@@ -410,6 +401,7 @@
       currentFruitIndex = (currentFruitIndex + 1) % fruitOrder.length;
       updateFruitDisplay(fruitOrder[currentFruitIndex]);
     });
+    updateFruitDisplay('Mango');
   </script>
 
 </body>
