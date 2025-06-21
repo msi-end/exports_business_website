@@ -40,6 +40,10 @@
 body {
   font-family: Poppins, sans-serif;
 }
+svg{
+width: 35px;
+height: 35px;
+}
 .main {
   max-width: 1200px;
   margin: 0 auto;
