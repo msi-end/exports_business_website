@@ -30,8 +30,8 @@ app.use(async (req, res, next) => {
     try {
       const jsContent = fs.readFileSync(filePath, "utf8");
       const minified = await minify(jsContent);
-      res.setHeader("Content-Type", "application/javascript");
-      res.setHeader("Cache-Control", "public, max-age=86400");
+      // res.setHeader("Content-Type", "application/javascript");
+      // res.setHeader("Cache-Control", "public, max-age=86400");
       res.send(minified.code);
     } catch (err) {
       next();
@@ -54,9 +54,9 @@ app.use(async (req, res, next) => {
 
 app.use(
   express.static(path.join(__dirname, "public"), {
-    maxAge: "15d",
-    immutable: true,
-    etag: false,
+    // maxAge: "15d",
+    // immutable: true,
+    // etag: false,
   })
 );
 

@@ -244,10 +244,53 @@ function updateMapProductShowcase(region) {
       title: "ASSAM",
       description:
         "Assam produces a wide variety of seasonal fruits rich in flavor and nutrients.",
-      image: "../image/fruits/banana.png",
+      image: "../image/home/map_image/kajinemu.png",
       alt: "Fruits from Assam",
     },
+    Arunachal: {
+      title: "ARUNACHAL PRADESH",
+      description:
+        "Arunachal Pradesh is known for unique fruits like kiwi, oranges, and apples grown in its cool climate.",
+      image: "../image/home/map_image/kiwi.png",
+      alt: "Fruits from Arunachal Pradesh",
+    },
+    Manipur: {
+      title: "MANIPUR",
+      description:
+        "Manipur offers exotic fruits like pineapples and passion fruits cultivated in its rich, fertile soil.",
+      image: "../image/home/map_image/black-rice.png",
+      alt: "Fruits from Manipur",
+    },
+    Meghalaya: {
+      title: "MEGHALAYA",
+      description:
+        "Meghalaya is famous for its juicy oranges and other citrus fruits grown in the hills.",
+      image: "../image/home/map_image/turmeric.png",
+      alt: "Fruits from Meghalaya",
+    },
+    Mizoram: {
+      title: "MIZORAM",
+      description:
+        "Mizoram produces delicious fruits like bananas, grapes, and plums across its highland areas.",
+      image: "../image/home/map_image/ginger.png",
+      alt: "Fruits from Mizoram",
+    },
+    Nagaland: {
+      title: "NAGALAND",
+      description:
+        "Nagaland is home to rare and indigenous fruits like wild apples and pears.",
+      image: "../image/home/map_image/king-chili.png",
+      alt: "Fruits from Nagaland",
+    },
+    Tripura: {
+      title: "TRIPURA",
+      description:
+        "Tripura is rich in fruit production including jackfruit, pineapple, and litchi.",
+      image: "../image/home/map_image/pineapple.webp",
+      alt: "Fruits from Tripura",
+    },
   };
+
   const data = State[region];
   if (!data) return;
   const leftContent = document.querySelector(

@@ -6,7 +6,8 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
   position: relative;
-  margin-top: 59vh;
+  /* margin-top: 59vh; */
+  margin-top: 38vh;
 }
 .footer::before {
   content: "";
