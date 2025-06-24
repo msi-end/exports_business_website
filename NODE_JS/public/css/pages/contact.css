@@ -278,5 +278,7 @@ svg {
   .contact-info,
   .contact-form {
     padding: 1.5rem;
+    max-width: 98%;
+    margin-left: -3%;
   }
 }

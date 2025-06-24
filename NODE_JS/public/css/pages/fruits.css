@@ -373,7 +373,7 @@ p {
 
 .t-container {
   width: 100%;
-  min-height: max-content;
+  min-height: 150vh;
   padding: 3rem;
 }
 

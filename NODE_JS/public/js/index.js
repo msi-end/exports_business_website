@@ -133,7 +133,7 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 async function loopTyping() {
-  const taglineText = "No #1 People's choice for Fresh food";
+  const taglineText = "#Connecting Local Farmers With Global Market";
   const subText = "Packed With Love From North-East India";
   const repeats = 50;
   for (let i = 0; i < repeats; i++) {
