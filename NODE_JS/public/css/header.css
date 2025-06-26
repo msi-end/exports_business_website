@@ -17,6 +17,12 @@
   --muted-color: #e9ecef;
 }
 
+.manual-map {
+  font-size: 12px;
+  color: rgb(14, 45, 6);
+  margin-left: 10%;
+}
+
 .navigation-container {
 }
 .header-background-0 {

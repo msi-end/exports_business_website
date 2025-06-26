@@ -490,11 +490,12 @@ p {
 
 
 .title {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: bold;
   color: #995100;
   margin-left: 4%;
 }
+
 
 .btn {
   background-color: #05478e;

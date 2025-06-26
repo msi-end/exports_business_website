@@ -153,6 +153,7 @@
   
     .t-container {
       padding: 1rem;
+      min-height: max-content;
     }
   
     .m-fruit-flex {

@@ -62,7 +62,7 @@
 }
 .hero-intro {
   position: relative;
-  bottom: 30%;
+  bottom: 40%;
 }
 .hero-intro p {
   color: var(--primary-color);

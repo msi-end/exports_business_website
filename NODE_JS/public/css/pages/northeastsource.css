@@ -93,9 +93,9 @@
 }
 
 .rice-text {
-  background-image: url("/image/sourcenortheast/text-bg.png");
-  background-size: contain;
-  background-position: center;
+  background-image: url("/image/sourcenortheast/hilly.jpg");
+  background-size: cover;
+  background-position: bottom ;
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -805,7 +805,8 @@ td:first-child {
 .rn-circle-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .number-circle {
@@ -826,10 +827,16 @@ td:first-child {
 
 .description {
   text-align: center;
-  color: #006633;
+  color: #006633 ;
   font-weight: 600;
   font-size: 16px;
   max-width: 200px;
+
+}
+
+.description p {
+  font-size: 13px;
+  color: #006633 
 }
 
 @media (max-width: 768px) {
