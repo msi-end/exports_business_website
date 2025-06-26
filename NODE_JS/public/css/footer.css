@@ -155,3 +155,18 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+#initials {
+  color: var(--primary-color);
+  background: var(--primary-color);
+  text-align: center;
+}
+#initials p {
+  padding: 5px;
+  font-size: 14px;
+  margin: 0px;
+  color: rgb(4, 4, 88);
+
+}
+#initials a {
+ 
+}
