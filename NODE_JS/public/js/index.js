@@ -133,7 +133,7 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 async function loopTyping() {
-  const taglineText = "#Connecting Local Farmers With Global Market";
+  const taglineText = "#Connecting Local Farmers With Global Markets";
   const subText = "Packed With Love From North-East India";
   const repeats = 50;
   for (let i = 0; i < repeats; i++) {
@@ -251,7 +251,7 @@ function updateMapProductShowcase(region) {
       title: "ARUNACHAL PRADESH",
       description:
         "Arunachal Pradesh is known for unique fruits like kiwi, oranges, and apples grown in its cool climate.",
-      image: "../image/home/map_image/kiwi.png",
+      image: "../image/home/map_image/kiwi-new.png",
       alt: "Fruits from Arunachal Pradesh",
     },
     Manipur: {
