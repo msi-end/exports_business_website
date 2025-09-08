@@ -68,13 +68,31 @@
   <p>© 2025 Design and Develop By <a href="https://reynrel.in" target="_blank">reynrel.in</a> </p>
 </div>
 <script>
+  // const nav = document.querySelector(".navigation");
+  // const logo = document.querySelector(".logo");
+  // const menuToggleBtns = document.querySelectorAll(".menu-toggle-btn");
+  // const navContent = document.querySelector(".navigation-content");
+  // function toggleMenu() {
+  //   nav.removeAttribute("data-aos");
+  //   logo.classList.toggle("menu-magnify-logo")
+  //   nav.classList.toggle("navigation-active");
+  // }
   const nav = document.querySelector(".navigation");
-  const logo = document.querySelector(".logo");
-  const menuToggleBtns = document.querySelectorAll(".menu-toggle-btn");
-  const navContent = document.querySelector(".navigation-content");
-  function toggleMenu() {
-    nav.removeAttribute("data-aos");
-    logo.classList.toggle("menu-magnify-logo")
-    nav.classList.toggle("navigation-active");
+const logo = document.querySelector(".logo");
+const menuToggleBtns = document.querySelectorAll(".menu-toggle-btn");
+const navContent = document.querySelector(".navigation-content");
+
+function toggleMenu() {
+  nav.removeAttribute("data-aos");
+  logo.classList.toggle("menu-magnify-logo");
+  nav.classList.toggle("navigation-active");
+}
+document.addEventListener("click", (e) => {
+  const isClickInsideMenu = nav.contains(e.target); 
+  if (nav.classList.contains("navigation-active") && !isClickInsideMenu) {
+    toggleMenu();
   }
+});
+
+
 </script>
