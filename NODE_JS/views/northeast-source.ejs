@@ -193,7 +193,7 @@
       <ul>
         <li>All products are naturally organic</li>
         <li>
-          Almost 80% of the agricultural region is never introduced to harful chemical.
+          Almost 80% of the agricultural region is never introduced to harmful chemicals.
         </li>
         <li>
           The region is full of exotic fruits and vegatables which are not found in other parts of the world.
@@ -348,75 +348,76 @@
     const stateData = {
       Meghalaya: {
         fruits: {
-          Chilli: [
+          Khasi_Mandarin: [
             "/image/sourcenortheast/ginger.png",
-            "/image/fruits/berry.png",
+            "/image/fruits/Khasi_Madarin.webp",
             "/image/fruits/berry.png"
           ],
-          Lemon: [
+          Lakadong_Turmeric: [
             "/image/vegetables/potato.png",
-            "/image/vegetables/Food.png",
+            "/image/fruits/Lakadong_Turmeric.webp",
             "/image/fruits/tomato.png"
           ],
           Ginger: [
             "/image/fruits/orange.png",
-            "/image/fruits/berry.png",
+            "/image/fruits/ginger.webp",
             "/image/fruits/berry.png"
           ],
-          Pineapple: [
+        Cashew_Nuts: [
             "/image/fruits/berry.png",
-            "/image/fruits/orange.png",
+            "/image/fruits/Cashew_Nuts.webp",
             "/image/vegetables/potato.png"
-          ],
-          Turmeric: [
-            "/image/vegetables/Food.png",
-            "/image/fruits/tomato.png",
-            "/image/fruits/orange.png"
-          ],
-          Corn: [
-            "/image/fruits/tomato.png",
-            "/image/vegetables/potato.png",
-            "/image/fruits/berry.png"
           ]
         }
       },
       Assam: {
         fruits: {
-          Joha_Rice: [
+          Pineapple: [
             "/image/fruits/berry.png",
             "/image/fruits/orange.png",
             "/image/fruits/berry.png"
           ],
-          Black_Rice: [
+          Assam_Lemon: [
             "/image/fruits/tomato.png",
             "/image/vegetables/Food.png",
             "/image/fruits/banana.png"
           ],
-          Pioner_Corn: [
+          Joha_Rice: [
             "/image/fruits/banana.png",
             "/image/fruits/berry.png",
             "/image/fruits/orange.png"
           ],
-          Basmati_Rice: [
+          Tezpur_Litchi: [
+            "/image/fruits/apple.png",
+            "/image/fruits/orange.png",
+            "/image/fruits/berry.png"
+          ],
+          Ginger: [
             "/image/fruits/apple.png",
             "/image/fruits/orange.png",
             "/image/fruits/berry.png"
           ]
+
         }
       },
       Mizoram: {
         fruits: {
-          Ginger: [
+          Passion_Fruit: [
             "/image/fruits/berry.png",
             "/image/fruits/orange.png",
             "/image/fruits/banana.png"
           ],
-          Orange: [
+          Shatkora: [
             "/image/fruits/orange.png",
             "/image/vegetables/Food.png",
             "/image/fruits/tomato.png"
           ],
-          Chilli: [
+          Bird_eye_Chilli: [
+            "/image/vegetables/potato.png",
+            "/image/fruits/berry.png",
+            "/image/fruits/banana.png"
+          ],
+           Dragon_Fruit: [
             "/image/vegetables/potato.png",
             "/image/fruits/berry.png",
             "/image/fruits/banana.png"
@@ -425,17 +426,17 @@
       },
       Tripura: {
         fruits: {
-          Pineapple: [
+          Jack_Fruit: [
             "/image/fruits/orange.png",
             "/image/fruits/berry.png",
             "/image/fruits/tomato.png"
           ],
-          Potato: [
+          Queen_Pineapple: [
             "/image/vegetables/potato.png",
             "/image/vegetables/Food.png",
             "/image/fruits/banana.png"
           ],
-          Tomato: [
+          Exotic_Vegetables: [
             "/image/fruits/tomato.png",
             "/image/fruits/berry.png",
             "/image/fruits/orange.png"
@@ -444,17 +445,22 @@
       },
       Manipur: {
         fruits: {
-          Black_Rice: [
+          Kachai_Lemon: [
             "/image/fruits/tomato.png",
             "/image/fruits/orange.png",
             "/image/fruits/apple.png"
           ],
-          Ginger: [
+          Mandarin_Orange: [
             "/image/fruits/banana.png",
             "/image/fruits/berry.png",
             "/image/fruits/orange.png"
           ],
-          Lemon: [
+          Ginger: [
+            "/image/fruits/tomato.png",
+            "/image/vegetables/potato.png",
+            "/image/vegetables/Food.png"
+          ],
+          Turmeric: [
             "/image/fruits/tomato.png",
             "/image/vegetables/potato.png",
             "/image/vegetables/Food.png"
@@ -463,17 +469,22 @@
       },
       Nagaland: {
         fruits: {
-          Chilli: [
+          Naga_Chilli: [
             "/image/fruits/orange.png",
             "/image/fruits/berry.png",
             "/image/fruits/tomato.png"
           ],
-          Ginger: [
+          Pineapple: [
             "/image/vegetables/Food.png",
             "/image/vegetables/potato.png",
             "/image/fruits/banana.png"
           ],
-          Turmeric: [
+          Ginger: [
+            "/image/fruits/berry.png",
+            "/image/fruits/orange.png",
+            "/image/fruits/banana.png"
+          ],
+          Naga_Tree_Tomato: [
             "/image/fruits/berry.png",
             "/image/fruits/orange.png",
             "/image/fruits/banana.png"
@@ -487,12 +498,17 @@
             "/image/fruits/banana.png",
             "/image/fruits/berry.png"
           ],
-          Apple: [
+          Dragon_Fruit: [
             "/image/fruits/apple.png",
             "/image/fruits/orange.png",
             "/image/fruits/berry.png"
           ],
           Ginger: [
+            "/image/fruits/tomato.png",
+            "/image/fruits/orange.png",
+            "/image/vegetables/Food.png"
+          ],
+          Exotic_Spices: [
             "/image/fruits/tomato.png",
             "/image/fruits/orange.png",
             "/image/vegetables/Food.png"
@@ -524,7 +540,7 @@
 
     function getLabel(path) {
       const file = path.split("/").pop().split(".")[0];
-      return file.charAt(0).toUpperCase() + file.slice(1);
+      return (file.charAt(0).toUpperCase() + file.slice(1)).replace(/_/g, ' ');
     }
 
     function renderTags(fruits) {
@@ -535,7 +551,7 @@
       currentFruitKeys.forEach((fruit, idx) => {
         const tag = document.createElement("div");
         tag.className = "tag" + (idx === 0 ? " active" : "");
-        tag.textContent = fruit.replace('_', ' ');
+        tag.textContent = fruit.replace(/_/g, ' ');
         tag.addEventListener("click", () => {
           document.querySelector(".tag.active")?.classList.remove("active");
           tag.classList.add("active");
