@@ -48,7 +48,7 @@
   border: 1px slid white;
   height: 60px;
   z-index: 3;
-  position: absolute;
+  position: fixed;
   padding: 14px 25px;
   border-radius: 30px;
   left: 65%;

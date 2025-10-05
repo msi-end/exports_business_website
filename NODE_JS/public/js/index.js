@@ -317,3 +317,4 @@ function updateMapProductShowcase(region) {
     }
   }, 500);
 }
+
