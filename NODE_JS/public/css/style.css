@@ -921,7 +921,6 @@
   overflow: hidden;
 }
 
-
 .profile-image:hover::before {
   animation: shimmer 1.5s ease-in-out;
   opacity: 1;
@@ -940,7 +939,6 @@
   color: var(--secondary-color);
   margin-bottom: 5px;
   font-size: 18px;
-
 }
 
 .farmer-location {
@@ -948,7 +946,6 @@
   margin-bottom: 3px;
   font-weight: 500;
   font-size: 16px;
-
 }
 
 .farmer-crop {
@@ -1130,11 +1127,18 @@
   top: -10rem;
 }
 
-
 /* Large Desktop - 1280x585 specific */
-@media (max-width: 1300px) {
+@media screen and (min-width: 1028px) and (max-width: 1300px) {
+  .text-em-15 {
+    font-size: 1.2em;
+  }
+
+  .top-up {
+    top: -6rem;
+  }
+  
   .hero-image {
-    top: 100px
+    top: 100px;
   }
   .product-hero {
     height: 600px;
@@ -1142,12 +1146,13 @@
 
   .hero-intro {
     margin-left: 3rem;
+    bottom: 38%;
   }
-  
+
   .hero-intro h1 {
     font-size: 45px;
   }
-  
+
   .hero-intro h4 {
     font-size: 16px;
   }
@@ -1155,19 +1160,43 @@
   .hero-intro p {
     font-size: 14px;
   }
-  
+
   .mission {
     /* height: 500px; */
     font-size: 18px;
+    height: max-content;
   }
-  
+
+  .mission-background-0 {
+    margin-left: -10%;
+    margin-top: -20%;
+  }
+
   .mission-content .one,
   .mission-content .two,
   .mission-content .three {
     padding-top: 50px;
   }
-  
+
+  .mission-content {
+    height: 300px;
+    width: 100%;
+  }
+
+  .fruit h2 {
+    font-size: 1.1em;
+  }
+
+  .fruit.first h2 {
+    font-size: 1em;
+  }
+
+  .fruit.first {
+    transform: scale(2);
+  }
+
   .testimonials-container {
     margin-top: 75vh;
+    max-width: 1200px;
   }
 }

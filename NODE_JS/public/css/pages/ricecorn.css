@@ -771,3 +771,16 @@ td:first-child {
 .h-benefit {
   margin-top: 8%;
 }
+
+
+
+@media screen and (min-width: 1028px) and (max-width: 1300px) {
+  .text-transparent {
+    font-size: 6rem;
+  }
+
+  .mb-5 {
+    margin-top: -22%;
+  }
+
+}
