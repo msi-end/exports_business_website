@@ -308,3 +308,14 @@ ol[role="list"] {
 .hidden {
   display: none !important;
 }
+
+
+.cta-btn {
+  margin-top: 10vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .cta-btn {
+    margin-left: 8vw;
+  }
+}

@@ -138,6 +138,10 @@ svg {
   box-shadow: 0 4px 10px rgba(116, 165, 40, 0.3);
 }
 
+.add-icon {
+  width: 120px;
+}
+
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -268,11 +272,19 @@ svg {
   .contact-form {
     padding: 2rem;
   }
+
+  .add-icon {
+    width: 100px;
+  }
 }
 
 @media (max-width: 480px) {
   .contact-hero h1 {
     font-size: 2rem;
+  }
+
+  .add-icon {
+    width: 200px;
   }
 
   .contact-info,
