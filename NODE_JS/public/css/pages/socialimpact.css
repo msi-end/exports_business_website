@@ -832,7 +832,7 @@ p {
 
 .line-f {
   position: absolute;
-  top: 0;
+  top: -10%;
   right: 15%;
 }
 

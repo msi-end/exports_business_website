@@ -288,17 +288,19 @@
   margin-left: 5vw;
 }
 .hero-two-content-1 {
-  height: 45vw;
-  background: url("../image/svg/hero_background.svg");
+  /* height: 700px;
+  width: 700px; */
+  /* background: url("../image/svg/hero-bg.svg");
   background-repeat: no-repeat;
-  background-size: 120% 105%;
+  background-size: 120% 105%; */
 }
 .hero-two-content-1 img {
-  width: 32vw;
-  height: 32vw;
-  bottom: 32px;
-  left: 150px;
+  width: 30vw;
+  height: 30vw;
   object-fit: cover;
+  left: 26%;
+  /* padding: 60px;
+  background-color: #e7f3c6; */
 }
 .hero-two .image-slider {
   background-color: var(--primary-color);
@@ -309,7 +311,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  left: 65vw;
+  left: 67vw;
   margin-top: 26px;
 }
 .hero-two .image-slider svg {
@@ -825,7 +827,7 @@
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 50px;
   margin-bottom: 60px;
 }
@@ -1133,10 +1135,14 @@
     font-size: 1.2em;
   }
 
+  .hero-two .image-slider {
+    left: 65vw;
+  }
+
   .top-up {
     top: -6rem;
   }
-  
+
   .hero-image {
     top: 100px;
   }

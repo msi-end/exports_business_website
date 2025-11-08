@@ -965,7 +965,7 @@ td:first-child {
 
 .line-f {
   position: absolute;
-  top: 0;
+  top: -10%;
   right: 4%;
 }
 
