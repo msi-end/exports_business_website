@@ -87,8 +87,20 @@
   padding: 10px; /* Add padding to create space around the text */
 }
 
+.text-transparent-spice {
+  font-size: 10rem;
+}
+
 .rice-text {
   background-image: url("/image/ricecorn/rice-hero.png");
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.spices-text {
+  background-image: url("/image/spices/colorful.jpg");
   background-size: cover;
   background-position: center;
   background-clip: text;
@@ -485,9 +497,7 @@ p {
 }
 .fruit img {
   width: 80%;
-
 }
-
 
 .title {
   font-size: 4rem;
@@ -495,7 +505,6 @@ p {
   color: #995100;
   margin-left: 4%;
 }
-
 
 .btn {
   background-color: #05478e;
@@ -750,6 +759,10 @@ td:first-child {
   right: 4%;
 }
 
+.line-f-spice {
+  top: -10%;
+}
+
 .blur_bg {
   position: absolute;
   background: rgba(161, 238, 82, 0.36);
@@ -772,8 +785,6 @@ td:first-child {
   margin-top: 8%;
 }
 
-
-
 @media screen and (min-width: 1028px) and (max-width: 1300px) {
   .text-transparent {
     font-size: 6rem;
@@ -783,4 +794,11 @@ td:first-child {
     margin-top: -22%;
   }
 
+  .text-transparent-spice {
+    font-size: 10rem;
+  }
+
+  .ring {
+    left: -55%;
+  }
 }

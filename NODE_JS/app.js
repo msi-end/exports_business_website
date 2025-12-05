@@ -68,6 +68,7 @@ app.get("/fruits", (req, res) => res.render("fruits"));
 app.get("/about-us", (req, res) => res.render("about-us"));
 app.get("/vegetables", (req, res) => res.render("vegetables"));
 app.get("/rice-corn", (req, res) => res.render("rice-corn"));
+app.get("/spices", (req, res) => res.render("spices"));
 app.get("/northeast-source", (req, res) => res.render("northeast-source"));
 app.get("/social-impact", (req, res) => res.render("social-impact"));
 app.get("/cultivate-northeast", (req, res) =>
